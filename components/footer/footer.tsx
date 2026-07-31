@@ -147,31 +147,31 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-950 text-slate-400 text-sm leading-normal border-t border-gray-900">
-      <div className="max-w-[1320px] mx-auto px-6 sm:px-10 lg:px-12 py-16 space-y-16">
+    <footer className="w-full bg-gray-950 text-slate-400 text-sm leading-normal border-t border-gray-900 dark:bg-gray-900 dark:text-gray-400 dark:border-gray-800">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-16 space-y-12 sm:space-y-16">
         
         {/* Top Branding Section */}
         <div className="flex flex-col items-center text-center space-y-6">
           <img className=" px-8 py-4 rounded-2xl shadow-sm inline-flex items-center justify-center" src="/images/footer/Frame 1.png"/>
-          <p className="max-w-[900px] text-xs text-slate-400 leading-relaxed">
+          <p className="max-w-[900px] text-xs text-slate-400 leading-relaxed dark:text-gray-400">
             ZoikoStream is Zoiko Group&apos;s secure media infrastructure and streaming platform, operated within Zoiko Tech and powered by Zoiko Cloud. ZoikoStream Live Events is the platform&apos;s scheduled, one-to-many broadcasting capability.
           </p>
         </div>
 
         {/* Navigation Links Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-10 gap-x-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-8 gap-x-6 sm:gap-y-10 sm:gap-x-8">
           {FOOTER_SECTIONS.map((section, idx) => (
             <div key={idx} className="space-y-4">
-              <h3 className="text-slate-100 text-base font-semibold">{section.title}</h3>
+              <h3 className="text-slate-100 text-base font-semibold dark:text-white">{section.title}</h3>
               <ul className="space-y-2">
                 {section.links.map((link, lIdx) => (
                   <li key={lIdx}>
                     <a
                       href={link.href}
-                      className="text-slate-400 hover:text-white transition-colors inline-flex items-center gap-1 text-sm"
+                      className="text-slate-400 hover:text-white transition-colors inline-flex items-center gap-1 text-sm dark:text-gray-400 dark:hover:text-white"
                     >
                       {link.name}
-                      {link.external && <span className="text-xs text-slate-600 font-sans">↗</span>}
+                      {link.external && <span className="text-xs text-slate-600 font-sans dark:text-gray-500">↗</span>}
                     </a>
                   </li>
                 ))}
@@ -181,52 +181,52 @@ export default function Footer() {
         </div>
 
         {/* Corporate Information and Contact */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-8 border-t border-gray-800/80">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-8 border-t border-gray-800/80 dark:border-gray-800">
           
           {/* US HQ */}
           <div className="space-y-2">
-            <h4 className="text-white text-xs   uppercase tracking-wider">Headquarters</h4>
-            <address className="not-italic text-slate-400 text-sm leading-relaxed">
+            <h4 className="text-white text-xs   uppercase tracking-wider dark:text-white">Headquarters</h4>
+            <address className="not-italic text-slate-400 text-sm leading-relaxed dark:text-gray-400">
               1401 21st Street, Suite R<br />
               Sacramento, CA 95811, USA
             </address>
-            <a href="#location-us" className="inline-block text-violet-400 hover:text-violet-300 font-semibold text-xs pt-1">
+            <a href="#location-us" className="inline-block text-violet-400 hover:text-violet-300 font-semibold text-xs pt-1 dark:text-violet-400 dark:hover:text-violet-300">
               View location &rarr;
             </a>
           </div>
 
           {/* EU HQ */}
           <div className="space-y-2">
-            <h4 className="text-white text-xs   uppercase tracking-wider">European Headquarters</h4>
-            <address className="not-italic text-slate-400 text-sm leading-relaxed">
+            <h4 className="text-white text-xs   uppercase tracking-wider dark:text-white">European Headquarters</h4>
+            <address className="not-italic text-slate-400 text-sm leading-relaxed dark:text-gray-400">
               167–169 Great Portland Street, 5th Floor<br />
               London W1W 5PF, UK
             </address>
-            <a href="#location-uk" className="inline-block text-violet-400 hover:text-violet-300 font-semibold text-xs pt-1">
+            <a href="#location-uk" className="inline-block text-violet-400 hover:text-violet-300 font-semibold text-xs pt-1 dark:text-violet-400 dark:hover:text-violet-300">
               View location &rarr;
             </a>
           </div>
 
           {/* Contact Inquiries */}
           <div className="space-y-2">
-            <h4 className="text-white text-xs   uppercase tracking-wider">Contact</h4>
+            <h4 className="text-white text-xs   uppercase tracking-wider dark:text-white">Contact</h4>
             <ul className="space-y-1 text-sm">
-              <li><a href="#contact" className="hover:text-white transition-colors">General contact</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Enterprise inquiries</a></li>
-              <li><a href="#contact" className="hover:text-white transition-colors">Live Events inquiries</a></li>
-              <li><a href="#support" className="hover:text-white transition-colors">Support</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors dark:hover:text-white">General contact</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors dark:hover:text-white">Enterprise inquiries</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors dark:hover:text-white">Live Events inquiries</a></li>
+              <li><a href="#support" className="hover:text-white transition-colors dark:hover:text-white">Support</a></li>
             </ul>
           </div>
 
           {/* Social Links */}
           <div className="space-y-3">
-          <h4 className="text-white text-xs   uppercase tracking-wider">Follow ZoikoStream</h4>
+          <h4 className="text-white text-xs   uppercase tracking-wider dark:text-white">Follow ZoikoStream</h4>
           <div className="flex flex-wrap gap-2">
               {SOCIAL_LINKS.map((social) => (
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-11 h-11 bg-gray-900 border border-gray-800 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-gray-800 transition-colors"
+                  className="w-11 h-11 bg-gray-900 border border-gray-800 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-gray-800 transition-colors dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                   aria-label={social.name}
                 >
                   <img
@@ -243,38 +243,38 @@ export default function Footer() {
         </div>
 
         {/* Secondary Navigation Row */}
-        <div className="pt-6 border-t border-gray-800/80 flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-400">
-          <a href="#sitemap" className="hover:text-white transition-colors">Sitemap</a>
-          <a href="#cookies" className="hover:text-white transition-colors">Cookie settings</a>
-          <a href="#accessibility" className="hover:text-white transition-colors">Accessibility</a>
-          <a href="#privacy" className="hover:text-white transition-colors">Privacy choices</a>
-          <a href="#status" className="hover:text-white transition-colors">System status</a>
-          <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+        <div className="pt-6 border-t border-gray-800/80 flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-400 dark:border-gray-800 dark:text-gray-400">
+          <a href="#sitemap" className="hover:text-white transition-colors dark:hover:text-white">Sitemap</a>
+          <a href="#cookies" className="hover:text-white transition-colors dark:hover:text-white">Cookie settings</a>
+          <a href="#accessibility" className="hover:text-white transition-colors dark:hover:text-white">Accessibility</a>
+          <a href="#privacy" className="hover:text-white transition-colors dark:hover:text-white">Privacy choices</a>
+          <a href="#status" className="hover:text-white transition-colors dark:hover:text-white">System status</a>
+          <a href="#contact" className="hover:text-white transition-colors dark:hover:text-white">Contact</a>
         </div>
 
       </div>
 
       {/* Bottom Sub-Footer Bar */}
-      <div className="w-full bg-zinc-950 border-t border-gray-800 py-8 px-6 sm:px-10 lg:px-12">
-        <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 text-xs text-gray-500">
+      <div className="w-full bg-zinc-950 border-t border-gray-800 py-8 px-4 sm:px-6 lg:px-12 dark:bg-black dark:border-gray-800">
+        <div className="max-w-[1320px] mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 text-xs text-gray-500 dark:text-gray-500">
           
           <div className="space-y-3">
             <nav className="flex flex-wrap gap-x-4 gap-y-1">
-              <a href="#privacy" className="hover:text-slate-300 transition-colors">Privacy</a>
-              <a href="#terms" className="hover:text-slate-300 transition-colors">Terms</a>
-              <a href="#cookies" className="hover:text-slate-300 transition-colors">Cookies</a>
-              <a href="#accessibility" className="hover:text-slate-300 transition-colors">Accessibility</a>
-              <a href="#use" className="hover:text-slate-300 transition-colors">Acceptable Use</a>
-              <a href="#dpa" className="hover:text-slate-300 transition-colors">DPA</a>
-              <a href="#disclosure" className="hover:text-slate-300 transition-colors">Responsible Disclosure</a>
-              <a href="#status" className="hover:text-slate-300 transition-colors">Status</a>
+              <a href="#privacy" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Privacy</a>
+              <a href="#terms" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Terms</a>
+              <a href="#cookies" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Cookies</a>
+              <a href="#accessibility" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Accessibility</a>
+              <a href="#use" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Acceptable Use</a>
+              <a href="#dpa" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">DPA</a>
+              <a href="#disclosure" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Responsible Disclosure</a>
+              <a href="#status" className="hover:text-slate-300 transition-colors dark:hover:text-gray-300">Status</a>
             </nav>
-            <p className="text-slate-600">
+            <p className="text-slate-600 dark:text-gray-600">
               © {new Date().getFullYear()} ZoikoStream. All rights reserved.
             </p>
           </div>
 
-          <p className="text-slate-600 max-w-[600px] leading-relaxed">
+          <p className="text-slate-600 max-w-[600px] leading-relaxed dark:text-gray-600">
             ZoikoStream is Zoiko Group&apos;s secure media infrastructure and streaming platform, operated within Zoiko Tech and powered by Zoiko Cloud.
           </p>
 
