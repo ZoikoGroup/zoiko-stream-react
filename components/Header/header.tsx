@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import DevelopersDropdown from './DevelopersDropdown';
 import CompanyDropdown from './CompanyDropdown';
@@ -11,7 +12,7 @@ import ResourcesDropdown from './ResourcesDropdown';
 import SolutionsDropdown from './SolutionsDropdown';
 
 const NAV_LINKS = [
-  { name: 'Platform', href: '/products', dropdown: 'products' as const },
+  { name: 'Platform', href: '/platform', dropdown: 'products' as const },
   { name: 'Solutions', href: '/solutions', dropdown: 'solutions' as const },
   { name: 'Live Events', href: '/live-events', dropdown: 'live-events' as const },
   { name: 'Developers', href: '/developers', dropdown: 'developers' as const },
@@ -32,6 +33,7 @@ const UTILITY_LINKS: UtilityLink[] = [
 type DropdownKey = 'products' | 'solutions' | 'live-events' | 'developers' | 'company' | 'resources';
 
 export default function Header() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileExpandedDropdown, setMobileExpandedDropdown] = useState<DropdownKey | null>(null);
   const [activeDropdown, setActiveDropdown] = useState<DropdownKey | null>(null);
@@ -73,6 +75,21 @@ export default function Header() {
     }, 120);
   };
 
+  const closeDropdownImmediately = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+
+    if (hideTimerRef.current) {
+      clearTimeout(hideTimerRef.current);
+      hideTimerRef.current = null;
+    }
+
+    setActiveDropdown(null);
+    setMountedDropdown(null);
+  };
+
   const toggleMobileDropdown = (menu: DropdownKey) => {
     setMobileExpandedDropdown((current) => (current === menu ? null : menu));
   };
@@ -93,6 +110,10 @@ export default function Header() {
       setMobileExpandedDropdown(null);
     }
   }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    closeDropdownImmediately();
+  }, [pathname]);
 
   const renderDropdown = (key: DropdownKey) => {
     switch (key) {
@@ -129,6 +150,7 @@ export default function Header() {
                   href={link.href}
                   onMouseEnter={() => openDropdown(dropdown)}
                   onFocus={() => openDropdown(dropdown)}
+                  onClick={closeDropdownImmediately}
                   className="flex items-center gap-1.5 text-[13px] font-medium text-gray-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
                   aria-haspopup="menu"
                   aria-expanded={activeDropdown === dropdown}
@@ -182,12 +204,13 @@ export default function Header() {
                   onMouseEnter={() => openDropdown(link.dropdown)}
                   onMouseLeave={closeDropdown}
                 >
-                  <Link
-                    href={link.href}
-                    onMouseEnter={() => openDropdown(link.dropdown)}
-                    onFocus={() => openDropdown(link.dropdown)}
-                    className="flex items-center gap-1.5 whitespace-nowrap text-[13px] font-medium text-slate-600 transition-colors hover:text-slate-900 focus:outline-none dark:text-gray-300 dark:hover:text-white"
-                    aria-haspopup="menu"
+                <Link
+                  href={link.href}
+                  onClick={closeDropdownImmediately}
+                  onMouseEnter={() => openDropdown(link.dropdown)}
+                  onFocus={() => openDropdown(link.dropdown)}
+                  className="flex items-center gap-1.5 whitespace-nowrap text-[13px] font-medium text-slate-600 transition-colors hover:text-slate-900 focus:outline-none dark:text-gray-300 dark:hover:text-white"
+                  aria-haspopup="menu"
                     aria-expanded={activeDropdown === link.dropdown}
                   >
                     <span>{link.name}</span>
@@ -265,6 +288,7 @@ export default function Header() {
           className="absolute left-1/2 top-[calc(100%-42px)] z-50 hidden w-[min(1080px,calc(100vw-24px))] -translate-x-1/2 px-0 lg:block"
           onMouseEnter={() => openDropdown(mountedDropdown)}
           onMouseLeave={closeDropdown}
+          onClickCapture={closeDropdownImmediately}
         >
           <div className="pt-3">
             <div
