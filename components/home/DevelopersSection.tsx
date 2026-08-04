@@ -15,7 +15,7 @@ export default function DevelopersSection() {
   const [activeTab, setActiveTab] = useState('create');
 
   return (
-    <section className="w-full border-t border-zinc-900 bg-zinc-950 px-6 py-16   text-slate-100 sm:px-10 lg:px-20">
+    <section className="w-full border-t border-zinc-900 bg-zinc-950 px-6 py-16   text-slate-100 dark:border-gray-800 dark:bg-gray-900 dark:text-white sm:px-10 lg:px-20">
       <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
         <div className="flex flex-col items-start gap-6 lg:col-span-5">
           <div className="flex items-center gap-2.5">
@@ -25,16 +25,16 @@ export default function DevelopersSection() {
             </span>
           </div>
 
-          <h2 className="  text-3xl font-bold leading-tight text-slate-100 sm:text-4xl lg:text-4xl">
+          <h2 className="  text-3xl font-bold leading-tight text-slate-100 dark:text-white sm:text-4xl lg:text-4xl">
             Video APIs that let your team ship faster.
           </h2>
 
-          <p className="text-base leading-relaxed text-slate-400 sm:text-lg">
+          <p className="text-base leading-relaxed text-slate-400 dark:text-gray-400 sm:text-lg">
             Create live streams, process video, control playback, manage access, retrieve analytics, and automate
             media workflows through programmable APIs, SDKs, webhooks, and supported media protocols.
           </p>
 
-          <p className="text-sm font-normal text-slate-500">
+          <p className="text-sm font-normal text-slate-500 dark:text-gray-500">
             Create a developer workspace and begin with self-service tools.
           </p>
 
@@ -47,13 +47,13 @@ export default function DevelopersSection() {
             </button>
             <button
               type="button"
-              className="rounded-[10px] border border-gray-700 px-6 py-3.5 text-base font-semibold text-slate-100 transition-colors hover:border-gray-500"
+              className="rounded-[10px] border border-gray-700 px-6 py-3.5 text-base font-semibold text-slate-100 transition-colors hover:border-gray-500 dark:border-gray-700 dark:text-white dark:hover:border-gray-500"
             >
               Get started
             </button>
           </div>
 
-          <ul className="flex flex-col gap-3 pt-4 text-sm font-normal text-slate-400">
+          <ul className="flex flex-col gap-3 pt-4 text-sm font-normal text-slate-400 dark:text-gray-400">
             <li className="flex items-center gap-2.5">
               <span className="h-1.5 w-1.5 rounded-xs bg-teal-400" />
               <span>API reference</span>
@@ -70,8 +70,8 @@ export default function DevelopersSection() {
         </div>
 
         <div className="flex flex-col gap-6 lg:col-span-7">
-          <div className="overflow-hidden rounded-2xl border border-gray-800 bg-neutral-900 shadow-2xl">
-            <div className="flex items-center overflow-x-auto border-b border-gray-800 bg-neutral-950/50 scrollbar-none">
+          <div className="overflow-hidden rounded-2xl border border-gray-800 bg-neutral-900 shadow-2xl dark:border-gray-700 dark:bg-gray-800">
+            <div className="flex items-center overflow-x-auto border-b border-gray-800 bg-neutral-950/50 scrollbar-none dark:border-gray-700 dark:bg-gray-900/50">
               {CODE_TABS.map((tab) => {
                 const isActive = activeTab === tab.id;
 
@@ -82,8 +82,8 @@ export default function DevelopersSection() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`border-b-2 px-4 py-3 text-xs font-normal whitespace-nowrap transition-colors   ${
                       isActive
-                        ? 'border-teal-400 bg-neutral-900 text-white'
-                        : 'border-transparent text-slate-400 hover:text-slate-200'
+                        ? 'border-teal-400 bg-neutral-900 text-white dark:bg-gray-800'
+                        : 'border-transparent text-slate-400 hover:text-slate-200 dark:text-gray-400 dark:hover:text-gray-200'
                     }`}
                   >
                     {tab.title}
@@ -93,7 +93,7 @@ export default function DevelopersSection() {
             </div>
 
             <div className="p-5   text-xs leading-relaxed overflow-x-auto">
-              <div className="mb-2 text-slate-500">POST /v1/streams</div>
+              <div className="mb-2 text-slate-500 dark:text-gray-500">POST /v1/streams</div>
               <pre className="text-white">
                 <code>
                   {'{'}
@@ -110,13 +110,13 @@ export default function DevelopersSection() {
                   {'}'}
                 </code>
               </pre>
-              <div className="mt-3 border-t border-neutral-800 pt-3 text-slate-500">
+              <div className="mt-3 border-t border-neutral-800 pt-3 text-slate-500 dark:border-gray-700 dark:text-gray-500">
                 → 201 {'{'} &quot;stream_id&quot;: &quot;str_9K2m...&quot;, &quot;playback_id&quot;: &quot;pb_9K2m...&quot; {'}'}
               </div>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-slate-700 bg-neutral-900">
+          <div className="overflow-hidden rounded-2xl border border-slate-700 bg-neutral-900 dark:border-gray-700 dark:bg-gray-800">
             <Image
               src="/images/home/div.on-dark (1).png"
               alt="Developer API workspace preview"
