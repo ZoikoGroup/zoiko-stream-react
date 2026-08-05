@@ -19,21 +19,21 @@ export default function MediaLifecycleSection() {
   const currentStage = LIFECYCLE_STAGES.find((stage) => stage.id === activeStage);
 
   return (
-    <section className="w-full bg-[#eef1f6] px-6 py-16 text-slate-900 transition-colors duration-200 sm:px-10 lg:px-20">
+    <section className="w-full bg-[#eef1f6] px-6 py-16 text-slate-900 transition-colors duration-200 dark:bg-gray-900 dark:text-white sm:px-10 lg:px-20">
       <div className="mx-auto flex max-w-[1240px] flex-col gap-10">
         <div className="flex max-w-[760px] flex-col items-start gap-4">
           <div className="flex items-center gap-2.5">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="  text-xs uppercase tracking-[0.22em] text-blue-500">
+            <span className="  text-xs uppercase tracking-[0.22em] text-blue-500 dark:text-blue-400">
               The complete media lifecycle
             </span>
           </div>
 
-          <h2 className="  text-3xl font-bold leading-tight text-slate-900 sm:text-3xl lg:text-[32px]">
+          <h2 className="  text-3xl font-bold leading-tight text-slate-900 dark:text-white sm:text-3xl lg:text-[32px]">
             From first signal to lasting replay.
           </h2>
 
-          <p className="max-w-[720px]   text-base leading-relaxed text-slate-500 sm:text-sm">
+          <p className="max-w-[720px]   text-base leading-relaxed text-slate-500 dark:text-gray-400 sm:text-sm">
             Manage the complete journey of live and on-demand media through one secure, observable, and globally
             distributed platform.
           </p>
@@ -50,8 +50,8 @@ export default function MediaLifecycleSection() {
                 onClick={() => setActiveStage(stage.id)}
                 className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-semibold transition-all ${
                   isActive
-                    ? 'border-slate-900 bg-slate-900 text-white shadow-sm'
-                    : 'border-slate-200 bg-white text-slate-500 hover:border-slate-300'
+                    ? 'border-slate-900 bg-slate-900 text-white shadow-sm dark:border-white dark:bg-white dark:text-slate-900'
+                    : 'border-slate-200 bg-white text-slate-500 hover:border-slate-300 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:border-gray-600'
                 }`}
               >
                 {stage.name}
@@ -61,7 +61,7 @@ export default function MediaLifecycleSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
-          <div className="relative min-h-[490px] overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800 text-white shadow-sm lg:col-span-12">
+          <div className="relative min-h-[490px] overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800 text-white shadow-sm dark:border-gray-700 lg:col-span-12">
             <Image
               src="/images/home/div.ar-2-1.png"
               alt="Annotated pipeline background"
@@ -81,7 +81,14 @@ export default function MediaLifecycleSection() {
               </p>
             </div>
 
-            
+            <div className="absolute bottom-6 left-6 max-w-[300px] lg:bottom-8 lg:left-10">
+              <p className="  text-sm font-semibold text-white">
+                Annotated seven-stage pipeline
+              </p>
+              <p className="mt-1 max-w-[280px]   text-xs leading-relaxed text-slate-300">
+                Directional flow from source tiles through orchestration to secure global playback and replay.
+              </p>
+            </div>
 
             <div className="absolute bottom-5 right-5 w-[39%] min-w-[240px] max-w-[440px] overflow-hidden rounded-2xl">
               <Image
@@ -98,7 +105,7 @@ export default function MediaLifecycleSection() {
         <div className="pt-1">
           <a
             href="#capabilities"
-            className="inline-flex items-center gap-1.5   text-sm font-semibold text-blue-500 transition-colors hover:text-blue-600"
+            className="inline-flex items-center gap-1.5   text-sm font-semibold text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
           >
             Explore all platform capabilities <span>→</span>
           </a>
