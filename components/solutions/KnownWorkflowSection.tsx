@@ -15,16 +15,6 @@ interface Workflow {
   stages: Stage[];
 }
 
-const LIFECYCLE_STAGES = [
-  'Contribute',
-  'Ingest',
-  'Produce',
-  'Secure',
-  'Deliver',
-  'Understand',
-  'Preserve',
-];
-
 const WORKFLOWS: Workflow[] = [
   {
     id: 'live-product-video',
@@ -124,16 +114,16 @@ export default function KnownWorkflowSection() {
         <div className="flex max-w-2xl flex-col gap-4 pb-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-normal uppercase tracking-wide text-teal-400">
+            <span className="  text-xs font-normal uppercase tracking-wide text-teal-400">
               START FROM A KNOWN WORKFLOW
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold leading-tight text-slate-100 sm:text-4xl">
+          <h2 className="  text-3xl font-bold leading-tight text-slate-100 sm:text-4xl">
             How workflows map to the platform.
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
+          <p className="  text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
             Open a workflow to see which of the seven ZoikoStream lifecycle stages it relies on.
           </p>
         </div>
@@ -154,7 +144,7 @@ export default function KnownWorkflowSection() {
                   className="flex w-full items-center justify-between px-5 py-4 text-left transition-colors hover:bg-zinc-800/60"
                   aria-expanded={isOpen}
                 >
-                  <span className="font-['Space_Grotesk'] text-base font-bold text-slate-100">
+                  <span className="  text-base font-bold text-slate-100">
                     {workflow.title}
                   </span>
                   <span className="text-slate-400 transition-transform">
@@ -173,7 +163,7 @@ export default function KnownWorkflowSection() {
                       {workflow.stages.map((stage) => (
                         <span
                           key={stage.name}
-                          className={`rounded-full px-3 py-1 font-['IBM_Plex_Mono'] text-xs font-normal leading-4 transition-colors ${
+                          className={`rounded-full px-3 py-1   text-xs font-normal leading-4 transition-colors ${
                             stage.isActive
                               ? 'bg-blue-500/20 text-blue-400'
                               : 'bg-zinc-800 text-slate-500'
@@ -191,7 +181,7 @@ export default function KnownWorkflowSection() {
         </div>
 
         {/* Micro-Disclaimer Note */}
-        <p className="pt-1 font-['IBM_Plex_Mono'] text-xs font-normal leading-relaxed text-slate-500">
+        <p className="pt-1   text-xs font-normal leading-relaxed text-slate-500">
           “Primary,” “Validate,” and “As applicable” are wireframe placeholders, not public product claims — pending product-architecture validation before publication.
         </p>
 
@@ -199,7 +189,7 @@ export default function KnownWorkflowSection() {
         <div className="pt-2">
           <Link
             href="/platform"
-            className="inline-flex min-h-[48px] items-center gap-2 rounded-[10px] border border-gray-700 px-6 py-3.5 font-['Inter'] text-base font-semibold text-slate-100 transition-colors hover:border-gray-500 hover:bg-zinc-900"
+            className="inline-flex min-h-[48px] items-center gap-2 rounded-[10px] border border-gray-700 px-6 py-3.5   text-base font-semibold text-slate-100 transition-colors hover:border-gray-500 hover:bg-zinc-900"
           >
             <span>Explore the platform</span>
             <ArrowRight className="h-4 w-4" />

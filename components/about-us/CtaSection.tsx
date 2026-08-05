@@ -12,7 +12,7 @@ export default function CtaSection() {
       <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col items-center text-center gap-6">
         
         {/* Main Heading */}
-        <h2 className="text-white text-3xl sm:text-4xl lg:text-4xl font-semibold leading-tight tracking-tight   max-w-[900px]">
+        <h2 className="text-white text-3xl sm:text-4xl lg:text-4xl  leading-tight tracking-tight   max-w-[900px]">
           Let&apos;s build something extraordinary together.
         </h2>
 
