@@ -25,23 +25,27 @@ const TRUST_METRICS = [
   },
 ];
 
-// --- COMPONENT ---
-
 export default function AboutHeroSection() {
   return (
-    <section className="w-full bg-zinc-950 text-white py-16 px-6 sm:px-10 lg:px-20  ">
-      <div className="max-w-[1280px] mx-auto flex flex-col items-start gap-8">
+    <section 
+      className="relative w-full bg-zinc-950 bg-[url('/images/about-us/aboutbg.jpg')] bg-cover bg-center bg-no-repeat text-white py-16 px-6 sm:px-10 lg:px-20"
+    >
+      {/* Dark Overlay layer to maintain text contrast */}
+      <div className="absolute inset-0 bg-zinc-950/80 pointer-events-none" />
+
+      {/* Content Container (relative z-10 puts content above overlay) */}
+      <div className="relative z-10 max-w-[1280px] mx-auto flex flex-col items-start gap-8">
         
         {/* Main Content Area */}
         <div className="max-w-[672px] flex flex-col items-start gap-4">
           
           {/* Eyebrow */}
-          <span className="text-teal-400 text-base font-normal uppercase tracking-[3.20px]  ">
+          <span className="text-teal-400 text-base font-normal uppercase tracking-[3.20px]">
             ABOUT US
           </span>
 
           {/* Heading */}
-          <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl font-semibold leading-[1.12] tracking-tight  ">
+          <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl  leading-[1.12] tracking-tight">
             Media infrastructure <br className="hidden sm:inline" />
             built to power the world.
           </h1>
@@ -58,7 +62,6 @@ export default function AboutHeroSection() {
               className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-90 transition-opacity rounded-xl flex items-center gap-2 text-white text-base font-normal"
             >
               <span>Talk to an Expert</span>
-              {/* Arrow Icon */}
               <svg
                 className="w-4 h-4 fill-current text-white"
                 viewBox="0 0 20 20"
@@ -84,8 +87,7 @@ export default function AboutHeroSection() {
           <div className="w-full pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
             {TRUST_METRICS.map((metric, idx) => (
               <div key={idx} className="flex items-center gap-3">
-                {/* Metric Gradient Icon Marker */}
-                <img className="w-5 h-5  " src={metric.iconType}/>
+                <img className="w-5 h-5" src={metric.iconType} alt="" />
                 
                 <div className="flex flex-col">
                   <span className="text-white text-base font-bold leading-snug">

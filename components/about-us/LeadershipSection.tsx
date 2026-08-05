@@ -37,7 +37,7 @@ export default function LeadershipSection() {
           <span className="text-teal-400 text-base font-normal uppercase tracking-widest  ">
             LEADERSHIP
           </span>
-          <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight  ">
+          <h2 className="text-white text-3xl sm:text-4xl lg:text-4xl  leading-tight  ">
             Experienced leaders. Unified vision.
           </h2>
           <p className="text-neutral-300 text-base font-normal leading-relaxed pt-1">

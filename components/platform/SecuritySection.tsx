@@ -42,16 +42,16 @@ export default function SecuritySection() {
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-wide text-teal-400">
+            <span className="  text-xs font-medium uppercase tracking-wide text-teal-400">
               SECURE AND DELIVER GLOBALLY
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-light text-slate-100 sm:text-4xl md:text-5xl">
+          <h2 className="  text-3xl font-light text-slate-100 sm:text-4xl md:text-5xl">
             Trust, delivery, and resilience across every stream.
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
+          <p className="  text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
             Use secure, global, and resilient only with nearby qualification or an inspectable evidence route.
             Marketing emphasis cannot substitute for approved fact.
           </p>
@@ -62,11 +62,11 @@ export default function SecuritySection() {
             <div key={step.title} className="flex w-full items-center lg:w-auto lg:flex-1">
               <div className="flex min-h-[160px] w-full flex-col justify-between rounded-lg border border-gray-800 bg-zinc-900 p-4 transition-colors hover:border-gray-700">
                 <div>
-                  <h3 className="font-['Space_Grotesk'] text-sm font-light text-slate-100">{step.title}</h3>
-                  <p className="mt-1 font-['Space_Grotesk'] text-xs text-slate-400">{step.description}</p>
+                  <h3 className="  text-sm font-light text-slate-100">{step.title}</h3>
+                  <p className="mt-1   text-xs text-slate-400">{step.description}</p>
                 </div>
 
-                <p className="mt-4 font-['IBM_Plex_Mono'] text-[11px] leading-4 text-slate-500">
+                <p className="mt-4   text-[11px] leading-4 text-slate-500">
                   {step.disclaimer}
                 </p>
               </div>

@@ -51,7 +51,7 @@ export default function AboutFaqSection() {
             QUESTIONS? WE&apos;VE GOT ANSWERS.
           </span>
 
-          <h2 className="text-white text-4xl sm:text-4xl font-semibold leading-[1.15]  ">
+          <h2 className="text-white text-4xl sm:text-4xl  leading-[1.15]  ">
             About ZoikoStream<br />FAQs
           </h2>
 

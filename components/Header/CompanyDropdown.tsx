@@ -40,7 +40,7 @@ type MenuItem = {
 
 const ABOUT_ITEMS: MenuItem[] = [
   { title: 'Company overview', description: 'Who operates ZoikoStream, and why', href: '/company-overview', icon: Layers },
-  { title: 'About ZoikoStream', description: 'Our purpose in plain terms', href: '/company', icon: Info },
+  { title: 'About ZoikoStream', description: 'Our purpose in plain terms', href: '/about-us', icon: Info },
   { title: 'Purpose and principles', description: 'What we optimize for', href: '/company', icon: Target },
   { title: 'Leadership', description: 'The people accountable for the platform', href: '/company', icon: Users },
   { title: 'Operating context', description: 'How the group fits together', href: '/company', icon: Building2 },

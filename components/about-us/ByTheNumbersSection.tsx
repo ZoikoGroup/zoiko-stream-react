@@ -40,7 +40,7 @@ export default function ByTheNumbersSection() {
           <div className="w-full grid grid-cols-2 gap-y-8 gap-x-6">
             {STATS.map((stat, idx) => (
               <div key={idx} className="flex flex-col gap-1">
-                <span className="text-white text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight  ">
+                <span className="text-white text-4xl sm:text-5xl  leading-tight tracking-tight  ">
                   {stat.value}
                 </span>
                 <span className="text-neutral-300 text-xs font-normal uppercase tracking-wider  ">

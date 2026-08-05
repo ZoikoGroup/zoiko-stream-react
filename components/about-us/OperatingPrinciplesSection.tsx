@@ -53,7 +53,7 @@ export default function OperatingPrinciplesSection() {
           <span className="text-teal-400 text-base font-normal uppercase tracking-widest  ">
             WHAT WE BELIEVE
           </span>
-          <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight  ">
+          <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl  leading-tight  ">
             Our operating principles
           </h2>
         </div>
