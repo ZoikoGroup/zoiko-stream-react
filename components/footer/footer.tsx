@@ -85,7 +85,7 @@ const FOOTER_SECTIONS = [
     title: 'Company',
     links: [
       { name: 'Company overview', href: 'company-overview' },
-      { name: 'About ZoikoStream', href: '#' },
+      { name: 'About ZoikoStream', href: '/about-us' },
       { name: 'Leadership', href: '#' },
       { name: 'Careers', href: '#' },
       { name: 'Partners', href: '#' },

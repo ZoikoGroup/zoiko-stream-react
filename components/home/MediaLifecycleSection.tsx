@@ -19,26 +19,29 @@ export default function MediaLifecycleSection() {
   const currentStage = LIFECYCLE_STAGES.find((stage) => stage.id === activeStage);
 
   return (
-    <section className="w-full bg-[#eef1f6] px-6 py-16 text-slate-900 transition-colors duration-200 dark:bg-gray-900 dark:text-white sm:px-10 lg:px-20">
+    <section className="w-full bg-[#eef1f6] px-6 py-16 text-slate-900 transition-colors duration-200 dark:bg-gray-900 dark:text-white sm:px-10 lg:px-20 ">
       <div className="mx-auto flex max-w-[1240px] flex-col gap-10">
+        
+        {/* Header Content */}
         <div className="flex max-w-[760px] flex-col items-start gap-4">
           <div className="flex items-center gap-2.5">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="  text-xs uppercase tracking-[0.22em] text-blue-500 dark:text-blue-400">
+            <span className="text-xs uppercase tracking-[0.22em] text-blue-500 dark:text-blue-400">
               The complete media lifecycle
             </span>
           </div>
 
-          <h2 className="  text-3xl font-bold leading-tight text-slate-900 dark:text-white sm:text-3xl lg:text-[32px]">
+          <h2 className="text-3xl font-bold leading-tight text-slate-900 dark:text-white sm:text-3xl lg:text-[32px]">
             From first signal to lasting replay.
           </h2>
 
-          <p className="max-w-[720px]   text-base leading-relaxed text-slate-500 dark:text-gray-400 sm:text-sm">
+          <p className="max-w-[720px] text-base leading-relaxed text-slate-500 dark:text-gray-400 sm:text-sm">
             Manage the complete journey of live and on-demand media through one secure, observable, and globally
             distributed platform.
           </p>
         </div>
 
+        {/* Lifecycle Stage Buttons */}
         <div className="flex items-center gap-2.5 overflow-x-auto pb-2">
           {LIFECYCLE_STAGES.map((stage) => {
             const isActive = activeStage === stage.id;
@@ -60,8 +63,11 @@ export default function MediaLifecycleSection() {
           })}
         </div>
 
+        {/* Main Stage Display Card */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
           <div className="relative min-h-[490px] overflow-hidden rounded-2xl border border-neutral-300 bg-slate-800 text-white shadow-sm dark:border-gray-700 lg:col-span-12">
+            
+            {/* Background Image */}
             <Image
               src="/images/home/div.ar-2-1.png"
               alt="Annotated pipeline background"
@@ -70,46 +76,44 @@ export default function MediaLifecycleSection() {
               priority
             />
 
+            {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/15 to-black/30" />
 
-            <div className="absolute left-10 top-6 max-w-[320px] lg:left-auto lg:right-[14%] lg:top-8">
-              <h3 className="  text-2xl font-semibold text-white">
+            {/* Stage Title and Description */}
+            <div className="absolute left-10 top-6 max-w-[320px] lg:left-auto lg:right-[4%] lg:top-8">
+              <h3 className="text-2xl font-semibold text-white">
                 {currentStage?.label}
               </h3>
-              <p className="mt-2 max-w-[280px]   text-base leading-relaxed text-slate-200">
+              <p className="mt-2 max-w-[280px] text-base leading-relaxed text-slate-200">
                 Bring in professional, remote, browser, mobile, or application-based media sources.
               </p>
             </div>
 
-            <div className="absolute bottom-6 left-6 max-w-[300px] lg:bottom-8 lg:left-10">
-              <p className="  text-sm font-semibold text-white">
-                Annotated seven-stage pipeline
-              </p>
-              <p className="mt-1 max-w-[280px]   text-xs leading-relaxed text-slate-300">
-                Directional flow from source tiles through orchestration to secure global playback and replay.
-              </p>
-            </div>
-
-            <div className="absolute bottom-5 right-5 w-[39%] min-w-[240px] max-w-[440px] overflow-hidden rounded-2xl">
+         
+            {/* Small Overlay Image (Pinned flush to Bottom Right) */}
+            <div className="absolute bottom-0 right-0 w-[39%] min-w-[240px] max-w-[440px] overflow-hidden rounded-tl-2xl">
               <Image
                 src="/images/home/div.ar-1-12x.png"
                 alt="Source tiles and verified signal state"
                 width={240}
                 height={130}
-                className="h-[320px] w-[320px] object-contain"
+                className="h-[320px] w-full object-contain object-bottom-right"
               />
             </div>
+
           </div>
         </div>
 
+        {/* Bottom Link */}
         <div className="pt-1">
           <a
             href="#capabilities"
-            className="inline-flex items-center gap-1.5   text-sm font-semibold text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
           >
             Explore all platform capabilities <span>→</span>
           </a>
         </div>
+
       </div>
     </section>
   );

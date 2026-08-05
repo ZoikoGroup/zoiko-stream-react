@@ -55,7 +55,7 @@ export default function WhoWeAreSection() {
               WHO WE ARE
             </span>
 
-            <h2 className="text-white text-4xl sm:text-5xl font-semibold leading-[1.15] tracking-tight  ">
+            <h2 className="text-white text-4xl sm:text-5xl  leading-[1.15] tracking-tight  ">
               Built by Zoiko.<br />Backed by trust.
             </h2>
 

@@ -137,79 +137,81 @@ export default function Header() {
 
   return (
     <header className="relative sticky top-0 z-30 w-full border-b border-slate-200 bg-white/95 backdrop-blur dark:border-gray-800 dark:bg-gray-900/95">
-      <div className="relative mx-auto hidden max-w-[1440px] justify-end gap-4 bg-linear-359 from-stone-100 to-neutral-300 px-4 py-2 sm:flex sm:px-8 lg:px-12 dark:from-gray-900 dark:to-gray-800">
-        {UTILITY_LINKS.map((link) => {
-          const dropdown = link.dropdown;
+      
+      {/* Top Utility Bar Wrapper */}
+      <div className="w-full bg-linear-359 from-stone-100 to-neutral-300 dark:from-gray-900 dark:to-gray-800">
+        <div className="mx-auto hidden max-w-7xl 2xl:max-w-[1600px] 3xl:max-w-[1920px] justify-end gap-6 px-4 py-2 sm:flex sm:px-8 lg:px-12 2xl:px-16">
+          {UTILITY_LINKS.map((link) => {
+            const dropdown = link.dropdown;
 
-          if (dropdown) {
-            return (
-              <div
-                key={link.name}
-                className="relative"
-                onMouseEnter={() => openDropdown(dropdown)}
-                onMouseLeave={closeDropdown}
-              >
-                <Link
-                  href={link.href}
+            if (dropdown) {
+              return (
+                <div
+                  key={link.name}
+                  className="relative"
                   onMouseEnter={() => openDropdown(dropdown)}
-                  onFocus={() => openDropdown(dropdown)}
-                  onClick={closeDropdownImmediately}
-                  className="flex items-center gap-1.5 text-[13px] font-medium text-gray-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
-                  aria-haspopup="menu"
-                  aria-expanded={activeDropdown === dropdown}
+                  onMouseLeave={closeDropdown}
                 >
-                  {link.name}
-                  <span
-                    aria-hidden
-                    className={`mt-[2px] inline-block h-0 w-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-gray-400 transition-transform duration-200 dark:border-t-gray-500 ${
-                      activeDropdown === dropdown ? 'rotate-180' : ''
-                    }`}
-                  />
-                </Link>
-              </div>
-            );
-          }
+                  <Link
+                    href={link.href}
+                    onMouseEnter={() => openDropdown(dropdown)}
+                    onFocus={() => openDropdown(dropdown)}
+                    onClick={closeDropdownImmediately}
+                    className="flex items-center gap-1.5 text-[13px] font-medium text-gray-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
+                    aria-haspopup="menu"
+                    aria-expanded={activeDropdown === dropdown}
+                  >
+                    {link.name}
+                    <span
+                      aria-hidden
+                      className={`mt-[2px] inline-block h-0 w-0 border-l-[3px] border-r-[3px] border-t-[4px] border-l-transparent border-r-transparent border-t-gray-400 transition-transform duration-200 dark:border-t-gray-500 ${
+                        activeDropdown === dropdown ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </Link>
+                </div>
+              );
+            }
 
-          return (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-[13px] font-medium text-gray-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
-            >
-              {link.name}
-            </Link>
-          );
-        })}
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-[13px] font-medium text-gray-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+        </div>
       </div>
 
-      <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-4 sm:h-[84px] sm:px-8 lg:px-12">
-     <div className="flex flex-shrink-0 items-center">
-  <Link href="/">
-    {/* Light Mode Logo */}
-    <Image 
-      src="/images/zoikostream-logo-preview.png" 
-      alt="ZoikoStream" 
-      width={296} 
-      height={66} 
-      priority 
-      className="block dark:hidden h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
-    />
-    {/* Dark Mode Logo */}
-    <Image 
-      src="/images/ZoikoStream_Logo_DarkBG_PNG.png" 
-      alt="ZoikoStream" 
-      width={296} 
-      height={66} 
-      priority 
-      className="hidden dark:block h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
-    />
-  </Link>
-</div>
+      {/* Main Navbar */}
+      <div className="mx-auto flex h-[72px] max-w-7xl 2xl:max-w-[1600px] 3xl:max-w-[1920px] items-center justify-between px-4 sm:h-[84px] sm:px-8 lg:px-12 2xl:px-16">
+        <div className="flex flex-shrink-0 items-center">
+          <Link href="/">
+            {/* Light Mode Logo */}
+            <Image 
+              src="/images/zoikostream-logo-preview.png" 
+              alt="ZoikoStream" 
+              width={296} 
+              height={66} 
+              priority 
+              className="block dark:hidden h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
+            />
+            {/* Dark Mode Logo */}
+            <Image 
+              src="/images/ZoikoStream_Logo_DarkBG_PNG.png" 
+              alt="ZoikoStream" 
+              width={296} 
+              height={66} 
+              priority 
+              className="hidden dark:block h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
+            />
+          </Link>
+        </div>
 
-
-        
-
-        <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
+        <nav className="hidden items-center gap-7 lg:flex xl:gap-8 2xl:gap-10">
           {NAV_LINKS.map((link) => {
             if (link.dropdown) {
               return (
@@ -219,13 +221,13 @@ export default function Header() {
                   onMouseEnter={() => openDropdown(link.dropdown)}
                   onMouseLeave={closeDropdown}
                 >
-                <Link
-                  href={link.href}
-                  onClick={closeDropdownImmediately}
-                  onMouseEnter={() => openDropdown(link.dropdown)}
-                  onFocus={() => openDropdown(link.dropdown)}
-                  className="flex items-center gap-1.5 whitespace-nowrap text-[13px] font-medium text-slate-600 transition-colors hover:text-slate-900 focus:outline-none dark:text-gray-300 dark:hover:text-white"
-                  aria-haspopup="menu"
+                  <Link
+                    href={link.href}
+                    onClick={closeDropdownImmediately}
+                    onMouseEnter={() => openDropdown(link.dropdown)}
+                    onFocus={() => openDropdown(link.dropdown)}
+                    className="flex items-center gap-1.5 whitespace-nowrap text-[13px] 2xl:text-[14px] font-medium text-slate-600 transition-colors hover:text-slate-900 focus:outline-none dark:text-gray-300 dark:hover:text-white"
+                    aria-haspopup="menu"
                     aria-expanded={activeDropdown === link.dropdown}
                   >
                     <span>{link.name}</span>
@@ -244,7 +246,7 @@ export default function Header() {
               <div key={link.name} className="relative py-2">
                 <Link
                   href={link.href}
-                  className="flex items-center gap-1.5 whitespace-nowrap text-[13px] font-normal text-slate-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
+                  className="flex items-center gap-1.5 whitespace-nowrap text-[13px] 2xl:text-[14px] font-normal text-slate-500 transition-colors hover:text-slate-900 dark:text-gray-400 dark:hover:text-white"
                 >
                   <span>{link.name}</span>
                 </Link>
@@ -256,22 +258,22 @@ export default function Header() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex 2xl:gap-4">
           <button
             type="button"
-            className="whitespace-nowrap rounded-lg border border-[#d9d6cc] px-3 py-2 text-[13px] font-semibold text-slate-800 transition-colors hover:bg-slate-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
+            className="whitespace-nowrap rounded-lg border border-[#d9d6cc] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-800 transition-colors hover:bg-slate-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
           >
             Sign In
           </button>
           <button
             type="button"
-            className="whitespace-nowrap rounded-xl bg-gradient-to-r from-[#28cfc5] to-[#4f80ff] px-3 py-2 text-[13px] font-semibold text-slate-950 shadow-sm transition-opacity hover:opacity-95"
+            className="whitespace-nowrap rounded-xl bg-gradient-to-r from-[#28cfc5] to-[#4f80ff] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-950 shadow-sm transition-opacity hover:opacity-95"
           >
             Start building
           </button>
           <button
             type="button"
-            className="whitespace-nowrap rounded-xl border border-slate-900 px-3 py-2 text-[13px] font-semibold text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-gray-200 dark:text-gray-100 dark:hover:bg-white dark:hover:text-slate-900"
+            className="whitespace-nowrap rounded-xl border border-slate-900 px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-gray-200 dark:text-gray-100 dark:hover:bg-white dark:hover:text-slate-900"
           >
             Talk to an expert
           </button>
@@ -300,12 +302,12 @@ export default function Header() {
 
       {mountedDropdown && (
         <div
-          className="absolute left-1/2 top-[calc(100%-42px)] z-50 hidden w-[min(1080px,calc(100vw-24px))] -translate-x-1/2 px-0 lg:block"
+          className="absolute left-1/2 top-[calc(100%-43px)] z-50 hidden w-[min(1280px,calc(100vw-32px))] -translate-x-1/2 px-0 lg:block"
           onMouseEnter={() => openDropdown(mountedDropdown)}
           onMouseLeave={closeDropdown}
           onClickCapture={closeDropdownImmediately}
         >
-          <div className="pt-3">
+          <div className="pt-3" onMouseLeave={closeDropdown}>
             <div
               className={`origin-top transition-[opacity,transform] duration-200 ease-out ${
                 activeDropdown === mountedDropdown
