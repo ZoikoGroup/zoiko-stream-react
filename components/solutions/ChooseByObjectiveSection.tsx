@@ -70,29 +70,29 @@ const OBJECTIVES: ObjectiveItem[] = [
 
 export default function ChooseByObjectiveSection() {
   return (
-    <section className="w-full bg-slate-100 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
+    <section className="w-full bg-slate-100 dark:bg-slate-900 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
       <div className="mx-auto flex max-w-5xl flex-col gap-12">
         
         {/* Header Block */}
         <div className="flex max-w-2xl flex-col gap-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-normal uppercase tracking-wide text-blue-500">
+            <span className="text-xs font-normal uppercase tracking-wide text-blue-500">
               CHOOSE BY OBJECTIVE
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-zinc-900 dark:text-white sm:text-4xl md:text-5xl">
             What result are you trying to achieve?
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-gray-500 sm:text-lg">
+          <p className="text-base font-normal leading-relaxed text-gray-500 dark:text-gray-400 sm:text-lg">
             Six outcomes, each with its own implementation path and evidence boundary.
           </p>
         </div>
 
         {/* Objectives Rows */}
-        <div className="divide-y divide-gray-200 border-y border-gray-200">
+        <div className="divide-y divide-gray-200 dark:divide-gray-800 border-y border-gray-200 dark:border-gray-800">
           {OBJECTIVES.map((item, index) => {
             const isEven = index % 2 === 0;
 
@@ -105,21 +105,21 @@ export default function ChooseByObjectiveSection() {
               >
                 {/* Text Area */}
                 <div className="flex flex-1 flex-col gap-2.5">
-                  <span className="font-['IBM_Plex_Mono'] text-xs font-normal uppercase tracking-wide text-blue-500">
+                  <span className="text-xs font-normal uppercase tracking-wide text-blue-500">
                     {item.number} / OBJECTIVE
                   </span>
 
-                  <h3 className="font-['Space_Grotesk'] text-2xl font-bold text-zinc-900">
+                  <h3 className="text-2xl font-bold text-zinc-900 dark:text-white">
                     {item.title}
                   </h3>
 
-                  <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-gray-500">
+                  <p className="text-base font-normal leading-relaxed text-gray-500 dark:text-gray-400">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Media Preview Container */}
-                <div className="relative aspect-[4/3] w-full flex-1 overflow-hidden rounded-2xl border border-neutral-300 bg-slate-200 shadow-sm">
+                <div className="relative aspect-[4/3] w-full flex-1 overflow-hidden rounded-2xl border border-neutral-300 dark:border-gray-800 bg-slate-200 dark:bg-slate-800 shadow-sm">
                   <Image
                     src={item.imageSrc}
                     alt={item.imageAlt}

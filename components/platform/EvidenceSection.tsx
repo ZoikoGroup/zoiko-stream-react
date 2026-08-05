@@ -45,16 +45,16 @@ export default function EvidenceSection() {
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-wide text-teal-400">
+            <span className="  text-xs font-medium uppercase tracking-wide text-teal-400">
               EVIDENCE, NOT DECORATION
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-light leading-tight text-slate-100 sm:text-4xl md:text-5xl">
+          <h2 className="  text-3xl font-light leading-tight text-slate-100 sm:text-4xl md:text-5xl">
             What evidence can you inspect?
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
+          <p className="  text-base font-normal leading-relaxed text-slate-400 sm:text-lg">
             Real documentation, architecture, status, and approved proof - organized by the job you&apos;re trying
             to do.
           </p>
@@ -67,7 +67,7 @@ export default function EvidenceSection() {
               className="flex flex-col justify-between rounded-2xl border border-gray-800 bg-zinc-900 p-6"
             >
               <div className="flex flex-col gap-4">
-                <h3 className="font-['IBM_Plex_Mono'] text-xs font-semibold uppercase tracking-wide text-slate-100">
+                <h3 className="  text-xs font-semibold uppercase tracking-wide text-slate-100">
                   {card.category}
                 </h3>
 
@@ -75,7 +75,7 @@ export default function EvidenceSection() {
                   {card.items.map((item) => (
                     <li
                       key={item}
-                      className="py-2.5 font-['Space_Grotesk'] text-sm font-normal text-slate-400 transition-colors hover:text-slate-200"
+                      className="py-2.5   text-sm font-normal text-slate-400 transition-colors hover:text-slate-200"
                     >
                       {item}
                     </li>
@@ -86,7 +86,7 @@ export default function EvidenceSection() {
               <div className="mt-8 pt-2">
                 <Link
                   href={card.ctaHref}
-                  className={`flex min-h-[48px] w-full items-center justify-center rounded-[10px] px-6 py-3.5 text-center font-['Space_Grotesk'] text-base font-normal transition-all ${
+                  className={`flex min-h-[48px] w-full items-center justify-center rounded-[10px] px-6 py-3.5 text-center   text-base font-normal transition-all ${
                     card.isPrimary
                       ? 'bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 hover:opacity-90'
                       : 'border border-gray-700 text-slate-100 hover:border-gray-500 hover:bg-zinc-800'

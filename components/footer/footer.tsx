@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FOOTER_SECTIONS = [
   {
@@ -39,7 +40,7 @@ const FOOTER_SECTIONS = [
       { name: 'Civic events', href: '#' },
       { name: 'Corporate broadcasts', href: '#' },
       { name: 'Conferences', href: '#' },
-      { name: 'Plan a live event', href: '#' },
+      { name: 'Plan a live event', href: '/plan-a-live-event' },
     ],
   },
   {
@@ -152,7 +153,21 @@ export default function Footer() {
         
         {/* Top Branding Section */}
         <div className="flex flex-col items-center text-center space-y-6">
-          <img className=" px-8 py-4 rounded-2xl shadow-sm inline-flex items-center justify-center" src="/images/footer/Frame 1.png"/>
+<Image 
+      src="/images/zoikostream-logo.jpg" 
+      alt="ZoikoStream" 
+      width={296} 
+      height={66} 
+      priority 
+      className="block dark:hidden h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px] rounded-xl" 
+    />          <Image 
+                src="/images/ZoikoStream_Logo_DarkBG_PNG.png" 
+                alt="ZoikoStream" 
+                width={296} 
+                height={66} 
+                priority 
+                className="hidden dark:block h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
+              />
           <p className="max-w-[900px] text-xs text-slate-400 leading-relaxed dark:text-gray-400">
             ZoikoStream is Zoiko Group&apos;s secure media infrastructure and streaming platform, operated within Zoiko Tech and powered by Zoiko Cloud. ZoikoStream Live Events is the platform&apos;s scheduled, one-to-many broadcasting capability.
           </p>

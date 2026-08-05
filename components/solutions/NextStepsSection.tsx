@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import Link from 'next/link';
 
@@ -43,12 +43,12 @@ export default function NextStepsSection() {
         <div className="flex max-w-3xl flex-col gap-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-teal-400" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-normal uppercase tracking-wide text-teal-400">
+            <span className="  text-xs font-normal uppercase tracking-wide text-teal-400">
               WHAT SHOULD YOU DO NEXT?
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold leading-tight text-slate-100 sm:text-4xl md:text-5xl">
+          <h2 className="  text-3xl font-bold leading-tight text-slate-100 sm:text-4xl md:text-5xl">
             Choose the path that matches where you are.
           </h2>
         </div>
@@ -62,17 +62,17 @@ export default function NextStepsSection() {
               }`}
             >
               <div className="flex flex-col gap-2 pb-6">
-                <h3 className="font-['Space_Grotesk'] text-base font-bold text-slate-100">
+                <h3 className="  text-base font-bold text-slate-100">
                   {card.title}
                 </h3>
-                <p className="font-['Space_Grotesk'] text-sm font-normal leading-relaxed text-slate-400">
+                <p className="  text-sm font-normal leading-relaxed text-slate-400">
                   {card.description}
                 </p>
               </div>
 
               <Link
                 href={card.href}
-                className={`inline-flex min-h-[48px] w-full items-center justify-center rounded-[10px] px-6 py-3.5 text-center font-['Inter'] text-base font-semibold transition-all ${
+                className={`inline-flex min-h-[48px] w-full items-center justify-center rounded-[10px] px-6 py-3.5 text-center   text-base font-semibold transition-all ${
                   card.variant === 'primary'
                     ? 'bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 hover:opacity-95'
                     : 'border border-gray-700 text-slate-100 hover:border-gray-500 hover:bg-zinc-800'

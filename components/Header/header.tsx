@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import DevelopersDropdown from './DevelopersDropdown';
 import CompanyDropdown from './CompanyDropdown';
@@ -33,7 +32,6 @@ const UTILITY_LINKS: UtilityLink[] = [
 type DropdownKey = 'products' | 'solutions' | 'live-events' | 'developers' | 'company' | 'resources';
 
 export default function Header() {
-  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileExpandedDropdown, setMobileExpandedDropdown] = useState<DropdownKey | null>(null);
   const [activeDropdown, setActiveDropdown] = useState<DropdownKey | null>(null);
@@ -90,6 +88,21 @@ export default function Header() {
     setMountedDropdown(null);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setMobileExpandedDropdown(null);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen((current) => {
+      const next = !current;
+      if (!next) {
+        setMobileExpandedDropdown(null);
+      }
+      return next;
+    });
+  };
+
   const toggleMobileDropdown = (menu: DropdownKey) => {
     setMobileExpandedDropdown((current) => (current === menu ? null : menu));
   };
@@ -104,16 +117,6 @@ export default function Header() {
       }
     };
   }, []);
-
-  useEffect(() => {
-    if (!mobileMenuOpen) {
-      setMobileExpandedDropdown(null);
-    }
-  }, [mobileMenuOpen]);
-
-  useEffect(() => {
-    closeDropdownImmediately();
-  }, [pathname]);
 
   const renderDropdown = (key: DropdownKey) => {
     switch (key) {
@@ -180,18 +183,30 @@ export default function Header() {
       </div>
 
       <div className="mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-4 sm:h-[84px] sm:px-8 lg:px-12">
-        <div className="flex flex-shrink-0 items-center">
-          <Link href="/">
-          <Image
-            src="/images/Rectangle 3.png"
-            alt="ZoikoStream"
-            width={179}
-            height={40}
-            priority
-            className="h-[46px] w-auto object-contain sm:h-[58px] lg:h-[66px]"
-          />
-          </Link>
-        </div>
+     <div className="flex flex-shrink-0 items-center">
+  <Link href="/">
+    {/* Light Mode Logo */}
+    <Image 
+      src="/images/zoikostream-logo-preview.png" 
+      alt="ZoikoStream" 
+      width={296} 
+      height={66} 
+      priority 
+      className="block dark:hidden h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
+    />
+    {/* Dark Mode Logo */}
+    <Image 
+      src="/images/ZoikoStream_Logo_DarkBG_PNG.png" 
+      alt="ZoikoStream" 
+      width={296} 
+      height={66} 
+      priority 
+      className="hidden dark:block h-[60px] w-auto object-contain sm:h-[75px] lg:h-[70px]" 
+    />
+  </Link>
+</div>
+
+
         
 
         <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
@@ -265,7 +280,7 @@ export default function Header() {
         <div className="flex items-center lg:hidden">
           <button
             type="button"
-            onClick={() => setMobileMenuOpen((current) => !current)}
+            onClick={toggleMobileMenu}
             className="p-2 text-gray-700 hover:text-gray-900 focus:outline-none dark:text-gray-300 dark:hover:text-white"
             aria-label="Toggle Menu"
             aria-expanded={mobileMenuOpen}
@@ -312,7 +327,7 @@ export default function Header() {
                 <div className="flex items-center justify-between py-3 font-medium text-gray-700 dark:text-gray-200">
                   <Link
                     href={link.href}
-                    onClick={() => !link.dropdown && setMobileMenuOpen(false)}
+                    onClick={() => !link.dropdown && closeMobileMenu()}
                     className={link.active ? 'font-semibold text-teal-600 dark:text-teal-400' : ''}
                   >
                     {link.name}
@@ -351,7 +366,7 @@ export default function Header() {
                 <div className="flex items-center justify-between py-2">
                   <Link
                     href={link.href}
-                    onClick={() => !link.dropdown && setMobileMenuOpen(false)}
+                    onClick={() => !link.dropdown && closeMobileMenu()}
                     className="text-sm font-medium text-gray-700 transition-colors hover:text-slate-900 dark:text-gray-300 dark:hover:text-white"
                   >
                     {link.name}

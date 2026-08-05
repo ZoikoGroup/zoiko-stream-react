@@ -50,36 +50,38 @@ const FEATURE_CARDS = [
 
 export default function PostLiveSection() {
   return (
-    <section className="w-full bg-slate-100 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
+    <section className="w-full bg-slate-100 dark:bg-slate-900 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
       <div className="mx-auto flex max-w-7xl flex-col gap-9">
+        {/* Header Section */}
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-wide text-blue-500">
+            <span className="text-xs font-medium uppercase tracking-wide text-blue-500">
               RECORD, REPLAY, AND UNDERSTAND
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-light leading-tight text-zinc-900 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-light leading-tight text-zinc-900 dark:text-white sm:text-4xl md:text-5xl">
             What happens after the live session ends.
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-gray-500 sm:text-lg">
+          <p className="text-base font-normal leading-relaxed text-gray-500 dark:text-gray-400 sm:text-lg">
             Post-live continuity turns live media into an authorized, reusable, inspectable asset - not every live
             workflow is recorded automatically.
           </p>
         </div>
 
+        {/* Workflow Steps */}
         <div className="flex flex-col items-stretch justify-between gap-3 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:gap-2">
           {WORKFLOW_STEPS.map((step, index) => (
             <div key={step.title} className="flex w-full items-center lg:w-auto lg:flex-1">
-              <div className="flex min-h-[110px] w-full flex-col justify-between rounded-lg border border-gray-200 bg-white p-4 transition-shadow hover:shadow-sm">
-                <h3 className="font-['Space_Grotesk'] text-sm font-light text-zinc-900">{step.title}</h3>
-                <p className="mt-2 font-['Space_Grotesk'] text-xs leading-5 text-gray-500">{step.description}</p>
+              <div className="flex min-h-[110px] w-full flex-col justify-between rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 transition-shadow hover:shadow-sm">
+                <h3 className="text-sm font-light text-zinc-900 dark:text-white">{step.title}</h3>
+                <p className="mt-2 text-xs leading-5 text-gray-500 dark:text-gray-400">{step.description}</p>
               </div>
 
               {index < WORKFLOW_STEPS.length - 1 && (
-                <div className="hidden shrink-0 px-1 text-gray-400 lg:block">
+                <div className="hidden shrink-0 px-1 text-gray-400 dark:text-gray-600 lg:block">
                   <ArrowRight className="h-4 w-4" />
                 </div>
               )}
@@ -87,14 +89,15 @@ export default function PostLiveSection() {
           ))}
         </div>
 
+        {/* Feature Cards Grid */}
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {FEATURE_CARDS.map((card) => (
             <div
               key={card.title}
-              className="flex flex-col justify-start rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+              className="flex flex-col justify-start rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm"
             >
-              <h3 className="font-['Space_Grotesk'] text-sm font-light text-zinc-900">{card.title}</h3>
-              <p className="mt-2 font-['Space_Grotesk'] text-sm leading-relaxed text-gray-500">
+              <h3 className="text-sm font-light text-zinc-900 dark:text-white">{card.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
                 {card.description}
               </p>
             </div>

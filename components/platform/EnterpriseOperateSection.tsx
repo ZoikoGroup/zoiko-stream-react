@@ -40,27 +40,27 @@ const OPERATE_FEATURES: FeatureCard[] = [
 
 export default function EnterpriseOperateSection() {
   return (
-    <section className="w-full bg-gray-200 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
+    <section className="w-full bg-slate-100 dark:bg-slate-900 px-4 py-16 md:px-12 lg:px-20 lg:py-28">
       <div className="mx-auto flex max-w-7xl flex-col gap-8">
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="font-['IBM_Plex_Mono'] text-xs font-medium uppercase tracking-wide text-blue-500">
+            <span className="text-xs font-medium uppercase tracking-wide text-blue-500">
               FOR ENTERPRISE OPERATORS
             </span>
           </div>
 
-          <h2 className="font-['Space_Grotesk'] text-3xl font-light leading-tight text-zinc-900 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-light leading-tight text-zinc-900 dark:text-white sm:text-4xl md:text-5xl">
             Operate enterprise media with one connected system.
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-relaxed text-gray-500 sm:text-lg">
+          <p className="text-base font-normal leading-relaxed text-gray-500 dark:text-gray-400 sm:text-lg">
             Coordinate control, health, access, recording, accessibility, and analytics across every critical
             workflow, without stitching together disconnected tools.
           </p>
         </div>
 
-        <div className="w-full overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div className="w-full overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-sm">
           <img
             src="/images/platform/Background+Border (1).png"
             alt="Enterprise operations overview"
@@ -72,11 +72,11 @@ export default function EnterpriseOperateSection() {
           {OPERATE_FEATURES.map((feature) => (
             <div
               key={feature.title}
-              className="flex flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              className="flex flex-col justify-between rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6 shadow-sm transition-shadow hover:shadow-md"
             >
               <div>
-                <h3 className="font-['Space_Grotesk'] text-sm font-light text-zinc-900">{feature.title}</h3>
-                <p className="mt-2 font-['Space_Grotesk'] text-sm font-normal leading-relaxed text-gray-500">
+                <h3 className="text-sm font-light text-zinc-900 dark:text-white">{feature.title}</h3>
+                <p className="mt-2 text-sm font-normal leading-relaxed text-gray-500 dark:text-gray-400">
                   {feature.description}
                 </p>
               </div>
@@ -87,7 +87,7 @@ export default function EnterpriseOperateSection() {
         <div className="pt-2">
           <Link
             href="/contact-expert"
-            className="inline-flex min-h-[48px] items-center justify-center rounded-[10px] border border-gray-800 px-6 py-3.5 font-['Space_Grotesk'] text-base font-normal text-zinc-900 transition-colors hover:bg-gray-300"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-[10px] border border-gray-800 dark:border-gray-700 px-6 py-3.5 text-base font-normal text-zinc-900 dark:text-white transition-colors hover:bg-gray-300 dark:hover:bg-gray-800"
           >
             Talk to an expert
           </Link>
