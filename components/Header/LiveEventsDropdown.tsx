@@ -135,7 +135,7 @@ export default function LiveEventsDropdown() {
               <div className="relative z-10 mt-4 border-t border-white/10 pt-4 sm:mt-5 sm:pt-5">
                 <div className="space-y-2.5">
                   <Link
-                    href="/live-events"
+                    href="/plan-a-live-event"
                     className="flex items-center justify-between text-[10px] font-bold text-white transition-colors hover:text-violet-300 sm:text-[11px]"
                   >
                     <span>Plan a live event</span>

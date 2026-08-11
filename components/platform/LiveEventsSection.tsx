@@ -37,7 +37,7 @@ export default function LiveEventsSection() {
 
           <div className="flex flex-wrap items-center gap-3.5 pt-2">
             <Link
-              href="/plan-event"
+              href="/plan-a-live-event"
               className="inline-flex min-h-[48px] items-center justify-center rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3.5 text-base font-normal text-slate-950 transition-opacity hover:opacity-95"
             >
               Plan a live event

@@ -18,7 +18,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Build video into a product',
     description:
       'Programmable video experiences inside an application or service.',
-    imageSrc: '/images/solutions/Background+Border (3).png',
+    imageSrc: '/images/solutions/BackgroundBorder (3).png',
     imageAlt: 'Build video into a product preview',
   },
   {
@@ -27,7 +27,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Broadcast globally',
     description:
       'Operate one-to-many distribution for audiences across approved regions and channels.',
-    imageSrc: '/images/solutions/Background+Border (4).png',
+    imageSrc: '/images/solutions/BackgroundBorder (4).png',
     imageAlt: 'Broadcast globally preview',
   },
   {
@@ -36,7 +36,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Secure enterprise video',
     description:
       'Protect private or controlled media access with policy and governance.',
-    imageSrc: '/images/solutions/Background+Border (5).png',
+    imageSrc: '/images/solutions/BackgroundBorder (5).png',
     imageAlt: 'Secure enterprise video preview',
   },
   {
@@ -45,7 +45,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Accessible and multilingual video',
     description:
       'Improve access through approved caption, language, and inclusive-delivery capabilities.',
-    imageSrc: '/images/solutions/Background+Border (6).png',
+    imageSrc: '/images/solutions/BackgroundBorder (6).png',
     imageAlt: 'Accessible and multilingual video preview',
   },
   {
@@ -54,7 +54,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Record, replay, and preserve',
     description:
       'Carry live media into durable replay, asset management, analytics, and retention workflows.',
-    imageSrc: '/images/solutions/Background+Border (7).png',
+    imageSrc: '/images/solutions/BackgroundBorder (7).png',
     imageAlt: 'Record, replay, and preserve preview',
   },
   {
@@ -63,7 +63,7 @@ const OBJECTIVES: ObjectiveItem[] = [
     title: 'Run managed Live Events',
     description:
       'Use ZoikoStream Live Events for professionally managed, scheduled broadcasts.',
-    imageSrc: '/images/solutions/Background+Border (8).png',
+    imageSrc: '/images/solutions/BackgroundBorder (8).png',
     imageAlt: 'Run managed Live Events preview',
   },
 ];

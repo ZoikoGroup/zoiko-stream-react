@@ -34,7 +34,7 @@ const EVIDENCE_CARDS: EvidenceCard[] = [
     category: 'Plan',
     items: ['Live Events overview', 'Live Events FAQs'],
     ctaText: 'Plan a live event',
-    ctaHref: '/plan',
+    ctaHref: '/plan-a-live-event',
   },
 ];
 
