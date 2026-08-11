@@ -81,7 +81,7 @@ export default function ResourcesDropdown() {
         </Link>
       </div>
 
-      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain">
+      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain scrollbar-none">
         <div className="grid grid-cols-1 divide-y divide-slate-100 md:grid-cols-4 md:divide-x md:divide-y-0 dark:divide-gray-800">
           <MenuColumn title="Learn" items={LEARN_ITEMS} accentClassName="text-cyan-700 dark:text-cyan-400" />
           <MenuColumn title="Proof & updates" items={PROOF_ITEMS} accentClassName="text-cyan-700 dark:text-cyan-400" />

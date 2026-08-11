@@ -112,9 +112,10 @@ export default function LiveEventsGuide() {
                 <p className="text-xs text-gray-500 dark:text-slate-400">
                   Respectful, non-exploitative handling for sensitive occasions.
                 </p>
+                <a href="/plan-a-live-event">
                 <button className="w-full rounded-lg bg-gradient-to-r from-teal-400 to-blue-500 py-2.5 text-center text-sm font-medium text-slate-950 transition hover:opacity-90">
                   Plan a live event
-                </button>
+                </button></a>
               </div>
             </div>
           </aside>
@@ -423,9 +424,10 @@ export default function LiveEventsGuide() {
               <p className="mt-2 text-sm leading-relaxed text-slate-400">
                 Now that you've thought through event type, timeline, access, accessibility, and resilience, the planning form should take just a few minutes.
               </p>
+              <a href="/plan-a-live-event">
               <button className="mt-6 inline-flex items-center rounded-xl bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3 text-base font-medium text-slate-950 transition hover:opacity-90">
                 Plan a live event →
-              </button>
+              </button></a>
             </section>
 
             {/* FAQs */}
