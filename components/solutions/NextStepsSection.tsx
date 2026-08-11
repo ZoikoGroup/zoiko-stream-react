@@ -31,7 +31,7 @@ const PATH_CARDS: PathCard[] = [
     title: 'Live Events path',
     description: 'For scheduled one-to-many events requiring planning or managed operation.',
     buttonText: 'Plan a live event',
-    href: '/live-events',
+    href: '/plan-a-live-event',
     variant: 'secondary',
   },
 ];

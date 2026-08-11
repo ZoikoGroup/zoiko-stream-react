@@ -44,7 +44,7 @@ const PATHWAYS: EngagementPathway[] = [
     title: 'Live Events inquiries',
     description: 'Plan a professionally managed broadcast for your event or occasion.',
     ctaText: 'Plan a live event →',
-    href: '/live-events',
+    href: '/plan-a-live-event',
   },
   {
     number: '06',

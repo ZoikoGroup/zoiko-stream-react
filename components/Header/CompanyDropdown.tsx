@@ -95,7 +95,7 @@ export default function CompanyDropdown() {
         </Link>
       </div>
 
-      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain">
+      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain scrollbar-none">
         <div className="grid grid-cols-1 divide-y divide-slate-100 md:grid-cols-4 md:divide-x md:divide-y-0 dark:divide-gray-800">
           <MenuColumn title="About" items={ABOUT_ITEMS} accentClassName="text-slate-700 dark:text-gray-300" />
           <MenuColumn title="Work with us" items={WORK_ITEMS} accentClassName="text-slate-700 dark:text-gray-300" />
