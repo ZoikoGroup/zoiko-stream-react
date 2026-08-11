@@ -90,7 +90,7 @@ export default function SolutionsDropdown() {
         </Link>
       </div>
 
-      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain">
+      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain scrollbar-none">
         <div className="grid grid-cols-1 divide-y divide-slate-100 md:grid-cols-4 md:divide-x md:divide-y-0 dark:divide-gray-800">
           <MenuColumn title="By objective" items={OBJECTIVE_ITEMS} accentClassName="text-pink-600 dark:text-pink-400" />
           <MenuColumn title="By organization" items={ORGANIZATION_ITEMS} accentClassName="text-pink-600 dark:text-pink-400" />

@@ -52,7 +52,7 @@ export default function HeroSection() {
               Start building
             </button>
             <a
-              href="#plan-live-event"
+              href="/plan-a-live-event"
               className="inline-flex items-center justify-center gap-1.5 py-2   text-lg font-semibold text-blue-400 transition-colors hover:text-blue-300"
             >
               Plan a live event <span className="text-xl">→</span>

@@ -259,12 +259,12 @@ export default function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex 2xl:gap-4">
-          <button
-            type="button"
+          <Link
+            href="https://zoikostream-git-454227754507.europe-west1.run.app"
             className="whitespace-nowrap rounded-lg border border-[#d9d6cc] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-800 transition-colors hover:bg-slate-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
           >
             Sign In
-          </button>
+          </Link>
           <button
             type="button"
             className="whitespace-nowrap rounded-xl bg-gradient-to-r from-[#28cfc5] to-[#4f80ff] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-950 shadow-sm transition-opacity hover:opacity-95"
@@ -307,7 +307,7 @@ export default function Header() {
           onMouseLeave={closeDropdown}
           onClickCapture={closeDropdownImmediately}
         >
-          <div className="pt-3" onMouseLeave={closeDropdown}>
+          <div className="pt-3" onMouseLeave={closeDropdownImmediately}>
             <div
               className={`origin-top transition-[opacity,transform] duration-200 ease-out ${
                 activeDropdown === mountedDropdown
@@ -402,12 +402,12 @@ export default function Header() {
           </div>
 
           <div className="flex flex-col gap-3 pt-2">
-            <button
-              type="button"
+            <Link
+              href="https://zoikostream-git-454227754507.europe-west1.run.app"
               className="w-full rounded-lg border border-[#d9d6cc] py-2.5 text-center text-sm font-semibold text-gray-800 dark:border-gray-700 dark:text-gray-200"
             >
               Sign In
-            </button>
+            </Link>
             <button
               type="button"
               className="w-full rounded-xl bg-gradient-to-r from-[#28cfc5] to-[#4f80ff] py-2.5 text-center text-sm font-semibold text-slate-950"

@@ -81,7 +81,7 @@ export default function PlanLiveEventForm() {
           </p>
         </div>
         <a
-          href="#"
+          href="/live-event-guide"
           className="w-64 left-0 top-[210.17px] absolute justify-center text-blue-500 hover:underline text-sm font-medium   leading-6"
         >
           Read the Live Events planning guide →

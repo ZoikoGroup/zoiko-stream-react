@@ -45,9 +45,9 @@ const PROOF_ITEMS: MenuItem[] = [
 ];
 
 const SUPPORT_ITEMS: MenuItem[] = [
-  { title: 'Help Center', description: 'Step-by-step help and articles', href: '/resources', icon: HelpCircle },
-  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/resources', icon: MessageSquare },
-  { title: 'Developer documentation', description: 'Technical references and guides', href: '/developers', icon: BookOpen },
+  { title: 'Help Center', description: 'Step-by-step help and articles', href: '/', icon: HelpCircle },
+  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/', icon: MessageSquare },
+  { title: 'Developer documentation', description: 'Technical references and guides', href: '/', icon: BookOpen },
   { title: 'API reference', description: 'Endpoints, params, examples', href: '/developers', icon: FileText },
   { title: 'Live Events planning guide', description: 'Book and prepare with confidence', href: '/live-event-guide', icon: Video },
   { title: 'Service updates', description: 'Maintenance and change notices', href: '/resources', icon: Gauge },
@@ -81,7 +81,7 @@ export default function ResourcesDropdown() {
         </Link>
       </div>
 
-      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain">
+      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain scrollbar-none">
         <div className="grid grid-cols-1 divide-y divide-slate-100 md:grid-cols-4 md:divide-x md:divide-y-0 dark:divide-gray-800">
           <MenuColumn title="Learn" items={LEARN_ITEMS} accentClassName="text-cyan-700 dark:text-cyan-400" />
           <MenuColumn title="Proof & updates" items={PROOF_ITEMS} accentClassName="text-cyan-700 dark:text-cyan-400" />
@@ -175,11 +175,11 @@ export default function ResourcesDropdown() {
               <BookOpen className="h-3 w-3 text-cyan-700 dark:text-cyan-400" />
               Resources overview
             </Link>
-            <Link href="/products" className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-700 dark:hover:text-cyan-400">
+            <Link href="#" className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-700 dark:hover:text-cyan-400">
               <Tag className="h-3 w-3 text-cyan-700 dark:text-cyan-400" />
               View pricing
             </Link>
-            <Link href="/about-us" className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-700 dark:hover:text-cyan-400">
+            <Link href="#" className="inline-flex items-center gap-1.5 transition-colors hover:text-cyan-700 dark:hover:text-cyan-400">
               <MessageSquare className="h-3 w-3 text-cyan-700 dark:text-cyan-400" />
               Talk to an expert
             </Link>

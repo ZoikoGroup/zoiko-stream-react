@@ -97,7 +97,7 @@ export default function LiveEventsDropdown() {
         </Link>
       </div>
 
-      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain">
+      <div className="max-h-[calc(100vh-165px)] overflow-y-auto overscroll-contain scrollbar-none">
         <div className="grid grid-cols-1 divide-y divide-slate-100 md:grid-cols-4 md:divide-x md:divide-y-0 dark:divide-gray-800">
           <MenuColumn title="Event types" items={EVENT_TYPE_ITEMS} accentClassName="text-violet-600 dark:text-violet-400" hoverClassName="hover:bg-violet-50/70 dark:hover:bg-violet-950/30" iconClassName="border-violet-100 bg-violet-50 text-violet-600 group-hover:border-violet-200 group-hover:bg-white dark:border-violet-900/40 dark:bg-violet-950/40 dark:text-violet-400 dark:group-hover:border-violet-800 dark:group-hover:bg-gray-900" />
           <MenuColumn title="Plan & operate" items={PLAN_ITEMS} accentClassName="text-violet-600 dark:text-violet-400" hoverClassName="hover:bg-violet-50/70 dark:hover:bg-violet-950/30" iconClassName="border-violet-100 bg-violet-50 text-violet-600 group-hover:border-violet-200 group-hover:bg-white dark:border-violet-900/40 dark:bg-violet-950/40 dark:text-violet-400 dark:group-hover:border-violet-800 dark:group-hover:bg-gray-900" />
@@ -135,7 +135,7 @@ export default function LiveEventsDropdown() {
               <div className="relative z-10 mt-4 border-t border-white/10 pt-4 sm:mt-5 sm:pt-5">
                 <div className="space-y-2.5">
                   <Link
-                    href="/live-events"
+                    href="/plan-a-live-event"
                     className="flex items-center justify-between text-[10px] font-bold text-white transition-colors hover:text-violet-300 sm:text-[11px]"
                   >
                     <span>Plan a live event</span>
