@@ -265,18 +265,20 @@ export default function Header() {
           >
             Sign In
           </Link>
+          <Link href="/start-building">
           <button
             type="button"
             className="whitespace-nowrap rounded-xl bg-gradient-to-r from-[#28cfc5] to-[#4f80ff] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-950 shadow-sm transition-opacity hover:opacity-95"
           >
             Start building
-          </button>
+          </button></Link>
+          <Link href="/talk-to-an-expert">
           <button
             type="button"
             className="whitespace-nowrap rounded-xl border border-slate-900 px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-900 transition-colors hover:bg-slate-900 hover:text-white dark:border-gray-200 dark:text-gray-100 dark:hover:bg-white dark:hover:text-slate-900"
           >
             Talk to an expert
-          </button>
+          </button></Link>
         </div>
 
         <div className="flex items-center lg:hidden">
