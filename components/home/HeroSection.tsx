@@ -45,12 +45,13 @@ export default function HeroSection() {
           </div>
 
           <div className="flex w-full flex-col gap-5 sm:w-auto sm:flex-row sm:items-center">
+            <a href="/start-building">
             <button
               type="button"
               className="rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 px-7 py-3.5   text-base font-semibold text-slate-950 shadow-lg shadow-teal-500/10 transition-opacity hover:opacity-95"
             >
               Start building
-            </button>
+            </button></a>
             <a
               href="/plan-a-live-event"
               className="inline-flex items-center justify-center gap-1.5 py-2   text-lg font-semibold text-blue-400 transition-colors hover:text-blue-300"
