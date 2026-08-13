@@ -7,6 +7,7 @@ const PATHWAYS = [
       'Build video into your product. Use APIs, SDKs, media protocols, and self-service tools to add live, real-time, and on-demand video without building the underlying media infrastructure yourself.',
     features: ['Video APIs', 'SDKs', 'Live and on-demand workflows', 'Secure playback', 'Analytics', 'Global delivery'],
     buttonText: 'Start building',
+    href:"/start-building",
     imageSrc: '/images/home/div.ar-16-10.png',
   },
   {
@@ -22,8 +23,10 @@ const PATHWAYS = [
       'Enterprise analytics',
     ],
     buttonText: 'Explore enterprise solutions',
+    href:"#",
     imageSrc: '/images/home/div.ar-16-10 (1).png',
   },
+
   {
     title: 'Live Events',
     description:
@@ -37,6 +40,7 @@ const PATHWAYS = [
       'Assured Event options',
     ],
     buttonText: 'Plan a live event',
+    href:"/plan-a-live-event",
     imageSrc: '/images/home/div.ar-16-10 (2).png',
   },
 ];
@@ -102,13 +106,14 @@ export default function PathwaysSection() {
               </div>
 
               <div className="pt-8">
+                <a href={card.href}>
                 <button
                   type="button"
                   className="group flex w-full items-center justify-center gap-2 rounded-[10px] border border-gray-800 px-6 py-3.5   text-xs font-semibold text-zinc-900 transition-colors duration-200 hover:bg-zinc-900 hover:text-white dark:border-gray-200 dark:text-white dark:hover:bg-white dark:hover:text-zinc-900"
                 >
                   <span>{card.buttonText}</span>
                   <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
-                </button>
+                </button></a>
               </div>
             </div>
           ))}
