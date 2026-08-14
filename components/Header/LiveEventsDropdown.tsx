@@ -35,11 +35,11 @@ type MenuItem = {
 };
 
 const EVENT_TYPE_ITEMS: MenuItem[] = [
-  { title: 'Live Events overview', description: 'How managed streaming works here', href: '/live-events', icon: Radio },
-  { title: 'Memorials', description: 'Handled with care, never exploited', href: '/live-events', icon: Heart },
-  { title: 'Worship', description: 'Services streamed reliably', href: '/live-events', icon: Sparkles },
+  { title: 'Live Events overview', description: 'How managed streaming works here', href: '/live-events-overview', icon: Radio },
+  { title: 'Memorials', description: 'Handled with care, never exploited', href: '/memorials', icon: Heart },
+  { title: 'Worship', description: 'Services streamed reliably', href: '/workship-detailed', icon: Sparkles },
   { title: 'Weddings & celebrations', description: 'Private or shared, your choice', href: '/live-events', icon: Calendar },
-  { title: 'Graduations', description: 'Every name, every family watching', href: '/live-events', icon: GraduationCap },
+  { title: 'Graduations', description: 'Every name, every family watching', href: '/graduation-detailed', icon: GraduationCap },
   { title: 'Civic events', description: 'Public proceedings, clearly delivered', href: '/live-events', icon: Building2 },
   { title: 'Corporate broadcasts', description: 'All-hands and announcements', href: '/live-events', icon: Briefcase },
 ];
@@ -89,7 +89,7 @@ export default function LiveEventsDropdown() {
         </div>
 
         <Link
-          href="/live-events"
+          href="/live-events-overview"
           className="inline-flex shrink-0 items-center gap-2 self-start rounded-xl border border-slate-200 px-3 py-2 text-[10px] font-bold text-violet-600 transition-colors hover:bg-slate-50 sm:px-4 sm:text-[11px] dark:border-gray-700 dark:text-violet-400 dark:hover:bg-gray-800"
         >
           Overview
@@ -187,7 +187,7 @@ export default function LiveEventsDropdown() {
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-[10px] font-bold text-slate-900 sm:gap-6 sm:text-[11px] dark:text-white">
-            <Link href="/live-events" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
+            <Link href="/live-events-overview" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
               <Radio className="h-3 w-3 text-violet-600 dark:text-violet-400" />
               Live Events overview
             </Link>
