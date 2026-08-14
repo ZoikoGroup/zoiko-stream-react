@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
 import Header from "@/components/Header/header";
 import Footer from "@/components/footer/footer";
 import "./globals.css";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-space-grotesk",
+});
 
 export const metadata: Metadata = {
   title: "ZoikoStream",
@@ -14,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`h-full antialiased ${spaceGrotesk.variable}`}>
       <body className="min-h-full">
         <div className="flex min-h-screen flex-col">
           <Header />
