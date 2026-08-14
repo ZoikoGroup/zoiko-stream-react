@@ -32,11 +32,11 @@ const FOOTER_SECTIONS = [
   {
     title: 'Live Events',
     links: [
-      { name: 'Live Events overview', href: '#' },
-      { name: 'Memorials', href: '#' },
-      { name: 'Worship', href: '#' },
+      { name: 'Live Events overview', href: '/live-events-overview' },
+      { name: 'Memorials', href: '/memorials' },
+      { name: 'Worship', href: '/workship-detailed' },
       { name: 'Weddings and celebrations', href: '#' },
-      { name: 'Graduations', href: '#' },
+      { name: 'Graduations', href: '/graduation-detailed' },
       { name: 'Civic events', href: '#' },
       { name: 'Corporate broadcasts', href: '#' },
       { name: 'Conferences', href: '#' },
