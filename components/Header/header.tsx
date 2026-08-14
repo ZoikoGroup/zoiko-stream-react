@@ -13,7 +13,7 @@ import SolutionsDropdown from './SolutionsDropdown';
 const NAV_LINKS = [
   { name: 'Platform', href: '/platform', dropdown: 'products' as const },
   { name: 'Solutions', href: '/solutions', dropdown: 'solutions' as const },
-  { name: 'Live Events', href: '/live-events', dropdown: 'live-events' as const },
+  { name: 'Live Events', href: '/live-events-overview', dropdown: 'live-events' as const },
   { name: 'Developers', href: '/developers', dropdown: 'developers' as const },
   { name: 'Pricing', href: '#', dropdown: null, active: true },
 ];
