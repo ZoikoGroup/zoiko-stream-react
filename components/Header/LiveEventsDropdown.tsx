@@ -40,13 +40,13 @@ const EVENT_TYPE_ITEMS: MenuItem[] = [
   { title: 'Worship', description: 'Services streamed reliably', href: '/workship-detailed', icon: Sparkles },
   { title: 'Weddings & celebrations', description: 'Private or shared, your choice', href: '/live-events', icon: Calendar },
   { title: 'Graduations', description: 'Every name, every family watching', href: '/graduation-detailed', icon: GraduationCap },
-  { title: 'Civic events', description: 'Public proceedings, clearly delivered', href: '/live-events', icon: Building2 },
-  { title: 'Corporate broadcasts', description: 'All-hands and announcements', href: '/live-events', icon: Briefcase },
+  { title: 'Civic events', description: 'Public proceedings, clearly delivered', href: '/civic-events-detailed', icon: Building2 },
+  { title: 'Corporate broadcasts', description: 'All-hands and announcements', href: '/corporate-broadcast-detailed', icon: Briefcase },
 ];
 
 const PLAN_ITEMS: MenuItem[] = [
   { title: 'Workflow overview', description: 'From booking to broadcast', href: '/live-events', icon: Sliders },
-  { title: 'Managed live event streaming', description: 'We run it end to end', href: '/live-events', icon: Radio },
+  { title: 'Managed live event streaming', description: 'We run it end to end', href: '/managed-live-event-streaming', icon: Radio },
   { title: 'Remote contribution', description: 'Send video in from any location', href: '/live-events', icon: Video },
   { title: 'Production, switching & graphics', description: 'Cameras, switching, graphics', href: '/live-events', icon: Zap },
   { title: 'Secure audience access', description: 'Invite-only or ticketed viewing', href: '/live-events', icon: ShieldCheck },
