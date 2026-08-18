@@ -30,7 +30,7 @@ export default function ManagedRunOfShowSection() {
     <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden border-t border-zinc-900">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none "
         style={{ backgroundImage: "url('/images/managed-live-event/bg (13).png')" }}
       />
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />
@@ -39,7 +39,7 @@ export default function ManagedRunOfShowSection() {
         
         {/* Left text column */}
         <div className="flex-1 flex flex-col justify-start items-start gap-6">
-          <h2 className="text-white text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight animate-fade-in">
+          <h2 className="text-white text-3xl sm:text-3xl font-bold font-sans leading-[50px] tracking-tight animate-fade-in">
             Synchronized cue sheets and real-time graphics switching.
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed font-sans">

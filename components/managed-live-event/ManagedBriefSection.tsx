@@ -56,7 +56,7 @@ export default function ManagedBriefSection() {
 
           <button 
             type="submit"
-            className="w-full py-4 bg-gradient-to-r from-teal-405 to-blue-500 rounded-lg text-slate-950 text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center font-sans shadow-md"
+            className="w-full py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center font-sans shadow-md"
           >
             Start event brief
           </button>

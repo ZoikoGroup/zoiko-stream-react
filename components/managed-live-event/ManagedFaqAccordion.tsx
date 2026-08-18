@@ -46,7 +46,7 @@ export default function ManagedFaqAccordion() {
           Managed Live Events FAQ
         </h2>
 
-        <div className="flex flex-col gap-4 max-w-5xl">
+        <div className="flex flex-col gap-4 max-w-6xl">
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (

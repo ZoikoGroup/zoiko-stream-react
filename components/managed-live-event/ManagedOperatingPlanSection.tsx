@@ -79,10 +79,10 @@ export default function ManagedOperatingPlanSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden border-t border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none "
         style={{ backgroundImage: "url('/images/managed-live-event/bg (11).png')" }}
       />
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />
@@ -100,7 +100,7 @@ export default function ManagedOperatingPlanSection() {
         </div>
 
         {/* Plan Matrix Box (No borders) */}
-        <div className="p-6 sm:p-8 bg-gray-900/60 rounded-2xl flex flex-col gap-6 shadow-xl border border-slate-805/40 backdrop-blur-sm">
+        <div className="p-6 sm:p-8 bg-gray-900/60 rounded-2xl flex flex-col gap-6 shadow-xl backdrop-blur-sm">
           <h3 className="text-white text-base font-bold font-sans">
             Comprehensive Operating Plan Matrix
           </h3>

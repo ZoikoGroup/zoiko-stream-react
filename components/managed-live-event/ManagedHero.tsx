@@ -66,7 +66,7 @@ export default function ManagedHero() {
           <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto font-sans">
             <button 
               onClick={scrollToBrief}
-              className="px-7 py-3.5 bg-gradient-to-r from-teal-405 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-[0px_4px_16px_rgba(51,217,199,0.25)] border-none text-center w-full sm:w-auto"
+              className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-[0px_4px_16px_rgba(51,217,199,0.25)] border-none text-center w-full sm:w-auto"
             >
               Plan a Live Event
             </button>
@@ -163,7 +163,7 @@ export default function ManagedHero() {
                 <span className="text-teal-400 font-bold">85%</span>
               </div>
               <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-teal-405 rounded-full" style={{ width: '85%' }} />
+                <div className="h-full bg-[#33D9C7] rounded-full" style={{ width: '85%' }} />
               </div>
             </div>
 

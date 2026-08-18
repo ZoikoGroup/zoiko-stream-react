@@ -41,7 +41,7 @@ export default function ManagedCapabilities() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
-        <div className="flex flex-col gap-4 max-w-3xl">
+        <div className="flex flex-col gap-4 max-w-4xl">
           <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Stream capabilities engineered for enterprise scale
           </h2>

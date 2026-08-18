@@ -1,20 +1,20 @@
 'use client';
 
 import React from 'react';
-import { Eye, Shield, Languages } from 'lucide-react';
+import { Eye, Shield, Languages, User2, User2Icon, Users2, Lock } from 'lucide-react';
 
 export default function ManagedAudienceAccessSection() {
   const cards = [
     {
       title: 'Audience Access & Portals',
       desc: 'Configure secure SAML SSO, invited-only lists, or general public access settings.',
-      icon: Eye,
+      icon: Users2,
       items: ['Active Directory Link', 'Temporary Passcodes', 'Public Embed Keys']
     },
     {
       title: 'Privacy & Safeguarding',
       desc: 'Safeguard attendee identities and minors with configurable overlay blurs.',
-      icon: Shield,
+      icon: Lock,
       items: ['Minors Blurring Matrix', 'Camera Angle Zones', 'Pruned Metadata Logs']
     },
     {
@@ -30,7 +30,7 @@ export default function ManagedAudienceAccessSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
-        <div className="flex flex-col gap-4 max-w-3xl">
+        <div className="flex flex-col gap-4 max-w-4xl">
           <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Audience access, privacy boundaries, and accessibility
           </h2>

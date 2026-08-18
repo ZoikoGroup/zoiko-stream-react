@@ -30,7 +30,7 @@ export default function ManagedSourcesSection() {
     <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden border-t border-zinc-900">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none  "
         style={{ backgroundImage: "url('/images/managed-live-event/bg (12).png')" }}
       />
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />
@@ -38,7 +38,7 @@ export default function ManagedSourcesSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
-        <div className="flex flex-col gap-4 max-w-3xl">
+        <div className="flex flex-col gap-4 max-w-4xl">
           <h2 className="text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Plan your input sources and contribution limits
           </h2>

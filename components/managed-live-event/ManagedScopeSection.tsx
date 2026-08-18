@@ -14,7 +14,7 @@ export default function ManagedScopeSection() {
     <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden border-t border-zinc-900">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none "
         style={{ backgroundImage: "url('/images/managed-live-event/bg (10).png')" }}
       />
       <div className="absolute inset-0 bg-zinc-950/80 pointer-events-none" />
@@ -23,7 +23,7 @@ export default function ManagedScopeSection() {
         
         {/* Left text column */}
         <div className="flex-1 flex flex-col justify-start items-start gap-8">
-          <h2 className="text-slate-105 text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight">
+          <h2 className="text-slate-105 text-3xl sm:text-3xl font-bold font-sans leading-[50px] tracking-tight">
             Managed means the operating scope is agreed — not assumed.
           </h2>
           <p className="text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
@@ -32,7 +32,7 @@ export default function ManagedScopeSection() {
           <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto font-sans">
             <button 
               onClick={scrollToBrief}
-              className="px-7 py-3.5 bg-gradient-to-r from-teal-405 to-blue-500 rounded-lg text-slate-950 text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center w-full sm:w-auto"
+              className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center w-full sm:w-auto"
             >
               Start event brief
             </button>
@@ -53,7 +53,7 @@ export default function ManagedScopeSection() {
           <div className="w-full h-px bg-slate-800" />
           
           <div className="w-full flex flex-col gap-3">
-            <div className="w-full pb-2.5 border-b border-slate-850 flex justify-between items-center text-xs">
+            <div className="w-full pb-2.5  flex justify-between items-center text-xs">
               <span className="text-slate-200">Live Transcoding</span>
               <div className="flex items-center gap-2">
                 <span className="text-slate-400">ZoikoStream</span>
@@ -61,7 +61,7 @@ export default function ManagedScopeSection() {
               </div>
             </div>
             
-            <div className="w-full pb-2.5 border-b border-slate-850 flex justify-between items-center text-xs">
+            <div className="w-full pb-2.5  flex justify-between items-center text-xs">
               <span className="text-slate-200">Sanctuary AV Mixer</span>
               <div className="flex items-center gap-2">
                 <span className="text-slate-400">Customer / Venue</span>

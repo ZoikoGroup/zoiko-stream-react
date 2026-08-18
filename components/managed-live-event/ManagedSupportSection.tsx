@@ -36,7 +36,7 @@ export default function ManagedSupportSection() {
 
           <button 
             onClick={handleSupportClick}
-            className="w-full px-7 py-3.5 bg-gradient-to-r from-teal-405 to-blue-500 rounded-[10px] text-white text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center shadow-sm"
+            className="w-full px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-[10px] text-white text-sm font-bold hover:opacity-90 transition-opacity cursor-pointer border-none text-center shadow-sm"
           >
             Active-event help
           </button>

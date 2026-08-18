@@ -25,10 +25,10 @@ export default function ManagedArchiveSection() {
     <section className="relative w-full py-16 sm:py-24 bg-zinc-955 text-white overflow-hidden border-t border-zinc-900">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-50"
         style={{ backgroundImage: "url('/images/managed-live-event/bg (15).png')" }}
       />
-      <div className="absolute inset-0 bg-black/60 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/75 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row justify-start items-center gap-12 sm:gap-16 text-left">
         
@@ -44,7 +44,7 @@ export default function ManagedArchiveSection() {
             {dispositions.map((item, idx) => (
               <div 
                 key={idx}
-                className="w-full pb-3 border-b border-slate-850/50 flex justify-between items-center gap-4 last:border-none last:pb-0"
+                className="w-full pb-3 flex justify-between items-center gap-4 last:border-none last:pb-0"
               >
                 <div className="flex-1 flex flex-col gap-1 text-left">
                   <span className="text-slate-100 text-xs font-bold leading-tight">

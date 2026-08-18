@@ -14,7 +14,7 @@ export default function ManagedReadinessSection() {
     <section className="relative w-full py-16 sm:py-24 bg-zinc-950 text-white overflow-hidden border-t border-zinc-900">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-50"
         style={{ backgroundImage: "url('/images/managed-live-event/bg (14).png')" }}
       />
       <div className="absolute inset-0 bg-black/60 pointer-events-none" />
@@ -39,7 +39,7 @@ export default function ManagedReadinessSection() {
             {metrics.map((m, idx) => (
               <div 
                 key={idx}
-                className="w-full flex justify-between items-center text-xs pb-3 border-b border-slate-850/50 last:border-none last:pb-0"
+                className="w-full flex justify-between items-center text-xs pb-3  last:border-none last:pb-0"
               >
                 <span className="text-slate-400 font-medium">{m.name}</span>
                 <span 

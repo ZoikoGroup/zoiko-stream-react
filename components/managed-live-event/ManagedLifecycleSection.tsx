@@ -1,147 +1,201 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function ManagedLifecycleSection() {
-  const [activeStep, setActiveStep] = useState(4); // Step 5 is index 4 (0-indexed)
+  const [activeStep, setActiveStep] = useState(4); // Default to Step 5 (Verify), which is index 4
 
   const steps = [
     {
       num: 1,
       title: 'Brief',
       owner: 'Shared',
-      desc: 'Initial requirement collection. Define date/time, sources, and audience pathways.'
+      desc: 'Initial requirement collection'
     },
     {
       num: 2,
       title: 'Scope',
       owner: 'Shared',
-      desc: 'Boundary & ownership signoff. Formulate explicitly what is venue-managed and what is ZoikoStream-managed.'
+      desc: 'Boundary & ownership signoff'
     },
     {
       num: 3,
       title: 'Plan',
       owner: 'Shared',
-      desc: 'AV and network path map. Identify encoders, codecs, transcoding profiles, and CDNs.'
+      desc: 'AV and network path map'
     },
     {
       num: 4,
       title: 'Prepare',
       owner: 'Customer',
-      desc: 'Encoder prep & test targets. Venue configures local switcher hardware to dispatch draft RTMP streams.'
+      desc: 'Encoder prep & test targets'
     },
     {
       num: 5,
       title: 'Verify',
       owner: 'ZoikoStream',
-      desc: 'SLA preflight signoff. Verify ingestion stability, backup routes, latency tolerances, and technician tasks.'
+      desc: 'SLA preflight signoff'
     },
     {
       num: 6,
       title: 'Go-live',
       owner: 'Shared',
-      desc: 'Broadcast auto-arm state. Stream targets are armed and ready for the main switcher trigger.'
+      desc: 'Broadcast auto-arm state'
     },
     {
       num: 7,
       title: 'Operate',
       owner: 'ZoikoStream',
-      desc: 'Sub-second active matrixing. Network health monitoring, slide sync checks, and backup transcoding.'
+      desc: 'Sub-second active matrixing'
     },
     {
       num: 8,
       title: 'Handoff',
       owner: 'ZoikoStream',
-      desc: 'Archive migration start. Shift master recordings to secure AWS S3 compliance vault storage.'
+      desc: 'Archive migration start'
     },
     {
       num: 9,
       title: 'Close',
       owner: 'Shared',
-      desc: 'Access pruning and safety lock. Delete session tokens, restrict download permissions, and lock archives.'
+      desc: 'Access pruning and safety lock'
     }
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
+    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 pointer-events-none select-none z-0">
+        <Image 
+          src="/images/recording-replay-archive/viewer-states-bg.png" 
+          alt="Topographic Background" 
+          fill 
+          className="object-cover opacity-60 dark:opacity-20"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+          <h2 className="text-gray-900 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight sm:leading-[60.80px]">
             Managed Event Lifecycle
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
+          <p className="text-gray-700 dark:text-zinc-300 text-base sm:text-lg font-normal font-spaceGrotesk leading-7">
             From initial operator brief to final archive closure, every live stream stage is verified.
           </p>
         </div>
 
-        {/* Stepper Timeline UI */}
+        {/* Stepper and Cards Container */}
         <div className="w-full flex flex-col gap-8">
           
-          {/* Horizontal timeline dots */}
-          <div className="w-full relative py-4">
-            {/* Connecting lines */}
-            <div className="absolute top-[26px] left-3.5 right-3.5 h-1 bg-slate-200 dark:bg-zinc-800 pointer-events-none z-0" />
-            <div 
-              className="absolute top-[26px] left-3.5 h-1 bg-teal-400 dark:bg-teal-500 pointer-events-none z-0 transition-all duration-300"
-              style={{ width: `${(activeStep / (steps.length - 1)) * 98}%` }}
-            />
-
-            <div className="relative z-10 flex justify-between items-center w-full">
+          {/* Stepper Timeline Row - Desktop view (horizontal scroll or grid) */}
+          <div className="w-full overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-teal-400">
+            <div className="min-w-[1000px] lg:min-w-0 w-full h-10 flex justify-start items-center relative">
               {steps.map((step, idx) => {
                 const isPassedOrActive = idx <= activeStep;
-                const isActive = idx === activeStep;
+                
+                // Segment container bg determines gray background band for steps starting from dot 6 to 9 (idx 5 to 8)
+                const isGrayBackground = idx >= 5;
+
                 return (
-                  <button
+                  <div 
                     key={step.num}
-                    onClick={() => setActiveStep(idx)}
-                    className="flex flex-col items-center gap-2 bg-transparent border-none cursor-pointer focus:outline-none"
+                    className={`flex-1 self-stretch flex justify-start items-center ${
+                      isGrayBackground ? 'bg-gray-50 dark:bg-zinc-900/30' : ''
+                    }`}
                   >
-                    <div 
-                      className={`w-5 h-5 rounded-full flex justify-center items-center font-bold text-[10px] transition-all ${
-                        isActive
-                          ? 'bg-teal-450 text-slate-950 ring-4 ring-teal-400/20 scale-125'
-                          : isPassedOrActive
-                          ? 'bg-teal-400 text-slate-950 hover:bg-teal-300'
-                          : 'bg-slate-300 dark:bg-zinc-800 text-gray-500 dark:text-slate-500 hover:bg-slate-400/30'
-                      }`}
+                    {/* Circle Dot Button */}
+                    <button
+                      onClick={() => setActiveStep(idx)}
+                      className="flex justify-start items-center cursor-pointer bg-transparent border-none focus:outline-none z-10 select-none group"
+                      title={`Go to step ${step.num}: ${step.title}`}
                     >
-                      {step.num}
-                    </div>
-                    <span 
-                      className={`text-[10px] sm:text-xs font-bold font-sans hidden sm:block ${
-                        isActive 
-                          ? 'text-teal-500 dark:text-teal-400 font-extrabold' 
-                          : 'text-gray-500 dark:text-slate-500'
-                      }`}
-                    >
-                      {step.title}
-                    </span>
-                  </button>
+                      <div className="flex justify-start items-center">
+                        <div 
+                          className={`size-4 rounded-full transition-all duration-300 ${
+                            isPassedOrActive 
+                              ? 'bg-teal-400 ring-4 ring-teal-400/20 scale-110' 
+                              : 'bg-gray-300 dark:bg-zinc-700 hover:bg-gray-400'
+                          }`}
+                        />
+                      </div>
+                    </button>
+
+                    {/* Connecting Line (drawn to the right of the dot, only if not the last step) */}
+                    {idx < steps.length - 1 && (
+                      <div 
+                        className={`flex-1 h-0 border-2 transition-all duration-300 ${
+                          isPassedOrActive
+                            ? 'border-teal-400'
+                            : 'border-gray-300 dark:border-zinc-700'
+                        }`}
+                      />
+                    )}
+                  </div>
                 );
               })}
             </div>
           </div>
 
-          {/* Detailed card block for active step */}
-          <div className="p-6 sm:p-8 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-zinc-800 flex flex-col justify-start items-start gap-4 transition-all duration-300 shadow-sm">
-            <div className="flex justify-between items-center w-full">
-              <span className="text-teal-500 dark:text-teal-400 text-xs sm:text-sm font-bold font-sans uppercase tracking-wider">
-                Step {steps[activeStep].num} of 9
-              </span>
-              <span className="px-3 py-1 bg-slate-200 dark:bg-zinc-800 text-gray-700 dark:text-slate-350 text-xs font-semibold rounded-md font-sans">
-                Owner: {steps[activeStep].owner}
-              </span>
+          {/* Cards Row */}
+          <div className="w-full overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-teal-400">
+            <div className="min-w-[1000px] lg:min-w-0 w-full grid grid-cols-9 gap-4">
+              {steps.map((step, idx) => {
+                const isActive = idx === activeStep;
+                const isCompleted = idx < activeStep;
+
+                return (
+                  <button
+                    key={step.num}
+                    onClick={() => setActiveStep(idx)}
+                    className={`w-full p-3 rounded-lg flex flex-col justify-start items-start gap-2 text-left cursor-pointer transition-all duration-300 focus:outline-none ${
+                      isActive
+                        ? 'bg-slate-800 dark:bg-zinc-900 shadow-md transform -translate-y-0.5 border border-transparent'
+                        : isCompleted
+                        ? 'bg-white dark:bg-zinc-950/60 border border-gray-200 dark:border-zinc-800 hover:border-teal-400/50'
+                        : 'bg-white dark:bg-zinc-950/20 border border-gray-200 dark:border-zinc-900/50 opacity-90 hover:border-gray-300'
+                    }`}
+                  >
+                    {/* Number and Title */}
+                    <div 
+                      className={`text-xs font-bold font-spaceGrotesk ${
+                        isActive
+                          ? 'text-teal-400'
+                          : isCompleted
+                          ? 'text-teal-400'
+                          : 'text-gray-900 dark:text-zinc-100'
+                      }`}
+                    >
+                      {step.num}. {step.title}
+                    </div>
+
+                    {/* Owner */}
+                    <div 
+                      className={`text-[10px] font-normal font-spaceGrotesk ${
+                        isActive
+                          ? 'text-gray-400 dark:text-zinc-400'
+                          : 'text-gray-500 dark:text-zinc-500'
+                      }`}
+                    >
+                      {step.owner}
+                    </div>
+
+                    {/* Description */}
+                    <div 
+                      className={`text-[10px] font-normal font-spaceGrotesk leading-4 ${
+                        isActive
+                          ? 'text-zinc-300'
+                          : 'text-gray-500 dark:text-zinc-500'
+                      }`}
+                    >
+                      {step.desc}
+                    </div>
+                  </button>
+                );
+              })}
             </div>
-
-            <h3 className="text-zinc-950 dark:text-white text-2xl font-bold font-sans tracking-tight">
-              {steps[activeStep].title}
-            </h3>
-
-            <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base font-sans leading-relaxed">
-              {steps[activeStep].desc}
-            </p>
           </div>
 
         </div>
