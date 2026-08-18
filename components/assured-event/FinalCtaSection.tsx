@@ -5,7 +5,7 @@ export default function FinalCtaSection() {
     <section
       className="w-full bg-slate-950 bg-cover bg-center px-6 md:px-12 xl:px-[112px] py-20 lg:py-28 flex flex-col items-center gap-6 text-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.78), rgba(2, 6, 23, 0.86)), url('/images/assured-event/cta-bg.png')`,
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.45), rgba(2, 6, 23, 0.45)), url('/images/assured-event/cta-bg.png')`,
       }}
     >
       <h2 className="max-w-3xl text-slate-100 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
