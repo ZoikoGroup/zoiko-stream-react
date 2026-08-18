@@ -57,7 +57,7 @@ export default function AccessibilityContinuitySection() {
     <section
       className="w-full bg-slate-950 border-t border-b border-gray-800 bg-cover bg-center px-6 md:px-12 xl:px-[112px] py-16 lg:py-24 flex flex-col gap-12"
       style={{
-        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.86), rgba(2, 6, 23, 0.92)), url('/images/assured-event/accessibility-bg.png')`,
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.35), rgba(2, 6, 23, 0.35)), url('/images/assured-event/accessibility-bg.png')`,
       }}
     >
       <div className="mx-auto w-full max-w-7xl flex flex-col gap-4">
