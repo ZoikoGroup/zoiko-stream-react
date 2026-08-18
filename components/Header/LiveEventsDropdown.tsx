@@ -57,7 +57,7 @@ const PLAN_ITEMS: MenuItem[] = [
 const RESILIENCE_ITEMS: MenuItem[] = [
   { title: 'Conferences & multi-track', description: 'Multi-session programming', href: '/live-events', icon: Layers },
   { title: 'Event resilience', description: 'Built for the one shot that matters', href: '/live-events', icon: ShieldCheck },
-  { title: 'Assured Event', description: 'Our highest-assurance tier', href: '/live-events', icon: Lock },
+  { title: 'Assured Event', description: 'Our highest-assurance tier', href: '/assured-event', icon: Lock },
   { title: 'Private streaming', description: 'Closed, credentialed rooms', href: '/live-events', icon: Eye },
   { title: 'Accessibility & inclusion', description: 'Captioned & screen-reader friendly', href: '/live-events', icon: HelpCircle },
   { title: 'FAQs & support', description: 'Answers before you book', href: '/live-events', icon: FileText },
