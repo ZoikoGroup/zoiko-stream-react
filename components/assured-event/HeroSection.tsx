@@ -27,7 +27,7 @@ export default function HeroSection() {
     <section
       className="relative w-full overflow-hidden bg-slate-950 border-b border-gray-800 bg-cover bg-center bg-no-repeat px-6 md:px-12 xl:px-[112px] py-16 lg:py-24"
       style={{
-        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.72), rgba(2, 6, 23, 0.82)), url('/images/assured-event/hero-bg.png')`,
+        backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.4)), url('/images/assured-event/hero-bg.png')`,
       }}
     >
       <div className="relative z-10 mx-auto w-full max-w-7xl flex flex-col lg:flex-row items-center gap-12">
