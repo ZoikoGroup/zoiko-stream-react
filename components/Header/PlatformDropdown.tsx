@@ -39,7 +39,7 @@ const BUILD_ITEMS: MenuItem[] = [
   { title: 'Video APIs', description: 'Programmable ingest, playback, control', href: '/video-apis', icon: Code2 },
   { title: 'SDKs', description: 'Native libraries for every surface', href: '/products', icon: Terminal },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP and more', href: '/products', icon: Radio },
-  { title: 'Live streaming', description: 'Broadcast to any audience size', href: '/products', icon: Tv },
+  { title: 'Live streaming', description: 'Broadcast to any audience size', href: '/live-streaming', icon: Tv },
   { title: 'Real-time contribution', description: 'Get signal in from anywhere', href: '/products', icon: RefreshCw },
   { title: 'Video on demand', description: 'Store, package and serve replays', href: '/products', icon: Film },
 ];
