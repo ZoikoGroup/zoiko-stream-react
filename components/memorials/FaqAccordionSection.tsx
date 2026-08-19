@@ -42,10 +42,10 @@ export default function FaqAccordionSection() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-white dark:bg-gray-900 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-200 dark:border-gray-800">
+    <section className="w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold mb-12 text-center sm:text-left">
+        <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold mb-12 text-center sm:text-left">
           Frequently asked questions
         </h2>
         
@@ -57,24 +57,24 @@ export default function FaqAccordionSection() {
                 key={index}
                 className={`rounded-xl border transition-all duration-300 overflow-hidden ${
                   isOpen 
-                    ? 'border-teal-400 dark:border-teal-500 bg-slate-50 dark:bg-zinc-950 shadow-sm' 
-                    : 'border-slate-200 dark:border-gray-850 bg-white dark:bg-zinc-955/40 hover:border-slate-350 dark:hover:border-gray-800'
+                    ? 'border-teal-400 bg-slate-50 shadow-sm' 
+                    : 'border-slate-200 bg-white hover:border-slate-350'
                 }`}
               >
                 <button
                   onClick={() => setOpenFaqIndex(isOpen ? null : index)}
                   className="w-full px-6 py-5 text-left flex justify-between items-center gap-4 focus:outline-none bg-transparent"
                 >
-                  <span className="text-zinc-900 dark:text-white text-base font-bold leading-snug">
+                  <span className="text-zinc-900 text-base font-bold leading-snug">
                     {faq.question}
                   </span>
-                  <span className="text-blue-500 dark:text-blue-400 text-lg font-bold shrink-0">
+                  <span className="text-blue-500 text-lg font-bold shrink-0">
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </span>
                 </button>
                 
                 {isOpen && (
-                  <div className="px-6 pb-6 pt-1 text-gray-500 dark:text-slate-350 text-sm leading-relaxed border-t border-slate-100 dark:border-gray-850/30">
+                  <div className="px-6 pb-6 pt-1 text-gray-500 text-sm leading-relaxed border-t border-slate-100">
                     {faq.answer}
                   </div>
                 )}

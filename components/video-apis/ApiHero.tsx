@@ -9,14 +9,14 @@ export default function ApiHero() {
   };
 
   return (
-    <section className="relative w-full py-20 sm:py-28 bg-slate-955 text-white overflow-hidden border-b border-zinc-900 font-spaceGrotesk">
+    <section className="relative w-full py-20 sm:py-28 text-white overflow-hidden border-b border-zinc-900 font-spaceGrotesk">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-75"
         style={{ backgroundImage: "url('/images/video-api/bg (49).png')" }}
       />
       {/* slate-950/70 mask */}
-      <div className="absolute inset-0 bg-slate-955/70 pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-black/75 pointer-events-none z-0" />
       <div className="absolute right-[-100px] top-[-100px] w-[600px] h-[500px] bg-gradient-to-b from-teal-500/10 to-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row justify-between items-center gap-12 text-left">

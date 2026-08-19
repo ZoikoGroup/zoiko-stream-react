@@ -6,11 +6,11 @@ export default function ReadinessIndicatorsSection() {
     { name: 'Camera and audio source verified', status: 'Verified', color: 'bg-emerald-500/10 text-emerald-400' },
     { name: 'CCLI Streaming License logged', status: 'Verified', color: 'bg-emerald-500/10 text-emerald-400' },
     { name: 'Active-event support contact assigned', status: 'Verified', color: 'bg-emerald-500/10 text-emerald-400' },
-    { name: 'Local internet stability backup verified', status: 'Draft', color: 'bg-slate-500/10 text-slate-500 dark:text-slate-400' },
+    { name: 'Local internet stability backup verified', status: 'Draft', color: 'bg-slate-500/10 text-slate-500' },
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-zinc-950 dark:bg-black text-white border-t border-slate-900 transition-colors duration-200"
+    <section className="w-full py-16 sm:py-24 bg-zinc-950 text-white border-t border-slate-900 transition-colors duration-200"
             style={{ backgroundImage: "url('/images/workship-detailed/image (29).png')" }}
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-14">
@@ -24,7 +24,7 @@ export default function ReadinessIndicatorsSection() {
           </p>
         </div>
 
-        <div className="w-full bg-gray-900 dark:bg-zinc-955 rounded-2xl border border-slate-800 flex flex-col overflow-hidden">
+        <div className="w-full bg-gray-900 rounded-2xl border border-slate-800 flex flex-col overflow-hidden">
           {indicators.map((item, idx) => (
             <div 
               key={idx}

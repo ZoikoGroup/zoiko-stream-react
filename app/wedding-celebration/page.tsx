@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function WeddingCelebrationPage() {
   return (
-    <main className="w-full bg-zinc-955 min-h-screen text-zinc-900 dark:text-white transition-colors duration-250 font-spaceGrotesk">
+    <main className="w-full bg-white min-h-screen text-zinc-900 font-spaceGrotesk">
       <WeddingHero />
       <WeddingPatterns />
       <WeddingRemoteGuests />

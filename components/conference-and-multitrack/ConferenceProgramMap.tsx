@@ -97,31 +97,31 @@ export default function ConferenceProgramMap() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-gray-900 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
+          <h2 className="text-gray-900 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
             Interactive Program Map
           </h2>
-          <p className="text-gray-600 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Monitor all track sessions, current speakers, and signal paths from one visual interface.
           </p>
         </div>
 
         {/* Dashboard Frame Container */}
-        <div className="self-stretch bg-white dark:bg-zinc-900 rounded-2xl shadow-xl border border-gray-200 dark:border-zinc-800 flex flex-col overflow-hidden">
+        <div className="self-stretch bg-white rounded-2xl shadow-xl border border-gray-200 flex flex-col overflow-hidden">
           
           {/* Header Panel */}
-          <div className="px-6 py-4 bg-gray-50 dark:bg-zinc-950/60 border-b border-gray-200 dark:border-zinc-800/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <div className="px-6 py-4 bg-gray-50 border-b border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
             <div className="flex flex-wrap items-center gap-3">
               <div className="flex items-center gap-1.5 shrink-0">
                 <div className="size-2.5 bg-red-500 rounded-full" />
                 <div className="size-2.5 bg-orange-300 rounded-full" />
                 <div className="size-2.5 bg-emerald-500 rounded-full" />
               </div>
-              <div className="flex items-center gap-1.5 text-[10px] font-bold font-mono text-gray-500 dark:text-zinc-400">
+              <div className="flex items-center gap-1.5 text-[10px] font-bold font-mono text-gray-500">
                 <span>ZOIKOSTREAM</span>
                 <span>/</span>
                 <span>CONFERENCES</span>
@@ -130,7 +130,7 @@ export default function ConferenceProgramMap() {
               </div>
             </div>
             
-            <div className="flex items-center gap-4 text-[10px] font-bold font-mono text-gray-500 dark:text-zinc-400">
+            <div className="flex items-center gap-4 text-[10px] font-bold font-mono text-gray-500">
               <div className="px-2 py-1 bg-emerald-500/10 rounded-sm outline outline-1 outline-offset-[-1px] outline-emerald-500/30 flex items-center gap-1.5 text-emerald-500 shrink-0">
                 <div className="size-1.5 bg-emerald-500 rounded-full animate-pulse" />
                 <span>ALL SYSTEMS LIVE</span>
@@ -141,21 +141,21 @@ export default function ConferenceProgramMap() {
 
           {/* Time & Tracks header (Grid headers) */}
           <div className="w-full overflow-x-auto scrollbar-none">
-            <div className="min-w-[850px] px-6 py-3 bg-gray-100 dark:bg-zinc-900/90 border-b border-gray-200 dark:border-zinc-850 flex items-center">
-              <div className="w-28 shrink-0 text-gray-500 dark:text-zinc-400 text-[10px] font-bold font-mono">
+            <div className="min-w-[850px] px-6 py-3 bg-gray-100 border-b border-gray-200 flex items-center">
+              <div className="w-28 shrink-0 text-gray-500 text-[10px] font-bold font-mono">
                 TIME (UTC)
               </div>
               <div className="flex-1 flex items-center gap-2">
                 <div className="size-2 bg-teal-400 rounded-xs" />
-                <span className="text-teal-600 dark:text-teal-400 text-[10px] font-bold font-mono">TRACK A · TECHNICAL</span>
+                <span className="text-teal-600 text-[10px] font-bold font-mono">TRACK A · TECHNICAL</span>
               </div>
               <div className="flex-1 flex items-center gap-2">
                 <div className="size-2 bg-blue-500 rounded-xs" />
-                <span className="text-blue-500 dark:text-blue-400 text-[10px] font-bold font-mono">TRACK B · PRODUCT</span>
+                <span className="text-blue-500 text-[10px] font-bold font-mono">TRACK B · PRODUCT</span>
               </div>
               <div className="flex-1 flex items-center gap-2">
                 <div className="size-2 bg-orange-300 rounded-xs" />
-                <span className="text-yellow-700 dark:text-orange-300 text-[10px] font-bold font-mono">TRACK C · WORKSHOP</span>
+                <span className="text-yellow-700 text-[10px] font-bold font-mono">TRACK C · WORKSHOP</span>
               </div>
             </div>
           </div>
@@ -166,30 +166,30 @@ export default function ConferenceProgramMap() {
               {schedule.map((row, idx) => (
                 <div 
                   key={idx}
-                  className={`px-6 flex items-stretch border-b border-gray-200 dark:border-zinc-800/80 ${
-                    idx % 2 === 1 ? 'bg-gray-50 dark:bg-zinc-950/20' : 'bg-white dark:bg-zinc-900/20'
+                  className={`px-6 flex items-stretch border-b border-gray-200 ${
+                    idx % 2 === 1 ? 'bg-gray-50' : 'bg-white'
                   }`}
                 >
                   {/* Time block */}
                   <div className="w-28 py-4 shrink-0 flex flex-col justify-center items-start gap-0.5 select-none">
-                    <span className="text-gray-900 dark:text-white text-xs font-bold font-mono">{row.time}</span>
-                    <span className="text-gray-500 dark:text-zinc-500 text-[10px] font-normal font-mono">{row.duration}</span>
+                    <span className="text-gray-900 text-xs font-bold font-mono">{row.time}</span>
+                    <span className="text-gray-500 text-[10px] font-normal font-mono">{row.duration}</span>
                   </div>
 
                   {/* Slots blocks */}
                   {row.slots.map((slot, sIdx) => (
                     <div key={sIdx} className="flex-1 pr-3 py-3 flex items-stretch">
-                      <div className={`flex-1 p-3.5 bg-white dark:bg-zinc-900 rounded-md border-l-2 border-slate-200 dark:border-zinc-800 shadow-[0_1px_3px_rgba(0,0,0,0.02)] inline-flex flex-col justify-between items-start gap-1.5 ${slot.borderCol} border-l-teal-400/40 hover:shadow-md transition-shadow`}>
+                      <div className={`flex-1 p-3.5 bg-white rounded-md border-l-2 border-slate-200 shadow-[0_1px_3px_rgba(0,0,0,0.02)] inline-flex flex-col justify-between items-start gap-1.5 ${slot.borderCol} border-l-teal-400/40 hover:shadow-md transition-shadow`}>
                         <div className="inline-flex items-center gap-2">
                           <div className={`size-1.5 rounded-full ${slot.dotCol}`} />
                           <span className={`text-[9px] font-bold font-mono tracking-wider px-1.5 py-0.5 rounded-sm ${slot.statusCol}`}>
                             {slot.status}
                           </span>
                         </div>
-                        <h4 className="text-gray-900 dark:text-white text-xs font-bold font-spaceGrotesk text-left">
+                        <h4 className="text-gray-900 text-xs font-bold font-spaceGrotesk text-left">
                           {slot.title}
                         </h4>
-                        <span className="text-gray-500 dark:text-zinc-400 text-[10px] font-normal font-spaceGrotesk">
+                        <span className="text-gray-500 text-[10px] font-normal font-spaceGrotesk">
                           {slot.speaker}
                         </span>
                       </div>
@@ -201,26 +201,26 @@ export default function ConferenceProgramMap() {
           </div>
 
           {/* Footer Panel */}
-          <div className="px-6 py-3.5 bg-gray-50 dark:bg-zinc-950/60 border-t border-gray-200 dark:border-zinc-800/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+          <div className="px-6 py-3.5 bg-gray-50 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
             <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-1.5 text-gray-500 dark:text-zinc-400 text-[9px] font-bold font-mono">
+              <div className="flex items-center gap-1.5 text-gray-500 text-[9px] font-bold font-mono">
                 <div className="size-1.5 bg-emerald-500 rounded-full" />
                 <span>LIVE</span>
               </div>
-              <div className="flex items-center gap-1.5 text-gray-500 dark:text-zinc-400 text-[9px] font-bold font-mono">
+              <div className="flex items-center gap-1.5 text-gray-500 text-[9px] font-bold font-mono">
                 <div className="size-1.5 bg-blue-500 rounded-full" />
                 <span>SCHEDULED</span>
               </div>
-              <div className="flex items-center gap-1.5 text-gray-500 dark:text-zinc-400 text-[9px] font-bold font-mono">
+              <div className="flex items-center gap-1.5 text-gray-500 text-[9px] font-bold font-mono">
                 <div className="size-1.5 bg-orange-300 rounded-full" />
                 <span>NEEDS REVIEW</span>
               </div>
-              <div className="flex items-center gap-1.5 text-gray-500 dark:text-zinc-400 text-[9px] font-bold font-mono">
+              <div className="flex items-center gap-1.5 text-gray-500 text-[9px] font-bold font-mono">
                 <div className="size-1.5 bg-gray-500 rounded-full" />
                 <span>PENDING</span>
               </div>
             </div>
-            <div className="text-gray-500 dark:text-zinc-500 text-[9px] font-bold font-mono tracking-wider">
+            <div className="text-gray-500 text-[9px] font-bold font-mono tracking-wider">
               3 TRACKS · 9 SESSIONS · AUTO-REFRESH 30s
             </div>
           </div>

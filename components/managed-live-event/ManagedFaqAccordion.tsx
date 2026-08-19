@@ -38,11 +38,11 @@ export default function ManagedFaqAccordion() {
   };
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-250 border-t border-slate-100">
       {/* Excluded from max-w-6xl constraint, using max-w-7xl */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
-        <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+        <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-sans tracking-tight">
           Managed Live Events FAQ
         </h2>
 
@@ -52,14 +52,14 @@ export default function ManagedFaqAccordion() {
             return (
               <div 
                 key={idx}
-                className="bg-slate-50 dark:bg-zinc-900/40 rounded-xl border border-slate-200 dark:border-zinc-800 overflow-hidden shadow-sm transition-colors"
+                className="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden shadow-sm transition-colors"
               >
                 <button
                   onClick={() => handleToggle(idx)}
-                  className="w-full px-6 py-5 flex justify-between items-center text-left border-none bg-transparent text-zinc-950 dark:text-white font-sans text-base sm:text-lg font-bold cursor-pointer hover:bg-slate-100/50 dark:hover:bg-white/5 transition-colors"
+                  className="w-full px-6 py-5 flex justify-between items-center text-left border-none bg-transparent text-zinc-955 font-sans text-base sm:text-lg font-bold cursor-pointer hover:bg-slate-100/50 transition-colors"
                 >
                   <span>{faq.q}</span>
-                  <span className="text-gray-500 dark:text-slate-400 font-bold ml-4">
+                  <span className="text-gray-500 font-bold ml-4">
                     {isOpen ? (
                       <ChevronUp className="w-5 h-5" />
                     ) : (
@@ -69,7 +69,7 @@ export default function ManagedFaqAccordion() {
                 </button>
                 
                 {isOpen && (
-                  <div className="px-6 pb-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed font-sans border-t border-slate-100 dark:border-zinc-800/50 pt-4">
+                  <div className="px-6 pb-6 text-slate-600 text-sm sm:text-base leading-relaxed font-sans border-t border-slate-100 pt-4">
                     {faq.a}
                   </div>
                 )}

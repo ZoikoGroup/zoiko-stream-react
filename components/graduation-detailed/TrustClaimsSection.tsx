@@ -55,33 +55,33 @@ export default function TrustClaimsSection() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-200 dark:border-gray-800">
+    <section className="w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-14 text-left">
         
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
             Every claim carries evidence — or is not made
           </h2>
-          <p className="text-gray-600 dark:text-slate-400 text-base sm:text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             Each trust statement is a claim object with owner, source, scope, approved copy, evidence reference, and expiry. If evidence lapses, the page degrades to neutral language or hides the claim — never leaves a stale promise live.
           </p>
         </div>
 
         {/* Claims List */}
-        <div className="bg-white dark:bg-zinc-950 rounded-2xl border border-slate-200 dark:border-gray-850 flex flex-col divide-y divide-slate-200 dark:divide-gray-850 shadow-md overflow-hidden">
+        <div className="bg-white rounded-2xl border border-slate-200 flex flex-col divide-y divide-slate-200 shadow-md overflow-hidden">
           {claims.map((claim, idx) => (
             <div 
               key={idx}
-              className="p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-50/50 dark:hover:bg-zinc-955/20 transition-colors"
+              className="p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-slate-50/50 transition-colors"
             >
               <div className="md:w-1/4">
-                <h3 className="text-zinc-900 dark:text-white text-base font-bold font-sans">
+                <h3 className="text-zinc-900 text-base font-bold font-sans">
                   {claim.title}
                 </h3>
               </div>
               
               <div className="flex-1 md:px-4">
-                <p className="text-gray-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed max-w-2xl">
+                <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-2xl">
                   {claim.desc}
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function TrustClaimsSection() {
               <div className="md:w-1/4 md:text-right shrink-0">
                 <a 
                   href={claim.url}
-                  className="text-violet-605 dark:text-violet-400 text-xs sm:text-sm font-medium hover:underline inline-flex items-center gap-1"
+                  className="text-violet-605 text-xs sm:text-sm font-medium hover:underline inline-flex items-center gap-1"
                 >
                   {claim.linkText}
                 </a>

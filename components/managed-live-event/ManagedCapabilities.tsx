@@ -37,12 +37,12 @@ export default function ManagedCapabilities() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-250 border-t border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-4xl">
-          <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Stream capabilities engineered for enterprise scale
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function ManagedCapabilities() {
           {cards.map((c, idx) => (
             <div 
               key={idx}
-              className="bg-white dark:bg-zinc-900/60 rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.06)] dark:shadow-none border border-slate-200 dark:border-zinc-800 flex flex-col justify-start items-start overflow-hidden hover:shadow-md transition-shadow group"
+              className="bg-white rounded-xl shadow-[0px_2px_8px_rgba(0,0,0,0.06)] border border-slate-200 flex flex-col justify-start items-start overflow-hidden hover:shadow-md transition-shadow group"
             >
               <div className="w-full h-44 overflow-hidden relative">
                 <img 
@@ -62,10 +62,10 @@ export default function ManagedCapabilities() {
                 />
               </div>
               <div className="p-5 flex flex-col gap-2">
-                <h3 className="text-zinc-900 dark:text-white text-base font-bold font-sans">
+                <h3 className="text-zinc-900 text-base font-bold font-sans">
                   {c.title}
                 </h3>
-                <p className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm font-sans leading-relaxed">
+                <p className="text-slate-500 text-xs sm:text-sm font-sans leading-relaxed">
                   {c.desc}
                 </p>
               </div>

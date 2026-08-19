@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function ConferenceAndMultitrackPage() {
   return (
-    <main className="w-full bg-zinc-955 min-h-screen text-zinc-900 dark:text-white transition-colors duration-250">
+    <main className="w-full bg-white min-h-screen text-zinc-900 transition-colors duration-250">
       <ConferenceHero />
       <ConferenceCapabilities />
       <ConferenceComplexity />

@@ -21,10 +21,10 @@ export default function PlatformManagedEvents() {
     <section className="relative w-full py-16 sm:py-24 bg-slate-955 text-white overflow-hidden border-b border-zinc-900 font-spaceGrotesk">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none "
         style={{ backgroundImage: "url('/images/platform-overview/bg (48).png')" }}
       />
-      <div className="absolute inset-0 bg-black/60 pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-black/70 pointer-events-none z-0" />
       <div className="absolute left-[-100px] top-[-100px] w-[500px] h-[500px] bg-gradient-to-tr from-teal-555/5 to-transparent rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row justify-between items-center gap-12 text-left">

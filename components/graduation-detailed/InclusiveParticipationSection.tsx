@@ -71,7 +71,7 @@ export default function InclusiveParticipationSection() {
                 key={idx}
                 className="p-6 bg-slate-900/60 rounded-xl border border-white/5 flex flex-col gap-4 hover:border-cyan-500/20 hover:bg-slate-900/80 transition-colors"
               >
-                <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 via-indigo-500 via 60% to-violet-600 dark:bg-purple-950/30 rounded-lg flex justify-center items-center text-[#7C3AED] dark:text-purple-400 flex-shrink-0">
+                <div className="w-10 h-10 bg-gradient-to-r from-cyan-400 via-indigo-500 via 60% to-violet-600 rounded-lg flex justify-center items-center text-[#7C3AED] flex-shrink-0">
                   <img className="w-5 h-5" src={card.icon} />
                 </div>
                 

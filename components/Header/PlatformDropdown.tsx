@@ -37,18 +37,18 @@ type MenuItem = {
 const BUILD_ITEMS: MenuItem[] = [
   { title: 'Platform overview', description: 'How the lifecycle fits together', href: '/platform-overview', icon: Grid },
   { title: 'Video APIs', description: 'Programmable ingest, playback, control', href: '/video-apis', icon: Code2 },
-  { title: 'SDKs', description: 'Native libraries for every surface', href: '/products', icon: Terminal },
+  { title: 'SDKs', description: 'Native libraries for every surface', href: '/sdks', icon: Terminal },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP and more', href: '/products', icon: Radio },
   { title: 'Live streaming', description: 'Broadcast to any audience size', href: '/live-streaming', icon: Tv },
-  { title: 'Real-time contribution', description: 'Get signal in from anywhere', href: '/products', icon: RefreshCw },
-  { title: 'Video on demand', description: 'Store, package and serve replays', href: '/products', icon: Film },
+  { title: 'Real-time contribution', description: 'Get signal in from anywhere', href: '/real-time-contribution', icon: RefreshCw },
+  { title: 'Video on demand', description: 'Store, package and serve replays', href: '/platform-video-on-demand', icon: Film },
 ];
 
 const OPERATE_ITEMS: MenuItem[] = [
   {
     title: 'Media operations overview',
     description: 'Run streams like infrastructure',
-    href: '/products',
+    href: '/platform-media-operation-overview',
     icon: Grid,
   },
   {
@@ -58,7 +58,7 @@ const OPERATE_ITEMS: MenuItem[] = [
     icon: Building2,
   },
   { title: 'Media management', description: 'Organize assets at scale', href: '/products', icon: FolderKanban },
-  { title: 'Stream monitoring', description: 'Live health and diagnostics', href: '/products', icon: Activity },
+  { title: 'Stream monitoring', description: 'Live health and diagnostics', href: '/platform-stream-monitoring', icon: Activity },
   { title: 'Recording and replay', description: 'Automatic, durable capture', href: '/products', icon: Disc },
   { title: 'Captions and translation', description: 'Reach audiences in-language', href: '/products', icon: Languages },
   { title: 'Analytics', description: 'Viewer, quality and delivery data', href: '/products', icon: BarChart3 },
