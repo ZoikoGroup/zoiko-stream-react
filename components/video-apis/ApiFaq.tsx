@@ -37,12 +37,12 @@ export default function ApiFaq() {
   };
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250 font-spaceGrotesk">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250 font-spaceGrotesk">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left font-spaceGrotesk">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 font-spaceGrotesk">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold tracking-tight">
             Frequently asked questions
           </h2>
         </div>
@@ -54,21 +54,21 @@ export default function ApiFaq() {
             return (
               <div 
                 key={idx}
-                className="bg-slate-50 dark:bg-zinc-900 rounded-xl border border-gray-200 dark:border-zinc-800 overflow-hidden transition-all duration-300 shadow-sm"
+                className="bg-slate-50 rounded-xl border border-gray-200 overflow-hidden transition-all duration-300 shadow-sm"
               >
                 {/* Question row */}
                 <button
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left bg-transparent border-none cursor-pointer focus:outline-none select-none group"
                 >
-                  <span className="text-zinc-955 dark:text-white text-base sm:text-lg font-bold font-spaceGrotesk leading-snug group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">
+                  <span className="text-zinc-955 text-base sm:text-lg font-bold font-spaceGrotesk leading-snug group-hover:text-blue-500 transition-colors">
                     {faq.question}
                   </span>
                   
                   {/* Indicator */}
                   <span className="size-4 shrink-0 relative overflow-hidden flex justify-center items-center">
-                    <span className={`w-3.5 h-0.5 bg-blue-600 dark:bg-blue-400 absolute transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`} />
-                    <span className={`w-0.5 h-3.5 bg-blue-600 dark:bg-blue-400 absolute transition-transform duration-300 ${isOpen ? 'scale-0' : 'scale-100'}`} />
+                    <span className={`w-3.5 h-0.5 bg-blue-600 absolute transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`} />
+                    <span className={`w-0.5 h-3.5 bg-blue-600 absolute transition-transform duration-300 ${isOpen ? 'scale-0' : 'scale-100'}`} />
                   </span>
                 </button>
 
@@ -78,7 +78,7 @@ export default function ApiFaq() {
                     isOpen ? 'max-h-[300px] pb-6 opacity-100 font-spaceGrotesk' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="text-slate-655 dark:text-zinc-400 text-sm sm:text-base font-normal leading-relaxed">
+                  <p className="text-slate-655 text-sm sm:text-base font-normal leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

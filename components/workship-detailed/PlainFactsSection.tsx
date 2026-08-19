@@ -37,7 +37,7 @@ export default function PlainFactsSection() {
   ];
 
   return (
-    <section className="relative w-full py-20 bg-zinc-950 dark:bg-black text-white overflow-hidden transition-colors duration-200 border-t border-slate-900">
+    <section className="relative w-full py-20 bg-zinc-950 text-white overflow-hidden transition-colors duration-200 border-t border-slate-900">
       
       {/* Background image underlay */}
       <div 
@@ -58,7 +58,7 @@ export default function PlainFactsSection() {
           {facts.map((fact, idx) => (
             <div 
               key={idx}
-              className="p-6 bg-zinc-900/60 dark:bg-zinc-950/60 rounded-xl border border-slate-800 backdrop-blur-sm flex flex-col justify-center items-start gap-3 hover:border-slate-700 transition-colors"
+              className="p-6 bg-zinc-900/60 rounded-xl border border-slate-800 backdrop-blur-sm flex flex-col justify-center items-start gap-3 hover:border-slate-700 transition-colors"
             >
               <h4 className="text-teal-400 text-base font-bold font-sans">
                 {fact.title}

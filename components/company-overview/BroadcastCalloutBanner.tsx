@@ -12,28 +12,28 @@ export default function BroadcastCalloutBanner({
   bgImageUrl = '/images/company-overview/Background-company.jpg',
 }: BannerCalloutProps) {
   return (
-    <section className="relative w-full overflow-hidden bg-slate-100 dark:bg-slate-950 py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full overflow-hidden bg-slate-100 py-16 sm:py-20 lg:py-24">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
         <img
           src={bgImageUrl}
           alt="Broadcast Control Room Background"
-          className="h-full w-full object-cover object-center opacity-30 dark:opacity-100"
+          className="h-full w-full object-cover object-center opacity-30"
         />
-        {/* Gradient Overlays for Light & Dark Mode Readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-100/95 via-slate-100/80 to-slate-100/40 dark:from-gray-950/95 dark:via-gray-950/70 dark:to-gray-950/30" />
+        {/* Gradient Overlays for Light Mode Readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-100/95 via-slate-100/80 to-slate-100/40" />
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center justify-center px-6 text-center sm:px-8">
         <div className="flex max-w-2xl flex-col items-center gap-3">
           {/* Main Title */}
-          <h2 className="text-2xl font-bold leading-snug text-zinc-900 dark:text-white sm:text-3xl sm:leading-tight lg:text-4xl">
+          <h2 className="text-2xl font-bold leading-snug text-zinc-900 sm:text-3xl sm:leading-tight lg:text-4xl">
             {title}
           </h2>
 
           {/* Subtitle */}
-          <p className="text-sm font-normal leading-relaxed text-gray-600 dark:text-white/70 sm:text-base">
+          <p className="text-sm font-normal leading-relaxed text-gray-600 sm:text-base">
             {subtitle}
           </p>
         </div>

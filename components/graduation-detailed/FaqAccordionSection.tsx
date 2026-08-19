@@ -45,10 +45,10 @@ export default function FaqAccordionSection() {
   };
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-200 dark:border-gray-800">
+    <section className="w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-start items-start gap-12">
         <div className="w-full flex flex-col justify-start items-start gap-3">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight">
             Questions organizers ask first
           </h2>
         </div>
@@ -59,14 +59,14 @@ export default function FaqAccordionSection() {
             return (
               <div 
                 key={idx}
-                className="w-full py-6 border-b border-slate-200 dark:border-zinc-800 flex flex-col justify-start items-start gap-3 cursor-pointer"
+                className="w-full py-6 border-b border-slate-200 flex flex-col justify-start items-start gap-3 cursor-pointer"
                 onClick={() => toggleIndex(idx)}
               >
                 <div className="w-full flex justify-between items-center gap-4">
-                  <span className="flex-1 text-zinc-900 dark:text-white text-base sm:text-lg font-bold font-sans">
+                  <span className="flex-1 text-zinc-900 text-base sm:text-lg font-bold font-sans">
                     {faq.question}
                   </span>
-                  <div className="w-7 h-7 bg-indigo-50 dark:bg-indigo-950/40 rounded-full flex justify-center items-center text-indigo-600 dark:text-indigo-400 flex-shrink-0">
+                  <div className="w-7 h-7 bg-indigo-50 rounded-full flex justify-center items-center text-indigo-600 flex-shrink-0">
                     {isOpen ? (
                       <Minus className="w-4 h-4" />
                     ) : (
@@ -76,7 +76,7 @@ export default function FaqAccordionSection() {
                 </div>
                 
                 {isOpen && (
-                  <div className="w-full text-zinc-500 dark:text-slate-400 text-sm sm:text-base font-normal leading-relaxed pr-8">
+                  <div className="w-full text-zinc-500 text-sm sm:text-base font-normal leading-relaxed pr-8">
                     {faq.answer}
                   </div>
                 )}

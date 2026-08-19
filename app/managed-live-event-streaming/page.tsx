@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function ManagedLiveEventStreamingPage() {
   return (
-    <main className="w-full bg-white dark:bg-zinc-955 min-h-screen text-zinc-900 dark:text-white transition-colors duration-250">
+    <main className="w-full bg-white min-h-screen text-zinc-900">
       <ManagedHero />
       <ManagedCapabilities />
       <ManagedScopeSection />

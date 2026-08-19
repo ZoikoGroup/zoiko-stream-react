@@ -8,32 +8,32 @@ export default function PlatformInspectEvidence() {
     {
       title: 'Developer Documentation',
       desc: 'Core Platform - access technical references, API schemas, and integration guides updated 2 days ago.',
-      overlay: '/images/platform-overview/overlay.png'
+      overlay: '/images/platform-overview/Thumbnail.png'
     },
     {
       title: 'Architecture Resource',
       desc: 'SRT & Low Latency - engineering schematics and protocol deep-dives updated 1 week ago.',
-      overlay: '/images/platform-overview/overlay (1).png'
+      overlay: '/images/platform-overview/Thumbnail (1).png'
     },
     {
       title: 'System Status Board',
       desc: 'Live Telemetry - real-time health signals, uptime metrics, and incident logs across all nodes.',
-      overlay: '/images/platform-overview/overlay (2).png'
+      overlay: '/images/platform-overview/Thumbnail (2).png'
     },
     {
       title: 'Security/Trust Report',
       desc: 'SSO & SAML Auth - compliance documentation, penetration test results, and trust policies updated 3 days ago.',
-      overlay: '/images/platform-overview/overlay (3).png'
+      overlay: '/images/platform-overview/Thumbnail (3).png'
     },
     {
       title: 'Platform Changelog',
       desc: 'Release Notes - detailed feature updates, bug fixes, and deprecation notices from yesterday\'s release.',
-      overlay: '/images/platform-overview/overlay (4).png'
+      overlay: '/images/platform-overview/Thumbnail (4).png'
     },
     {
       title: 'Case Study Archives',
       desc: 'Customer Success - documented outcomes, workflow transformations, and ROI breakdowns from 2 weeks ago.',
-      overlay: '/images/platform-overview/overlay (5).png'
+      overlay: '/images/platform-overview/Thumbnail (5).png'
     }
   ];
 
@@ -65,7 +65,7 @@ export default function PlatformInspectEvidence() {
                   src={c.overlay} 
                   alt={c.title}
                   fill
-                  className="object-cover opacity-80"
+                  className="object-cover "
                 />
                 <div className="absolute inset-0 bg-slate-950/20" />
               </div>

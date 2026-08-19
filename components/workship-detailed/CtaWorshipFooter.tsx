@@ -13,7 +13,7 @@ export default function CtaWorshipFooter() {
   return (
     <section 
       id="worship-contact-panel"
-      className="relative w-full py-20 bg-zinc-950 dark:bg-black text-white overflow-hidden transition-colors duration-200 border-t border-slate-900"
+      className="relative w-full py-20 bg-zinc-950 text-white overflow-hidden transition-colors duration-200 border-t border-slate-900"
     >
       {/* Background Image with opacity and blur */}
       <div 
@@ -30,11 +30,11 @@ export default function CtaWorshipFooter() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col justify-start items-center gap-8 text-center">
         
-        <h2 className="text-slate-100 dark:text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-sans tracking-tight">
+        <h2 className="text-slate-100 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight font-sans tracking-tight">
           Plan your next service with the right access, production, and support
         </h2>
         
-        <p className="text-slate-400 dark:text-slate-350 text-base sm:text-lg max-w-2xl leading-relaxed">
+        <p className="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
           Submit your basic service details, and our specialized event team will guide you through our clear operational paths.
         </p>
 
@@ -47,7 +47,7 @@ export default function CtaWorshipFooter() {
           </button>
           <a 
             href="mailto:support@zoikostream.com"
-            className="px-8 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 dark:text-white text-base font-bold transition-colors cursor-pointer w-full sm:w-auto text-center"
+            className="px-8 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 text-base font-bold transition-colors cursor-pointer w-full sm:w-auto text-center"
           >
             Email event advisor
           </a>

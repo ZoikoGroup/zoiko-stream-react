@@ -57,7 +57,7 @@ const PATHWAYS: EngagementPathway[] = [
 
 export default function WorkWithUsSection() {
   return (
-    <section className="w-full bg-slate-50 dark:bg-zinc-950 px-6 py-16 text-gray-900 dark:text-slate-100 sm:px-12 lg:px-20 lg:py-24">
+    <section className="w-full bg-slate-50 px-6 py-16 text-gray-900 sm:px-12 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         
         {/* Section Header */}
@@ -65,18 +65,18 @@ export default function WorkWithUsSection() {
           {/* Tagline / Subheading Badge */}
           <div className="inline-flex items-center gap-2.5">
             <span className="h-0.5 w-5 bg-cyan-400" />
-            <span className="text-xs font-bold uppercase tracking-widest text-cyan-500 dark:text-cyan-400">
+            <span className="text-xs font-bold uppercase tracking-widest text-cyan-500">
               Work with us
             </span>
           </div>
 
           {/* Main Title */}
-          <h2 className="text-3xl font-bold leading-tight text-gray-900 dark:text-slate-100 sm:text-4xl">
+          <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
             How you can engage.
           </h2>
 
           {/* Description Subtitle */}
-          <p className="text-sm font-normal leading-relaxed text-slate-500 dark:text-slate-400 sm:text-base">
+          <p className="text-sm font-normal leading-relaxed text-slate-500 sm:text-base">
             Each pathway collects only the information needed for that purpose.
           </p>
         </div>
@@ -86,11 +86,11 @@ export default function WorkWithUsSection() {
           {PATHWAYS.map((item) => (
             <div
               key={item.number}
-              className="group flex flex-col justify-between rounded-2xl border border-slate-200 dark:border-gray-800 bg-white dark:bg-zinc-900 p-7 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-slate-300 dark:hover:border-gray-700 hover:shadow-md"
+              className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-7 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-md"
             >
               <div className="flex flex-col items-start gap-4">
                 {/* Number Badge */}
-                <div className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-gray-950 dark:bg-zinc-800 border border-transparent dark:border-gray-700 px-2.5">
+                <div className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-gray-950 border border-transparent px-2.5">
                   <span className="text-sm font-bold text-cyan-400">
                     {item.number}
                   </span>
@@ -98,10 +98,10 @@ export default function WorkWithUsSection() {
 
                 {/* Title & Description */}
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-base font-bold text-gray-900 dark:text-slate-100">
+                  <h3 className="text-base font-bold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-xs font-normal leading-relaxed text-slate-500 dark:text-slate-400">
+                  <p className="text-xs font-normal leading-relaxed text-slate-500">
                     {item.description}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ export default function WorkWithUsSection() {
               <div className="mt-6 pt-1">
                 <Link
                   href={item.href}
-                  className="inline-flex items-center text-sm font-bold text-gray-900 dark:text-slate-100 transition-colors group-hover:text-cyan-600 dark:group-hover:text-cyan-400 focus:outline-none"
+                  className="inline-flex items-center text-sm font-bold text-gray-900 transition-colors group-hover:text-cyan-600 focus:outline-none"
                 >
                   {item.ctaText}
                 </Link>

@@ -42,21 +42,21 @@ export default function EventShapeSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24  dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-200 dark:border-gray-800">
+    <section className="relative w-full py-16 sm:py-24 text-zinc-900 transition-colors duration-200 border-t border-slate-200">
       {/* Background Image Overlay */}
       <div 
         className="absolute inset-0 bg-contain bg-center bg-no-repeat select-none pointer-events-none"
         style={{ backgroundImage: "url('/images/graduations-detailed/Section - SECTION 4 — CHOOSE THE CEREMONY MODEL.png')" }}
       />
-      <div className="absolute inset-0 bg-white/70 dark:bg-zinc-900/70 pointer-events-none" />
+      <div className="absolute inset-0 bg-white/70 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
             Choose the shape that fits your event
           </h2>
-          <p className="text-gray-650 dark:text-slate-400 text-base sm:text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             Not every graduation is one ceremony in one room. Pick the shape below; each carries its own schedule, readiness, and access state — no single global &quot;ready&quot; hides exceptions.
           </p>
         </div>
@@ -66,9 +66,9 @@ export default function EventShapeSection() {
             return (
               <div 
                 key={idx}
-                className="p-6 bg-white/90 dark:bg-zinc-950/90 rounded-2xl shadow-[0px_6px_18px_rgba(15,18,34,0.05)] border border-slate-200 dark:border-zinc-800 flex flex-col gap-4 hover:shadow-md transition-shadow backdrop-blur-sm"
+                className="p-6 bg-white/90 rounded-2xl shadow-[0px_6px_18px_rgba(15,18,34,0.05)] border border-slate-200 flex flex-col gap-4 hover:shadow-md transition-shadow backdrop-blur-sm"
               >
-                <div className="w-10 h-10 bg-purple-50 dark:bg-purple-950/30 rounded-lg flex justify-center items-center text-[#7C3AED] dark:text-purple-400">
+                <div className="w-10 h-10 bg-purple-50 rounded-lg flex justify-center items-center text-[#7C3AED]">
                   {typeof shape.icon === 'string' ? (
                     <img src={shape.icon} alt={shape.title} className="w-5 h-5" />
                   ) : (
@@ -77,10 +77,10 @@ export default function EventShapeSection() {
                 </div>
                 
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-zinc-900 dark:text-white text-lg font-bold font-sans">
+                  <h3 className="text-zinc-900 text-lg font-bold font-sans">
                     {shape.title}
                   </h3>
-                  <p className="text-gray-650 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                     {shape.desc}
                   </p>
                 </div>
