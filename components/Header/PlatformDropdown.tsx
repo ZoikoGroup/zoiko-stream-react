@@ -36,7 +36,7 @@ type MenuItem = {
 
 const BUILD_ITEMS: MenuItem[] = [
   { title: 'Platform overview', description: 'How the lifecycle fits together', href: '/platform-overview', icon: Grid },
-  { title: 'Video APIs', description: 'Programmable ingest, playback, control', href: '/products', icon: Code2 },
+  { title: 'Video APIs', description: 'Programmable ingest, playback, control', href: '/video-apis', icon: Code2 },
   { title: 'SDKs', description: 'Native libraries for every surface', href: '/products', icon: Terminal },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP and more', href: '/products', icon: Radio },
   { title: 'Live streaming', description: 'Broadcast to any audience size', href: '/live-streaming', icon: Tv },
