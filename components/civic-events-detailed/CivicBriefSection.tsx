@@ -77,7 +77,7 @@ export default function CivicBriefSection() {
               >
                 {/* Step indicator */}
                 <div className="flex items-center gap-2 w-full">
-                  <div className="w-7 h-7 bg-teal-400 dark:bg-teal-500/20 text-zinc-950 dark:text-teal-400 rounded-full flex justify-center items-center font-bold text-xs font-sans">
+                  <div className="w-7 h-7 bg-teal-400 text-zinc-950 rounded-full flex justify-center items-center font-bold text-xs font-sans">
                     {step.num}
                   </div>
                   {!isLast && (

@@ -47,21 +47,21 @@ const EVENT_TYPE_ITEMS: MenuItem[] = [
 const PLAN_ITEMS: MenuItem[] = [
   { title: 'Workflow overview', description: 'From booking to broadcast', href: '/workflow-overview', icon: Sliders },
   { title: 'Managed live event streaming', description: 'We run it end to end', href: '/managed-live-event-streaming', icon: Radio },
-  { title: 'Remote contribution', description: 'Send video in from any location', href: '/live-events', icon: Video },
-  { title: 'Production, switching & graphics', description: 'Cameras, switching, graphics', href: '/live-events', icon: Zap },
-  { title: 'Secure audience access', description: 'Invite-only or ticketed viewing', href: '/live-events', icon: ShieldCheck },
+  { title: 'Remote contribution', description: 'Send video in from any location', href: '/remote-contribution-landing', icon: Video },
+  { title: 'Production, switching & graphics', description: 'Cameras, switching, graphics', href: '/production-switching-graphics', icon: Zap },
+  { title: 'Secure audience access', description: 'Invite-only or ticketed viewing', href: '/secure-audience-access', icon: ShieldCheck },
   { title: 'Captions and languages', description: 'Understood by every guest', href: '/captions-and-languages', icon: ClosedCaption },
   { title: 'Recording, replay & archive', description: 'Keep the moment afterward', href: '/recording-replay-archive', icon: RotateCcw },
 ];
 
 const RESILIENCE_ITEMS: MenuItem[] = [
   { title: 'Conferences & multi-track', description: 'Multi-session programming', href: '/conference-and-multitrack', icon: Layers },
-  { title: 'Event resilience', description: 'Built for the one shot that matters', href: '/live-events', icon: ShieldCheck },
+  { title: 'Event resilience', description: 'Built for the one shot that matters', href: '/event-resilience', icon: ShieldCheck },
   { title: 'Assured Event', description: 'Our highest-assurance tier', href: '/assured-event', icon: Lock },
   { title: 'Private streaming', description: 'Closed, credentialed rooms', href: '/private-streaming', icon: Eye },
   { title: 'Accessibility & inclusion', description: 'Captioned & screen-reader friendly', href: '/accessibility-inclusion', icon: HelpCircle },
-  { title: 'FAQs & support', description: 'Answers before you book', href: '/live-events', icon: FileText },
-  { title: 'Planning & briefing', description: 'Start your event brief', href: '/live-events', icon: Headphones },
+  { title: 'FAQs & support', description: 'Answers before you book', href: '/faqs-and-support', icon: FileText },
+  { title: 'Planning & briefing', description: 'Start your event brief', href: '/planning-and-briefing', icon: Headphones },
 ];
 
 const POPULAR_TAGS = [
@@ -142,7 +142,7 @@ export default function LiveEventsDropdown() {
                     <ArrowRight className="h-3 w-3" />
                   </Link>
                   <Link
-                    href="/about-us"
+                    href="/talk-to-an-expert"
                     className="flex items-center justify-between text-[10px] font-semibold text-slate-300 transition-colors hover:text-white sm:text-[11px]"
                   >
                     <span>Talk to an expert</span>

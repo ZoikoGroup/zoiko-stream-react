@@ -64,14 +64,14 @@ export default function ManagedLifecycleSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900 overflow-hidden">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-250 border-t border-slate-100 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none select-none z-0">
         <Image 
           src="/images/recording-replay-archive/viewer-states-bg.png" 
           alt="Topographic Background" 
           fill 
-          className="object-cover opacity-60 dark:opacity-20"
+          className="object-cover opacity-60"
         />
       </div>
 
@@ -79,10 +79,10 @@ export default function ManagedLifecycleSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-gray-900 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight sm:leading-[60.80px]">
+          <h2 className="text-gray-900 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight sm:leading-[60.80px]">
             Managed Event Lifecycle
           </h2>
-          <p className="text-gray-700 dark:text-zinc-300 text-base sm:text-lg font-normal font-spaceGrotesk leading-7">
+          <p className="text-gray-700 text-base sm:text-lg font-normal font-spaceGrotesk leading-7">
             From initial operator brief to final archive closure, every live stream stage is verified.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function ManagedLifecycleSection() {
                   <div 
                     key={step.num}
                     className={`flex-1 self-stretch flex justify-start items-center ${
-                      isGrayBackground ? 'bg-gray-50 dark:bg-zinc-900/30' : ''
+                      isGrayBackground ? 'bg-gray-50' : ''
                     }`}
                   >
                     {/* Circle Dot Button */}
@@ -117,7 +117,7 @@ export default function ManagedLifecycleSection() {
                           className={`size-4 rounded-full transition-all duration-300 ${
                             isPassedOrActive 
                               ? 'bg-teal-400 ring-4 ring-teal-400/20 scale-110' 
-                              : 'bg-gray-300 dark:bg-zinc-700 hover:bg-gray-400'
+                              : 'bg-gray-300 hover:bg-gray-400'
                           }`}
                         />
                       </div>
@@ -129,7 +129,7 @@ export default function ManagedLifecycleSection() {
                         className={`flex-1 h-0 border-2 transition-all duration-300 ${
                           isPassedOrActive
                             ? 'border-teal-400'
-                            : 'border-gray-300 dark:border-zinc-700'
+                            : 'border-gray-300'
                         }`}
                       />
                     )}
@@ -152,10 +152,10 @@ export default function ManagedLifecycleSection() {
                     onClick={() => setActiveStep(idx)}
                     className={`w-full p-3 rounded-lg flex flex-col justify-start items-start gap-2 text-left cursor-pointer transition-all duration-300 focus:outline-none ${
                       isActive
-                        ? 'bg-slate-800 dark:bg-zinc-900 shadow-md transform -translate-y-0.5 border border-transparent'
+                        ? 'bg-slate-800 text-white shadow-md transform -translate-y-0.5 border border-transparent'
                         : isCompleted
-                        ? 'bg-white dark:bg-zinc-950/60 border border-gray-200 dark:border-zinc-800 hover:border-teal-400/50'
-                        : 'bg-white dark:bg-zinc-950/20 border border-gray-200 dark:border-zinc-900/50 opacity-90 hover:border-gray-300'
+                        ? 'bg-white border border-gray-200 hover:border-teal-400/50'
+                        : 'bg-white border border-gray-200 opacity-90 hover:border-gray-300'
                     }`}
                   >
                     {/* Number and Title */}
@@ -165,7 +165,7 @@ export default function ManagedLifecycleSection() {
                           ? 'text-teal-400'
                           : isCompleted
                           ? 'text-teal-400'
-                          : 'text-gray-900 dark:text-zinc-100'
+                          : 'text-gray-900'
                       }`}
                     >
                       {step.num}. {step.title}
@@ -175,8 +175,8 @@ export default function ManagedLifecycleSection() {
                     <div 
                       className={`text-[10px] font-normal font-spaceGrotesk ${
                         isActive
-                          ? 'text-gray-400 dark:text-zinc-400'
-                          : 'text-gray-500 dark:text-zinc-500'
+                          ? 'text-gray-400'
+                          : 'text-gray-500'
                       }`}
                     >
                       {step.owner}
@@ -187,7 +187,7 @@ export default function ManagedLifecycleSection() {
                       className={`text-[10px] font-normal font-spaceGrotesk leading-4 ${
                         isActive
                           ? 'text-zinc-300'
-                          : 'text-gray-500 dark:text-zinc-500'
+                          : 'text-gray-500'
                       }`}
                     >
                       {step.desc}

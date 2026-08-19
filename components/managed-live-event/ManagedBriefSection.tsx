@@ -11,7 +11,7 @@ export default function ManagedBriefSection() {
   return (
     <section 
       id="managed-brief-form"
-      className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white transition-colors duration-250 border-t border-slate-100 dark:border-zinc-900"
+      className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-250 border-t border-slate-100"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row justify-start items-center gap-12 sm:gap-16 text-left">
         
@@ -64,10 +64,10 @@ export default function ManagedBriefSection() {
 
         {/* Right text description */}
         <div className="w-full lg:w-[500px] flex flex-col justify-start items-start gap-6">
-          <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-sans leading-tight tracking-tight">
             Secure planning, simplified execution.
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
+          <p className="text-slate-500 text-base sm:text-lg leading-relaxed font-sans">
             Our briefing workflow asks only what is required to formulate your managed operating structure. No payment credentials or technical matrices are needed to reserve your support window.
           </p>
         </div>

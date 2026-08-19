@@ -50,15 +50,15 @@ export default function ConferenceCapabilities() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-slate-50 dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-slate-50 text-zinc-900 border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
             Multi-Session Capabilities
           </h2>
-          <p className="text-gray-600 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Six integrated modules power every conference deployment - from agenda structure to post-event continuity.
           </p>
         </div>
@@ -68,10 +68,10 @@ export default function ConferenceCapabilities() {
           {modules.map((m, idx) => (
             <div 
               key={idx}
-              className="bg-white dark:bg-zinc-900/60 rounded-2xl overflow-hidden shadow-sm border border-gray-200 dark:border-zinc-800/80 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Image box */}
-              <div className="relative h-48 w-full bg-slate-100 dark:bg-zinc-950/40">
+              <div className="relative h-48 w-full bg-slate-100">
                 <Image 
                   src={m.img} 
                   alt={m.title}
@@ -85,10 +85,10 @@ export default function ConferenceCapabilities() {
                 <div className={`${m.badgeColor} text-[10px] font-bold font-mono uppercase tracking-wider`}>
                   {m.num}
                 </div>
-                <h3 className="text-zinc-950 dark:text-white text-xl font-bold font-spaceGrotesk">
+                <h3 className="text-zinc-955 text-xl font-bold font-spaceGrotesk">
                   {m.title}
                 </h3>
-                <p className="text-gray-500 dark:text-zinc-450 text-sm font-normal font-spaceGrotesk leading-relaxed">
+                <p className="text-gray-500 text-sm font-normal font-spaceGrotesk leading-relaxed">
                   {m.desc}
                 </p>
               </div>

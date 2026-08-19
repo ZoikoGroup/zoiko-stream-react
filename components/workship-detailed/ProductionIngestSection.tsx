@@ -70,7 +70,7 @@ export default function ProductionIngestSection() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-zinc-900 dark:bg-zinc-955 border-t border-b border-gray-850 dark:border-gray-800 text-white transition-colors duration-200"
+    <section className="w-full py-16 sm:py-24 bg-zinc-900 border-t border-b border-gray-850 text-white transition-colors duration-200"
             style={{ backgroundImage: "url('/images/workship-detailed/image (13).png')" }}
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-16">
@@ -91,9 +91,9 @@ export default function ProductionIngestSection() {
             return (
               <div 
                 key={idx}
-                className="p-8 bg-zinc-950 dark:bg-gray-900 rounded-xl border border-slate-800 flex flex-col gap-5 hover:border-slate-700 transition-colors"
+                className="p-8 bg-zinc-950 rounded-xl border border-slate-800 flex flex-col gap-5 hover:border-slate-700 transition-colors"
               >
-                <div className="w-9 h-9 bg-zinc-900 dark:bg-zinc-800 rounded-lg flex justify-center items-center">
+                <div className="w-9 h-9 bg-zinc-900 rounded-lg flex justify-center items-center">
                   <Icon className="w-5 h-5 text-teal-400" />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -110,7 +110,7 @@ export default function ProductionIngestSection() {
         </div>
 
         {/* Responsibility Matrix */}
-        <div className="p-6 sm:p-8 bg-zinc-950 dark:bg-gray-900 rounded-2xl border border-slate-800 flex flex-col gap-6">
+        <div className="p-6 sm:p-8 bg-zinc-950 rounded-2xl border border-slate-800 flex flex-col gap-6">
           
           <h3 className="text-white text-base font-bold font-sans">
             Operational Responsibility Matrix
@@ -122,11 +122,11 @@ export default function ProductionIngestSection() {
             <div className="min-w-[768px] flex flex-col gap-1">
               
               {/* Header Row */}
-              <div className="px-4 py-3 bg-slate-800 dark:bg-gray-800 rounded-t-lg grid grid-cols-4 gap-4">
-                <div className="text-slate-200 dark:text-white text-xs font-bold uppercase tracking-wider">Responsibility</div>
-                <div className="text-slate-200 dark:text-white text-xs font-bold uppercase tracking-wider">Organizer / Venue</div>
-                <div className="text-slate-200 dark:text-white text-xs font-bold uppercase tracking-wider">Production Team</div>
-                <div className="text-slate-200 dark:text-white text-xs font-bold uppercase tracking-wider">ZoikoStream</div>
+              <div className="px-4 py-3 bg-slate-800 rounded-t-lg grid grid-cols-4 gap-4">
+                <div className="text-slate-200 text-xs font-bold uppercase tracking-wider">Responsibility</div>
+                <div className="text-slate-200 text-xs font-bold uppercase tracking-wider">Organizer / Venue</div>
+                <div className="text-slate-200 text-xs font-bold uppercase tracking-wider">Production Team</div>
+                <div className="text-slate-200 text-xs font-bold uppercase tracking-wider">ZoikoStream</div>
               </div>
 
               {/* Data Rows */}
