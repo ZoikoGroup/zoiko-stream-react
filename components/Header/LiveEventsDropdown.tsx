@@ -38,24 +38,24 @@ const EVENT_TYPE_ITEMS: MenuItem[] = [
   { title: 'Live Events overview', description: 'How managed streaming works here', href: '/live-events-overview', icon: Radio },
   { title: 'Memorials', description: 'Handled with care, never exploited', href: '/memorials', icon: Heart },
   { title: 'Worship', description: 'Services streamed reliably', href: '/workship-detailed', icon: Sparkles },
-  { title: 'Weddings & celebrations', description: 'Private or shared, your choice', href: '/live-events', icon: Calendar },
+  { title: 'Weddings & celebrations', description: 'Private or shared, your choice', href: '/wedding-celebration', icon: Calendar },
   { title: 'Graduations', description: 'Every name, every family watching', href: '/graduation-detailed', icon: GraduationCap },
-  { title: 'Civic events', description: 'Public proceedings, clearly delivered', href: '/live-events', icon: Building2 },
-  { title: 'Corporate broadcasts', description: 'All-hands and announcements', href: '/live-events', icon: Briefcase },
+  { title: 'Civic events', description: 'Public proceedings, clearly delivered', href: '/civic-events-detailed', icon: Building2 },
+  { title: 'Corporate broadcasts', description: 'All-hands and announcements', href: '/corporate-broadcast-detailed', icon: Briefcase },
 ];
 
 const PLAN_ITEMS: MenuItem[] = [
-  { title: 'Workflow overview', description: 'From booking to broadcast', href: '/live-events', icon: Sliders },
-  { title: 'Managed live event streaming', description: 'We run it end to end', href: '/live-events', icon: Radio },
+  { title: 'Workflow overview', description: 'From booking to broadcast', href: '/workflow-overview', icon: Sliders },
+  { title: 'Managed live event streaming', description: 'We run it end to end', href: '/managed-live-event-streaming', icon: Radio },
   { title: 'Remote contribution', description: 'Send video in from any location', href: '/live-events', icon: Video },
-  { title: 'Production, switching & graphics', description: 'Cameras, switching, graphics', href: '/production-switching-graphics', icon: Zap },
-  { title: 'Secure audience access', description: 'Invite-only or ticketed viewing', href: '/secure-audience-access', icon: ShieldCheck },
-  { title: 'Captions and languages', description: 'Understood by every guest', href: '/live-events', icon: ClosedCaption },
-  { title: 'Recording, replay & archive', description: 'Keep the moment afterward', href: '/live-events', icon: RotateCcw },
+  { title: 'Production, switching & graphics', description: 'Cameras, switching, graphics', href: '/live-events', icon: Zap },
+  { title: 'Secure audience access', description: 'Invite-only or ticketed viewing', href: '/live-events', icon: ShieldCheck },
+  { title: 'Captions and languages', description: 'Understood by every guest', href: '/captions-and-languages', icon: ClosedCaption },
+  { title: 'Recording, replay & archive', description: 'Keep the moment afterward', href: '/recording-replay-archive', icon: RotateCcw },
 ];
 
 const RESILIENCE_ITEMS: MenuItem[] = [
-  { title: 'Conferences & multi-track', description: 'Multi-session programming', href: '/live-events', icon: Layers },
+  { title: 'Conferences & multi-track', description: 'Multi-session programming', href: '/conference-and-multitrack', icon: Layers },
   { title: 'Event resilience', description: 'Built for the one shot that matters', href: '/live-events', icon: ShieldCheck },
   { title: 'Assured Event', description: 'Our highest-assurance tier', href: '/assured-event', icon: Lock },
   { title: 'Private streaming', description: 'Closed, credentialed rooms', href: '/private-streaming', icon: Eye },

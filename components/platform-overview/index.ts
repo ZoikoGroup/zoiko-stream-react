@@ -1,0 +1,10 @@
+export { default as PlatformHero } from './PlatformHero';
+export { default as PlatformLifecycle } from './PlatformLifecycle';
+export { default as PlatformApis } from './PlatformApis';
+export { default as PlatformEnterpriseMedia } from './PlatformEnterpriseMedia';
+export { default as PlatformSecureDeliver } from './PlatformSecureDeliver';
+export { default as PlatformRecordReplay } from './PlatformRecordReplay';
+export { default as PlatformManagedEvents } from './PlatformManagedEvents';
+export { default as PlatformInspectEvidence } from './PlatformInspectEvidence';
+export { default as PlatformFaq } from './PlatformFaq';
+export { default as PlatformCta } from './PlatformCta';
