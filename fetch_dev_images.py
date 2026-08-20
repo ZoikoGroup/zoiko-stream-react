@@ -2,7 +2,7 @@ import urllib.request
 import os
 
 images = {
-    "faq-bg.png": "http://localhost:3845/assets/7d1da33f23bc4a67756f6421294d587dfd286aca.png",
+    "developer-bg.png": "http://localhost:3845/assets/bd408b5f9a15399047af09dabed6a9f8f2a4fd2d.png",
 }
 
 out_dir = r"d:\Nextjs-app\zoiko-stream\public\images\platform-captions-and-translation"
