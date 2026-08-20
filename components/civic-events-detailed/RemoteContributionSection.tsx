@@ -152,7 +152,7 @@ export default function RemoteContributionSection() {
                   <div className="w-1/12 flex justify-end">
                     <span 
                       className={`px-3 py-1 text-xs font-semibold rounded-md ${
-                        row.stateType === 'verified'
+                        row.statusType === 'verified'
                           ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-400'
                           : 'bg-amber-100 text-amber-800 dark:bg-amber-500/10 dark:text-amber-400'
                       }`}
