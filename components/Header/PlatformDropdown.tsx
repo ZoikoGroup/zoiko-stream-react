@@ -72,7 +72,7 @@ const SECURE_ITEMS: MenuItem[] = [
     icon: Grid,
   },
   { title: 'Access control', description: 'Identity-aware entitlements', href: '/products', icon: KeyRound },
-  { title: 'Secure playback', description: 'Signed, tokenized delivery', href: '/products', icon: ShieldCheck },
+  { title: 'Secure playback', description: 'Signed, tokenized delivery', href: '/platform-secure-playback', icon: ShieldCheck },
   { title: 'Adaptive video delivery', description: 'Quality that fits the network', href: '/products', icon: Zap },
   { title: 'Global distribution', description: 'Edge presence worldwide', href: '/products', icon: Globe2 },
   { title: 'Resilient delivery', description: 'Built to survive failure', href: '/products', icon: RefreshCw },
