@@ -2,10 +2,10 @@ import urllib.request
 import os
 
 images = {
-    "faq-bg.png": "http://localhost:3845/assets/7d1da33f23bc4a67756f6421294d587dfd286aca.png",
+    "sources-bg.png": "http://localhost:3845/assets/3d4544f1c38051b6e75d00eda5560cb45b44ef2d.png",
 }
 
-out_dir = r"d:\Nextjs-app\zoiko-stream\public\images\platform-captions-and-translation"
+out_dir = r"d:\Nextjs-app\zoiko-stream\public\images\platform-enterprise-broadcasting"
 os.makedirs(out_dir, exist_ok=True)
 
 for name, url in images.items():
