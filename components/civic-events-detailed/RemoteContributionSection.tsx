@@ -82,15 +82,15 @@ export default function RemoteContributionSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-100 dark:border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Plan officials, speakers, interpreters, and remote sites
           </h2>
-          <p className="text-gray-500 dark:text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
+          <p className="text-gray-500 text-base sm:text-lg leading-relaxed font-sans">
             Remote contribution is a separate path from public viewing. Each participant needs connection instructions, rehearsal, identity confirmation, and privacy treatment.
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function RemoteContributionSection() {
           {cards.map((c, idx) => (
             <div 
               key={idx}
-              className="bg-slate-50 dark:bg-zinc-900/40 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col justify-start items-start gap-4 overflow-hidden hover:shadow-md transition-shadow backdrop-blur-sm"
+              className="bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-start items-start gap-4 overflow-hidden hover:shadow-md transition-shadow backdrop-blur-sm"
             >
               <div className="w-full h-36 overflow-hidden">
                 <img 
@@ -110,10 +110,10 @@ export default function RemoteContributionSection() {
                 />
               </div>
               <div className="px-5 pb-5 flex flex-col gap-2">
-                <h3 className="text-zinc-900 dark:text-white text-lg font-bold font-sans">
+                <h3 className="text-zinc-900 text-lg font-bold font-sans">
                   {c.title}
                 </h3>
-                <p className="text-gray-500 dark:text-slate-400 text-xs sm:text-sm font-sans leading-relaxed">
+                <p className="text-gray-500 text-xs sm:text-sm font-sans leading-relaxed">
                   {c.desc}
                 </p>
               </div>
@@ -122,8 +122,8 @@ export default function RemoteContributionSection() {
         </div>
 
         {/* Synchronized Multi-Site Matrix (No Borders) */}
-        <div className="p-6 sm:p-8 bg-slate-50 dark:bg-zinc-900/40 rounded-2xl flex flex-col gap-6 shadow-sm border border-slate-100 dark:border-zinc-850">
-          <h3 className="text-zinc-900 dark:text-white text-base font-bold font-sans">
+        <div className="p-6 sm:p-8 bg-slate-50 rounded-2xl flex flex-col gap-6 shadow-sm border border-slate-100">
+          <h3 className="text-zinc-900 text-base font-bold font-sans">
             Synchronized Multi-Site Matrix
           </h3>
           
@@ -131,7 +131,7 @@ export default function RemoteContributionSection() {
             <div className="min-w-[800px] flex flex-col gap-2">
               
               {/* Header row */}
-              <div className="flex items-center gap-4 px-4 py-3 bg-slate-200/50 dark:bg-zinc-800 rounded-xl text-gray-500 dark:text-slate-400 text-xs font-bold uppercase tracking-wider">
+              <div className="flex items-center gap-4 px-4 py-3 bg-slate-200/50 rounded-xl text-gray-500 text-xs font-bold uppercase tracking-wider">
                 <div className="w-1/4">Location Site</div>
                 <div className="w-1/6">Time Zone</div>
                 <div className="w-1/5">Local Owner</div>
@@ -143,18 +143,18 @@ export default function RemoteContributionSection() {
               {siteRows.map((row, idx) => (
                 <div 
                   key={idx}
-                  className="flex items-center gap-4 px-4 py-4 bg-white dark:bg-zinc-950/60 rounded-xl transition-colors hover:bg-slate-100/50 dark:hover:bg-zinc-900/50"
+                  className="flex items-center gap-4 px-4 py-4 bg-white rounded-xl transition-colors hover:bg-slate-100/50"
                 >
-                  <div className="w-1/4 text-zinc-900 dark:text-white text-sm font-bold font-sans">{row.site}</div>
-                  <div className="w-1/6 text-gray-500 dark:text-slate-400 text-sm font-sans">{row.zone}</div>
-                  <div className="w-1/5 text-gray-500 dark:text-slate-400 text-sm font-sans">{row.owner}</div>
-                  <div className="w-1/4 text-gray-500 dark:text-slate-400 text-sm font-sans">{row.path}</div>
+                  <div className="w-1/4 text-zinc-900 text-sm font-bold font-sans">{row.site}</div>
+                  <div className="w-1/6 text-gray-500 text-sm font-sans">{row.zone}</div>
+                  <div className="w-1/5 text-gray-500 text-sm font-sans">{row.owner}</div>
+                  <div className="w-1/4 text-gray-500 text-sm font-sans">{row.path}</div>
                   <div className="w-1/12 flex justify-end">
                     <span 
                       className={`px-3 py-1 text-xs font-semibold rounded-md ${
-                        row.statusType === 'verified'
-                          ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-400'
-                          : 'bg-amber-100 text-amber-800 dark:bg-amber-500/10 dark:text-amber-400'
+                        row.stateType === 'verified'
+                          ? 'bg-emerald-100 text-emerald-800'
+                          : 'bg-amber-100 text-amber-800'
                       }`}
                     >
                       {row.status}

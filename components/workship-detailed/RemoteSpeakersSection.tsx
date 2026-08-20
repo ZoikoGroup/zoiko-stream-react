@@ -25,7 +25,7 @@ export default function RemoteSpeakersSection() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-zinc-950 dark:bg-black text-white border-t border-slate-900 transition-colors duration-200"
+    <section className="w-full py-16 sm:py-24 bg-zinc-955 text-white border-t border-slate-900 transition-colors duration-200"
             style={{ backgroundImage: "url('/images/workship-detailed/image (19).png')" }}
 >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-14">
@@ -43,7 +43,7 @@ export default function RemoteSpeakersSection() {
           {cards.map((card, idx) => (
             <div 
               key={idx}
-              className="p-8 bg-gray-900 dark:bg-zinc-950 rounded-xl border border-slate-800 flex flex-col gap-5 hover:border-slate-700 transition-colors"
+              className="p-8 bg-gray-900 rounded-xl border border-slate-800 flex flex-col gap-5 hover:border-slate-700 transition-colors"
             >
               <img 
                 className="w-12 h-12 rounded-sm object-cover" 

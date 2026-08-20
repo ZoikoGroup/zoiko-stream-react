@@ -49,14 +49,14 @@ export default function PlanningSurfacesSection() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-200 dark:border-gray-800">
+    <section className="w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-14 text-left">
         
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-950 dark:text-white text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
+          <h2 className="text-zinc-950 text-3xl sm:text-4xl font-bold leading-tight tracking-tight">
             Six planning surfaces, each with its own state
           </h2>
-          <p className="text-gray-600 dark:text-slate-400 text-base sm:text-lg">
+          <p className="text-gray-600 text-base sm:text-lg">
             A graduation isn&apos;t one undifferentiated feed. Each planning surface below is a separate decision with its own readiness - none default to &quot;ready&quot; until verified.
           </p>
         </div>
@@ -67,16 +67,16 @@ export default function PlanningSurfacesSection() {
             return (
               <div 
                 key={idx}
-                className="p-6 bg-slate-50 dark:bg-zinc-950 rounded-2xl border border-slate-200 dark:border-zinc-800 flex flex-row items-start gap-4 hover:shadow-md transition-shadow"
+                className="p-6 bg-slate-50 rounded-2xl border border-slate-200 flex flex-row items-start gap-4 hover:shadow-md transition-shadow"
               >
                 <div className="flex-shrink-0 w-10 h-10 bg-gradient-to-r from-cyan-400 via-indigo-500 via 60% to-violet-600 rounded-xl flex justify-center items-center text-white">
                   <IconComponent className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-zinc-900 dark:text-white text-base font-bold font-sans leading-tight">
+                  <h3 className="text-zinc-900 text-base font-bold font-sans leading-tight">
                     {card.title}
                   </h3>
-                  <p className="text-zinc-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+                  <p className="text-zinc-500 text-xs sm:text-sm leading-relaxed">
                     {card.desc}
                   </p>
                 </div>

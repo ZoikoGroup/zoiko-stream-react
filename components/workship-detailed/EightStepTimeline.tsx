@@ -13,7 +13,7 @@ export default function EightStepTimeline() {
   ];
 
   return (
-    <section className="w-full py-16 sm:py-24 bg-zinc-950 dark:bg-black text-white border-t border-slate-900 transition-colors duration-200">
+    <section className="w-full py-16 sm:py-24 bg-zinc-950 text-white border-t border-slate-900 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-12 sm:gap-16">
         
         <div className="flex flex-col gap-4">

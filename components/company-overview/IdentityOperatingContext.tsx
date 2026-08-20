@@ -24,7 +24,7 @@ export default function IdentityOperatingContext({
   hierarchySteps = ['Zoiko Group', 'Zoiko Tech', 'ZoikoStream', 'Zoiko Cloud'],
 }: OperatingContextProps) {
   return (
-    <section className="w-full bg-white dark:bg-zinc-950 px-6 py-16 text-gray-900 dark:text-slate-100 sm:px-12 lg:px-20 lg:py-24">
+    <section className="w-full bg-white px-6 py-16 text-gray-900 sm:px-12 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-14">
           
@@ -34,18 +34,18 @@ export default function IdentityOperatingContext({
             {/* Tagline / Subheading Badge */}
             <div className="inline-flex items-center gap-2.5">
               <span className="h-0.5 w-5 bg-cyan-400" />
-              <span className="text-xs font-bold uppercase tracking-wider text-cyan-500 dark:text-cyan-400">
+              <span className="text-xs font-bold uppercase tracking-wider text-cyan-500">
                 {sectionTag}
               </span>
             </div>
 
             {/* Section Heading */}
-            <h2 className="pt-0.5 text-3xl font-bold leading-tight text-gray-900 dark:text-slate-100 sm:text-4xl">
+            <h2 className="pt-0.5 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
               {title}
             </h2>
 
             {/* Paragraph Text Content */}
-            <div className="flex flex-col gap-3 pt-0.5 text-gray-700 dark:text-slate-400">
+            <div className="flex flex-col gap-3 pt-0.5 text-gray-700">
               <p className="text-base font-normal leading-relaxed">
                 {paragraph1}
               </p>
@@ -55,10 +55,10 @@ export default function IdentityOperatingContext({
             </div>
 
             {/* CTA Underlined Link */}
-            <div className="inline-block border-b-2 border-cyan-400 pb-0.5 transition-colors hover:border-cyan-600 dark:hover:border-cyan-300">
+            <div className="inline-block border-b-2 border-cyan-400 pb-0.5 transition-colors hover:border-cyan-600">
               <Link
                 href={ctaHref}
-                className="text-sm font-bold text-gray-900 dark:text-slate-100 transition-colors hover:text-cyan-600 dark:hover:text-cyan-300 focus:outline-none"
+                className="text-sm font-bold text-gray-900 transition-colors hover:text-cyan-600 focus:outline-none"
               >
                 {ctaText}
               </Link>
@@ -67,7 +67,7 @@ export default function IdentityOperatingContext({
 
           {/* Image & Hierarchy Card Column (5 Cols on desktop) */}
           <div className="flex justify-center lg:col-span-5">
-            <div className="group relative w-full max-w-md overflow-hidden rounded-3xl bg-slate-900 shadow-[0px_14px_34px_-14px_rgba(16,24,40,0.14)] dark:border dark:border-gray-800">
+            <div className="group relative w-full max-w-md overflow-hidden rounded-3xl bg-slate-900 shadow-[0px_14px_34px_-14px_rgba(16,24,40,0.14)]">
               {/* Image */}
               <img
                 src={imageUrl}

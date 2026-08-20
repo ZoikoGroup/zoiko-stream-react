@@ -84,7 +84,7 @@ export default function IntakeWizardForm() {
   return (
     <section 
       id="intake-brief-form"
-      className="w-full py-16 sm:py-24 bg-zinc-950 dark:bg-black bg-[url('/images/memorials/bg-image.png')] bg-cover bg-center bg-no-repeat text-white transition-colors duration-200"
+      className="w-full py-16 sm:py-24 bg-zinc-950 bg-[url('/images/memorials/bg-image.png')] bg-cover bg-center bg-no-repeat text-white transition-colors duration-200"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
@@ -136,7 +136,7 @@ export default function IntakeWizardForm() {
 
           </div>
 
-          <p className="text-slate-400 dark:text-slate-350 text-base leading-relaxed">
+          <p className="text-slate-400 text-base leading-relaxed">
             A short first step, with the rest requested only as needed. No sensitive memorial details are required to understand the next step.
           </p>
 
@@ -144,14 +144,14 @@ export default function IntakeWizardForm() {
             
             <div className="flex flex-col gap-1.5">
               <h4 className="text-white text-sm font-semibold">Coming in Step 2</h4>
-              <p className="text-slate-400 dark:text-slate-350 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 Accessibility needs (multi-select — &quot;not sure&quot;), recording/replay preference, support need.
               </p>
             </div>
 
             <div className="flex flex-col gap-1.5">
               <h4 className="text-white text-sm font-semibold">Coming in Step 3</h4>
-              <p className="text-slate-400 dark:text-slate-350 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 Contact name, email, phone (optional), additional context — please don&apos;t include sensitive personal, medical, financial, or access-credential information — and a privacy acknowledgment.
               </p>
             </div>
@@ -160,7 +160,7 @@ export default function IntakeWizardForm() {
         </div>
         
         {/* Right form block */}
-        <div className="lg:col-span-7 w-full p-6 sm:p-10 bg-gray-900 dark:bg-zinc-900 rounded-3xl shadow-[0px_16px_32px_0px_rgba(0,0,0,0.25)] animate-fade-in">
+        <div className="lg:col-span-7 w-full p-6 sm:p-10 bg-gray-900 rounded-3xl shadow-[0px_16px_32px_0px_rgba(0,0,0,0.25)] animate-fade-in">
           
           {formSubmitted ? (
             <div className="flex flex-col items-center justify-center text-center py-8 gap-6">
@@ -168,12 +168,12 @@ export default function IntakeWizardForm() {
                 <CheckCircle2 className="w-8 h-8 text-teal-400" />
               </div>
               <h3 className="text-white text-2xl font-bold">Intake Brief Received</h3>
-              <p className="text-slate-400 dark:text-slate-350 text-sm max-w-md leading-relaxed">
+              <p className="text-slate-400 text-sm max-w-md leading-relaxed">
                 Thank you, {formData.contactName}. We have saved your brief. An expert will review your requirements and reach out to the email provided shortly.
               </p>
               
               {/* Brief Summary Box */}
-              <div className="w-full bg-slate-950 dark:bg-black text-slate-350 p-6 rounded-xl text-left text-xs space-y-3">
+              <div className="w-full bg-slate-950 text-slate-350 p-6 rounded-xl text-left text-xs space-y-3">
                 <h4 className="font-bold text-white text-sm  pb-2">Submitted Brief Parameters:</h4>
                 <div><span className="font-semibold text-slate-400">Date Option:</span> {formData.eventDate}</div>
                 <div><span className="font-semibold text-slate-400">Approx. Duration:</span> {formData.duration}</div>
@@ -189,7 +189,7 @@ export default function IntakeWizardForm() {
 
               <button 
                 onClick={resetForm}
-                className="mt-4 px-6 py-2.5 bg-slate-800 dark:bg-gray-800 text-slate-200 dark:text-white rounded-lg hover:bg-slate-750 transition-colors text-sm cursor-pointer"
+                className="mt-4 px-6 py-2.5 bg-slate-800 text-slate-200 rounded-lg hover:bg-slate-750 transition-colors text-sm cursor-pointer"
               >
                 Create another brief
               </button>
@@ -202,7 +202,7 @@ export default function IntakeWizardForm() {
                 <form onSubmit={handleStep1Submit} className="flex flex-col gap-6">
                   <div className="flex flex-col gap-2">
                     <label className="text-white text-base font-bold">Event type</label>
-                    <div className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-450 text-sm">
+                    <div className="px-4 py-3 bg-slate-955 rounded-lg text-slate-450 text-sm">
                       Memorials
                     </div>
                   </div>
@@ -215,7 +215,7 @@ export default function IntakeWizardForm() {
                         id="eventDate"
                         value={formData.eventDate}
                         onChange={(e) => setFormData({...formData, eventDate: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                       >
                         <option value="Not decided yet">Not decided yet</option>
                         <option value="Within 7 Days">Within 7 Days</option>
@@ -230,7 +230,7 @@ export default function IntakeWizardForm() {
                         id="duration"
                         value={formData.duration}
                         onChange={(e) => setFormData({...formData, duration: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                       >
                         <option value="Under 30 minutes">Under 30 minutes</option>
                         <option value="30-60 minutes">30-60 minutes</option>
@@ -249,7 +249,7 @@ export default function IntakeWizardForm() {
                         id="sourceContext"
                         value={formData.sourceContext}
                         onChange={(e) => setFormData({...formData, sourceContext: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                       >
                         <option value="Venue">Venue</option>
                         <option value="Camera Setup">Camera / Encoder Setup</option>
@@ -264,7 +264,7 @@ export default function IntakeWizardForm() {
                         id="audienceSize"
                         value={formData.audienceSize}
                         onChange={(e) => setFormData({...formData, audienceSize: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                       >
                         <option value="Under 25">Under 25</option>
                         <option value="25-100">25-100</option>
@@ -281,7 +281,7 @@ export default function IntakeWizardForm() {
                       id="audienceAccess"
                       value={formData.audienceAccess}
                       onChange={(e) => setFormData({...formData, audienceAccess: e.target.value})}
-                      className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                      className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                     >
                       <option value="Public">Public (Anyone with link)</option>
                       <option value="Link-based">Link-based (Unlisted / password protected)</option>
@@ -323,7 +323,7 @@ export default function IntakeWizardForm() {
                           className={`p-3 rounded-lg flex items-center gap-3 cursor-pointer transition-colors ${
                             formData.accessibilityNeeds.includes(need) 
                               ? 'bg-teal-500/10 text-white' 
-                              : 'bg-slate-955 dark:bg-black text-slate-450 hover:bg-slate-900/50'
+                              : 'bg-slate-955 text-slate-450 hover:bg-slate-900/50'
                           }`}
                         >
                           <input 
@@ -344,7 +344,7 @@ export default function IntakeWizardForm() {
                       id="recordingPreference"
                       value={formData.recordingPreference}
                       onChange={(e) => setFormData({...formData, recordingPreference: e.target.value})}
-                      className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                      className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                     >
                       <option value="Live stream only">Live stream only (No recording)</option>
                       <option value="Live stream + 30-day replay">Live stream + 30-day replay window</option>
@@ -359,7 +359,7 @@ export default function IntakeWizardForm() {
                       id="supportNeed"
                       value={formData.supportNeed}
                       onChange={(e) => setFormData({...formData, supportNeed: e.target.value})}
-                      className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none"
+                      className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none"
                     >
                       <option value="Standard platform support">Standard platform support (SLA advisory)</option>
                       <option value="Assigned tech support specialist">Assigned tech support specialist (Dedicated pre-event review)</option>
@@ -394,7 +394,7 @@ export default function IntakeWizardForm() {
                 <form onSubmit={handleStep3Submit} className="flex flex-col gap-5">
                   <div className="flex flex-col gap-2">
                     <label className="text-white text-base font-bold flex items-center gap-1.5" htmlFor="contactName">
-                      <User className="w-4 h-4 text-slate-450" />
+                      <User className="w-4 h-4 text-slate-455" />
                       Coordinator Name <span className="text-red-400">*</span>
                     </label>
                     <input 
@@ -404,7 +404,7 @@ export default function IntakeWizardForm() {
                       placeholder="John Doe"
                       value={formData.contactName}
                       onChange={(e) => setFormData({...formData, contactName: e.target.value})}
-                      className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-350 dark:text-white text-sm focus:outline-none"
+                      className="px-4 py-3 bg-slate-955 rounded-lg text-slate-350 text-sm focus:outline-none"
                     />
                   </div>
 
@@ -412,7 +412,7 @@ export default function IntakeWizardForm() {
                     
                     <div className="flex flex-col gap-2">
                       <label className="text-white text-base font-bold flex items-center gap-1.5" htmlFor="contactEmail">
-                        <Mail className="w-4 h-4 text-slate-450" />
+                        <Mail className="w-4 h-4 text-slate-455" />
                         Email <span className="text-red-400">*</span>
                       </label>
                       <input 
@@ -422,7 +422,7 @@ export default function IntakeWizardForm() {
                         placeholder="coordinator@example.com"
                         value={formData.contactEmail}
                         onChange={(e) => setFormData({...formData, contactEmail: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-350 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-350 text-sm focus:outline-none"
                       />
                     </div>
 
@@ -437,7 +437,7 @@ export default function IntakeWizardForm() {
                         placeholder="+1 (555) 000-0000"
                         value={formData.contactPhone}
                         onChange={(e) => setFormData({...formData, contactPhone: e.target.value})}
-                        className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-350 dark:text-white text-sm focus:outline-none"
+                        className="px-4 py-3 bg-slate-955 rounded-lg text-slate-350 text-sm focus:outline-none"
                       />
                     </div>
 
@@ -451,7 +451,7 @@ export default function IntakeWizardForm() {
                       placeholder="Detail any AV specifications or platform integrations..."
                       value={formData.additionalContext}
                       onChange={(e) => setFormData({...formData, additionalContext: e.target.value})}
-                      className="px-4 py-3 bg-slate-955 dark:bg-black rounded-lg text-slate-300 dark:text-white text-sm focus:outline-none resize-none animate-none"
+                      className="px-4 py-3 bg-slate-955 rounded-lg text-slate-300 text-sm focus:outline-none resize-none animate-none"
                     />
                     <div className="text-[10px] text-slate-500 flex items-center gap-1 mt-1">
                       <AlertCircle className="w-3.5 h-3.5 text-slate-600 shrink-0" />

@@ -37,15 +37,15 @@ export default function ParticipationBoundariesSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-100 dark:border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-14 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             Public participation boundaries without profiling
           </h2>
-          <p className="text-gray-500 dark:text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
+          <p className="text-gray-500 text-base sm:text-lg leading-relaxed font-sans">
             Distinguish viewing from contribution. Never create a political profiling or surveillance system.
           </p>
         </div>
@@ -55,17 +55,17 @@ export default function ParticipationBoundariesSection() {
           {cards.map((c, idx) => (
             <div 
               key={idx}
-              className="p-8 bg-slate-100 dark:bg-zinc-900/50 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col justify-start items-start gap-4 hover:shadow-md transition-shadow backdrop-blur-sm"
+              className="p-8 bg-slate-100 rounded-xl border border-slate-200 flex flex-col justify-start items-start gap-4 hover:shadow-md transition-shadow backdrop-blur-sm"
             >
-              <div className="w-8 h-8 bg-blue-600 dark:bg-blue-500/20 text-white dark:text-blue-400 rounded-full flex justify-center items-center font-bold text-xs font-sans">
+              <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex justify-center items-center font-bold text-xs font-sans">
                 {c.num}
               </div>
               
               <div className="flex flex-col gap-2">
-                <h3 className="text-zinc-900 dark:text-white text-xl font-bold font-sans">
+                <h3 className="text-zinc-900 text-xl font-bold font-sans">
                   {c.title}
                 </h3>
-                <p className="text-gray-505 dark:text-slate-400 text-sm font-sans leading-relaxed">
+                <p className="text-gray-550 text-sm font-sans leading-relaxed">
                   {c.desc}
                 </p>
               </div>

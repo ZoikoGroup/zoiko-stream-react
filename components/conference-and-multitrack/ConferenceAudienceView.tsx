@@ -38,15 +38,15 @@ export default function ConferenceAudienceView() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 sm:gap-16 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-5 max-w-4xl">
-          <h2 className="text-gray-900 dark:text-white text-4xl sm:text-4xl font-bold font-spaceGrotesk leading-[1.1] tracking-tight">
+          <h2 className="text-gray-900 text-4xl sm:text-4xl font-bold font-spaceGrotesk leading-[1.1] tracking-tight">
             Help every viewer find the right session
           </h2>
-          <p className="text-gray-600 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Design seamless transition states. From agenda overview to the instant the speaker unmutes, govern how viewers change tracks, handle unexpected stream delays, and navigate access-controlled rooms.
           </p>
         </div>
@@ -56,10 +56,10 @@ export default function ConferenceAudienceView() {
           {cards.map((card, idx) => (
             <div 
               key={idx}
-              className="bg-white dark:bg-zinc-900/60 rounded-xl overflow-hidden shadow-sm border border-gray-200 dark:border-zinc-800/80 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Image box */}
-              <div className="relative h-56 sm:h-60 w-full bg-slate-100 dark:bg-zinc-950/40">
+              <div className="relative h-56 sm:h-60 w-full bg-slate-100">
                 <Image 
                   src={card.img} 
                   alt={card.title}
@@ -70,13 +70,13 @@ export default function ConferenceAudienceView() {
 
               {/* Content box */}
               <div className="p-6 flex-1 flex flex-col justify-start items-start gap-2.5">
-                <div className="text-teal-500 dark:text-teal-400 text-xs font-bold font-spaceGrotesk uppercase tracking-wider">
+                <div className="text-teal-500 text-xs font-bold font-spaceGrotesk uppercase tracking-wider">
                   {card.num}
                 </div>
-                <h3 className="text-slate-900 dark:text-white text-xl font-bold font-spaceGrotesk leading-tight">
+                <h3 className="text-slate-900 text-xl font-bold font-spaceGrotesk leading-tight">
                   {card.title}
                 </h3>
-                <p className="text-slate-500 dark:text-zinc-450 text-sm font-normal font-spaceGrotesk leading-relaxed">
+                <p className="text-slate-500 text-sm font-normal font-spaceGrotesk leading-relaxed">
                   {card.desc}
                 </p>
               </div>

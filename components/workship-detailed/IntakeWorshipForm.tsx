@@ -57,11 +57,11 @@ export default function IntakeWorshipForm() {
   return (
     <section 
       id="worship-intake-form"
-      className="w-full bg-cover  py-16 sm:py-24 bg-zinc-950 dark:bg-black text-white border-t border-slate-900 transition-colors duration-200"
+      className="w-full bg-cover  py-16 sm:py-24 bg-zinc-955 text-white border-t border-slate-900 transition-colors duration-200"
               style={{ backgroundImage: "url('/images/workship-detailed/image (33).png')" }}
 
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         {/* Left Side Info */}
         <div className="lg:col-span-5 flex flex-col justify-start items-start gap-8">
@@ -110,7 +110,7 @@ export default function IntakeWorshipForm() {
         </div>
 
         {/* Right Side Form Panel */}
-        <div className="lg:col-span-7 w-full p-6 sm:p-10 bg-gray-900 dark:bg-zinc-900 rounded-3xl border border-slate-800 shadow-[0_16px_32px_rgba(0,0,0,0.25)] transition-all">
+        <div className="lg:col-span-7 w-full p-6 sm:p-10 bg-gray-900 rounded-3xl border border-slate-800 shadow-[0_16px_32px_rgba(0,0,0,0.25)] transition-all">
           
           {formSubmitted ? (
             <div className="flex flex-col items-center justify-center text-center py-6 gap-6">
@@ -162,7 +162,7 @@ export default function IntakeWorshipForm() {
                         id="worshipPattern"
                         value={formData.worshipPattern}
                         onChange={(e) => setFormData({...formData, worshipPattern: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Recurring Weekly Service">Recurring Weekly Service</option>
                         <option value="One-time Special Service">One-time / Special Service</option>
@@ -176,7 +176,7 @@ export default function IntakeWorshipForm() {
                         id="worshipEventDate"
                         value={formData.eventDate}
                         onChange={(e) => setFormData({...formData, eventDate: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Not decided yet">Not decided yet</option>
                         <option value="Within 14 Days">Within 14 Days</option>
@@ -195,7 +195,7 @@ export default function IntakeWorshipForm() {
                         id="worshipDuration"
                         value={formData.duration}
                         onChange={(e) => setFormData({...formData, duration: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Under 60 minutes">Under 60 minutes</option>
                         <option value="60-90 minutes">60-90 minutes</option>
@@ -210,7 +210,7 @@ export default function IntakeWorshipForm() {
                         id="worshipVenue"
                         value={formData.venue}
                         onChange={(e) => setFormData({...formData, venue: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Sanctuary / Main Hall">Sanctuary / Main Hall</option>
                         <option value="Chapel / Auxiliary Hall">Chapel / Auxiliary Hall</option>
@@ -229,7 +229,7 @@ export default function IntakeWorshipForm() {
                         id="worshipAttendance"
                         value={formData.attendance}
                         onChange={(e) => setFormData({...formData, attendance: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Under 100 viewers">Under 100 viewers</option>
                         <option value="100 to 500 viewers">100 to 500 viewers</option>
@@ -244,7 +244,7 @@ export default function IntakeWorshipForm() {
                         id="worshipAccessSetting"
                         value={formData.accessSetting}
                         onChange={(e) => setFormData({...formData, accessSetting: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                       >
                         <option value="Private (invite-controlled)">Private (invite-controlled)</option>
                         <option value="Public (anyone with link)">Public (anyone with link)</option>
@@ -263,7 +263,7 @@ export default function IntakeWorshipForm() {
                       placeholder="Enter CCLI or equivalent broadcast license number if known..."
                       value={formData.licenseNumber}
                       onChange={(e) => setFormData({...formData, licenseNumber: e.target.value})}
-                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400"
+                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400"
                     />
                   </div>
 
@@ -298,7 +298,7 @@ export default function IntakeWorshipForm() {
                       placeholder="Coordinator Name"
                       value={formData.coordinatorName}
                       onChange={(e) => setFormData({...formData, coordinatorName: e.target.value})}
-                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-405"
+                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-450"
                     />
                   </div>
 
@@ -316,7 +316,7 @@ export default function IntakeWorshipForm() {
                         placeholder="email@example.com"
                         value={formData.coordinatorEmail}
                         onChange={(e) => setFormData({...formData, coordinatorEmail: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-405"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-450"
                       />
                     </div>
 
@@ -331,7 +331,7 @@ export default function IntakeWorshipForm() {
                         placeholder="+1 (555) 000-0000"
                         value={formData.coordinatorPhone}
                         onChange={(e) => setFormData({...formData, coordinatorPhone: e.target.value})}
-                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-405"
+                        className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-455"
                       />
                     </div>
 
@@ -345,7 +345,7 @@ export default function IntakeWorshipForm() {
                       placeholder="Detail any sound board outputs, camera models, or internet specs..."
                       value={formData.notes}
                       onChange={(e) => setFormData({...formData, notes: e.target.value})}
-                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 dark:text-white text-sm focus:outline-none focus:border-teal-400 resize-none"
+                      className="px-4 py-3 bg-gray-900 rounded-lg border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-teal-400 resize-none"
                     />
                     <div className="text-[10px] text-slate-500 flex items-center gap-1.5 mt-1">
                       <AlertCircle className="w-3.5 h-3.5 text-slate-650 shrink-0" />

@@ -17,7 +17,7 @@ export default function ConferenceAccessibility() {
       code: 'TRACK B · DEV OPS',
       title: 'Dynamic Failover Switch Drill',
       captions: { text: 'Ready', style: 'text-emerald-500 bg-emerald-500/10' },
-      signLang: { text: 'Unavailable', style: 'text-slate-400 bg-slate-400/10 dark:bg-zinc-800' },
+      signLang: { text: 'Unavailable', style: 'text-slate-400 bg-slate-400/10' },
       audioDesc: { text: 'Ready', style: 'text-emerald-500 bg-emerald-500/10' },
       auditor: 'Sarah Jenkins'
     },
@@ -26,7 +26,7 @@ export default function ConferenceAccessibility() {
       title: 'Designing High-Integrity Event Briefs',
       captions: { text: 'Needs Review', style: 'text-orange-400 bg-orange-500/10' },
       signLang: { text: 'Partial', style: 'text-blue-500 bg-blue-500/10' },
-      audioDesc: { text: 'Unavailable', style: 'text-slate-400 bg-slate-400/10 dark:bg-zinc-800' },
+      audioDesc: { text: 'Unavailable', style: 'text-slate-400 bg-slate-400/10' },
       auditor: 'Dave Holloway'
     },
     {
