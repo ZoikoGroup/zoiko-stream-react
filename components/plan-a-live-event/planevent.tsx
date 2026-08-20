@@ -367,7 +367,9 @@ export default function PlanLiveEventForm() {
               No account required. Do not include passwords, access keys, private attendee lists, or sensitive personal information.
             </div>
           </form>
-          {/* STEP 2 CONTENT */}
+        )}
+
+        {/* STEP 2 CONTENT */}
         {currentStep === 2 && (
           <form
             onSubmit={handleSubmit}
