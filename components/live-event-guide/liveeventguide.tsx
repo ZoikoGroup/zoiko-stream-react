@@ -303,7 +303,9 @@ export default function LiveEventsGuide() {
                   Submitting early with "date not fixed" is better than waiting — it lets planning conversations start sooner, without pretending a decision has been made.
                 </p>
               </div>
-                  {/* 3. Decide who can watch */}
+            </section>
+
+            {/* 3. Decide who can watch */}
             <section id="section-3" className="scroll-mt-24 space-y-4">
               <h2 className="  text-2xl font-bold text-zinc-900">
                 3. Decide who can watch
