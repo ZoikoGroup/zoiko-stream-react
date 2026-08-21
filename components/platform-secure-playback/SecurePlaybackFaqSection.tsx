@@ -41,7 +41,7 @@ const FAQS: Faq[] = [
 ];
 
 export default function SecurePlaybackFaqSection() {
-  const [openIndexes, setOpenIndexes] = useState<number[]>([0, 1, 2, 3, 4, 5]);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([]);
 
   const toggle = (index: number) =>
     setOpenIndexes((current) =>

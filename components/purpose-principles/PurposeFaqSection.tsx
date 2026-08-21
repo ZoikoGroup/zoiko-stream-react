@@ -31,7 +31,7 @@ const FAQS: Faq[] = [
 ];
 
 export default function PurposeFaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="w-full bg-[#EEF1F6]">

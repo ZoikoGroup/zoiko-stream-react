@@ -47,7 +47,7 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-  const [openItems, setOpenItems] = useState<number[]>(faqs.map((_, index) => index));
+  const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggle = (index: number) =>
     setOpenItems((current) =>

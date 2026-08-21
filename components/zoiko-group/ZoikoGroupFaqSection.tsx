@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+
 interface Faq {
   question: string;
   answer: string;
@@ -39,6 +41,11 @@ const FAQS: Faq[] = [
 ];
 
 export default function ZoikoGroupFaqSection() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggle = (index: number) =>
+    setOpenIndex((current) => (current === index ? null : index));
+
   return (
     <section className="w-full bg-white">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-8 lg:py-20">
@@ -56,15 +63,33 @@ export default function ZoikoGroupFaqSection() {
         </div>
 
         <div className="mt-8">
-          {FAQS.map((faq) => (
-            <div key={faq.question} className="border-b border-zinc-200 py-6">
-              <h3 className="text-base font-bold leading-7 text-neutral-700">
-                {faq.question}
-              </h3>
+          {FAQS.map((faq, index) => {
+            const isOpen = openIndex === index;
 
-              <p className="mt-3 text-sm leading-6 text-gray-500">{faq.answer}</p>
-            </div>
-          ))}
+            return (
+              <div key={faq.question} className="border-b border-zinc-200 py-6">
+                <button
+                  type="button"
+                  onClick={() => toggle(index)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-start justify-between gap-6 text-left"
+                >
+                  <h3 className="text-base font-bold leading-7 text-neutral-700">{faq.question}</h3>
+
+                  <span
+                    aria-hidden="true"
+                    className="shrink-0 text-lg font-normal leading-7 text-neutral-700"
+                  >
+                    {isOpen ? '−' : '+'}
+                  </span>
+                </button>
+
+                {isOpen && (
+                  <p className="mt-3 text-sm leading-6 text-gray-500">{faq.answer}</p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
