@@ -4,7 +4,7 @@ const fs = require('fs');
 
 async function main() {
   console.log("Connecting to MCP SSE server...");
-  const transport = new SSEClientTransport(new URL("http://127.0.0.1:3845/mcp"));
+  const transport = new SSEClientTransport(new URL("http://127.0.0.1:3845/sse"));
   const client = new Client({ name: "figma-fetcher", version: "1.0.0" }, { capabilities: {} });
   
   await client.connect(transport);
@@ -13,13 +13,13 @@ async function main() {
   const result = await client.callTool({
     name: "get_code",
     arguments: {
-      nodeId: "2289:1439",
+      nodeId: "2211:1050",
       framework: "react",
       styling: "tailwind"
     }
   });
   console.log("TOOL RESULT OK");
-  fs.writeFileSync('design_code_2289_1439.txt', JSON.stringify(result, null, 2));
+  fs.writeFileSync('design_code_2211_1050.txt', JSON.stringify(result, null, 2));
   process.exit(0);
 }
 
