@@ -45,7 +45,7 @@ export default function AudioPathRightsSection() {
             >
               {/* Card background image and overlay */}
               <div 
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105 opacity-35 blur-[1px]"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105  "
                 style={{ backgroundImage: `url('${card.bg}')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-85 group-hover:opacity-90 transition-opacity" />
@@ -54,7 +54,7 @@ export default function AudioPathRightsSection() {
                 <h3 className="text-white text-lg font-bold font-sans">
                   {card.title}
                 </h3>
-                <p className="text-slate-350 text-xs leading-relaxed">
+                <p className="text-white text-xs leading-relaxed">
                   {card.desc}
                 </p>
               </div>

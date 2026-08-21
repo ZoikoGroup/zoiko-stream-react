@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function LiveEventsHero() {
   const readinessItems = [
@@ -79,18 +80,20 @@ export default function LiveEventsHero() {
 
           {/* Call to Action Buttons */}
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <Link href="/plan-a-live-event">
             <button
               type="button"
               className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-[10px] text-zinc-950 text-base font-bold   hover:opacity-90 transition-opacity flex justify-center items-center"
             >
               Plan a live event
-            </button>
+            </button></Link>
+            <Link href="/talk-to-an-expert">
             <button
               type="button"
               className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-gray-500 hover:outline-gray-400 bg-slate-900/40 backdrop-blur-sm text-slate-100 dark:text-white text-base font-medium   transition-colors flex justify-center items-center"
             >
               Talk to an expert
-            </button>
+            </button></Link>
           </div>
         </div>
 

@@ -38,7 +38,7 @@ export default function MemorialsHero() {
               Start your event brief
             </button>
             <a 
-              href="#contact-expert"
+              href="/talk-to-an-expert"
               className="px-7 py-3.5 rounded-[10px] border border-gray-500 hover:bg-white/5 transition-colors text-slate-100 text-base font-bold text-center cursor-pointer"
             >
               Talk to an expert

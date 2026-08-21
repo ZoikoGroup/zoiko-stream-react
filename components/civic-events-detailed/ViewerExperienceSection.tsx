@@ -129,7 +129,7 @@ export default function ViewerExperienceSection() {
             <div className="flex items-center gap-2">
               <span className="text-teal-400 font-sans">Need assistance?</span>
               <a 
-                href="mailto:support@zoikostream.com" 
+                href="/faqs-and-support" 
                 className="text-white font-bold font-sans hover:underline"
               >
                 Access Help

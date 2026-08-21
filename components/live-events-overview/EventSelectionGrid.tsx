@@ -7,6 +7,7 @@ interface EventCategory {
   description: string;
   linkText: string;
   icon: string;
+  href: string;
 }
 
 export default function EventSelectionGrid() {
@@ -17,6 +18,7 @@ export default function EventSelectionGrid() {
         'A respectful path for services where reliability, privacy, and remote attendance need careful planning.',
       linkText: 'Explore →',
       icon: "/images/live-event-overview/flame.png",
+      href: "/memorials",
     },
     {
       title: 'Worship',
@@ -24,6 +26,7 @@ export default function EventSelectionGrid() {
         'Plan recurring or special services with production, access, captions, and support decisions visible.',
       linkText: 'Explore →',
       icon: "/images/live-event-overview/landmark.png",
+      href: "/workship-detailed",
     },
     {
       title: 'Weddings & celebrations',
@@ -31,6 +34,7 @@ export default function EventSelectionGrid() {
         'Choose private or shared viewing, contribution, replay, and guest-access options for the event you are hosting.',
       linkText: 'Explore →',
       icon: "/images/live-event-overview/heart.png",
+      href: "/wedding-celebration",
     },
     {
       title: 'Graduations',
@@ -38,6 +42,7 @@ export default function EventSelectionGrid() {
         'Plan a high-attendance ceremony with audience, accessibility, language, recording, and resilience needs considered early.',
       linkText: 'Explore →',
       icon: "/images/live-event-overview/award.png",
+      href: "/graduation-detailed",
     },
     {
       title: 'Corporate broadcasts',
@@ -45,6 +50,7 @@ export default function EventSelectionGrid() {
         'Coordinate leadership, town hall, launch, or internal broadcasts with controlled audience and operational workflows.',
       linkText: 'Explore →',
       icon: "/images/live-event-overview/video.png",
+      href: "/corporate-broadcast-detailed",
     },
     {
       title: 'Not sure where to start?',
@@ -52,6 +58,7 @@ export default function EventSelectionGrid() {
         "Explore the full Live Events overview and find the right planning path for your organization's unique requirements.",
       linkText: 'Explore →',
       icon: "/images/live-event-overview/briefcase.png",
+      href: "/plan-a-live-event",
     },
   ];
 
@@ -74,7 +81,7 @@ export default function EventSelectionGrid() {
           {categories.map((item, index) => (
             <a
               key={index}
-              href="#"
+              href={item.href}
               className="w-full p-6 sm:p-8 bg-white dark:bg-zinc-900/90 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 border border-teal-400/80 dark:border-teal-500/50 flex flex-col justify-between items-start gap-6 group"
             >
               <div className="w-full flex flex-col gap-4">

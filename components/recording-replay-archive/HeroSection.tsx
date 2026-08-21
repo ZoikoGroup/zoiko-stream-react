@@ -75,12 +75,13 @@ export default function HeroSection() {
             >
               Start your event brief
             </button>
+            <a href="/talk-to-an-expert">
             <button
               type="button"
               className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-gray-500 hover:outline-gray-400 bg-slate-900/40 backdrop-blur-sm text-slate-100 text-base font-medium transition-colors flex justify-center items-center"
             >
               Talk to an event expert
-            </button>
+            </button></a>
           </div>
 
           <hr className="w-full border-t border-gray-800" />

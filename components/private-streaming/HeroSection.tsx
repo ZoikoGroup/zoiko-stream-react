@@ -72,7 +72,7 @@ export default function HeroSection() {
 
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
             <Link
-              href="/plan-a-live-event"
+              href="#"
               className="px-6 py-3.5 rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 shadow-[0px_4px_16px_0px_rgba(51,217,199,0.20)] text-slate-950 text-base font-bold text-center hover:opacity-90 transition-opacity"
             >
               Start your event brief

@@ -99,9 +99,11 @@ export default function WorkflowRunOfShow() {
 
         {/* Bottom Button link */}
         <div className="flex justify-start pt-2">
+          <a href="/production-switching-graphics">
           <button className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 text-base font-bold font-spaceGrotesk">
             Explore Production, switching &amp; graphics
           </button>
+          </a>
         </div>
 
       </div>

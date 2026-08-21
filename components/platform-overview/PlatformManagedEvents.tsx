@@ -46,7 +46,7 @@ export default function PlatformManagedEvents() {
               Plan a live event
             </button>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="#"
               className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-100 hover:outline-teal-405 transition-colors text-slate-100 text-base font-medium"
             >
               Talk to an expert

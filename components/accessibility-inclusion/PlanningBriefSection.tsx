@@ -19,7 +19,7 @@ export default function PlanningBriefSection() {
   };
 
   return (
-    <section className="w-full bg-white px-6 md:px-12 xl:px-[112px] py-16 lg:py-24 flex flex-col gap-10 lg:gap-14">
+    <section id="accessibility-form" className="w-full bg-white px-6 md:px-12 xl:px-[112px] py-16 lg:py-24 flex flex-col gap-10 lg:gap-14">
       <div className="mx-auto w-full max-w-7xl flex flex-col gap-4">
         <h2 className="text-zinc-950 text-3xl sm:text-4xl font-bold leading-tight">
           Start with minimum data. Plan with maximum clarity.

@@ -64,14 +64,15 @@ export default function ManagedHero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto font-sans">
+            <a 
+              href="/plan-a-live-event">
             <button 
-              onClick={scrollToBrief}
               className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-[0px_4px_16px_rgba(51,217,199,0.25)] border-none text-center w-full sm:w-auto"
             >
               Plan a Live Event
-            </button>
+            </button></a>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="/talk-to-an-expert"
               className="px-7 py-3.5 rounded-lg border border-gray-500 bg-zinc-900/40 text-slate-100 text-base font-bold hover:bg-zinc-900/80 transition-colors cursor-pointer text-center w-full sm:w-auto"
             >
               Talk to an expert

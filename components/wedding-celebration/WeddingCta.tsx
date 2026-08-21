@@ -44,7 +44,7 @@ export default function WeddingCta({ onStartBrief }: WeddingCtaProps) {
             Start your event brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="/talk-to-an-expert"
             className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-400 bg-transparent transition-colors text-slate-105 text-base font-medium font-spaceGrotesk"
           >
             Talk to an event expert

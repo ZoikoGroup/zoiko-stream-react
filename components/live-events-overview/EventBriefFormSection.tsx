@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-
+import Link from 'next/link';
 export default function EventBriefFormSection() {
   return (
     <section className="w-full bg-slate-100 dark:bg-slate-900 text-zinc-900 dark:text-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 transition-colors duration-200">
@@ -127,12 +127,13 @@ export default function EventBriefFormSection() {
 
             {/* Bottom Actions Row */}
             <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pt-2">
+                <Link href="/plan-a-live-event">
               <button
                 type="submit"
                 className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-zinc-950 font-bold text-base   leading-6 hover:opacity-90 transition-opacity shrink-0"
               >
                 Plan a live event
-              </button>
+              </button></Link>
               <p className="max-w-xl text-slate-500 dark:text-slate-400 text-sm font-normal   leading-6">
                 We use this information to route your event to the right planning path. Do not include credentials or sensitive attendee data.
               </p>

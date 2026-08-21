@@ -3,10 +3,7 @@
 import React from 'react';
 
 export default function ManagedBriefSection() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you! Your live event brief has been simulated as submitted.');
-  };
+  
 
   return (
     <section 
@@ -17,7 +14,6 @@ export default function ManagedBriefSection() {
         
         {/* Left dashboard brief mockup card */}
         <form 
-          onSubmit={handleSubmit}
           className="w-full lg:flex-1 p-8 sm:p-10 bg-gray-900 text-white rounded-3xl border border-slate-800 flex flex-col gap-6 sm:gap-7 shadow-2xl"
         >
           <span className="text-slate-100 text-lg font-bold font-sans">

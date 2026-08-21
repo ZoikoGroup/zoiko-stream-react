@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function PreEventAndCtaSections() {
   const reviewedItems = [
@@ -102,18 +103,21 @@ export default function PreEventAndCtaSections() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-4">
+                <Link href="/plan-a-live-event">
               <button
                 type="button"
                 className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-zinc-950 text-base font-bold   leading-6 hover:opacity-90 transition-opacity"
               >
                 Plan a live event
-              </button>
+              </button></Link>
+               <Link href="/talk-to-an-expert">
+
               <button
                 type="button"
                 className="px-7 py-3.5 rounded-lg border border-gray-800 dark:border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 dark:text-white text-base font-bold   leading-6 transition-colors"
               >
                 Talk to an expert
-              </button>
+              </button></Link>
             </div>
 
             <p className="text-slate-500 dark:text-slate-400 text-sm font-normal   leading-relaxed">

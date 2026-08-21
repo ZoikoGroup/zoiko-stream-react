@@ -87,9 +87,10 @@ export default function WorkflowPostEvent() {
 
         {/* Explore button at bottom */}
         <div className="flex justify-start pt-2">
-          <button className="px-7 py-3.5 bg-gradient-to-r from-teal-450 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold font-spaceGrotesk rounded-[10px] cursor-pointer border-none shadow-md">
+          <a href="/recording-replay-archive">
+          <button className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold font-spaceGrotesk rounded-[10px] cursor-pointer border-none shadow-md">
             Explore Recording, replay &amp; archive
-          </button>
+          </button></a>
         </div>
 
       </div>

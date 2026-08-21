@@ -45,7 +45,7 @@ const ABOUT_ITEMS: MenuItem[] = [
   { title: 'Leadership', description: 'The people accountable for the platform', href: '/leadership', icon: Users },
   { title: 'Operating context', description: 'How the group fits together', href: '/company', icon: Building2 },
   { title: 'Zoiko Group', description: 'The parent organization', href: '/zoiko-group', icon: Building },
-  { title: 'Zoiko Tech', description: 'Where ZoikoStream is built', href: '/company', icon: Code2 },
+  { title: 'Zoiko Tech', description: 'Where ZoikoStream is built', href: '/zoiko-tech', icon: Code2 },
 ];
 
 const WORK_ITEMS: MenuItem[] = [

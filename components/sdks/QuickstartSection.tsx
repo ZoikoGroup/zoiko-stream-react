@@ -84,7 +84,7 @@ export default function QuickstartSection() {
 
       <div className="flex items-start justify-center w-full">
         <a
-          href="#"
+          href="/start-building"
           className="flex items-center justify-center px-7 py-3.5 rounded-[10px] border border-[#4f5e74] hover:bg-[rgba(10,13,19,0.05)] transition-colors"
         >
           <span className="font-medium text-[#0a0d13] text-[15px] whitespace-nowrap">

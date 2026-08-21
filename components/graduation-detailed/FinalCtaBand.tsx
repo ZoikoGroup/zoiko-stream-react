@@ -38,7 +38,7 @@ export default function FinalCtaBand() {
             Start your graduation brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="/talk-to-an-expert"
             className="px-7 py-3.5 rounded-lg border border-white/25 bg-zinc-900/40 text-slate-100 text-base font-bold hover:bg-zinc-900/80 transition-colors cursor-pointer w-full sm:w-auto text-center"
           >
             Talk to an event expert
@@ -47,7 +47,7 @@ export default function FinalCtaBand() {
 
         <div className="text-xs sm:text-sm text-gray-500 mt-2">
           Event already in progress?{' '}
-          <a href="mailto:support@zoikostream.com" className="text-cyan-400 hover:underline">
+          <a href="#" className="text-cyan-400 hover:underline">
             Active-event help &rarr;
           </a>
         </div>

@@ -37,7 +37,7 @@ export default function CorpCtaBand() {
               Start your corporate broadcast brief
             </button>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="/talk-to-an-expert"
               className="px-8 py-4 rounded-lg border border-gray-500 bg-zinc-900/40 text-slate-100 text-sm font-medium hover:bg-zinc-900/80 transition-colors cursor-pointer w-full sm:w-auto text-center"
             >
               Talk to an event expert

@@ -26,17 +26,21 @@ export default function FinalCtaSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-[16px] justify-center w-full">
-          <button className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] drop-shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity">
-            <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap leading-[normal]">
-              Start your event brief
-            </span>
-          </button>
+          <a href="/plan-a-live-event">
+            <button className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] drop-shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity">
+              <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap leading-[normal]">
+                Start your event brief
+              </span>
+            </button>
+          </a>
           
-          <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] rounded-[10px] bg-transparent hover:bg-[rgba(255,255,255,0.05)] transition-colors">
-            <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap leading-[normal]">
-              Talk to an expert
-            </span>
-          </button>
+          <a href="/talk-to-an-expert">
+            <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] rounded-[10px] bg-transparent hover:bg-[rgba(255,255,255,0.05)] transition-colors">
+              <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap leading-[normal]">
+                Talk to an expert
+              </span>
+            </button>
+          </a>
         </div>
 
         <p className="font-space-grotesk font-normal text-[#707a8c] text-[13px] leading-[normal] w-full">

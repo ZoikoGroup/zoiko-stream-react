@@ -96,7 +96,7 @@ export default function ResourcesDropdown() {
 
               <div className="relative z-10 space-y-4">
                 <div className="flex h-24 items-center justify-center rounded-xl p-3 sm:h-28">
-                 <img src="/images/header/Overlay+Border (1).png"></img>
+                 <img src="/images/header/OverlayBorder (1).png"></img>
                 </div>
 
                 <div className="space-y-2">

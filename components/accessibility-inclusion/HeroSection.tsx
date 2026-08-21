@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 type ReadinessState = 'VERIFIED' | 'PLANNED' | 'CHANGED' | 'LIMITATION' | 'UNAVAILABLE';
@@ -24,6 +26,13 @@ const stateStyles: Record<ReadinessState, string> = {
 };
 
 export default function HeroSection() {
+  const scrollToForm = () => {
+    const element = document.getElementById('accessibility-form');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
       className="relative w-full overflow-hidden bg-neutral-900 border-b border-gray-800 bg-cover bg-center px-6 md:px-12 xl:px-[112px] py-16 lg:py-24"
@@ -50,12 +59,12 @@ export default function HeroSection() {
           </p>
 
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <Link
-              href="/plan-a-live-event"
-              className="px-6 py-3.5 rounded-[10px] bg-gradient-to-b from-teal-400 to-blue-500 text-slate-950 text-base font-bold text-center hover:opacity-90 transition-opacity"
+            <button
+              onClick={scrollToForm}
+              className="px-6 py-3.5 rounded-[10px] bg-gradient-to-b from-teal-400 to-blue-500 text-slate-950 text-base font-bold text-center hover:opacity-90 transition-opacity cursor-pointer border-none"
             >
               Plan accessibility
-            </Link>
+            </button>
             <Link
               href="/talk-to-an-expert"
               className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-slate-200 text-slate-100 text-base font-medium text-center transition-colors"

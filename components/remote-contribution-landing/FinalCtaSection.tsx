@@ -31,6 +31,7 @@ export default function FinalCtaSection() {
         {/* Action Row */}
         <div className="flex items-center justify-center" style={{ gap: '16px' }}>
           {/* Primary Button */}
+          <a href="/plan-a-live-event">
           <button
             className="flex items-center justify-center shrink-0"
             style={{
@@ -43,9 +44,10 @@ export default function FinalCtaSection() {
             <span className="font-space-grotesk font-bold whitespace-nowrap" style={{ color: '#04141a', fontSize: '15px' }}>
               Plan a live event
             </span>
-          </button>
+          </button></a>
 
           {/* Secondary Outline Button */}
+          <a href="/talk-to-an-expert">
           <button
             className="flex items-center justify-center shrink-0 border"
             style={{
@@ -59,7 +61,7 @@ export default function FinalCtaSection() {
             <span className="font-space-grotesk font-bold whitespace-nowrap" style={{ color: '#ffffff', fontSize: '15px' }}>
               Talk to an expert
             </span>
-          </button>
+          </button></a>
         </div>
 
       </div>

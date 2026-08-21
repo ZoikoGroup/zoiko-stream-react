@@ -86,9 +86,10 @@ export default function WorkflowResilience() {
 
         {/* Bottom Button */}
         <div className="flex justify-start pt-2">
+          <a href="/event-resilience">
           <button className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-405 transition-colors text-white text-base font-bold font-spaceGrotesk bg-transparent">
             Explore Event resilience
-          </button>
+          </button></a>
         </div>
 
       </div>

@@ -25,6 +25,7 @@ import {
   RotateCcw,
   Zap,
   Briefcase,
+  Router,
 } from 'lucide-react';
 
 type MenuItem = {
@@ -165,7 +166,7 @@ export default function LiveEventsDropdown() {
               type="button"
               className="flex h-8 cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 text-xs font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700"
             >
-              <Search className="h-3.5 w-3.5 text-slate-400 dark:text-gray-500" />
+              <img className="h-3.5 w-3.5 "src="/images/header/SVG (3).svg" />
               <span>{tag}</span>
             </button>
           ))}
@@ -191,11 +192,11 @@ export default function LiveEventsDropdown() {
               <Radio className="h-3 w-3 text-violet-600 dark:text-violet-400" />
               Live Events overview
             </Link>
-            <Link href="/products" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
+            <Link href="/secure-audience-access" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
               <ShieldCheck className="h-3 w-3 text-violet-600 dark:text-violet-400" />
               Security
             </Link>
-            <Link href="/about-us" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
+            <Link href="/talk-to-an-expert" className="inline-flex items-center gap-1.5 transition-colors hover:text-violet-600 dark:hover:text-violet-400">
               <Headphones className="h-3 w-3 text-violet-600 dark:text-violet-400" />
               Expert support
             </Link>

@@ -51,7 +51,7 @@ export default function CorpHero() {
               Start your corporate broadcast brief
             </button>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="/talk-to-an-expert"
               className="px-7 py-3.5 rounded-[10px] border border-gray-500 bg-zinc-900/40 text-slate-100 text-base font-bold hover:bg-zinc-900/80 transition-colors cursor-pointer text-center"
             >
               Talk to an event expert

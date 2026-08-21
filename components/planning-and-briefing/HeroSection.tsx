@@ -61,17 +61,20 @@ export default function HeroSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-[16px] items-start">
-          <button className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity w-full sm:w-auto">
-            <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap">
-              Start your event brief
-            </span>
-          </button>
-          
-          <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] bg-transparent rounded-[10px] hover:bg-white/5 transition-colors w-full sm:w-auto">
-            <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">
-              Talk to an expert
-            </span>
-          </button>
+          <a href="/plan-a-live-event" className="w-full sm:w-auto">
+            <button className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity w-full sm:w-auto">
+              <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap">
+                Start your event brief
+              </span>
+            </button>
+          </a>
+          <a href="/talk-to-an-expert">
+            <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] bg-transparent rounded-[10px] hover:bg-white/5 transition-colors w-full sm:w-auto">
+              <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">
+                Talk to an expert
+              </span>
+            </button>
+          </a>
         </div>
 
         {/* Trust Stats */}

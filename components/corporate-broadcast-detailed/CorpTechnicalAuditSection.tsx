@@ -85,9 +85,9 @@ export default function CorpTechnicalAuditSection() {
             </p>
             
             <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto font-sans">
-              <button className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer border-none shadow-[0px_4px_16px_rgba(51,217,199,0.20)]">
+              <a href="#" className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer border-none shadow-[0px_4px_16px_rgba(51,217,199,0.20)]">
                 Get active-event help
-              </button>
+              </a>
               <button className="px-7 py-3.5 rounded-lg border border-gray-800 bg-white text-gray-800 text-sm font-medium hover:bg-slate-50 transition-colors cursor-pointer text-center">
                 View fallback documentation
               </button>

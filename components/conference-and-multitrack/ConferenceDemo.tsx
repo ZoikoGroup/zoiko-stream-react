@@ -62,18 +62,18 @@ export default function ConferenceDemo() {
 
             {/* Action buttons */}
             <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto pt-2">
+              <a href="/plan-a-live-event">
               <button 
-                onClick={() => scrollToSection('conference-brief-section')}
                 className="px-6 py-3 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-955 text-sm font-bold font-spaceGrotesk rounded-[10px] cursor-pointer border-none"
               >
                 Plan a Live Event
-              </button>
+              </button></a>
+              <a href="/talk-to-an-expert">
               <button 
-                onClick={() => scrollToSection('conference-brief-section')}
                 className="px-6 py-3 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-gray-200 bg-transparent hover:outline-teal-400 transition-colors text-gray-900 text-sm font-medium font-spaceGrotesk cursor-pointer"
               >
                 Talk to an expert
-              </button>
+              </button></a>
             </div>
           </div>
         </div>

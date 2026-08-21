@@ -28,17 +28,17 @@ export default function CtaSection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-[16px] items-center justify-center">
-          <button className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#34d4ca] to-[#4a8cfb] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity w-full sm:w-auto">
+          <a href="/plan-a-live-event" className="flex items-center justify-center px-[26px] py-[14px] bg-gradient-to-r from-[#34d4ca] to-[#4a8cfb] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity w-full sm:w-auto">
             <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap">
               Start your event brief
             </span>
-          </button>
+          </a>
           
-          <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] bg-transparent rounded-[10px] hover:bg-white/5 transition-colors w-full sm:w-auto">
+          <a href="/talk-to-an-expert" className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] bg-transparent rounded-[10px] hover:bg-white/5 transition-colors w-full sm:w-auto">
             <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">
               Talk to an event expert
             </span>
-          </button>
+          </a>
         </div>
 
       </div>

@@ -51,13 +51,13 @@ export default function HeroSection() {
 
           <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
             <Link
-              href="/talk-to-an-expert"
+              href="#"
               className="px-6 py-3.5 rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 text-slate-950 text-base font-bold text-center hover:opacity-90 transition-opacity"
             >
               Discuss Assured Event
             </Link>
             <Link
-              href="/plan-a-live-event"
+              href="#"
               className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-slate-200 bg-slate-900/40 backdrop-blur-sm text-slate-100 text-base font-medium text-center transition-colors"
             >
               Start your event brief

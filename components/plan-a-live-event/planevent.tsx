@@ -629,13 +629,13 @@ export default function PlanLiveEventForm() {
           <a href="#" className="text-gray-500 text-xs hover:underline">
             Privacy
           </a>
-          <a href="#" className="text-gray-500 text-xs hover:underline">
+          <a href="/accessibility-inclusion" className="text-gray-500 text-xs hover:underline">
             Accessibility
           </a>
-          <a href="#" className="text-gray-500 text-xs hover:underline">
+          <a href="/platform-delivery-and-trust-overview" className="text-gray-500 text-xs hover:underline">
             Security
           </a>
-          <a href="#" className="text-gray-500 text-xs hover:underline">
+          <a href="/faqs-and-support" className="text-gray-500 text-xs hover:underline">
             Live Events FAQs
           </a>
         </div>
