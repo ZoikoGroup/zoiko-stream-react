@@ -32,10 +32,10 @@ export default function CorpBriefSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-white text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-white text-4xl font-bold   leading-[60.80px]">
             Start your corporate broadcast brief
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-400 text-lg font-normal   leading-7">
             Submit your event requirements and reserve transcoding capacity. Our team will review your brief and configure a tailored broadcast environment matched to your organization's security, accessibility, and scale needs.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function CorpBriefSection() {
           {isSubmitted ? (
             <div className="w-full py-12 flex flex-col items-center justify-center text-center gap-4">
               <span className="text-teal-400 text-5xl">✓</span>
-              <h3 className="text-white text-2xl font-bold font-['Space_Grotesk']">
+              <h3 className="text-white text-2xl font-bold  ">
                 Thank you! Your brief is submitted.
               </h3>
               <p className="text-slate-455 text-sm max-w-md">
@@ -65,26 +65,26 @@ export default function CorpBriefSection() {
               {/* Row 1 */}
               <div className="w-full flex flex-col md:flex-row justify-start items-start gap-6">
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Organization name
                   </label>
                   <input 
                     type="text"
                     value={formData.orgName}
                     onChange={(e) => setFormData({ ...formData, orgName: e.target.value })}
-                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal font-['Space_Grotesk'] focus:outline-none focus:border-teal-500 transition-colors"
+                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal   focus:outline-none focus:border-teal-500 transition-colors"
                   />
                 </div>
 
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Event type
                   </label>
                   <div className="w-full h-12 bg-zinc-950 rounded-lg border border-slate-800 inline-flex justify-between items-center px-4 relative">
                     <select 
                       value={formData.eventType}
                       onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-                      className="w-full h-full bg-transparent text-slate-105 text-sm font-normal font-['Space_Grotesk'] focus:outline-none cursor-pointer appearance-none pr-8"
+                      className="w-full h-full bg-transparent text-slate-105 text-sm font-normal   focus:outline-none cursor-pointer appearance-none pr-8"
                     >
                       <option className="bg-zinc-900">Corporate Town Hall / Webcast</option>
                       <option className="bg-zinc-900">Earnings Call & Webcasts</option>
@@ -99,26 +99,26 @@ export default function CorpBriefSection() {
               {/* Row 2 */}
               <div className="w-full flex flex-col md:flex-row justify-start items-start gap-6">
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Expected audience size
                   </label>
                   <input 
                     type="text"
                     value={formData.audienceSize}
                     onChange={(e) => setFormData({ ...formData, audienceSize: e.target.value })}
-                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal font-['Space_Grotesk'] focus:outline-none focus:border-teal-500 transition-colors"
+                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal   focus:outline-none focus:border-teal-500 transition-colors"
                   />
                 </div>
 
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Preferred date
                   </label>
                   <input 
                     type="text"
                     value={formData.preferredDate}
                     onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal font-['Space_Grotesk'] focus:outline-none focus:border-teal-500 transition-colors"
+                    className="w-full h-12 px-4 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal   focus:outline-none focus:border-teal-500 transition-colors"
                   />
                 </div>
               </div>
@@ -126,14 +126,14 @@ export default function CorpBriefSection() {
               {/* Row 3 */}
               <div className="w-full flex flex-col md:flex-row justify-start items-start gap-6">
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Access model
                   </label>
                   <div className="w-full h-12 bg-zinc-950 rounded-lg border border-slate-800 inline-flex justify-between items-center px-4 relative">
                     <select 
                       value={formData.accessModel}
                       onChange={(e) => setFormData({ ...formData, accessModel: e.target.value })}
-                      className="w-full h-full bg-transparent text-slate-105 text-sm font-normal font-['Space_Grotesk'] focus:outline-none cursor-pointer appearance-none pr-8"
+                      className="w-full h-full bg-transparent text-slate-105 text-sm font-normal   focus:outline-none cursor-pointer appearance-none pr-8"
                     >
                       <option className="bg-zinc-900">Authenticated SSO Enforced</option>
                       <option className="bg-zinc-900">Invite-Only Restricted Link</option>
@@ -145,21 +145,21 @@ export default function CorpBriefSection() {
                 </div>
 
                 <div className="flex-1 w-full inline-flex flex-col justify-start items-start gap-2">
-                  <label className="text-white text-sm font-bold font-['Space_Grotesk']">
+                  <label className="text-white text-sm font-bold  ">
                     Additional requirements
                   </label>
                   <textarea 
                     value={formData.additionalReqs}
                     onChange={(e) => setFormData({ ...formData, additionalReqs: e.target.value })}
                     rows={1}
-                    className="w-full h-12 px-4 pt-3 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal font-['Space_Grotesk'] focus:outline-none focus:border-teal-500 transition-colors resize-none overflow-hidden"
+                    className="w-full h-12 px-4 pt-3 bg-zinc-950 rounded-lg border border-slate-800 text-slate-100 text-sm font-normal   focus:outline-none focus:border-teal-500 transition-colors resize-none overflow-hidden"
                   />
                 </div>
               </div>
 
               {/* Form Footer */}
               <div className="w-full pt-4 border-t border-slate-850 inline-flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                <span className="text-slate-450 text-sm font-normal font-['Space_Grotesk'] leading-6">
+                <span className="text-slate-450 text-sm font-normal   leading-6">
                   Your brief will reserve transcoding allocation. No payment details required.
                 </span>
                 

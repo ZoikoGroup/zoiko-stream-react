@@ -46,11 +46,11 @@ export default function ChooseLiveWorkflow() {
     >
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-12">
         <div className="flex flex-col items-start gap-3">
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold text-[#0F1B2D] sm:text-4xl">
+          <h2 className="  text-3xl font-bold text-[#0F1B2D] sm:text-4xl">
             Choose your live workflow
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-lg font-normal text-[#4F5E74]">
+          <p className="  text-lg font-normal text-[#4F5E74]">
             Find the right path for your live video needs
           </p>
         </div>
@@ -72,17 +72,17 @@ export default function ChooseLiveWorkflow() {
               </div>
 
               <div className="flex flex-col items-start gap-3 p-6">
-                <h3 className="font-['Space_Grotesk'] text-xl font-bold text-[#0F1B2D]">
+                <h3 className="  text-xl font-bold text-[#0F1B2D]">
                   {card.title}
                 </h3>
 
-                <p className="font-['Space_Grotesk'] text-sm font-normal leading-5 text-[#4F5E74]">
+                <p className="  text-sm font-normal leading-5 text-[#4F5E74]">
                   {card.description}
                 </p>
 
                 <Link
                   href={card.href}
-                  className="pt-2 font-['Space_Grotesk'] text-sm font-bold text-[#4C86FF] transition-opacity hover:opacity-75"
+                  className="pt-2   text-sm font-bold text-[#4C86FF] transition-opacity hover:opacity-75"
                 >
                   Learn more →
                 </Link>

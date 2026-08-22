@@ -56,11 +56,11 @@ export default function RecordReplayPreserve() {
 
         {/* Heading */}
         <div className="flex w-full flex-col items-start gap-4">
-          <h2 className="w-full font-['Space_Grotesk'] text-4xl font-bold leading-[60.8px] text-slate-900">
+          <h2 className="w-full   text-4xl font-bold leading-[60.8px] text-slate-900">
             Record, replay, and preserve
           </h2>
 
-          <p className="w-full font-['Space_Grotesk'] text-lg font-normal leading-7 text-slate-600">
+          <p className="w-full   text-lg font-normal leading-7 text-slate-600">
             Post-live continuity requires separate authorization and retention
             decisions mapped during event setup.
           </p>
@@ -78,18 +78,18 @@ export default function RecordReplayPreserve() {
               >
                 {/* Text */}
                 <div className="flex min-w-0 flex-1 flex-col items-start gap-1">
-                  <h3 className="font-['Space_Grotesk'] text-base font-bold text-slate-900">
+                  <h3 className="  text-base font-bold text-slate-900">
                     {item.title}
                   </h3>
 
-                  <p className="w-full font-['Space_Grotesk'] text-xs font-normal leading-5 text-slate-600">
+                  <p className="w-full   text-xs font-normal leading-5 text-slate-600">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Status */}
                 <div
-                  className={`shrink-0 rounded-full border px-2.5 py-1 font-['Space_Grotesk'] text-xs font-bold ${item.statusStyle}`}
+                  className={`shrink-0 rounded-full border px-2.5 py-1   text-xs font-bold ${item.statusStyle}`}
                 >
                   {item.status}
                 </div>
@@ -128,7 +128,7 @@ export default function RecordReplayPreserve() {
           {/* Primary Button */}
           <Link
             href="/recording-replay-archive"
-            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5 font-['Space_Grotesk'] text-base font-bold text-slate-950 transition-opacity duration-200 hover:opacity-90"
+            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5   text-base font-bold text-slate-950 transition-opacity duration-200 hover:opacity-90"
           >
             Manage Recordings
           </Link>
@@ -136,7 +136,7 @@ export default function RecordReplayPreserve() {
           {/* Secondary Button */}
           <Link
             href="/recording-replay-archive"
-            className="rounded-[10px] border border-slate-600 px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
+            className="rounded-[10px] border border-slate-600 px-7 py-3.5   text-base font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
           >
             Explore VOD Pipeline
           </Link>

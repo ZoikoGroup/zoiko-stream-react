@@ -47,10 +47,10 @@ export default function AdaptiveDeliverySection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             Adaptive Delivery and Verified Distribution
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
             Delivery outcomes depend on conditions — media, network, player, geography, and policy
           </p>
         </div>
@@ -64,11 +64,11 @@ export default function AdaptiveDeliverySection() {
                 className="p-4 bg-slate-900/50 rounded-lg border border-gray-800 flex items-center gap-5"
               >
                 <div className="w-28 px-2.5 py-1 bg-teal-400/10 rounded border border-teal-400/20 text-center shrink-0">
-                  <span className="text-teal-400 text-xs font-bold font-['Inter']">
+                  <span className="text-teal-400 text-xs font-bold  ">
                     {item.tag}
                   </span>
                 </div>
-                <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-xs font-normal   leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -79,10 +79,10 @@ export default function AdaptiveDeliverySection() {
           <div className="lg:col-span-5">
             <div className="p-7 bg-zinc-900/80 rounded-2xl border border-gray-800 flex flex-col gap-5 backdrop-blur-md">
               <div className="flex justify-between items-center pb-2 border-b border-gray-800">
-                <span className="text-white text-sm font-bold font-['Space_Grotesk'] tracking-wide">
+                <span className="text-white text-sm font-bold   tracking-wide">
                   VERIFIED DISTRIBUTION SCOPES
                 </span>
-                <span className="px-2 py-0.5 bg-emerald-600/10 text-emerald-400 text-xs font-bold font-['Inter'] rounded">
+                <span className="px-2 py-0.5 bg-emerald-600/10 text-emerald-400 text-xs font-bold   rounded">
                   ACTIVE SCOPES
                 </span>
               </div>
@@ -94,14 +94,14 @@ export default function AdaptiveDeliverySection() {
                     className="p-3 bg-slate-900/50 rounded-lg border border-gray-800 flex justify-between items-center"
                   >
                     <div className="flex flex-col">
-                      <span className="text-white text-sm font-semibold font-['Inter']">
+                      <span className="text-white text-sm font-semibold  ">
                         {sc.region}
                       </span>
-                      <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                      <span className="text-slate-400 text-xs font-normal  ">
                         {sc.status}
                       </span>
                     </div>
-                    <span className="text-teal-400 text-xs font-normal font-['Space_Grotesk']">
+                    <span className="text-teal-400 text-xs font-normal  ">
                       {sc.ping}
                     </span>
                   </div>
@@ -109,10 +109,10 @@ export default function AdaptiveDeliverySection() {
               </div>
 
               <div className="p-4 bg-amber-100/90 rounded-lg border border-amber-500 flex flex-col gap-1 text-slate-950">
-                <span className="text-amber-900 text-xs font-bold font-['Inter']">
+                <span className="text-amber-900 text-xs font-bold  ">
                   ⚠ Geographical Policy Restrictions Active
                 </span>
-                <span className="text-amber-800 text-xs font-normal font-['Inter'] leading-relaxed">
+                <span className="text-amber-800 text-xs font-normal   leading-relaxed">
                   Regional distribution rules are assessed continuously at connection handshake. Decryption failover is restricted outside whitelisted zones.
                 </span>
               </div>

@@ -56,7 +56,7 @@ export default function PlaybackAuthorizationContentProtectionSection() {
                   <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk']">
                     {item.q}
                   </h3>
-                  <p className="text-slate-600 text-base font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-base font-normal   leading-relaxed">
                     {item.a}
                   </p>
                 </div>
@@ -72,30 +72,30 @@ export default function PlaybackAuthorizationContentProtectionSection() {
                 <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                   Playback standards
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   Every secure playback session is validated at the edge against these primary security baselines.
                 </p>
               </div>
 
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Required DRM standard</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Required DRM standard</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">Widevine L1 / FairPlay</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Token signature algorithm</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Token signature algorithm</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">RS256 (Asymmetric)</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Token expiry window</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Token expiry window</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">≤ 15 minutes</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Revocation latency</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Revocation latency</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">≤ 5 seconds</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Default stream concurrency</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Default stream concurrency</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">3 concurrent streams</span>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function PlaybackAuthorizationContentProtectionSection() {
                 <span className="text-white text-base font-bold font-['Space_Grotesk']">
                   Revocation clause
                 </span>
-                <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                   Token validation occurs at every chunk request, ensuring revocation takes effect almost instantly.
                 </p>
               </div>
@@ -119,7 +119,7 @@ export default function PlaybackAuthorizationContentProtectionSection() {
                 <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                   Referrer defense rule
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   The visible descriptor <span className="text-teal-400 font-bold">&quot;Referrer checking&quot;</span> is insufficient. Production integrations must require signed playback tokens to prevent browser header spoofing and hotlinking.
                 </p>
               </div>

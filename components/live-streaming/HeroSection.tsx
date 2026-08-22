@@ -40,19 +40,19 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border border-[#00D4AA] px-3 py-1.5">
             <div className="h-1.5 w-1.5 rounded-full bg-[#00D4AA]" />
 
-            <span className="font-['Space_Grotesk'] text-xs font-bold uppercase tracking-wide text-[#00D4AA]">
+            <span className="  text-xs font-bold uppercase tracking-wide text-[#00D4AA]">
               Platform / Live Streaming
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="w-full max-w-[650px] font-['Space_Grotesk'] text-4xl font-bold leading-tight text-[#EEF1F6] sm:text-5xl sm:leading-[62px]">
+          <h1 className="w-full max-w-[650px]   text-4xl font-bold leading-tight text-[#EEF1F6] sm:text-5xl sm:leading-[62px]">
             Build and operate live video workflows across the complete media
             lifecycle.
           </h1>
 
           {/* Description */}
-          <p className="w-full max-w-[650px] font-['Space_Grotesk'] text-base font-normal leading-6 text-[#707A8C]">
+          <p className="w-full max-w-[650px]   text-base font-normal leading-6 text-[#707A8C]">
             ZoikoStream Live streaming explains how approved sources enter a
             live workflow, how sessions are operated and secured, how
             audiences receive playback, and how teams observe and recover.
@@ -62,14 +62,14 @@ export default function HeroSection() {
           <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
             <Link
               href="/plan-a-live-event"
-              className="rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4F80FF] px-6 py-3.5 text-center font-['Space_Grotesk'] text-base font-bold text-[#04141A] transition-opacity hover:opacity-90"
+              className="rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4F80FF] px-6 py-3.5 text-center   text-base font-bold text-[#04141A] transition-opacity hover:opacity-90"
             >
               Start your event brief
             </Link>
 
             <Link
               href="/talk-to-an-expert"
-              className="rounded-[10px] border border-[#707A8C] px-7 py-3.5 text-center font-['Space_Grotesk'] text-base font-medium text-[#AAB3C4] transition-colors hover:border-[#EEF1F6] hover:text-white"
+              className="rounded-[10px] border border-[#707A8C] px-7 py-3.5 text-center   text-base font-medium text-[#AAB3C4] transition-colors hover:border-[#EEF1F6] hover:text-white"
             >
               Talk to an event expert
             </Link>
@@ -77,7 +77,7 @@ export default function HeroSection() {
 
           {/* Disclaimer */}
           <div className="w-full max-w-[650px] border-t border-[#232B3A] pt-4">
-            <p className="font-['Space_Grotesk'] text-xs font-normal leading-5 text-[#707A8C]">
+            <p className="  text-xs font-normal leading-5 text-[#707A8C]">
               Exact protocols, formats, regions, limits, access models, and
               operational commitments depend on current approved capabilities.
             </p>
@@ -128,7 +128,7 @@ export default function HeroSection() {
                   </div>
 
                   <span
-                    className={`whitespace-nowrap text-center font-['Space_Grotesk'] text-[10px] font-normal ${
+                    className={`whitespace-nowrap text-center   text-[10px] font-normal ${
                       stage.active
                         ? "text-[#00D4AA]"
                         : "text-[#707A8C]"
@@ -154,11 +154,11 @@ export default function HeroSection() {
 
           {/* Bottom Status */}
           <div className="mt-4 flex items-center justify-between gap-4 pt-1">
-            <span className="font-['Space_Grotesk'] text-xs font-bold text-[#EEF1F6]">
+            <span className="  text-xs font-bold text-[#EEF1F6]">
               Verified RTMP / SRT Ingest Active
             </span>
 
-            <span className="font-['Space_Grotesk'] text-xs font-normal text-[#00D4AA]">
+            <span className="  text-xs font-normal text-[#00D4AA]">
               Stream Status: Healthy
             </span>
           </div>

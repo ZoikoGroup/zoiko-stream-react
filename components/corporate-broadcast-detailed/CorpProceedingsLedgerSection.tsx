@@ -42,7 +42,7 @@ export default function CorpProceedingsLedgerSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-slate-900 text-4xl font-bold font-['Space_Grotesk'] leading-tight">
+          <h2 className="text-slate-900 text-4xl font-bold   leading-tight">
             Stream capabilities engineered for enterprise scale
           </h2>
         </div>
@@ -62,10 +62,10 @@ export default function CorpProceedingsLedgerSection() {
                 />
               </div>
               <div className="self-stretch p-6 flex flex-col justify-start items-start gap-3">
-                <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
+                <h3 className="text-slate-900 text-lg font-bold  ">
                   {c.title}
                 </h3>
-                <p className="self-stretch text-slate-600 text-sm font-normal font-['Space_Grotesk'] leading-5">
+                <p className="self-stretch text-slate-600 text-sm font-normal   leading-5">
                   {c.desc}
                 </p>
               </div>

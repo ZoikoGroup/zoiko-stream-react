@@ -31,7 +31,7 @@ export default function HeroSection() {
               Qualified media protocol paths for connecting approved sources
             </h1>
 
-            <p className="text-slate-400 text-base md:text-lg font-normal font-['Inter'] leading-relaxed">
+            <p className="text-slate-400 text-base md:text-lg font-normal   leading-relaxed">
               Identify verified connection paths for approved contribution or transport workflows. Understand endpoint, authorization, media, network, and operational conditions before integration.
             </p>
 
@@ -61,10 +61,10 @@ export default function HeroSection() {
               <div className="flex flex-col gap-3.5">
                 <div className="p-3.5 bg-slate-900/60 rounded-lg border border-gray-800 flex justify-between items-start">
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-semibold font-['Inter']">
+                    <span className="text-white text-sm font-semibold  ">
                       1. Media Source
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       On-premise Encoder, Camera, Browser
                     </span>
                   </div>
@@ -75,10 +75,10 @@ export default function HeroSection() {
 
                 <div className="p-3.5 bg-slate-900/60 rounded-lg border border-teal-400 flex justify-between items-start">
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-semibold font-['Inter']">
+                    <span className="text-white text-sm font-semibold  ">
                       2. Qualified Protocol Boundary
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       SRT, RTMPS, WHIP Handshake
                     </span>
                   </div>
@@ -89,10 +89,10 @@ export default function HeroSection() {
 
                 <div className="p-3.5 bg-slate-900/60 rounded-lg border border-gray-800 flex justify-between items-start">
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-semibold font-['Inter']">
+                    <span className="text-white text-sm font-semibold  ">
                       3. Approved Platform Ingress
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       ZoikoStream Regional Endpoint
                     </span>
                   </div>
@@ -103,10 +103,10 @@ export default function HeroSection() {
 
                 <div className="p-3.5 bg-slate-900/60 rounded-lg border border-gray-800 flex justify-between items-start">
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-semibold font-['Inter']">
+                    <span className="text-white text-sm font-semibold  ">
                       4. Observable Connection State
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       Real-time Telemetry Registry
                     </span>
                   </div>

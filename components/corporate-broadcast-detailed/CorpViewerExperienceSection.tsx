@@ -31,10 +31,10 @@ export default function CorpViewerExperienceSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-100 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-100 text-4xl font-bold   leading-[60.80px]">
             Viewer landing screen and recovery
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-400 text-lg font-normal   leading-7">
             Shape the first impression and ensure uninterrupted viewing. The landing screen sets session context, language preferences, and live status while built-in recovery procedures handle drift, failover, and transcoder continuity automatically.
           </p>
         </div>
@@ -44,17 +44,17 @@ export default function CorpViewerExperienceSection() {
           
           <div className="self-stretch inline-flex justify-between items-center">
             <div className="inline-flex flex-col justify-start items-start gap-1">
-              <div className="text-slate-100 text-lg font-bold font-['Space_Grotesk']">
+              <div className="text-slate-100 text-lg font-bold  ">
                 Annual Corporate All-Hands
               </div>
-              <div className="text-slate-400 text-xs font-normal font-['Space_Grotesk']">
+              <div className="text-slate-400 text-xs font-normal  ">
                 Q1 Strategy Session
               </div>
             </div>
             
             <div className="px-4 py-1.5 bg-red-500 rounded-[20px] flex justify-start items-center gap-2">
               <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-              <div className="text-zinc-950 text-xs font-bold font-['Space_Grotesk']">
+              <div className="text-zinc-950 text-xs font-bold  ">
                 LIVE
               </div>
             </div>
@@ -73,25 +73,25 @@ export default function CorpViewerExperienceSection() {
 
             {/* Q&A Column */}
             <div className="w-full lg:w-96 self-stretch p-5 bg-zinc-950/80 rounded-lg border border-slate-800 flex flex-col justify-start items-start gap-4">
-              <div className="text-slate-100 text-base font-bold font-['Space_Grotesk']">
+              <div className="text-slate-100 text-base font-bold  ">
                 Moderated Q&A Queue
               </div>
               <div className="self-stretch flex flex-col justify-start items-start gap-3 w-full">
                 
                 <div className="self-stretch p-3 bg-gray-900 rounded-md flex flex-col justify-start items-start gap-1">
-                  <div className="text-teal-400 text-xs font-bold font-['Space_Grotesk']">
+                  <div className="text-teal-400 text-xs font-bold  ">
                     David L.
                   </div>
-                  <div className="self-stretch text-slate-100 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                  <div className="self-stretch text-slate-100 text-xs font-normal   leading-relaxed">
                     How will this plan affect European remote entities?
                   </div>
                 </div>
 
                 <div className="self-stretch p-3 bg-gray-900 rounded-md flex flex-col justify-start items-start gap-1">
-                  <div className="text-teal-400 text-xs font-bold font-['Space_Grotesk']">
+                  <div className="text-teal-400 text-xs font-bold  ">
                     Sarah K.
                   </div>
-                  <div className="self-stretch text-slate-100 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                  <div className="self-stretch text-slate-100 text-xs font-normal   leading-relaxed">
                     Can we expect SLA details on the SaaS tools?
                   </div>
                 </div>
@@ -101,13 +101,13 @@ export default function CorpViewerExperienceSection() {
           </div>
 
           <div className="self-stretch pt-4 border-t border-slate-800 inline-flex flex-col sm:flex-row justify-between sm:items-center gap-4 text-xs sm:text-sm">
-            <div className="text-slate-400 font-['Space_Grotesk']">
+            <div className="text-slate-400  ">
               Language: English (Primary) | Spanish (Secondary)
             </div>
             <div className="inline-flex justify-start items-center gap-2">
               <a 
                 href="#" 
-                className="text-teal-400 font-normal font-['Space_Grotesk'] underline hover:opacity-90"
+                className="text-teal-400 font-normal   underline hover:opacity-90"
               >
                 Report lag or sync issues
               </a>
@@ -118,7 +118,7 @@ export default function CorpViewerExperienceSection() {
 
         {/* Recovery Section */}
         <div className="self-stretch flex flex-col justify-start items-start gap-6 font-sans">
-          <h3 className="text-slate-100 text-xl font-bold font-['Space_Grotesk'] leading-7">
+          <h3 className="text-slate-100 text-xl font-bold   leading-7">
             Seamless Recovery Procedures
           </h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -127,10 +127,10 @@ export default function CorpViewerExperienceSection() {
                 key={idx}
                 className="p-5 bg-gray-900/60 rounded-lg  inline-flex flex-col justify-start items-start gap-3 backdrop-blur-sm hover:border-slate-700/60 transition-colors"
               >
-                <h4 className="text-slate-100 text-base font-bold font-['Space_Grotesk']">
+                <h4 className="text-slate-100 text-base font-bold  ">
                   {proc.title}
                 </h4>
-                <p className="self-stretch text-slate-400 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                <p className="self-stretch text-slate-400 text-xs font-normal   leading-relaxed">
                   {proc.desc}
                 </p>
               </div>

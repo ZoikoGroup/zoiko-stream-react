@@ -32,20 +32,20 @@ export default function HeroSection() {
               Protect media workflows across access, playback, delivery, operations, and evidence.
             </h1>
 
-            <p className="text-slate-400 text-lg md:text-xl font-normal font-['Inter'] leading-relaxed">
+            <p className="text-slate-400 text-lg md:text-xl font-normal   leading-relaxed">
               Media-specific controls, shared responsibility boundaries, and qualified evidence — not generic cybersecurity promises.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/company-overview"
-                className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold font-['Inter'] hover:opacity-90 transition-opacity"
+                className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold   hover:opacity-90 transition-opacity"
               >
                 Explore security evidence
               </Link>
               <Link
                 href="/talk-to-an-expert"
-                className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold font-['Inter'] hover:bg-white/10 transition-colors"
+                className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold   hover:bg-white/10 transition-colors"
               >
                 Talk to an expert
               </Link>

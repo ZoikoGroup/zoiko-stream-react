@@ -46,10 +46,10 @@ export default function DelegationAdminAuthoritySection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Delegation &amp; Administrative Authority
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             Granting authority is itself a governed decision. Implement zero-trust boundaries across departments.
           </p>
         </div>
@@ -66,10 +66,10 @@ export default function DelegationAdminAuthoritySection() {
                   <Icon className="size-4" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
+                  <h3 className="text-slate-900 text-base font-bold   group-hover:text-teal-600 transition-colors">
                     {card.title}
                   </h3>
-                  <p className="text-slate-600 text-xs font-normal font-['Inter'] leading-relaxed pt-1">
+                  <p className="text-slate-600 text-xs font-normal   leading-relaxed pt-1">
                     {card.desc}
                   </p>
                 </div>

@@ -65,10 +65,10 @@ export default function SharedResponsibilitySection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             Media Security and Shared Responsibility
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
             Platform controls and customer obligations — clearly separated
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function SharedResponsibilitySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* ZoikoStream Responsibility */}
           <div className="p-7 bg-gray-900/90 rounded-2xl border border-slate-800 flex flex-col gap-5">
-            <h3 className="text-white text-lg font-bold font-['Space_Grotesk']">
+            <h3 className="text-white text-lg font-bold  ">
               ZoikoStream Responsibility
             </h3>
 
@@ -86,10 +86,10 @@ export default function SharedResponsibilitySection() {
                 <div key={idx} className="flex items-start gap-3">
                   <Check className="size-4 text-teal-400 shrink-0 mt-0.5" />
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-bold font-['Inter']">
+                    <span className="text-white text-sm font-bold  ">
                       {item.title}
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       {item.desc}
                     </span>
                   </div>
@@ -100,7 +100,7 @@ export default function SharedResponsibilitySection() {
 
           {/* Customer Responsibility */}
           <div className="p-7 bg-gray-900/90 rounded-2xl border border-slate-800 flex flex-col gap-5">
-            <h3 className="text-white text-lg font-bold font-['Space_Grotesk']">
+            <h3 className="text-white text-lg font-bold  ">
               Customer Responsibility
             </h3>
 
@@ -109,10 +109,10 @@ export default function SharedResponsibilitySection() {
                 <div key={idx} className="flex items-start gap-3">
                   <Square className="size-3.5 text-blue-500 shrink-0 mt-1" />
                   <div className="flex flex-col gap-0.5">
-                    <span className="text-white text-sm font-bold font-['Inter']">
+                    <span className="text-white text-sm font-bold  ">
                       {item.title}
                     </span>
-                    <span className="text-slate-400 text-xs font-normal font-['Inter']">
+                    <span className="text-slate-400 text-xs font-normal  ">
                       {item.desc}
                     </span>
                   </div>
@@ -129,14 +129,14 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <ShieldCheck className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold font-['Inter']">Trust Center</span>
+              <span className="text-teal-400 text-xs font-bold  ">Trust Center</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
               Inspect platform certifications, SOC 2 reports, and compliance credentials.
             </p>
             <Link
               href="/company-overview"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold font-['Inter'] hover:bg-white/10"
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
             >
               View compliance records
             </Link>
@@ -147,14 +147,14 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <Activity className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold font-['Inter']">System Status</span>
+              <span className="text-teal-400 text-xs font-bold  ">System Status</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
               View real-time global availability, latency parameters, and past incident logs.
             </p>
             <Link
               href="/faqs-and-support"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold font-['Inter'] hover:bg-white/10"
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
             >
               Check system status
             </Link>
@@ -165,14 +165,14 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <FileText className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold font-['Inter']">Documentation</span>
+              <span className="text-teal-400 text-xs font-bold  ">Documentation</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
               Access our comprehensive guide libraries, API keys, and implementation routes.
             </p>
             <Link
               href="/sdks"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold font-['Inter'] hover:bg-white/10"
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
             >
               Open developer guides
             </Link>

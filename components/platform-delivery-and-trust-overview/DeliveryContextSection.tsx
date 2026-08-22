@@ -45,10 +45,10 @@ export default function DeliveryContextSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-gray-950 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-gray-950 leading-tight">
             Delivery Context
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             How capabilities apply across different media contexts
           </p>
         </div>
@@ -69,18 +69,18 @@ export default function DeliveryContextSection() {
               </div>
               <div className="p-5 flex flex-col justify-between flex-1 gap-3">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-gray-950 text-base font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
+                  <h3 className="text-gray-950 text-base font-bold   group-hover:text-teal-600 transition-colors">
                     {ctx.title}
                   </h3>
-                  <p className="text-slate-600 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                  <p className="text-slate-600 text-xs font-normal   leading-relaxed">
                     {ctx.desc}
                   </p>
                 </div>
                 <div className="flex items-center gap-1.5 pt-2 border-t border-slate-200">
-                  <span className="text-blue-600 text-xs font-bold font-['Space_Grotesk'] tracking-wide">
+                  <span className="text-blue-600 text-xs font-bold   tracking-wide">
                     POLICY:
                   </span>
-                  <span className="text-slate-600 text-xs font-normal font-['Space_Grotesk'] truncate">
+                  <span className="text-slate-600 text-xs font-normal   truncate">
                     {ctx.policy}
                   </span>
                 </div>

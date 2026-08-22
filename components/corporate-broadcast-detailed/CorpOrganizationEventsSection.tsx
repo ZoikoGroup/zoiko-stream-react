@@ -31,10 +31,10 @@ export default function CorpOrganizationEventsSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-white text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-white text-4xl font-bold   leading-[60.80px]">
             Recurring enterprise broadcast path
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Space_Grotesk'] leading-7">
+          <p className="text-slate-400 text-lg font-normal   leading-7">
             Professional communications teams plan for the year, not the hour. We synchronize municipal networks, corporate directories, AV suppliers, and satellite campuses into a single templates engine. Run repeating town halls or webcasts with minimal re-evaluation.
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function CorpOrganizationEventsSection() {
               key={idx}
               className="p-8 bg-gray-900/90 rounded-xl border border-slate-800 flex flex-col justify-start items-start gap-4 hover:border-slate-700/60 transition-colors backdrop-blur-[10px] shadow-lg"
             >
-              <h3 className="text-teal-400 text-xl font-bold font-['Space_Grotesk']">
+              <h3 className="text-teal-400 text-xl font-bold  ">
                 {c.title}
               </h3>
-              <p className="text-slate-450 text-sm font-normal font-['Space_Grotesk'] leading-6">
+              <p className="text-slate-450 text-sm font-normal   leading-6">
                 {c.desc}
               </p>
             </div>

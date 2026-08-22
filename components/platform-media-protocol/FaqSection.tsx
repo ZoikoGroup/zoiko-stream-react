@@ -115,7 +115,7 @@ export default function FaqSection() {
             <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
               Still need help?
             </h3>
-            <p className="text-slate-400 text-sm font-normal font-['Inter']">
+            <p className="text-slate-400 text-sm font-normal  ">
               Connect with our support engineering team.
             </p>
           </div>

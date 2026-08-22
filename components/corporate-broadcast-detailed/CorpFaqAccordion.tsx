@@ -41,7 +41,7 @@ export default function CorpFaqAccordion() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
-        <div className="text-zinc-900 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+        <div className="text-zinc-900 text-4xl font-bold   leading-[60.80px]">
           Questions about corporate broadcasts
         </div>
 
@@ -58,7 +58,7 @@ export default function CorpFaqAccordion() {
                   onClick={() => toggleFaq(idx)}
                   className="self-stretch inline-flex justify-between items-center text-left bg-transparent border-none cursor-pointer p-0 w-full"
                 >
-                  <span className="text-zinc-900 text-base font-bold font-['Space_Grotesk']">
+                  <span className="text-zinc-900 text-base font-bold  ">
                     {faq.q}
                   </span>
                   <span className={`text-slate-500 font-bold transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
@@ -67,7 +67,7 @@ export default function CorpFaqAccordion() {
                 </button>
 
                 {isOpen && (
-                  <div className="self-stretch text-slate-650 text-sm font-normal font-['Space_Grotesk'] leading-6 mt-1 pr-6 animate-fade-in">
+                  <div className="self-stretch text-slate-650 text-sm font-normal   leading-6 mt-1 pr-6 animate-fade-in">
                     {faq.a}
                   </div>
                 )}

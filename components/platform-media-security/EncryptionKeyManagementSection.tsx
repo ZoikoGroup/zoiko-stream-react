@@ -40,7 +40,7 @@ export default function EncryptionKeyManagementSection() {
                   <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk']">
                     {item.q}
                   </h3>
-                  <p className="text-slate-600 text-base font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-base font-normal   leading-relaxed">
                     {item.a}
                   </p>
                 </div>
@@ -56,26 +56,26 @@ export default function EncryptionKeyManagementSection() {
                 <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                   Encryption standards
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   Current evidence must reference a specific standard, key size, and lifecycle stage.
                 </p>
               </div>
 
               <div className="flex flex-col gap-3">
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">AES minimum</span>
+                  <span className="text-slate-400 text-sm font-normal  ">AES minimum</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">AES-256-GCM</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Key rotation</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Key rotation</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">≤ 90 days</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Key custody</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Key custody</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">Customer or HSM</span>
                 </div>
                 <div className="flex justify-between items-center py-1">
-                  <span className="text-slate-400 text-sm font-normal font-['Inter']">Evidence freshness</span>
+                  <span className="text-slate-400 text-sm font-normal  ">Evidence freshness</span>
                   <span className="text-teal-400 text-base font-bold font-['Space_Grotesk']">≤ 30 days</span>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function EncryptionKeyManagementSection() {
                 <span className="text-white text-sm font-bold font-['Space_Grotesk']">
                   Evidence rule
                 </span>
-                <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                   Claim → Technical source → Trust review date → Lifecycle stage.
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default function EncryptionKeyManagementSection() {
                 <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                   Not generic security promises
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   The visible descriptor <span className="text-teal-400 font-bold">&quot;Encryption end to end&quot;</span> is information scent, not evidence. Production copy must be backed by explicit endpoint, cryptographic, key-control, exception, and processing evidence.
                 </p>
               </div>

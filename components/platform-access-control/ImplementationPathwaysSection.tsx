@@ -90,10 +90,10 @@ export default function ImplementationPathwaysSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Implementation &amp; Evaluation Pathways
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             Whether writing code, setting policies, or managing events, access the exact wrapper designed for your role.
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function ImplementationPathwaysSection() {
                   <Icon className="size-5" />
                 </div>
 
-                <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
+                <h3 className="text-slate-900 text-lg font-bold  ">
                   {pw.role}
                 </h3>
 
@@ -119,7 +119,7 @@ export default function ImplementationPathwaysSection() {
                   {pw.bullets.map((b, bIdx) => (
                     <div key={bIdx} className="flex items-center gap-2">
                       <div className="size-1 bg-slate-600 rounded-full shrink-0" />
-                      <span className="text-slate-600 text-xs font-normal font-['Inter']">
+                      <span className="text-slate-600 text-xs font-normal  ">
                         {b}
                       </span>
                     </div>
@@ -133,10 +133,10 @@ export default function ImplementationPathwaysSection() {
         {/* Sub-section: Choose your environment / SDKs */}
         <div className="flex flex-col gap-8 pt-8 border-t border-slate-200">
           <div className="flex flex-col gap-2">
-            <h3 className="text-zinc-950 text-3xl font-bold font-['Space_Grotesk']">
+            <h3 className="text-zinc-950 text-3xl font-bold  ">
               Choose your environment
             </h3>
-            <p className="text-slate-600 text-base font-normal font-['Space_Grotesk']">
+            <p className="text-slate-600 text-base font-normal  ">
               Access native wrappers built to manage core signaling, network transit, and edge audio-video buffering.
             </p>
           </div>
@@ -146,7 +146,7 @@ export default function ImplementationPathwaysSection() {
               <button
                 type="button"
                 onClick={() => setFilter('all')}
-                className={`px-4 py-2 rounded-full text-xs font-bold font-['Space_Grotesk'] transition-colors ${
+                className={`px-4 py-2 rounded-full text-xs font-bold   transition-colors ${
                   filter === 'all'
                     ? 'bg-sky-100 border border-blue-500 text-blue-700'
                     : 'border border-gray-200 text-slate-600 hover:bg-slate-100'
@@ -157,7 +157,7 @@ export default function ImplementationPathwaysSection() {
               <button
                 type="button"
                 onClick={() => setFilter('client')}
-                className={`px-4 py-2 rounded-full text-xs font-medium font-['Space_Grotesk'] transition-colors ${
+                className={`px-4 py-2 rounded-full text-xs font-medium   transition-colors ${
                   filter === 'client'
                     ? 'bg-sky-100 border border-blue-500 text-blue-700'
                     : 'border border-gray-200 text-slate-600 hover:bg-slate-100'
@@ -168,7 +168,7 @@ export default function ImplementationPathwaysSection() {
               <button
                 type="button"
                 onClick={() => setFilter('server')}
-                className={`px-4 py-2 rounded-full text-xs font-medium font-['Space_Grotesk'] transition-colors ${
+                className={`px-4 py-2 rounded-full text-xs font-medium   transition-colors ${
                   filter === 'server'
                     ? 'bg-sky-100 border border-blue-500 text-blue-700'
                     : 'border border-gray-200 text-slate-600 hover:bg-slate-100'
@@ -185,7 +185,7 @@ export default function ImplementationPathwaysSection() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Filter runtime or platform..."
-                className="w-full text-xs font-normal font-['Space_Grotesk'] bg-transparent text-slate-900 focus:outline-hidden"
+                className="w-full text-xs font-normal   bg-transparent text-slate-900 focus:outline-hidden"
               />
             </div>
           </div>
@@ -206,7 +206,7 @@ export default function ImplementationPathwaysSection() {
                 </div>
                 <div className="p-5 bg-white flex flex-col gap-4 flex-1 justify-between">
                   <div className="flex justify-between items-center">
-                    <h4 className="text-zinc-950 text-lg font-bold font-['Space_Grotesk']">
+                    <h4 className="text-zinc-950 text-lg font-bold  ">
                       {sdk.title}
                     </h4>
                     <span className="px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded text-[9px] font-bold font-mono">
@@ -215,7 +215,7 @@ export default function ImplementationPathwaysSection() {
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <span className="text-slate-600 text-sm font-normal font-['Space_Grotesk']">
+                    <span className="text-slate-600 text-sm font-normal  ">
                       {sdk.desc}
                     </span>
                     <span className="text-gray-400 text-xs font-normal font-mono">

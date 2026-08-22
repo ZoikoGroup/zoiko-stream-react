@@ -48,10 +48,10 @@ export default function CorpOperationalMatrixSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-900 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-900 text-4xl font-bold   leading-[60.80px]">
             Production, source, and venue responsibility
           </h2>
-          <p className="text-slate-650 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-650 text-lg font-normal   leading-7">
             Verify every link in the production chain before going live. From venue AV hookups and camera sources to audio processing, graphics overlays, and network failover — each element is validated and assigned to a responsible operator.
           </p>
         </div>
@@ -66,16 +66,16 @@ export default function CorpOperationalMatrixSection() {
                 className="p-4 bg-slate-50 rounded-xl border border-gray-200 inline-flex flex-col justify-start items-start gap-3 hover:shadow-sm transition-all"
               >
                 <div className="w-full flex justify-between items-center">
-                  <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk']">
+                  <h3 className="text-slate-900 text-base font-bold  ">
                     {item.title}
                   </h3>
                   <div className={`px-3 py-1 ${item.badgeClass} rounded-sm flex justify-center items-center`}>
-                    <span className="text-xs font-bold font-['Space_Grotesk']">
+                    <span className="text-xs font-bold  ">
                       {item.badge}
                     </span>
                   </div>
                 </div>
-                <p className="self-stretch text-slate-600 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                <p className="self-stretch text-slate-600 text-xs font-normal   leading-relaxed">
                   {item.desc}
                 </p>
               </div>

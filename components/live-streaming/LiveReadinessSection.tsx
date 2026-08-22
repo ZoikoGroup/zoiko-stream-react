@@ -71,11 +71,11 @@ export default function LiveReadinessSection() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-12">
         {/* Heading */}
         <div className="flex flex-col items-start gap-3">
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold leading-tight text-[#EEF1F6] sm:text-4xl">
+          <h2 className="  text-3xl font-bold leading-tight text-[#EEF1F6] sm:text-4xl">
             What must be true before live?
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-7 text-[#AAB3C4] sm:text-lg">
+          <p className="  text-base font-normal leading-7 text-[#AAB3C4] sm:text-lg">
             Evidence-aware review of dependencies required for your declared
             workflow.
           </p>
@@ -90,19 +90,19 @@ export default function LiveReadinessSection() {
             >
               {/* Card Header */}
               <div className="flex w-full items-center justify-between gap-4">
-                <h3 className="font-['Space_Grotesk'] text-base font-bold text-[#EEF1F6]">
+                <h3 className="  text-base font-bold text-[#EEF1F6]">
                   {card.title}
                 </h3>
 
                 <span
-                  className={`shrink-0 rounded-full border px-2.5 py-1 font-['Space_Grotesk'] text-xs font-bold ${statusStyles[card.status]}`}
+                  className={`shrink-0 rounded-full border px-2.5 py-1   text-xs font-bold ${statusStyles[card.status]}`}
                 >
                   {card.status}
                 </span>
               </div>
 
               {/* Description */}
-              <p className="font-['Space_Grotesk'] text-xs font-normal leading-5 text-[#AAB3C4]">
+              <p className="  text-xs font-normal leading-5 text-[#AAB3C4]">
                 {card.description}
               </p>
             </div>
@@ -113,7 +113,7 @@ export default function LiveReadinessSection() {
         <div className="flex w-full justify-center">
           <Link
             href="/live-streaming/readiness"
-            className="rounded-[10px] border border-[#AAB3C4] px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-[#EEF1F6] transition-all duration-200 hover:border-[#00D4AA] hover:text-[#00D4AA]"
+            className="rounded-[10px] border border-[#AAB3C4] px-7 py-3.5   text-base font-medium text-[#EEF1F6] transition-all duration-200 hover:border-[#00D4AA] hover:text-[#00D4AA]"
           >
             Review readiness requirements →
           </Link>

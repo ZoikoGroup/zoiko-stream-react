@@ -73,9 +73,9 @@ const SECURE_ITEMS: MenuItem[] = [
   },
   { title: 'Access control', description: 'Identity-aware entitlements', href: '/platform-access-control', icon: KeyRound },
   { title: 'Secure playback', description: 'Signed, tokenized delivery', href: '/platform-secure-playback', icon: ShieldCheck },
-  { title: 'Adaptive video delivery', description: 'Quality that fits the network', href: '/products', icon: Zap },
-  { title: 'Global distribution', description: 'Edge presence worldwide', href: '/products', icon: Globe2 },
-  { title: 'Resilient delivery', description: 'Built to survive failure', href: '/products', icon: RefreshCw },
+  { title: 'Adaptive video delivery', description: 'Quality that fits the network', href: '/platform-adaptive-video-delivery', icon: Zap },
+  { title: 'Global distribution', description: 'Edge presence worldwide', href: '/platform-global-distribution', icon: Globe2 },
+  { title: 'Resilient delivery', description: 'Built to survive failure', href: '/platform-resilient-delivery', icon: RefreshCw },
   { title: 'Media security', description: 'Encryption end to end', href: '/platform-media-security', icon: Lock },
 ];
 
@@ -121,17 +121,11 @@ export default function PlatformDropdown() {
 
               <div className="relative z-10 space-y-4">
                 <div className="flex h-24 items-center justify-center rounded-xl border border-white/10 bg-white/5 p-3 sm:h-28">
-                  <div className="flex h-full w-full items-center justify-around rounded-lg border border-dashed border-white/20 px-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-white/90" />
-                    <span className="h-1.5 w-1.5 rounded-full bg-white/90" />
-                    <span className="h-2.5 w-2.5 rounded-full bg-blue-400 shadow-[0_0_12px_rgba(96,165,250,0.75)]" />
-                    <span className="h-1.5 w-1.5 rounded-full bg-white/90" />
-                    <span className="h-1.5 w-1.5 rounded-full bg-white/90" />
-                  </div>
+                    <img src="/images/header/SVG (4).svg"/>
                 </div>
 
                 <div className="space-y-2">
-                  <div className='flex flex-row'>
+                  <div className='flex flex-row gap-4'>
                   <p className="text-[9px] font-bold uppercase text-blue-300 sm:text-[8px]">
                     Featured life cycle
                   </p>

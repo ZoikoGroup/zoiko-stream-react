@@ -58,11 +58,11 @@ export default function SecureDeliveryAudienceBoundary() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-10 lg:gap-12">
         {/* Heading */}
         <div className="flex w-full flex-col gap-4">
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold leading-tight text-[#EEF1F6] sm:text-4xl lg:leading-[60.8px]">
+          <h2 className="  text-3xl font-bold leading-tight text-[#EEF1F6] sm:text-4xl lg:leading-[60.8px]">
             Secure delivery and audience boundary
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal leading-7 text-[#AAB3C4] sm:text-lg">
+          <p className="  text-base font-normal leading-7 text-[#AAB3C4] sm:text-lg">
             Identity, access, playback authorization, and data protection
             built directly into the core live routing fabric.
           </p>
@@ -98,13 +98,13 @@ export default function SecureDeliveryAudienceBoundary() {
                     />
                   </div>
 
-                  <h3 className="font-['Space_Grotesk'] text-lg font-bold text-[#EEF1F6]">
+                  <h3 className="  text-lg font-bold text-[#EEF1F6]">
                     {card.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="font-['Space_Grotesk'] text-xs font-normal leading-5 text-[#AAB3C4]">
+                <p className="  text-xs font-normal leading-5 text-[#AAB3C4]">
                   {card.description}
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function SecureDeliveryAudienceBoundary() {
             />
           </div>
 
-          <p className="flex-1 font-['Space_Grotesk'] text-xs font-normal leading-5 text-[#707A8C]">
+          <p className="flex-1   text-xs font-normal leading-5 text-[#707A8C]">
             Operational Expectation: Secure access controls authorization and
             stream perimeter validation, not a promise of absolute zero-leak
             or client screen capture defense.
@@ -134,14 +134,14 @@ export default function SecureDeliveryAudienceBoundary() {
         <div className="flex flex-col items-start gap-4 sm:flex-row">
           <Link
             href="/secure-audience-access"
-            className="rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5 font-['Space_Grotesk'] text-base font-bold text-[#04141A] transition-opacity hover:opacity-90"
+            className="rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5   text-base font-bold text-[#04141A] transition-opacity hover:opacity-90"
           >
             Configure Access Control
           </Link>
 
           <button
             type="button"
-            className="rounded-[10px] border border-[#AAB3C4] px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-[#EEF1F6] transition-colors hover:bg-white/5"
+            className="rounded-[10px] border border-[#AAB3C4] px-7 py-3.5   text-base font-medium text-[#EEF1F6] transition-colors hover:bg-white/5"
           >
             Security Documentation
           </button>

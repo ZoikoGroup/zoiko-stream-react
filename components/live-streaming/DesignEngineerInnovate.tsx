@@ -44,11 +44,11 @@ export default function DesignEngineerInnovate() {
 
         {/* Heading */}
         <div className="flex w-full flex-col items-start gap-3.5">
-          <h2 className="font-['Space_Grotesk'] text-4xl font-bold text-gray-900 sm:text-5xl">
+          <h2 className="  text-4xl font-bold text-gray-900 sm:text-5xl">
             Design, engineer, and innovate
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-lg font-normal text-gray-700">
+          <p className="  text-lg font-normal text-gray-700">
             Cutting-edge automotive design powered by precision engineering and
             bold vision
           </p>
@@ -77,19 +77,19 @@ export default function DesignEngineerInnovate() {
                 <div className="flex items-center gap-2.5">
                   <div className="h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
 
-                  <h3 className="font-['Space_Grotesk'] text-base font-bold text-gray-900">
+                  <h3 className="  text-base font-bold text-gray-900">
                     {card.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="w-full font-['Space_Grotesk'] text-sm font-normal leading-5 text-gray-700">
+                <p className="w-full   text-sm font-normal leading-5 text-gray-700">
                   {card.description}
                 </p>
 
                 {/* Tag */}
                 <div className="rounded-[100px] border border-indigo-200 bg-indigo-50 px-3 py-[5px]">
-                  <span className="font-['Space_Grotesk'] text-xs font-bold text-blue-500">
+                  <span className="  text-xs font-bold text-blue-500">
                     {card.tag}
                   </span>
                 </div>

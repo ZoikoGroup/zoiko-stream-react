@@ -48,10 +48,10 @@ export default function WhyCorpBroadcastSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-100 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-100 text-4xl font-bold   leading-[60.80px]">
             Why corporate-broadcast delivery needs a governed plan
           </h2>
-          <p className="max-w-[800px] text-slate-400 text-lg font-normal font-['Space_Grotesk'] leading-7">
+          <p className="max-w-[800px] text-slate-400 text-lg font-normal   leading-7">
             A corporate webcast is not simply a camera pointed at an executive. It demands structured management across identity, accessibility, and operational alignment. Our 6-step planning flow ensures zero configuration gaps.
           </p>
         </div>
@@ -65,15 +65,15 @@ export default function WhyCorpBroadcastSection() {
             >
               <div className="inline-flex justify-start items-center gap-3">
                 <div className="w-8 h-8 bg-teal-400 rounded-full flex justify-center items-center select-none shrink-0">
-                  <span className="text-zinc-955 text-sm font-bold font-['Space_Grotesk']">
+                  <span className="text-zinc-955 text-sm font-bold  ">
                     {step.num}
                   </span>
                 </div>
-                <div className="text-slate-100 text-base font-bold font-['Space_Grotesk']">
+                <div className="text-slate-100 text-base font-bold  ">
                   {step.title}
                 </div>
               </div>
-              <div className="text-slate-400 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+              <div className="text-slate-400 text-xs font-normal   leading-relaxed">
                 {step.desc}
               </div>
             </div>
