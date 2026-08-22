@@ -57,11 +57,11 @@ export default function LiveStreamingLifecycle() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-14">
         {/* Heading */}
         <div className="flex flex-col items-start gap-3">
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold text-[#0F1B2D] sm:text-4xl">
+          <h2 className="  text-3xl font-bold text-[#0F1B2D] sm:text-4xl">
             The complete live-streaming lifecycle
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal text-[#4F5E74] sm:text-lg">
+          <p className="  text-base font-normal text-[#4F5E74] sm:text-lg">
             End-to-end workflow from source entry through post-live continuity
           </p>
         </div>
@@ -77,18 +77,18 @@ export default function LiveStreamingLifecycle() {
               <div className="flex min-w-0 flex-1 flex-col items-center gap-3">
                 {/* Number Circle */}
                 <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#E1E6EB] bg-[#F5F7FA]">
-                  <span className="font-['Space_Grotesk'] text-base font-bold text-[#0F1B2D]">
+                  <span className="  text-base font-bold text-[#0F1B2D]">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Text */}
                 <div className="flex w-full flex-col items-center gap-1">
-                  <h3 className="font-['Space_Grotesk'] text-base font-bold text-[#0F1B2D]">
+                  <h3 className="  text-base font-bold text-[#0F1B2D]">
                     {step.title}
                   </h3>
 
-                  <p className="w-full text-center font-['Space_Grotesk'] text-xs font-normal text-[#4F5E74]">
+                  <p className="w-full text-center   text-xs font-normal text-[#4F5E74]">
                     {step.description}
                   </p>
                 </div>
@@ -110,17 +110,17 @@ export default function LiveStreamingLifecycle() {
               className="flex items-center gap-4 rounded-xl border border-[#E1E6EB] bg-[#F5F7FA]/70 p-5"
             >
               <div className="flex size-12 shrink-0 items-center justify-center rounded-full border border-[#E1E6EB] bg-[#F5F7FA]">
-                <span className="font-['Space_Grotesk'] text-base font-bold text-[#0F1B2D]">
+                <span className="  text-base font-bold text-[#0F1B2D]">
                   {step.number}
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <h3 className="font-['Space_Grotesk'] text-base font-bold text-[#0F1B2D]">
+                <h3 className="  text-base font-bold text-[#0F1B2D]">
                   {step.title}
                 </h3>
 
-                <p className="font-['Space_Grotesk'] text-xs font-normal text-[#4F5E74]">
+                <p className="  text-xs font-normal text-[#4F5E74]">
                   {step.description}
                 </p>
               </div>

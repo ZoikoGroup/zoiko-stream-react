@@ -62,7 +62,7 @@ export default function ContinueRightDestinationSection() {
                     <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
                       {dst.title}
                     </h3>
-                    <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                    <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                       {dst.desc}
                     </p>
                   </div>

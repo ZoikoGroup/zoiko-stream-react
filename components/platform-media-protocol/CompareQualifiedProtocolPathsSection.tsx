@@ -91,7 +91,7 @@ export default function CompareQualifiedProtocolPathsSection() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Filter protocols by connection context..."
-                className="w-full sm:w-80 bg-transparent text-slate-300 text-base font-normal font-['Inter'] focus:outline-hidden"
+                className="w-full sm:w-80 bg-transparent text-slate-300 text-base font-normal   focus:outline-hidden"
               />
             </div>
             <span className="text-teal-400 text-sm font-bold font-['Space_Grotesk'] shrink-0">
@@ -134,7 +134,7 @@ export default function CompareQualifiedProtocolPathsSection() {
                   </span>
                 </div>
 
-                <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                   {p.subtitle}
                 </p>
 
@@ -142,7 +142,7 @@ export default function CompareQualifiedProtocolPathsSection() {
                   <span className="text-teal-400 text-xs font-bold font-['Space_Grotesk']">
                     DIRECTION:
                   </span>
-                  <span className="text-white text-xs font-normal font-['Inter']">
+                  <span className="text-white text-xs font-normal  ">
                     {p.direction}
                   </span>
                 </div>
@@ -154,7 +154,7 @@ export default function CompareQualifiedProtocolPathsSection() {
                   {p.qualifications.map((q, qIdx) => (
                     <div key={qIdx} className="flex items-center gap-2">
                       <CheckCircle2 className="size-3.5 text-teal-400 shrink-0" />
-                      <span className="text-slate-400 text-xs font-normal font-['Inter'] truncate">
+                      <span className="text-slate-400 text-xs font-normal   truncate">
                         {q}
                       </span>
                     </div>

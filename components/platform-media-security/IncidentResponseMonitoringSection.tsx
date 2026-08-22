@@ -57,7 +57,7 @@ export default function IncidentResponseMonitoringSection() {
           <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white leading-tight">
             Incident response, monitoring, and operational continuity
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Inter'] leading-relaxed max-w-3xl">
+          <p className="text-slate-400 text-lg font-normal   leading-relaxed max-w-3xl">
             Guaranteed video delivery is backed by micro-level threat tracking, real-time alert telemetry, hot-standby architectures, and clear response SLAs.
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function IncidentResponseMonitoringSection() {
                 <h3 className="text-white text-lg font-bold font-['Space_Grotesk']">
                   {st.title}
                 </h3>
-                <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                   {st.desc}
                 </p>
               </div>
@@ -97,14 +97,14 @@ export default function IncidentResponseMonitoringSection() {
               <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                 Uptime Commitments &amp; SLAs
               </h3>
-              <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+              <p className="text-slate-400 text-base font-normal   leading-relaxed">
                 We stand behind our broadcast-grade stream delivery framework with financially backed guarantees.
               </p>
             </div>
 
             <div className="grid grid-cols-3 gap-4">
               <div className="p-5 bg-gray-900 rounded-lg border border-gray-800 flex flex-col gap-2">
-                <span className="text-slate-400 text-xs font-medium font-['Inter']">Guaranteed SLA</span>
+                <span className="text-slate-400 text-xs font-medium  ">Guaranteed SLA</span>
                 <div className="flex items-baseline gap-1">
                   <span className="text-teal-400 text-3xl font-bold font-['Space_Grotesk']">99.99</span>
                   <span className="text-slate-400 text-base font-bold font-['Space_Grotesk']">%</span>
@@ -112,7 +112,7 @@ export default function IncidentResponseMonitoringSection() {
               </div>
 
               <div className="p-5 bg-gray-900 rounded-lg border border-gray-800 flex flex-col gap-2">
-                <span className="text-slate-400 text-xs font-medium font-['Inter']">P0 Response Target</span>
+                <span className="text-slate-400 text-xs font-medium  ">P0 Response Target</span>
                 <div className="flex items-baseline gap-1">
                   <span className="text-teal-400 text-3xl font-bold font-['Space_Grotesk']">15</span>
                   <span className="text-slate-400 text-base font-bold font-['Space_Grotesk']">MIN</span>
@@ -120,7 +120,7 @@ export default function IncidentResponseMonitoringSection() {
               </div>
 
               <div className="p-5 bg-gray-900 rounded-lg border border-gray-800 flex flex-col gap-2">
-                <span className="text-slate-400 text-xs font-medium font-['Inter']">Ingress Hot-Standbys</span>
+                <span className="text-slate-400 text-xs font-medium  ">Ingress Hot-Standbys</span>
                 <div className="flex items-baseline gap-1">
                   <span className="text-teal-400 text-3xl font-bold font-['Space_Grotesk']">2:1</span>
                   <span className="text-slate-400 text-base font-bold font-['Space_Grotesk']">N+1</span>
@@ -135,7 +135,7 @@ export default function IncidentResponseMonitoringSection() {
               <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                 Operational Continuity &amp; DR
               </h3>
-              <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+              <p className="text-slate-400 text-base font-normal   leading-relaxed">
                 Our active-active media processing infrastructure ensures resilience against full region failures.
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function IncidentResponseMonitoringSection() {
               <div className="py-3 flex justify-between items-center gap-4">
                 <div className="flex items-center gap-3">
                   <Check className="size-4 text-teal-400 shrink-0" />
-                  <span className="text-white text-sm font-normal font-['Inter']">Multi-region active-active transcoding</span>
+                  <span className="text-white text-sm font-normal  ">Multi-region active-active transcoding</span>
                 </div>
                 <span className="px-2 py-1 bg-teal-400/10 text-teal-400 rounded text-xs font-bold font-['Space_Grotesk'] uppercase">
                   continuous
@@ -154,7 +154,7 @@ export default function IncidentResponseMonitoringSection() {
               <div className="py-3 flex justify-between items-center gap-4">
                 <div className="flex items-center gap-3">
                   <Check className="size-4 text-teal-400 shrink-0" />
-                  <span className="text-white text-sm font-normal font-['Inter']">Multi-CDN dynamic fallback routing</span>
+                  <span className="text-white text-sm font-normal  ">Multi-CDN dynamic fallback routing</span>
                 </div>
                 <span className="px-2 py-1 bg-teal-400/10 text-teal-400 rounded text-xs font-bold font-['Space_Grotesk'] uppercase">
                   automated
@@ -164,7 +164,7 @@ export default function IncidentResponseMonitoringSection() {
               <div className="py-3 flex justify-between items-center gap-4">
                 <div className="flex items-center gap-3">
                   <Check className="size-4 text-teal-400 shrink-0" />
-                  <span className="text-white text-sm font-normal font-['Inter']">Isolated DRM key recovery cycles</span>
+                  <span className="text-white text-sm font-normal  ">Isolated DRM key recovery cycles</span>
                 </div>
                 <span className="px-2 py-1 bg-teal-400/10 text-teal-400 rounded text-xs font-bold font-['Space_Grotesk'] uppercase">
                   verified
@@ -177,7 +177,7 @@ export default function IncidentResponseMonitoringSection() {
         {/* System Transparency Banner */}
         <div className="p-6 bg-teal-400/5 rounded-xl border border-teal-400/20 flex items-center gap-4">
           <AlertCircle className="size-6 text-teal-400 shrink-0" />
-          <p className="text-teal-400 text-base font-normal font-['Inter'] leading-relaxed">
+          <p className="text-teal-400 text-base font-normal   leading-relaxed">
             <span className="font-bold">System Transparency:</span> All active incidents, service interruptions, and historical post-incident RCAs are consultable by developers and enterprise compliance officers in our central Trust Center portal.
           </p>
         </div>

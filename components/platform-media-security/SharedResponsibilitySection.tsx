@@ -38,17 +38,17 @@ export default function SharedResponsibilitySection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-28 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-14">
         <div className="flex flex-col gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Shared responsibility — platform and customer boundaries
           </h2>
-          <p className="text-slate-600 text-lg font-normal font-['Space_Grotesk'] leading-relaxed max-w-3xl">
+          <p className="text-slate-600 text-lg font-normal   leading-relaxed max-w-3xl">
             Make shared responsibility explicit and actionable across every control domain.
           </p>
         </div>
 
         {/* Table Container */}
         <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-lg flex flex-col gap-4">
-          <div className="p-3 bg-slate-50 rounded-lg grid grid-cols-1 md:grid-cols-12 gap-4 text-sm font-bold font-['Space_Grotesk']">
+          <div className="p-3 bg-slate-50 rounded-lg grid grid-cols-1 md:grid-cols-12 gap-4 text-sm font-bold  ">
             <span className="md:col-span-3 text-slate-900">Control Domain</span>
             <span className="md:col-span-4 text-blue-600">Platform Responsibility</span>
             <span className="md:col-span-5 text-amber-600">Customer / Integrator Responsibility</span>
@@ -60,13 +60,13 @@ export default function SharedResponsibilitySection() {
                 key={idx}
                 className="p-4 grid grid-cols-1 md:grid-cols-12 gap-4 items-start"
               >
-                <span className="md:col-span-3 text-slate-900 text-base font-bold font-['Space_Grotesk']">
+                <span className="md:col-span-3 text-slate-900 text-base font-bold  ">
                   {row.domain}
                 </span>
-                <p className="md:col-span-4 text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="md:col-span-4 text-slate-600 text-sm font-normal   leading-relaxed">
                   {row.platform}
                 </p>
-                <p className="md:col-span-5 text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="md:col-span-5 text-slate-600 text-sm font-normal   leading-relaxed">
                   {row.customer}
                 </p>
               </div>

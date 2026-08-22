@@ -62,7 +62,7 @@ export default function FinalCtaSection() {
                 <h3 className="text-white text-lg font-bold font-['Space_Grotesk']">
                   {card.title}
                 </h3>
-                <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-xs font-normal   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

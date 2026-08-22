@@ -100,7 +100,7 @@ export default function FaqSection() {
                 </span>
 
                 {isOpen && (
-                  <p className="text-slate-600 text-xs font-normal font-['Inter'] leading-relaxed pt-2 border-t border-slate-200">
+                  <p className="text-slate-600 text-xs font-normal   leading-relaxed pt-2 border-t border-slate-200">
                     {faq.answer}
                   </p>
                 )}

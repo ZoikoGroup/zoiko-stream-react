@@ -36,10 +36,10 @@ export default function CorpEventShapeSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-900 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-900 text-4xl font-bold   leading-[60.80px]">
             Choose your corporate broadcast model
           </h2>
-          <p className="text-slate-600 text-lg font-normal font-['Space_Grotesk'] leading-7">
+          <p className="text-slate-600 text-lg font-normal   leading-7">
             Select the broadcast model that best fits your event type, audience size, and security requirements.
           </p>
         </div>
@@ -54,15 +54,15 @@ export default function CorpEventShapeSection() {
                 className="w-full p-5 bg-slate-50 rounded-xl border border-gray-200 inline-flex justify-between items-center gap-4 hover:shadow-sm transition-all"
               >
                 <div className="flex-1 flex flex-col justify-start items-start gap-1">
-                  <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk']">
+                  <h3 className="text-slate-900 text-base font-bold  ">
                     {model.title}
                   </h3>
-                  <p className="self-stretch text-slate-600 text-xs font-normal font-['Space_Grotesk']">
+                  <p className="self-stretch text-slate-600 text-xs font-normal  ">
                     {model.desc}
                   </p>
                 </div>
                 <div className={`px-3 py-1 ${model.badgeClass} rounded-sm flex justify-center items-center`}>
-                  <span className="text-xs font-bold font-['Space_Grotesk']">
+                  <span className="text-xs font-bold  ">
                     {model.badge}
                   </span>
                 </div>

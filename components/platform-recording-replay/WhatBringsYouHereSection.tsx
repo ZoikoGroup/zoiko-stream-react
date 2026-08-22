@@ -61,10 +61,10 @@ export default function WhatBringsYouHereSection() {
     <section className="w-full bg-slate-50 border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-zinc-950">
+          <h2 className="text-3xl md:text-4xl font-bold   text-zinc-950">
             What brings you here?
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk']">
+          <p className="text-slate-600 text-base md:text-lg font-normal  ">
             Choose your path to find the most relevant recording and replay guidance
           </p>
         </div>
@@ -81,10 +81,10 @@ export default function WhatBringsYouHereSection() {
                   <Icon className="size-5 text-blue-600" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-zinc-950 text-base font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
+                  <h3 className="text-zinc-950 text-base font-bold   group-hover:text-teal-600 transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-slate-600 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                  <p className="text-slate-600 text-xs font-normal   leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

@@ -25,10 +25,10 @@ export default function ReadinessCheckSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-zinc-950">
+          <h2 className="text-3xl md:text-4xl font-bold   text-zinc-950">
             Is this recording ready to proceed?
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk']">
+          <p className="text-slate-600 text-base md:text-lg font-normal  ">
             Every recording starts with an explicit, reviewable decision
           </p>
         </div>
@@ -38,74 +38,74 @@ export default function ReadinessCheckSection() {
           <div className="lg:col-span-7">
             <div className="p-6 bg-slate-900 rounded-2xl shadow-xl border border-slate-800 text-white flex flex-col gap-4">
               <div className="flex justify-between items-center pb-2 border-b border-slate-800">
-                <span className="text-white text-base font-bold font-['Space_Grotesk']">
+                <span className="text-white text-base font-bold  ">
                   Recording Readiness Review
                 </span>
-                <span className="text-slate-400 text-xs font-normal font-['Space_Grotesk']">
+                <span className="text-slate-400 text-xs font-normal  ">
                   Ref: REC-2026-03
                 </span>
               </div>
 
               <div className="flex flex-col gap-2">
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Purpose/policy</span>
-                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Purpose/policy</span>
+                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold   flex items-center gap-1">
                     Satisfied <Check className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Rights/privacy/consent</span>
-                  <span className="px-2.5 py-1 bg-amber-950/90 rounded text-amber-500 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Rights/privacy/consent</span>
+                  <span className="px-2.5 py-1 bg-amber-950/90 rounded text-amber-500 text-xs font-bold   flex items-center gap-1">
                     Needs review <AlertTriangle className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Source/track scope</span>
-                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Source/track scope</span>
+                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold   flex items-center gap-1">
                     Satisfied <Check className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Owner/operator</span>
-                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Owner/operator</span>
+                  <span className="px-2.5 py-1 bg-emerald-950/90 rounded text-teal-400 text-xs font-bold   flex items-center gap-1">
                     Satisfied <Check className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Automation eligibility</span>
-                  <span className="px-2.5 py-1 bg-slate-800 rounded text-slate-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Automation eligibility</span>
+                  <span className="px-2.5 py-1 bg-slate-800 rounded text-slate-400 text-xs font-bold   flex items-center gap-1">
                     Not applicable <Minus className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Accessibility continuity</span>
-                  <span className="px-2.5 py-1 bg-purple-950/90 rounded text-purple-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Accessibility continuity</span>
+                  <span className="px-2.5 py-1 bg-purple-950/90 rounded text-purple-400 text-xs font-bold   flex items-center gap-1">
                     Needs input <AlertTriangle className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Replay intent</span>
-                  <span className="px-2.5 py-1 bg-gray-800 rounded text-gray-400 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Replay intent</span>
+                  <span className="px-2.5 py-1 bg-gray-800 rounded text-gray-400 text-xs font-bold   flex items-center gap-1">
                     Undecided <HelpCircle className="size-3" />
                   </span>
                 </div>
 
                 <div className="pb-1.5 border-b border-slate-800/80 flex justify-between items-center">
-                  <span className="text-slate-400 text-xs font-['Space_Grotesk']">Lifecycle intent</span>
-                  <span className="px-2.5 py-1 bg-amber-950/90 rounded text-amber-500 text-xs font-bold font-['Space_Grotesk'] flex items-center gap-1">
+                  <span className="text-slate-400 text-xs  ">Lifecycle intent</span>
+                  <span className="px-2.5 py-1 bg-amber-950/90 rounded text-amber-500 text-xs font-bold   flex items-center gap-1">
                     Needs review <AlertTriangle className="size-3" />
                   </span>
                 </div>
               </div>
 
               <div className="pt-2">
-                <button className="px-6 py-3 bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 text-xs font-bold font-['Space_Grotesk'] rounded-lg hover:opacity-90 transition-opacity">
+                <button className="px-6 py-3 bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 text-xs font-bold   rounded-lg hover:opacity-90 transition-opacity">
                   Review decision
                 </button>
               </div>
@@ -120,10 +120,10 @@ export default function ReadinessCheckSection() {
                   <ShieldCheck className="size-5" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-zinc-950 text-base font-bold font-['Space_Grotesk']">
+                  <h3 className="text-zinc-950 text-base font-bold  ">
                     {rule.title}
                   </h3>
-                  <p className="text-slate-600 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                  <p className="text-slate-600 text-xs font-normal   leading-relaxed">
                     {rule.desc}
                   </p>
                 </div>

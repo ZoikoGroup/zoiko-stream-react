@@ -16,12 +16,12 @@ const StartBuildingCTA = () => {
       <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col items-center gap-6">
 
         {/* Heading */}
-        <h2 className="w-full max-w-[800px] text-center font-['Space_Grotesk'] text-4xl font-bold leading-[60.80px] text-slate-100">
+        <h2 className="w-full max-w-[800px] text-center   text-4xl font-bold leading-[60.80px] text-slate-100">
           Start building live video workflows today
         </h2>
 
         {/* Description */}
-        <p className="w-full max-w-[800px] text-center font-['Space_Grotesk'] text-lg font-normal leading-7 text-slate-400">
+        <p className="w-full max-w-[800px] text-center   text-lg font-normal leading-7 text-slate-400">
           From source to audience - governed, observable, recoverable.
           Backed by expert support.
         </p>
@@ -32,7 +32,7 @@ const StartBuildingCTA = () => {
           {/* Start Building */}
           <Link
             href="/start-building"
-            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5 font-['Space_Grotesk'] text-base font-bold text-slate-950 transition-transform duration-200 hover:scale-[1.02]"
+            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5   text-base font-bold text-slate-950 transition-transform duration-200 hover:scale-[1.02]"
           >
             Start building
           </Link>
@@ -40,7 +40,7 @@ const StartBuildingCTA = () => {
           {/* Talk to an Expert */}
           <Link
             href="/talk-to-an-expert"
-            className="rounded-[10px] border border-slate-400 px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-slate-100 transition-colors duration-200 hover:bg-white/10"
+            className="rounded-[10px] border border-slate-400 px-7 py-3.5   text-base font-medium text-slate-100 transition-colors duration-200 hover:bg-white/10"
           >
             Talk to an expert
           </Link>

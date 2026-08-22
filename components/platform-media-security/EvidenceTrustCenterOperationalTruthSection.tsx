@@ -49,7 +49,7 @@ export default function EvidenceTrustCenterOperationalTruthSection() {
                   <h3 className="text-white text-base font-bold font-['Space_Grotesk']">
                     {p.title}
                   </h3>
-                  <p className="text-slate-400 text-xs font-normal font-['Inter']">
+                  <p className="text-slate-400 text-xs font-normal  ">
                     {p.desc}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export default function EvidenceTrustCenterOperationalTruthSection() {
               <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                 Responsible Disclosure
               </h3>
-              <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+              <p className="text-slate-400 text-base font-normal   leading-relaxed">
                 We maintain an active security disclosure process. Review legal safe-harbor parameters and report verified issues to our engineering response desk. Coordinated vulnerability handling is strictly prioritized.
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function EvidenceTrustCenterOperationalTruthSection() {
               <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                 Support &amp; Routing
               </h3>
-              <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+              <p className="text-slate-400 text-base font-normal   leading-relaxed">
                 Get dedicated architecture support for enterprise integration. From client diagnostics to regional data-residency audits, connect with media security engineers prepared for deep compliance evaluations.
               </p>
             </div>
@@ -92,7 +92,7 @@ export default function EvidenceTrustCenterOperationalTruthSection() {
         {/* Bottom Banner */}
         <div className="p-6 bg-teal-400/5 rounded-xl border border-teal-400/20 flex items-center gap-4">
           <CircleQuestionMarkIcon className="size-6 text-teal-400 shrink-0" />
-          <p className="text-teal-400 text-base font-normal font-['Inter'] leading-relaxed">
+          <p className="text-teal-400 text-base font-normal   leading-relaxed">
             A certification logo, shield, or compliance framework name is not sufficient evidence. Reviewers must be able to inspect <span className="font-bold">scope, authority, date,</span> and current status directly within the Trust Center.
           </p>
         </div>

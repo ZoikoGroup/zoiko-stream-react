@@ -76,7 +76,7 @@ export default function SecretsCredentialsDeveloperSafetySection() {
                 <h3 className="text-white text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-400 transition-colors">
                   {card.title}
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

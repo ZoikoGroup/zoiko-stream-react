@@ -69,11 +69,11 @@ export default function LiveSessionControlCenter() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-12">
         {/* Heading */}
         <div className="flex flex-col items-start gap-3">
-          <h2 className="font-['Space_Grotesk'] text-3xl font-bold text-[#EEF1F6] sm:text-4xl">
+          <h2 className="  text-3xl font-bold text-[#EEF1F6] sm:text-4xl">
             Live Session Control Center
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-base font-normal text-[#AAB3C4] sm:text-lg">
+          <p className="  text-base font-normal text-[#AAB3C4] sm:text-lg">
             Implementation-aware operational state and recovery —
             Illustrative interface
           </p>
@@ -83,7 +83,7 @@ export default function LiveSessionControlCenter() {
         <div className="flex min-h-[520px] w-full overflow-hidden rounded-[20px] border border-[#232B3A] bg-[#10151E]/80 backdrop-blur-md">
           {/* Sidebar */}
           <aside className="hidden w-48 shrink-0 flex-col gap-4 border-r border-[#232B3A] p-5 md:flex">
-            <h3 className="font-['Space_Grotesk'] text-base font-bold text-[#EEF1F6]">
+            <h3 className="  text-base font-bold text-[#EEF1F6]">
               Dashboard
             </h3>
 
@@ -102,7 +102,7 @@ export default function LiveSessionControlCenter() {
                   />
 
                   <span
-                    className={`font-['Space_Grotesk'] text-xs ${
+                    className={`  text-xs ${
                       item.active
                         ? "font-bold text-[#EEF1F6]"
                         : "font-medium text-[#AAB3C4]"
@@ -120,7 +120,7 @@ export default function LiveSessionControlCenter() {
             {/* Header */}
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-1">
-                <h3 className="break-all font-['Space_Grotesk'] text-lg font-bold text-[#EEF1F6] sm:text-xl">
+                <h3 className="break-all   text-lg font-bold text-[#EEF1F6] sm:text-xl">
                   Tokyo_Main_Ceremony_Broadcast
                 </h3>
 
@@ -131,7 +131,7 @@ export default function LiveSessionControlCenter() {
               </div>
 
               <div className="w-fit rounded-sm border border-[#00D4AA] bg-[#00D4AA]/10 px-3 py-1.5">
-                <span className="font-['Space_Grotesk'] text-xs font-bold text-[#00D4AA]">
+                <span className="  text-xs font-bold text-[#00D4AA]">
                   ACTIVE STREAMING
                 </span>
               </div>
@@ -149,7 +149,7 @@ export default function LiveSessionControlCenter() {
                   }`}
                 >
                   <span
-                    className={`font-['Space_Grotesk'] text-[10px] font-bold sm:text-xs ${
+                    className={`  text-[10px] font-bold sm:text-xs ${
                       stage.active
                         ? "text-[#00D4AA]"
                         : "text-[#707A8C]"
@@ -159,7 +159,7 @@ export default function LiveSessionControlCenter() {
                   </span>
 
                   <span
-                    className={`font-['Space_Grotesk'] text-[10px] font-bold sm:text-xs ${
+                    className={`  text-[10px] font-bold sm:text-xs ${
                       stage.active
                         ? "text-[#EEF1F6]"
                         : "text-[#AAB3C4]"
@@ -175,13 +175,13 @@ export default function LiveSessionControlCenter() {
             <div className="grid flex-1 grid-cols-1 gap-4 lg:grid-cols-2">
               {/* Diagnostic Health Metrics */}
               <div className="flex flex-col gap-3 rounded-lg border border-[#232B3A] bg-[#0A0F1A] p-4">
-                <h4 className="font-['Space_Grotesk'] text-sm font-bold text-[#EEF1F6]">
+                <h4 className="  text-sm font-bold text-[#EEF1F6]">
                   Diagnostic Health Metrics
                 </h4>
 
                 <div className="flex flex-col gap-2">
                   <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Ingest Buffer Stability
                     </span>
 
@@ -191,7 +191,7 @@ export default function LiveSessionControlCenter() {
                   </div>
 
                   <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Transcoding Pipeline
                     </span>
 
@@ -201,7 +201,7 @@ export default function LiveSessionControlCenter() {
                   </div>
 
                   <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Edge Delivery Network
                     </span>
 
@@ -214,7 +214,7 @@ export default function LiveSessionControlCenter() {
 
               {/* System Event Timeline */}
               <div className="flex flex-col gap-3 rounded-lg border border-[#232B3A] bg-[#0A0F1A] p-4">
-                <h4 className="font-['Space_Grotesk'] text-sm font-bold text-[#EEF1F6]">
+                <h4 className="  text-sm font-bold text-[#EEF1F6]">
                   System Event Timeline
                 </h4>
 
@@ -224,7 +224,7 @@ export default function LiveSessionControlCenter() {
                       13:04:02
                     </span>
 
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Cloud DVR master recording file initialized.
                     </span>
                   </div>
@@ -234,7 +234,7 @@ export default function LiveSessionControlCenter() {
                       13:00:00
                     </span>
 
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Secure SAML Single Sign-On session authorized.
                     </span>
                   </div>
@@ -244,7 +244,7 @@ export default function LiveSessionControlCenter() {
                       12:58:30
                     </span>
 
-                    <span className="font-['Space_Grotesk'] text-xs text-[#AAB3C4]">
+                    <span className="  text-xs text-[#AAB3C4]">
                       Primary SRT contribution pipeline verified.
                     </span>
                   </div>
@@ -263,14 +263,14 @@ export default function LiveSessionControlCenter() {
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
             href="/monitoring"
-            className="w-full rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5 text-center font-['Space_Grotesk'] text-base font-bold text-[#0A0F1A] transition-opacity hover:opacity-90 sm:w-auto"
+            className="w-full rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5 text-center   text-base font-bold text-[#0A0F1A] transition-opacity hover:opacity-90 sm:w-auto"
           >
             Open monitoring cockpit
           </Link>
 
           <Link
             href="/api-documentation"
-            className="w-full rounded-[10px] border border-[#AAB3C4] px-7 py-3.5 text-center font-['Space_Grotesk'] text-base font-medium text-[#EEF1F6] transition-colors hover:border-[#EEF1F6] sm:w-auto"
+            className="w-full rounded-[10px] border border-[#AAB3C4] px-7 py-3.5 text-center   text-base font-medium text-[#EEF1F6] transition-colors hover:border-[#EEF1F6] sm:w-auto"
           >
             View API documentation
           </Link>

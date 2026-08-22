@@ -39,10 +39,10 @@ export default function UnderstandMediaSecurityBoundarySection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-28 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-14">
         <div className="flex flex-col gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Understand the media security boundary
           </h2>
-          <p className="text-slate-600 text-lg font-normal font-['Space_Grotesk'] leading-relaxed max-w-3xl">
+          <p className="text-slate-600 text-lg font-normal   leading-relaxed max-w-3xl">
             What is protected, where boundaries exist, and who is responsible — before asking for trust or conversion.
           </p>
         </div>
@@ -62,10 +62,10 @@ export default function UnderstandMediaSecurityBoundarySection() {
                 />
               </div>
               <div className="p-6 flex flex-col gap-3 flex-1">
-                <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
+                <h3 className="text-white text-xl font-bold  ">
                   {card.title}
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

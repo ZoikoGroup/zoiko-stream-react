@@ -37,10 +37,10 @@ export default function CorpPublicAccessSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-900 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-900 text-4xl font-bold   leading-[60.80px]">
             Audience access and viewer experience
           </h2>
-          <p className="text-slate-600 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-600 text-lg font-normal   leading-7">
             Define who can watch and how they authenticate. ZoikoStream supports SSO-locked internal broadcasts, invite-only restricted sessions, fully public streams, and hybrid combinations — each with distinct security controls and audit trails.
           </p>
         </div>
@@ -60,10 +60,10 @@ export default function CorpPublicAccessSection() {
                 />
               </div>
               <div className="self-stretch p-6 flex flex-col justify-start items-start gap-3">
-                <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
+                <h3 className="text-slate-900 text-lg font-bold  ">
                   {acc.title}
                 </h3>
-                <p className="self-stretch text-slate-600 text-sm font-normal font-['Space_Grotesk'] leading-relaxed">
+                <p className="self-stretch text-slate-600 text-sm font-normal   leading-relaxed">
                   {acc.desc}
                 </p>
               </div>

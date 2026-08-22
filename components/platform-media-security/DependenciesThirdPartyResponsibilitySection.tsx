@@ -65,7 +65,7 @@ export default function DependenciesThirdPartyResponsibilitySection() {
                 <h3 className="text-white text-xl font-bold font-['Space_Grotesk']">
                   {card.title}
                 </h3>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

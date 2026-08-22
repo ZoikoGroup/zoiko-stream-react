@@ -39,10 +39,10 @@ export default function OperateObserveDiagnoseSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Operate, observe, diagnose, and recover
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             Monitor connection health, understand errors, and follow verified recovery paths.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function OperateObserveDiagnoseSection() {
           {/* Left States Box */}
           <div className="lg:col-span-6">
             <div className="p-8 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col gap-5">
-              <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk'] tracking-wider uppercase">
+              <h3 className="text-slate-900 text-base font-bold   tracking-wider uppercase">
                 CONNECTION HEALTH STATES
               </h3>
 
@@ -64,11 +64,11 @@ export default function OperateObserveDiagnoseSection() {
                     <div className="flex flex-col gap-0.5">
                       <div className="flex items-center gap-2">
                         <div className={`size-2 rounded-full ${hs.dotBg}`} />
-                        <span className="text-slate-900 text-sm font-semibold font-['Inter']">
+                        <span className="text-slate-900 text-sm font-semibold  ">
                           {hs.num}
                         </span>
                       </div>
-                      <span className="text-slate-600 text-xs font-normal font-['Inter']">
+                      <span className="text-slate-600 text-xs font-normal  ">
                         {hs.desc}
                       </span>
                     </div>
@@ -94,10 +94,10 @@ export default function OperateObserveDiagnoseSection() {
                     <Icon className="size-5" />
                   </div>
                   <div className="flex flex-col gap-1.5">
-                    <h4 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
+                    <h4 className="text-slate-900 text-lg font-bold  ">
                       {fc.title}
                     </h4>
-                    <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                    <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                       {fc.desc}
                     </p>
                   </div>
