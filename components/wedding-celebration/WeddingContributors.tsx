@@ -70,10 +70,13 @@ export default function WeddingContributors() {
         </div>
 
         {/* Explore remote button */}
+        
         <div className="flex justify-start pt-2">
+          <a 
+              href="/remote-contribution-landing">
           <button className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold font-spaceGrotesk rounded-[10px] cursor-pointer border-none shadow-md">
             Explore remote contribution
-          </button>
+          </button></a>
         </div>
 
       </div>

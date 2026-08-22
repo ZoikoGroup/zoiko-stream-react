@@ -11,6 +11,8 @@ export default function ApiCta({ onStartBuild }: ApiCtaProps) {
     <section 
       id="api-cta-band"
       className="relative w-full py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-gray-800 flex flex-col justify-center items-center text-center font-spaceGrotesk"
+              style={{ backgroundImage: "url('/images/video-api/CtaBackground.png')" }}
+
     >
       {/* Background Decorator */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-gradient-to-br from-teal-500/10 to-blue-500/10 rounded-full blur-[80px] pointer-events-none z-0" />
@@ -36,7 +38,7 @@ export default function ApiCta({ onStartBuild }: ApiCtaProps) {
             Start Building
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="#"
             className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-400 bg-transparent transition-colors text-slate-105 text-base font-medium"
           >
             Talk to an expert

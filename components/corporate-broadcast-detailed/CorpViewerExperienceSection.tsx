@@ -106,7 +106,7 @@ export default function CorpViewerExperienceSection() {
             </div>
             <div className="inline-flex justify-start items-center gap-2">
               <a 
-                href="mailto:support@zoikostream.com" 
+                href="#" 
                 className="text-teal-400 font-normal font-['Space_Grotesk'] underline hover:opacity-90"
               >
                 Report lag or sync issues

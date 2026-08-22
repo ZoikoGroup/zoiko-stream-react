@@ -26,7 +26,7 @@ export default function FinalCtaSection() {
 
       <div className="flex flex-col sm:flex-row gap-4 items-center relative z-10">
         <Link 
-          href="#"
+          href="/plan-a-live-event"
           className="drop-shadow-[0px_4px_8px_rgba(51,217,199,0.2)] flex items-center justify-center px-6 xl:px-[26px] py-3.5 xl:py-[14px] rounded-[10px] transition-transform hover:scale-105"
           style={{ 
             backgroundImage: "linear-gradient(90deg, rgb(52, 212, 202) 0%, rgb(74, 140, 251) 100%), linear-gradient(90deg, rgba(51, 217, 199, 0.1) 0%, rgba(51, 217, 199, 0.1) 100%)" 
@@ -37,7 +37,7 @@ export default function FinalCtaSection() {
           </span>
         </Link>
         <Link 
-          href="#"
+          href="/talk-to-an-expert"
           className="border border-[#aab3c4] border-solid flex items-center justify-center px-6 xl:px-[28px] py-3.5 xl:py-[14px] rounded-[10px] transition-colors hover:bg-white/10"
         >
           <span className="font-spaceGrotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">

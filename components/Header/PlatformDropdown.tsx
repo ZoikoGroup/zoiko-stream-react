@@ -37,18 +37,18 @@ type MenuItem = {
 const BUILD_ITEMS: MenuItem[] = [
   { title: 'Platform overview', description: 'How the lifecycle fits together', href: '/platform-overview', icon: Grid },
   { title: 'Video APIs', description: 'Programmable ingest, playback, control', href: '/video-apis', icon: Code2 },
-  { title: 'SDKs', description: 'Native libraries for every surface', href: '/products', icon: Terminal },
-  { title: 'Media protocols', description: 'RTMPS, SRT, WHIP and more', href: '/products', icon: Radio },
+  { title: 'SDKs', description: 'Native libraries for every surface', href: '/sdks', icon: Terminal },
+  { title: 'Media protocols', description: 'RTMPS, SRT, WHIP and more', href: '/platform-media-protocol', icon: Radio },
   { title: 'Live streaming', description: 'Broadcast to any audience size', href: '/live-streaming', icon: Tv },
-  { title: 'Real-time contribution', description: 'Get signal in from anywhere', href: '/products', icon: RefreshCw },
-  { title: 'Video on demand', description: 'Store, package and serve replays', href: '/products', icon: Film },
+  { title: 'Real-time contribution', description: 'Get signal in from anywhere', href: '/real-time-contribution', icon: RefreshCw },
+  { title: 'Video on demand', description: 'Store, package and serve replays', href: '/platform-video-on-demand', icon: Film },
 ];
 
 const OPERATE_ITEMS: MenuItem[] = [
   {
     title: 'Media operations overview',
     description: 'Run streams like infrastructure',
-    href: '/products',
+    href: '/platform-media-operation-overview',
     icon: Grid,
   },
   {
@@ -57,11 +57,11 @@ const OPERATE_ITEMS: MenuItem[] = [
     href: '/products',
     icon: Building2,
   },
-  { title: 'Media management', description: 'Organize assets at scale', href: '/products', icon: FolderKanban },
-  { title: 'Stream monitoring', description: 'Live health and diagnostics', href: '/products', icon: Activity },
-  { title: 'Recording and replay', description: 'Automatic, durable capture', href: '/products', icon: Disc },
-  { title: 'Captions and translation', description: 'Reach audiences in-language', href: '/products', icon: Languages },
-  { title: 'Analytics', description: 'Viewer, quality and delivery data', href: '/products', icon: BarChart3 },
+  { title: 'Media management', description: 'Organize assets at scale', href: '/platform-media-management', icon: FolderKanban },
+  { title: 'Stream monitoring', description: 'Live health and diagnostics', href: '/platform-stream-monitoring', icon: Activity },
+  { title: 'Recording and replay', description: 'Automatic, durable capture', href: '/platform-recording-replay', icon: Disc },
+  { title: 'Captions and translation', description: 'Reach audiences in-language', href: '/platform-captions-and-translation', icon: Languages },
+  { title: 'Analytics', description: 'Viewer, quality and delivery data', href: '/platform-analytics', icon: BarChart3 },
 ];
 
 const SECURE_ITEMS: MenuItem[] = [
@@ -71,12 +71,12 @@ const SECURE_ITEMS: MenuItem[] = [
     href: '/products',
     icon: Grid,
   },
-  { title: 'Access control', description: 'Identity-aware entitlements', href: '/products', icon: KeyRound },
-  { title: 'Secure playback', description: 'Signed, tokenized delivery', href: '/products', icon: ShieldCheck },
+  { title: 'Access control', description: 'Identity-aware entitlements', href: '/platform-access-control', icon: KeyRound },
+  { title: 'Secure playback', description: 'Signed, tokenized delivery', href: '/platform-secure-playback', icon: ShieldCheck },
   { title: 'Adaptive video delivery', description: 'Quality that fits the network', href: '/products', icon: Zap },
   { title: 'Global distribution', description: 'Edge presence worldwide', href: '/products', icon: Globe2 },
   { title: 'Resilient delivery', description: 'Built to survive failure', href: '/products', icon: RefreshCw },
-  { title: 'Media security', description: 'Encryption end to end', href: '/products', icon: Lock },
+  { title: 'Media security', description: 'Encryption end to end', href: '/platform-media-security', icon: Lock },
 ];
 
 const POPULAR_TAGS = ['Video APIs', 'Adaptive delivery', 'Media protocols', 'Analytics', 'Security'];

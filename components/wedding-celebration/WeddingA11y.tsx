@@ -23,15 +23,15 @@ export default function WeddingA11y() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 max-w-3xl">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
             Captions, languages &amp; accessibility
           </h2>
-          <p className="text-slate-655 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-slate-655 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Make inclusive participation a planning decision, not an afterthought.
           </p>
         </div>
@@ -43,18 +43,18 @@ export default function WeddingA11y() {
             return (
               <div 
                 key={idx}
-                className="p-7 bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 flex flex-col justify-start items-start gap-4 hover:-translate-y-1 hover:shadow-md transition-all duration-300"
+                className="p-7 bg-slate-50 rounded-2xl border border-gray-200 flex flex-col justify-start items-start gap-4 hover:-translate-y-1 hover:shadow-md transition-all duration-300"
               >
                 {/* Custom Icon Wrapper */}
-                <div className="size-12 bg-teal-400/10 dark:bg-teal-405/20 rounded-xl flex justify-center items-center shrink-0">
-                  <Icon className="size-5 text-teal-500 dark:text-teal-400 stroke-[1.8]" />
+                <div className="size-12 bg-teal-400/10 rounded-xl flex justify-center items-center shrink-0">
+                  <Icon className="size-5 text-teal-500 stroke-[1.8]" />
                 </div>
                 
                 <div className="flex flex-col gap-2 w-full">
-                  <h3 className="text-zinc-955 dark:text-white text-lg font-bold font-spaceGrotesk leading-tight">
+                  <h3 className="text-zinc-955 text-lg font-bold font-spaceGrotesk leading-tight">
                     {c.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm font-normal font-spaceGrotesk leading-relaxed text-left">
+                  <p className="text-slate-600 text-xs sm:text-sm font-normal font-spaceGrotesk leading-relaxed text-left">
                     {c.desc}
                   </p>
                 </div>

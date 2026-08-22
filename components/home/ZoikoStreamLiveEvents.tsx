@@ -141,7 +141,7 @@ export default function ZoikoStreamLiveEvents() {
 
             <div>
               <a
-                href="#assured-event"
+                href="/assured-event"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-[10px] border border-gray-800 dark:border-gray-700 text-zinc-900 dark:text-white font-semibold text-base hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
               >
                 Discuss an Assured Event →

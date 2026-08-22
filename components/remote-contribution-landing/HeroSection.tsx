@@ -75,6 +75,7 @@ export default function HeroSection() {
                 Start event brief
               </span>
             </button>
+            <a href="/talk-to-an-expert">
             <button 
               className="flex items-center justify-center bg-transparent transition-colors hover:bg-white/5 border border-[#6f7787]"
               style={{
@@ -85,7 +86,7 @@ export default function HeroSection() {
               <span className="font-space-grotesk font-bold whitespace-nowrap" style={{ color: '#ffffff', fontSize: '15px' }}>
                 Talk to an expert
               </span>
-            </button>
+            </button></a>
           </div>
 
           <p className="font-space-grotesk font-normal opacity-60" style={{ color: '#aab3c4', fontSize: '14px', lineHeight: '22.75px' }}>

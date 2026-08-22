@@ -41,15 +41,15 @@ export default function ViewerExperienceSection() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-950 text-zinc-900 dark:text-white transition-colors duration-200 border-t border-slate-100 dark:border-zinc-900">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 transition-colors duration-200 border-t border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-14 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-3xl">
-          <h2 className="text-zinc-900 dark:text-white text-3xl sm:text-4xl font-bold font-sans tracking-tight">
+          <h2 className="text-zinc-900 text-3xl sm:text-4xl font-bold font-sans tracking-tight">
             What the viewer sees and how they recover
           </h2>
-          <p className="text-gray-500 dark:text-slate-400 text-base sm:text-lg leading-relaxed font-sans">
+          <p className="text-gray-500 text-base sm:text-lg leading-relaxed font-sans">
             The viewing experience should be low-friction, understandable, and recoverable.
           </p>
         </div>
@@ -129,7 +129,7 @@ export default function ViewerExperienceSection() {
             <div className="flex items-center gap-2">
               <span className="text-teal-400 font-sans">Need assistance?</span>
               <a 
-                href="mailto:support@zoikostream.com" 
+                href="/faqs-and-support" 
                 className="text-white font-bold font-sans hover:underline"
               >
                 Access Help
@@ -141,22 +141,22 @@ export default function ViewerExperienceSection() {
 
         {/* Seamless Recovery Procedures */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-zinc-900 dark:text-white text-xl font-bold font-sans">
+          <h3 className="text-zinc-900 text-xl font-bold font-sans">
             Seamless Recovery Procedures
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {errors.map((err, idx) => (
               <div 
                 key={idx}
-                className="p-5 bg-slate-50 dark:bg-zinc-900/50 rounded-lg border border-slate-200 dark:border-zinc-800 flex flex-col gap-3 hover:shadow-sm transition-shadow backdrop-blur-sm"
+                className="p-5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col gap-3 hover:shadow-sm transition-shadow backdrop-blur-sm"
               >
-                <span className="text-teal-800 dark:text-teal-400 text-xs font-bold font-sans tracking-wide">
+                <span className="text-teal-800 text-xs font-bold font-sans tracking-wide">
                   {err.code}
                 </span>
-                <h4 className="text-zinc-900 dark:text-white text-base font-bold font-sans">
+                <h4 className="text-zinc-900 text-base font-bold font-sans">
                   {err.title}
                 </h4>
-                <p className="text-gray-500 dark:text-slate-450 text-xs leading-relaxed font-sans">
+                <p className="text-gray-505 text-xs leading-relaxed font-sans">
                   {err.desc}
                 </p>
               </div>

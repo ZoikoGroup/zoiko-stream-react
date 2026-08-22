@@ -52,7 +52,7 @@ export default function GraduationHero() {
               Start your graduation brief
             </button>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="/talk-to-an-expert"
               className="px-7 py-3.5 rounded-lg border border-white/25 bg-zinc-900/40 text-slate-105 text-base font-bold hover:bg-zinc-900/80 transition-colors cursor-pointer w-full sm:w-auto text-center"
             >
               Talk to an event expert
@@ -60,7 +60,7 @@ export default function GraduationHero() {
           </div>
 
           <div className="text-xs text-gray-500 max-w-md mt-2 leading-relaxed">
-            <span className="text-[#22D3EE] cursor-pointer hover:underline">See how Live Events works →</span> &middot; Availability, accessibility, and rights depend on current service scope and are surfaced with verified states.
+            <a href="/live-events-overview" className="text-[#22D3EE] cursor-pointer hover:underline">See how Live Events works →</a> &middot; Availability, accessibility, and rights depend on current service scope and are surfaced with verified states.
           </div>
 
         </div>

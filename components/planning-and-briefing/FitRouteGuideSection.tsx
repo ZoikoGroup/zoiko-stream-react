@@ -1,35 +1,42 @@
 import React from 'react';
+import Link from 'next/link';
 
 const paths = [
   {
     icon: '/images/planning-and-briefing/video.svg',
     title: 'Managed Live Streaming',
-    description: 'Full-service execution with technical delivery, monitoring, and support.'
+    description: 'Full-service execution with technical delivery, monitoring, and support.',
+    href: '/managed-live-event-streaming'
   },
   {
     icon: '/images/planning-and-briefing/mic.svg',
     title: 'Remote Contribution',
-    description: 'Ingest from remote locations with quality monitoring and backup paths.'
+    description: 'Ingest from remote locations with quality monitoring and backup paths.',
+    href: '/remote-contribution-landing'
   },
   {
     icon: '/images/planning-and-briefing/lock-white.svg',
     title: 'Private Streaming',
-    description: 'Restricted access, SSO, and secure delivery for internal audiences.'
+    description: 'Restricted access, SSO, and secure delivery for internal audiences.',
+    href: '/private-streaming'
   },
   {
     icon: '/images/planning-and-briefing/layers.svg',
     title: 'Conference & Multi-track',
-    description: 'Multiple sessions, tracks, and simultaneous delivery profiles.'
+    description: 'Multiple sessions, tracks, and simultaneous delivery profiles.',
+    href: '/conference-and-multitrack'
   },
   {
     icon: '/images/planning-and-briefing/shield.svg',
     title: 'Event Resilience',
-    description: 'Failover planning, backup ingest, and contingency workflows.'
+    description: 'Failover planning, backup ingest, and contingency workflows.',
+    href: '/event-resilience'
   },
   {
     icon: '/images/planning-and-briefing/check-circle-white.svg',
     title: 'Assured Event',
-    description: 'High-stakes events with strict SLAs and technical assurance.'
+    description: 'High-stakes events with strict SLAs and technical assurance.',
+    href: '/assured-event'
   }
 ];
 
@@ -61,8 +68,9 @@ export default function FitRouteGuideSection() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] w-full">
           {paths.map((path, idx) => (
-            <div 
+            <Link
               key={idx}
+              href={path.href}
               className="flex flex-col gap-[12px] bg-white border border-[#e2e8f0] rounded-[16px] p-[20px] shadow-[0px_10px_12px_rgba(0,0,0,0.05)] transition-transform hover:-translate-y-1 hover:shadow-lg cursor-pointer group"
             >
               <div className="w-[40px] h-[40px] rounded-[12px] bg-[#2563eb] flex items-center justify-center mb-[4px]">
@@ -83,7 +91,7 @@ export default function FitRouteGuideSection() {
                 </span>
                 <img src="/images/planning-and-briefing/arrow-right-blue.svg" alt="" className="w-[16px] h-[16px] transition-transform group-hover:translate-x-1" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

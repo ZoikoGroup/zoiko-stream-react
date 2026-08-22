@@ -44,20 +44,24 @@ export default function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center gap-[16px] w-fit">
-          <button 
+          <a 
+            href="/plan-a-live-event"
             className="flex items-center justify-center px-[26px] py-[14px] rounded-[10px] drop-shadow-[0px_4px_8px_rgba(0,212,170,0.2)] hover:opacity-90 transition-opacity w-full sm:w-auto"
             style={{ background: 'linear-gradient(90deg, #00d4aa 0%, #4c86ff 100%)' }}
           >
             <span className="font-space-grotesk font-bold text-[#04141a] text-[15px] whitespace-nowrap leading-[normal]">
               Plan a Live Event
             </span>
-          </button>
+          </a>
           
-          <button className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] rounded-[10px] bg-transparent hover:bg-[rgba(255,255,255,0.05)] transition-colors w-full sm:w-auto">
+          <a 
+            href="/talk-to-an-expert" 
+            className="flex items-center justify-center px-[28px] py-[14px] border border-[#aab3c4] rounded-[10px] bg-transparent hover:bg-[rgba(255,255,255,0.05)] transition-colors w-full sm:w-auto"
+          >
             <span className="font-space-grotesk font-medium text-[#eef1f6] text-[15px] whitespace-nowrap leading-[normal]">
               Talk to an expert
             </span>
-          </button>
+          </a>
         </div>
 
         {/* Trust Stats */}

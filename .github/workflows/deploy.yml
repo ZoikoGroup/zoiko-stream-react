@@ -1,12 +1,11 @@
 name: Deploy to VM
-
 on:
   push:
     branches: [main]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
     steps:
       - name: Deploy over SSH
         uses: appleboy/ssh-action@v1.0.3
@@ -14,6 +13,8 @@ jobs:
           host: ${{ secrets.GCP_SSH_HOST }}
           username: ${{ secrets.GCP_SSH_USER }}
           key: ${{ secrets.GCP_SSH_KEY }}
+          timeout: 30s
+          command_timeout: 30m
           script: |
             cd /var/www/zoiko-stream/app
             git pull origin main

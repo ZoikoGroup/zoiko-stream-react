@@ -4,15 +4,15 @@ import React from 'react';
 
 export default function ApiRequestProof() {
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250 font-spaceGrotesk">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250 font-spaceGrotesk">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left font-spaceGrotesk">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 max-w-3xl">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold tracking-tight">
             Request-to-Outcome Proof
           </h2>
-          <p className="text-slate-655 dark:text-zinc-400 text-base sm:text-lg font-normal leading-relaxed">
+          <p className="text-slate-655 text-base sm:text-lg font-normal leading-relaxed">
             See what an implementation looks like with a verified, maintained example. Simple contracts, robust systems.
           </p>
         </div>
@@ -34,7 +34,7 @@ Authorization: Bearer zk_live_8372bf...
 Content-Type: application/json
 
 {
-  "name": "Keynote Broadcast SF",
+  "name": "Keynote SF",
   "ingest_protocol": "SRT",
   "latency_mode": "low",
   "recording": {
@@ -67,25 +67,25 @@ Content-Type: application/json
         </div>
 
         {/* Sandbox Metrics Panel */}
-        <div className="p-5 bg-slate-50 dark:bg-zinc-900 rounded-lg border border-gray-200 dark:border-zinc-800 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 w-full text-xs font-spaceGrotesk">
-          <div className="flex flex-wrap items-center gap-6 text-slate-600 dark:text-zinc-400">
+        <div className="p-5 bg-slate-50 rounded-lg border border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 w-full text-xs font-spaceGrotesk">
+          <div className="flex flex-wrap items-center gap-6 text-slate-600">
             <div>
               <span>API Version: </span>
-              <span className="font-bold text-zinc-955 dark:text-white">v1.4.2</span>
+              <span className="font-bold text-zinc-955">v1.4.2</span>
             </div>
             <div>
               <span>Tested Date: </span>
-              <span className="font-bold text-zinc-955 dark:text-white">2026-03-18</span>
+              <span className="font-bold text-zinc-955">2026-03-18</span>
             </div>
             <div>
               <span>Sandbox Environment: </span>
-              <span className="font-bold text-zinc-955 dark:text-white">sandbox-us-west</span>
+              <span className="font-bold text-zinc-955">sandbox-us-west</span>
             </div>
           </div>
           
           <a 
             href="#handbooks" 
-            className="text-blue-500 dark:text-blue-400 font-bold hover:underline"
+            className="text-blue-500 font-bold hover:underline"
           >
             View Error Code Handbooks →
           </a>

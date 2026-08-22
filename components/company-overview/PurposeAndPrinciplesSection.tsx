@@ -63,25 +63,25 @@ const PRINCIPLES: PrincipleCard[] = [
 
 export default function PurposeAndPrinciplesSection() {
   return (
-    <section className="w-full bg-slate-50 dark:bg-zinc-950 px-6 py-16 text-gray-900 dark:text-slate-100 sm:px-12 lg:px-20 lg:py-24">
+    <section className="w-full bg-slate-50 px-6 py-16 text-gray-900 sm:px-12 lg:px-20 lg:py-24">
       <div className="mx-auto max-w-7xl">
         {/* Section Header */}
         <div className="mb-10 flex max-w-2xl flex-col items-start gap-3">
           {/* Tagline Badge */}
           <div className="inline-flex items-center gap-2.5">
             <span className="h-0.5 w-5 bg-cyan-400" />
-            <span className="text-xs font-bold uppercase tracking-wider text-cyan-500 dark:text-cyan-400">
+            <span className="text-xs font-bold uppercase tracking-wider text-cyan-500">
               Purpose and principles
             </span>
           </div>
 
           {/* Main Title */}
-          <h2 className="text-3xl font-bold leading-tight text-gray-900 dark:text-slate-100 sm:text-4xl">
+          <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
             What guides the organization.
           </h2>
 
           {/* Subtitle Paragraph */}
-          <p className="text-base font-normal leading-relaxed text-slate-500 dark:text-slate-400">
+          <p className="text-base font-normal leading-relaxed text-slate-500">
             Principles specific to secure media infrastructure, global streaming, and
             professional live-event operations — not generic corporate values.
           </p>
@@ -92,16 +92,16 @@ export default function PurposeAndPrinciplesSection() {
           {PRINCIPLES.map((item) => (
             <div
               key={item.id}
-              className="group flex flex-col justify-between rounded-2xl border border-slate-200 dark:border-gray-800 bg-white dark:bg-zinc-900 p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-slate-300 dark:hover:border-gray-700 hover:shadow-md"
+              className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-slate-300 hover:shadow-md"
             >
               <div className="flex flex-col gap-2">
                 {/* Principle Title */}
-                <h3 className="text-base font-bold leading-snug text-gray-900 dark:text-slate-100">
+                <h3 className="text-base font-bold leading-snug text-gray-900">
                   {item.title}
                 </h3>
 
                 {/* Principle Description */}
-                <p className="pb-4 text-sm font-normal leading-relaxed text-slate-500 dark:text-slate-400">
+                <p className="pb-4 text-sm font-normal leading-relaxed text-slate-500">
                   {item.description}
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function PurposeAndPrinciplesSection() {
               <div>
                 <Link
                   href={item.href}
-                  className="inline-block border-b-2 border-cyan-400 pb-0.5 text-xs font-bold text-gray-900 dark:text-slate-100 transition-colors hover:border-cyan-600 dark:hover:border-cyan-300 hover:text-cyan-600 dark:hover:text-cyan-300 focus:outline-none"
+                  className="inline-block border-b-2 border-cyan-400 pb-0.5 text-xs font-bold text-gray-900 transition-colors hover:border-cyan-600 hover:text-cyan-600 focus:outline-none"
                 >
                   {item.ctaText}
                 </Link>

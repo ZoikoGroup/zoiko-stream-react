@@ -1,0 +1,17 @@
+export { default as HeroSection } from './HeroSection';
+export { default as WhatDoYouNeedToDoSection } from './WhatDoYouNeedToDoSection';
+export { default as GovernedMediaRecordSection } from './GovernedMediaRecordSection';
+export { default as MediaReadinessReviewSection } from './MediaReadinessReviewSection';
+export { default as SearchWithoutCompromiseSection } from './SearchWithoutCompromiseSection';
+export { default as RightsProvenanceSection } from './RightsProvenanceSection';
+export { default as VersionsLineageSection } from './VersionsLineageSection';
+export { default as AccessibilityContinuitySection } from './AccessibilityContinuitySection';
+export { default as AccessClassificationSection } from './AccessClassificationSection';
+export { default as LifecyclePreservationSection } from './LifecyclePreservationSection';
+export { default as MediaGovernanceRecordDashboardSection } from './MediaGovernanceRecordDashboardSection';
+export { default as DeveloperHandoffSection } from './DeveloperHandoffSection';
+export { default as OperationsAnalyticsSection } from './OperationsAnalyticsSection';
+export { default as SecurityPrivacySection } from './SecurityPrivacySection';
+export { default as AlreadyACustomerSection } from './AlreadyACustomerSection';
+export { default as FaqSection } from './FaqSection';
+export { default as FinalCtaSection } from './FinalCtaSection';

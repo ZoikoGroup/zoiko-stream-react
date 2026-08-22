@@ -157,12 +157,14 @@ export default function BriefReadinessPreviewSection() {
             <p className="font-space-grotesk font-normal text-[#cbd5e1] text-[14px]">
               This preview shows how the brief organizes key planning details into a single, reviewable summary.
             </p>
-            <button className="flex items-center gap-[10px] px-[18px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] w-fit hover:opacity-90 transition-opacity">
-              <span className="font-space-grotesk font-bold text-white text-[14px] whitespace-nowrap">
-                Open example summary
-              </span>
-              <img src="/images/planning-and-briefing/arrow-right.svg" alt="" className="w-[18px] h-[18px]" />
-            </button>
+            <a href="/plan-a-live-event" className="w-fit">
+              <button className="flex items-center gap-[10px] px-[18px] py-[14px] bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] w-fit hover:opacity-90 transition-opacity">
+                <span className="font-space-grotesk font-bold text-white text-[14px] whitespace-nowrap">
+                  Open example summary
+                </span>
+                <img src="/images/planning-and-briefing/arrow-right.svg" alt="" className="w-[18px] h-[18px]" />
+              </button>
+            </a>
           </div>
 
         </div>

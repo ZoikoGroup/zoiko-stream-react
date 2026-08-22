@@ -26,15 +26,15 @@ export default function WeddingAudioRights() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 max-w-3xl">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
             Audio, music &amp; content rights
           </h2>
-          <p className="text-slate-650 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-slate-655 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Plan spoken word and music quality while understanding content-rights boundaries.
           </p>
         </div>
@@ -44,10 +44,10 @@ export default function WeddingAudioRights() {
           {cards.map((c, idx) => (
             <div 
               key={idx}
-              className="bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800/80 overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
+              className="bg-slate-50 rounded-2xl border border-gray-200 overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300 flex flex-col"
             >
               {/* Image box */}
-              <div className="relative h-48 w-full bg-slate-100 dark:bg-zinc-950">
+              <div className="relative h-48 w-full bg-slate-100">
                 <Image 
                   src={c.img} 
                   alt={c.title}
@@ -59,14 +59,14 @@ export default function WeddingAudioRights() {
               {/* Text Padding */}
               <div className="p-6 flex flex-col gap-3 justify-start items-start">
                 <div className="flex justify-between items-center w-full">
-                  <h3 className="text-zinc-955 dark:text-white text-lg font-bold font-spaceGrotesk leading-tight">
+                  <h3 className="text-zinc-955 text-lg font-bold font-spaceGrotesk leading-tight">
                     {c.title}
                   </h3>
                   <span className="px-2 py-0.5 bg-blue-500/10 text-blue-500 text-[10px] font-bold font-mono rounded-sm tracking-wider uppercase shrink-0">
                     {c.badge}
                   </span>
                 </div>
-                <p className="text-slate-605 dark:text-zinc-400 text-xs sm:text-sm font-normal font-spaceGrotesk leading-relaxed text-left">
+                <p className="text-slate-600 text-xs sm:text-sm font-normal font-spaceGrotesk leading-relaxed text-left">
                   {c.desc}
                 </p>
               </div>

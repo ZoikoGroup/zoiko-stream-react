@@ -45,15 +45,15 @@ export default function ConferenceFaq() {
   };
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-t border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-t border-b border-gray-200 transition-colors duration-250">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-center items-center">
-          <h2 className="text-gray-900 dark:text-white text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
+          <h2 className="text-gray-900 text-3xl sm:text-4xl font-bold font-spaceGrotesk leading-tight tracking-tight">
             Frequently asked questions
           </h2>
-          <p className="text-gray-600 dark:text-zinc-400 text-base sm:text-lg font-normal font-spaceGrotesk max-w-2xl">
+          <p className="text-gray-600 text-base sm:text-lg font-normal font-spaceGrotesk max-w-2xl">
             Everything you need to know about setting up and governing multi-track enterprise broadcasts.
           </p>
         </div>
@@ -65,21 +65,21 @@ export default function ConferenceFaq() {
             return (
               <div 
                 key={idx}
-                className="bg-slate-50 dark:bg-zinc-900 rounded-xl outline outline-1 outline-offset-[-1px] outline-gray-200 dark:outline-zinc-800 overflow-hidden transition-all duration-300"
+                className="bg-slate-55 rounded-xl outline outline-1 outline-offset-[-1px] outline-gray-200 overflow-hidden transition-all duration-300"
               >
                 {/* Question Row */}
                 <button
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left bg-transparent border-none cursor-pointer focus:outline-none select-none group"
                 >
-                  <span className="text-slate-900 dark:text-white text-lg font-bold font-spaceGrotesk leading-snug group-hover:text-teal-500 transition-colors">
+                  <span className="text-slate-900 text-lg font-bold font-spaceGrotesk leading-snug group-hover:text-teal-500 transition-colors">
                     {faq.question}
                   </span>
                   
                   {/* Plus/Minus icon */}
                   <span className="size-4 shrink-0 relative overflow-hidden flex justify-center items-center">
-                    <span className={`w-3.5 h-0.5 bg-slate-900 dark:bg-white absolute transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
-                    <span className={`w-0.5 h-3.5 bg-slate-900 dark:bg-white absolute transition-transform duration-300 ${isOpen ? 'scale-0' : 'scale-100'}`} />
+                    <span className={`w-3.5 h-0.5 bg-slate-900 absolute transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+                    <span className={`w-0.5 h-3.5 bg-slate-900 absolute transition-transform duration-300 ${isOpen ? 'scale-0' : 'scale-100'}`} />
                   </span>
                 </button>
 
@@ -89,7 +89,7 @@ export default function ConferenceFaq() {
                     isOpen ? 'max-h-[300px] pb-6 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="text-gray-600 dark:text-zinc-400 text-base font-normal font-spaceGrotesk leading-relaxed">
+                  <p className="text-gray-600 text-base font-normal font-spaceGrotesk leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

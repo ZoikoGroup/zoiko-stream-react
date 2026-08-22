@@ -37,7 +37,8 @@ export default function FinalCtaSection() {
 
       {/* Buttons */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full" style={{ gap: '16px' }}>
-        <button 
+        <a 
+          href="#"
           className="flex items-center justify-center cursor-pointer transition-transform hover:scale-[1.02]"
           style={{ 
             background: 'linear-gradient(to right, #00d4aa, #4c86ff)',
@@ -47,9 +48,10 @@ export default function FinalCtaSection() {
           }}
         >
           <span className="font-space-grotesk font-bold" style={{ color: '#04141a', fontSize: '15px' }}>Start your event brief</span>
-        </button>
+        </a>
 
-        <button 
+        <a 
+          href="/talk-to-an-expert"
           className="flex items-center justify-center cursor-pointer transition-transform hover:scale-[1.02]"
           style={{ 
             border: '1px solid #aab3c4',
@@ -59,7 +61,7 @@ export default function FinalCtaSection() {
           }}
         >
           <span className="font-space-grotesk font-medium" style={{ color: '#eef1f6', fontSize: '15px' }}>Talk to an expert</span>
-        </button>
+        </a>
       </div>
 
       {/* Small Disclaimer */}

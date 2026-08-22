@@ -13,11 +13,11 @@ const CAPABILITIES = [
 ];
 
 const RESOURCES = [
-  'Documentation',
-  'API reference',
-  'Changelog',
-  'Status',
-  'Sample application',
+  { name: 'Documentation', href: '/sdks' },
+  { name: 'API reference', href: '/video-apis' },
+  { name: 'Changelog', href: '#' },
+  { name: 'Status', href: '#' },
+  { name: 'Sample application', href: '/sdks' },
 ];
 
 const WORKFLOW_STEPS = ['Credential', 'Request', 'Stream', 'Player', 'Analytics'];
@@ -56,18 +56,18 @@ export default function DeveloperSection() {
           <div className="flex flex-wrap gap-2.5 py-2">
             {RESOURCES.map((resource) => (
               <Link
-                key={resource}
-                href="#"
+                key={resource.name}
+                href={resource.href}
                 className="inline-flex h-9 items-center justify-center rounded-full border border-gray-800 bg-zinc-900/50 px-3.5   text-xs text-slate-400 transition-colors hover:border-gray-700 hover:text-white"
               >
-                {resource}
+                {resource.name}
               </Link>
             ))}
           </div>
 
           <div className="pt-2">
             <Link
-              href="/signup"
+              href="/start-building"
               className="inline-flex min-h-[48px] min-w-[192px] items-center justify-center rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3.5   text-base font-normal text-slate-950 transition-opacity hover:opacity-95"
             >
               Start building

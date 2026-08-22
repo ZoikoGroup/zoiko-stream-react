@@ -58,7 +58,7 @@ export default function AboutHeroSection() {
           {/* Action Buttons */}
           <div className="pt-6 pb-6 sm:pb-12 flex flex-wrap items-center gap-4">
             <a
-              href="#contact"
+              href="/talk-to-an-expert"
               className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-90 transition-opacity rounded-xl flex items-center gap-2 text-white text-base font-normal"
             >
               <span>Talk to an Expert</span>
@@ -76,7 +76,7 @@ export default function AboutHeroSection() {
             </a>
 
             <a
-              href="#explore"
+              href="/platform-overview"
               className="px-8 py-4 rounded-xl border border-white/20 hover:bg-white/10 transition-colors text-white text-base font-normal"
             >
               Explore the Platform

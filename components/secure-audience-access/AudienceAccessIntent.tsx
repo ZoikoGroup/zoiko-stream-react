@@ -86,7 +86,7 @@ export default function AudienceAccessIntent() {
                 </p>
 
                 <Link
-                  href="#"
+                  href="/secure-audience-access"
                   className="mt-auto pt-3 text-[12px] font-semibold text-slate-300 transition-colors hover:text-white"
                 >
                   Learn more →

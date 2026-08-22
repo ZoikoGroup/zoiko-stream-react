@@ -30,15 +30,15 @@ export default function WorkflowRunOfShow() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250 font-spaceGrotesk">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250 font-spaceGrotesk">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 max-w-3xl">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold tracking-tight">
             Turn the event plan into a production-ready sequence
           </h2>
-          <p className="text-slate-655 dark:text-zinc-400 text-base sm:text-lg font-normal leading-relaxed">
+          <p className="text-slate-655 text-base sm:text-lg font-normal leading-relaxed">
             Delineate cues, lower-third graphic layers, audio priorities, and remote speaker transitions in our interactive Run-of-Show planner.
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function WorkflowRunOfShow() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 w-full">
           
           {/* Left panel: Run-of-Show Segment list */}
-          <div className="w-full lg:w-[500px] p-5 bg-slate-50 dark:bg-zinc-900 rounded-xl border border-slate-200 dark:border-zinc-800 flex flex-col gap-3.5 shadow-sm shrink-0">
-            <h3 className="text-zinc-955 dark:text-white text-base font-bold">
+          <div className="w-full lg:w-[500px] p-5 bg-slate-50 rounded-xl border border-slate-200 flex flex-col gap-3.5 shadow-sm shrink-0">
+            <h3 className="text-zinc-955 text-base font-bold">
               Run-of-Show Segment
             </h3>
             
@@ -56,10 +56,10 @@ export default function WorkflowRunOfShow() {
               {segments.map((s, idx) => (
                 <div 
                   key={idx}
-                  className="p-3 bg-white dark:bg-zinc-950 rounded-lg border border-slate-200 dark:border-zinc-850 flex items-center justify-between gap-3 text-xs"
+                  className="p-3 bg-white rounded-lg border border-slate-200 flex items-center justify-between gap-3 text-xs"
                 >
-                  <span className="w-20 text-blue-500 dark:text-blue-400 font-bold font-mono">{s.time}</span>
-                  <span className="flex-1 text-zinc-950 dark:text-slate-200 font-semibold truncate text-left">{s.name}</span>
+                  <span className="w-20 text-blue-500 font-bold font-mono">{s.time}</span>
+                  <span className="flex-1 text-zinc-955 font-semibold truncate text-left">{s.name}</span>
                   <span className="px-2 py-0.5 bg-teal-500/10 text-teal-500 font-mono rounded-sm text-[10px] uppercase shrink-0">
                     {s.badge}
                   </span>
@@ -75,18 +75,18 @@ export default function WorkflowRunOfShow() {
               return (
                 <div 
                   key={idx}
-                  className="p-4 bg-slate-50 dark:bg-zinc-900 rounded-xl border border-slate-200 dark:border-zinc-850 flex justify-start items-start gap-4 hover:border-slate-300 dark:hover:border-zinc-750 transition-colors"
+                  className="p-4 bg-slate-50 rounded-xl border border-slate-200 flex justify-start items-start gap-4 hover:border-slate-300 transition-colors"
                 >
                   {/* Icon Block */}
                   <div className="size-9 bg-blue-500/10 rounded-lg flex justify-center items-center shrink-0">
-                    <Icon className="size-4 text-blue-500 dark:text-blue-400 stroke-[1.8]" />
+                    <Icon className="size-4 text-blue-500 stroke-[1.8]" />
                   </div>
                   
                   <div className="flex-1 flex flex-col gap-1 text-left w-full">
-                    <h4 className="text-zinc-955 dark:text-white text-base font-bold leading-tight">
+                    <h4 className="text-zinc-955 text-base font-bold leading-tight">
                       {f.title}
                     </h4>
-                    <p className="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm font-normal leading-relaxed">
+                    <p className="text-slate-600 text-xs sm:text-sm font-normal leading-relaxed">
                       {f.desc}
                     </p>
                   </div>
@@ -99,9 +99,11 @@ export default function WorkflowRunOfShow() {
 
         {/* Bottom Button link */}
         <div className="flex justify-start pt-2">
-          <button className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 dark:outline-zinc-700 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 dark:text-slate-100 text-base font-bold">
+          <a href="/production-switching-graphics">
+          <button className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 text-base font-bold font-spaceGrotesk">
             Explore Production, switching &amp; graphics
           </button>
+          </a>
         </div>
 
       </div>

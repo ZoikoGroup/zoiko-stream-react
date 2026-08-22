@@ -25,16 +25,18 @@ export default function FinalCta() {
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 items-center relative z-10 mt-2">
+        <a href="/plan-a-live-event">
         <button className="bg-gradient-to-r drop-shadow-[0px_4px_8px_rgba(51,217,199,0.2)] flex from-[#33d9c7] items-center justify-center px-[26px] py-[14px] rounded-[10px] to-[#4c86ff] transition-transform hover:-translate-y-0.5">
           <span className="font-spaceGrotesk font-bold leading-[normal] text-[#04141a] text-[15px] whitespace-nowrap">
             Plan a live event
           </span>
-        </button>
+        </button></a>
+        <a href="/talk-to-an-expert">
         <button className="border border-[#aab3c4] flex items-center justify-center px-[28px] py-[14px] rounded-[10px] transition-colors hover:bg-white/5">
           <span className="font-spaceGrotesk font-bold leading-[normal] text-[#eef1f6] text-[15px] whitespace-nowrap">
             Talk to an expert
           </span>
-        </button>
+        </button></a>
       </div>
     </section>
   );

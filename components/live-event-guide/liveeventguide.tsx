@@ -40,7 +40,7 @@ export default function LiveEventsGuide() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 text-zinc-900 transition-colors duration-200 dark:bg-slate-900 dark:text-slate-100">
+    <div className="min-h-screen bg-slate-100 text-zinc-900 transition-colors duration-200">
       
 
       {/* Main Content Area */}
@@ -49,16 +49,16 @@ export default function LiveEventsGuide() {
         <section className="mx-auto max-w-3xl py-8 text-center sm:py-12">
           <div className="inline-flex items-center gap-2">
             <div className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="  text-xs font-normal uppercase tracking-wide text-blue-500 dark:text-blue-400">
+            <span className="  text-xs font-normal uppercase tracking-wide text-blue-500">
               LIVE EVENTS GUIDE
             </span>
           </div>
 
-          <h1 className="mt-4   text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl md:text-5xl dark:text-white">
+          <h1 className="mt-4   text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl md:text-5xl">
             How to plan a professionally managed live broadcast.
           </h1>
 
-          <p className="mt-4   text-base leading-relaxed text-gray-500 dark:text-slate-400">
+          <p className="mt-4   text-base leading-relaxed text-gray-500">
             This guide walks through everything to decide before you submit a
             Live Events inquiry: event type, timeline, audience access,
             accessibility, production, recording, and resilience. It is planning
@@ -66,7 +66,7 @@ export default function LiveEventsGuide() {
             level.
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-tight text-gray-500 dark:text-slate-400">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-tight text-gray-500">
             <span>Live Events guide</span>
             <span>•</span>
             <span>9 min read</span>
@@ -81,16 +81,16 @@ export default function LiveEventsGuide() {
           <aside className="lg:col-span-3">
             <div className="sticky top-24 space-y-6">
               <div className="space-y-3">
-                <span className="  text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-slate-400">
+                <span className="  text-xs font-semibold uppercase tracking-wide text-gray-500">
                   On this page ▾
                 </span>
-                <nav className="flex flex-col border-l-2 border-gray-200 text-sm dark:border-slate-800">
+                <nav className="flex flex-col border-l-2 border-gray-200 text-sm">
                   {navItems.map((item) => (
                     <a
                       key={item.id}
                       href={`#${item.id}`}
                       onClick={(e) => scrollToSection(e, item.id)}
-                      className="py-1.5 pl-3 text-gray-500 transition hover:text-blue-500 dark:text-slate-400 dark:hover:text-blue-400"
+                      className="py-1.5 pl-3 text-gray-500 transition hover:text-blue-500"
                     >
                       {item.label}
                     </a>
@@ -99,17 +99,17 @@ export default function LiveEventsGuide() {
               </div>
 
               {/* Quick Facts Box */}
-              <div className="rounded-xl border border-gray-200 bg-slate-50 p-4 space-y-3 dark:border-slate-800 dark:bg-slate-800/50">
-                <h3 className="  text-xs font-semibold uppercase tracking-wide text-zinc-900 dark:text-white">
+              <div className="rounded-xl border border-gray-200 bg-slate-50 p-4 space-y-3">
+                <h3 className="  text-xs font-semibold uppercase tracking-wide text-zinc-900">
                   Quick facts
                 </h3>
-                <p className="text-xs text-gray-500 dark:text-slate-400">
+                <p className="text-xs text-gray-500">
                   Two-step inquiry, no account required.
                 </p>
-                <p className="text-xs text-gray-500 dark:text-slate-400">
+                <p className="text-xs text-gray-500">
                   Submitting does not reserve a date or confirm a service.
                 </p>
-                <p className="text-xs text-gray-500 dark:text-slate-400">
+                <p className="text-xs text-gray-500">
                   Respectful, non-exploitative handling for sensitive occasions.
                 </p>
                 <a href="/plan-a-live-event">
@@ -124,27 +124,27 @@ export default function LiveEventsGuide() {
           <div className="space-y-12 lg:col-span-9">
             {/* Intro / Audience */}
             <section id="section-intro" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 Who this guide is for
               </h2>
-              <p className="max-w-3xl leading-7 text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl leading-7 text-gray-600">
                 This guide is for anyone preparing to submit a ZoikoStream Live
                 Events inquiry — a conference organizer, a place of worship, a
                 family planning a memorial or wedding livestream, a school
                 handling a graduation, a civic institution, or a company
                 running an internal broadcast. It's meant to be read{" "}
-                <strong className="text-zinc-900 dark:text-white">
+                <strong className="text-zinc-900">
                   before
                 </strong>{" "}
                 you start the planning form, so you arrive with clear answers
                 instead of guessing under time pressure.
               </p>
 
-              <div className="max-w-3xl rounded-xl border-l-4 border-blue-500 bg-indigo-50/70 p-4 dark:bg-indigo-950/30">
-                <h4 className="font-bold text-blue-900 dark:text-blue-300">
+              <div className="max-w-3xl rounded-xl border-l-4 border-blue-500 bg-indigo-50/70 p-4">
+                <h4 className="font-bold text-blue-900">
                   Before you start
                 </h4>
-                <p className="mt-1 text-sm text-blue-900/80 dark:text-blue-200/80">
+                <p className="mt-1 text-sm text-blue-900/80">
                   The planning form itself takes about five minutes for Step 1
                   and a few more for Step 2. This guide takes about nine minutes
                   and will make both steps faster and more accurate.
@@ -154,26 +154,26 @@ export default function LiveEventsGuide() {
 
             {/* 1. Define the event */}
             <section id="section-1" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 1. Define the event
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 ZoikoStream Live Events routes inquiries using a small set of
                 canonical event types. Picking the closest match — even if
                 imperfect — helps route your inquiry to the right planning
                 context faster than leaving it as "Other."
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-slate-800">
-                <table className="w-full text-left text-sm text-gray-600 dark:text-slate-300">
-                  <thead className="bg-slate-200/60   text-xs uppercase text-zinc-900 dark:bg-slate-800 dark:text-slate-200">
+              <div className="overflow-x-auto rounded-lg border border-gray-200">
+                <table className="w-full text-left text-sm text-gray-600">
+                  <thead className="bg-slate-200/60   text-xs uppercase text-zinc-900">
                     <tr>
                       <th className="p-3">Event type</th>
                       <th className="p-3">Typical routing intent</th>
                       <th className="p-3">Notes</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-slate-800">
+                  <tbody className="divide-y divide-gray-200">
                     {[
                       {
                         type: "Conference",
@@ -223,8 +223,8 @@ export default function LiveEventsGuide() {
                           "Perfectly fine to select — you're never forced into the wrong category.",
                       },
                     ].map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
-                        <td className="p-3 font-medium text-zinc-900 dark:text-white">
+                      <tr key={idx} className="hover:bg-slate-50">
+                        <td className="p-3 font-medium text-zinc-900">
                           {row.type}
                         </td>
                         <td className="p-3">{row.intent}</td>
@@ -238,29 +238,29 @@ export default function LiveEventsGuide() {
 
             {/* 2. Choose your timeline */}
             <section id="section-2" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 2. Choose your timeline
               </h2>
-              <p className="max-w-3xl leading-7 text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl leading-7 text-gray-600">
                 An exact date isn't required to start planning. You can submit a
                 fixed date, a planning window (a range, or "sometime next
                 quarter"), or mark the date as{" "}
-                <strong className="text-zinc-900 dark:text-white">
+                <strong className="text-zinc-900">
                   not fixed
                 </strong>
                 . What changes is how much detail is useful at each stage.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-slate-800">
-                <table className="w-full text-left text-sm text-gray-600 dark:text-slate-300">
-                  <thead className="bg-slate-200/60   text-xs uppercase text-zinc-900 dark:bg-slate-800 dark:text-slate-200">
+              <div className="overflow-x-auto rounded-lg border border-gray-200">
+                <table className="w-full text-left text-sm text-gray-600">
+                  <thead className="bg-slate-200/60   text-xs uppercase text-zinc-900">
                     <tr>
                       <th className="p-3">When</th>
                       <th className="p-3">What's worth deciding</th>
                       <th className="p-3">Why it matters</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-gray-200 dark:divide-slate-800">
+                  <tbody className="divide-y divide-gray-200">
                     {[
                       {
                         when: "6+ weeks out",
@@ -283,8 +283,8 @@ export default function LiveEventsGuide() {
                         why: "See the day-of checklist.",
                       },
                     ].map((row, idx) => (
-                      <tr key={idx} className="hover:bg-slate-50 dark:hover:bg-slate-800/40">
-                        <td className="p-3 font-medium text-zinc-900 dark:text-white">
+                      <tr key={idx} className="hover:bg-slate-50">
+                        <td className="p-3 font-medium text-zinc-900">
                           {row.when}
                         </td>
                         <td className="p-3">{row.decide}</td>
@@ -295,11 +295,11 @@ export default function LiveEventsGuide() {
                 </table>
               </div>
 
-              <div className="max-w-3xl rounded-xl border-l-4 border-blue-500 bg-indigo-50/70 p-4 dark:bg-indigo-950/30">
-                <h4 className="font-bold text-blue-900 dark:text-blue-300">
+              <div className="max-w-3xl rounded-xl border-l-4 border-blue-500 bg-indigo-50/70 p-4">
+                <h4 className="font-bold text-blue-900">
                   Date not fixed is a valid answer
                 </h4>
-                <p className="mt-1 text-sm text-blue-900/80 dark:text-blue-200/80">
+                <p className="mt-1 text-sm text-blue-900/80">
                   Submitting early with "date not fixed" is better than waiting — it lets planning conversations start sooner, without pretending a decision has been made.
                 </p>
               </div>
@@ -307,18 +307,18 @@ export default function LiveEventsGuide() {
 
             {/* 3. Decide who can watch */}
             <section id="section-3" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 3. Decide who can watch
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Audience access is one of the most consequential planning decisions, especially for private or sensitive occasions. Choose the model that matches your intent — not the one that sounds most impressive.
               </p>
 
-              <div className="max-w-3xl rounded-xl border-l-4 border-yellow-500 bg-amber-50 p-4 dark:bg-amber-950/30">
-                <h4 className="font-bold text-yellow-800 dark:text-yellow-400">
+              <div className="max-w-3xl rounded-xl border-l-4 border-yellow-500 bg-amber-50 p-4">
+                <h4 className="font-bold text-yellow-800">
                   Never submit attendee data
                 </h4>
-                <p className="mt-1 text-sm text-yellow-800/80 dark:text-yellow-200/80">
+                <p className="mt-1 text-sm text-yellow-800/80">
                   Don't upload guest lists, emails, phone numbers, or private access codes through the public planning form. Approved-list and sign-in configuration happens in a separate, secured process — not here.
                 </p>
               </div>
@@ -326,70 +326,70 @@ export default function LiveEventsGuide() {
 
             {/* 4. Plan contribution & production */}
             <section id="section-4" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 4. Plan contribution & production
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 "Contribution" simply means where the video and audio are coming from. Knowing this in advance helps the next conversation move faster.
               </p>
-              <ul className="list-disc space-y-2 pl-5 text-gray-600 dark:text-slate-300">
-                <li><strong className="text-zinc-900 dark:text-white">One venue</strong> — a single location with one or more cameras/microphones.</li>
-                <li><strong className="text-zinc-900 dark:text-white">Multiple venues</strong> — for example, a wedding ceremony at one site and a reception at another, or a conference with satellite rooms.</li>
-                <li><strong className="text-zinc-900 dark:text-white">Remote speakers</strong> — contributors joining from their own location rather than a shared venue.</li>
-                <li><strong className="text-zinc-900 dark:text-white">Not decided</strong> — also a fine answer if you're still finalizing logistics.</li>
+              <ul className="list-disc space-y-2 pl-5 text-gray-600">
+                <li><strong className="text-zinc-900">One venue</strong> — a single location with one or more cameras/microphones.</li>
+                <li><strong className="text-zinc-900">Multiple venues</strong> — for example, a wedding ceremony at one site and a reception at another, or a conference with satellite rooms.</li>
+                <li><strong className="text-zinc-900">Remote speakers</strong> — contributors joining from their own location rather than a shared venue.</li>
+                <li><strong className="text-zinc-900">Not decided</strong> — also a fine answer if you're still finalizing logistics.</li>
               </ul>
             </section>
 
             {/* 5. Captions, languages & accessibility */}
             <section id="section-5" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 5. Captions, languages & accessibility
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Accessibility decisions are easiest to plan upfront rather than add during a live broadcast. Consider language options, real-time automated or human captioning requirements, and multi-stream output requirements.
               </p>
             </section>
 
             {/* 6. Recording, replay & preservation */}
             <section id="section-6" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 6. Recording, replay & preservation
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Decide whether you want the broadcast recorded for instant replay, downloaded as an archive file, or deleted immediately following the completion of the live broadcast.
               </p>
             </section>
 
             {/* 7. Plan for the unexpected */}
             <section id="section-7" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 7. Plan for the unexpected
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Always ensure you have backup cellular connections, designated primary points of contact, and a defined procedure if local power or internet is disrupted.
               </p>
             </section>
 
             {/* Guidance for sensitive events */}
             <section id="section-sensitive" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 Guidance for sensitive events
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Memorials, private family events, and confidential corporate briefings are treated with high privacy and dedicated routing care.
               </p>
             </section>
 
             {/* Day-of Checklist */}
             <section id="section-checklist" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 Day-of checklist
               </h2>
-              <p className="text-gray-600 dark:text-slate-300">
+              <p className="text-gray-600">
                 A short, practical checklist for the day of the event itself — tick items off as you go.
               </p>
 
-              <div className="max-w-3xl space-y-3 rounded-lg border border-gray-200 p-4 dark:border-slate-800 dark:bg-slate-800/20">
+              <div className="max-w-3xl space-y-3 rounded-lg border border-gray-200 p-4">
                 {[
                   "Confirm the primary contribution device is charged, connected, and tested.",
                   "Confirm the backup connection or device is ready and someone knows how to switch to it.",
@@ -398,8 +398,8 @@ export default function LiveEventsGuide() {
                   "Confirm who is the single point of contact if something needs to be resolved mid-event.",
                   "Start a few minutes early to absorb any last-minute connection delay.",
                 ].map((item, idx) => (
-                  <label key={idx} className="flex items-start gap-3 text-sm text-zinc-900 dark:text-slate-200">
-                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500 dark:border-slate-700 dark:bg-slate-800" />
+                  <label key={idx} className="flex items-start gap-3 text-sm text-zinc-900">
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
                     <span>{item}</span>
                   </label>
                 ))}
@@ -408,16 +408,16 @@ export default function LiveEventsGuide() {
 
             {/* What happens after you submit */}
             <section id="section-after-submit" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 What happens after you submit
               </h2>
-              <p className="max-w-3xl text-gray-600 dark:text-slate-300">
+              <p className="max-w-3xl text-gray-600">
                 Once submitted, a live event coordinator will review the requirements and follow up to schedule a technical walkthrough.
               </p>
             </section>
 
             {/* CTA Box */}
-            <section className="rounded-2xl bg-zinc-950 p-6 sm:p-10 dark:bg-slate-950">
+            <section className="rounded-2xl bg-zinc-950 p-6 sm:p-10">
               <h3 className="text-xl font-bold text-slate-100 sm:text-2xl">
                 Ready to start?
               </h3>
@@ -432,10 +432,10 @@ export default function LiveEventsGuide() {
 
             {/* FAQs */}
             <section id="section-faq" className="scroll-mt-24 space-y-4">
-              <h2 className="  text-2xl font-bold text-zinc-900 dark:text-white">
+              <h2 className="  text-2xl font-bold text-zinc-900">
                 FAQs
               </h2>
-              <div className="divide-y divide-gray-200 border-b border-t border-gray-200 dark:divide-slate-800 dark:border-slate-800">
+              <div className="divide-y divide-gray-200 border-b border-t border-gray-200">
                 {[
                   {
                     q: "Does submitting the form reserve my date?",
@@ -450,7 +450,7 @@ export default function LiveEventsGuide() {
                   <div key={idx} className="py-4">
                     <button
                       onClick={() => toggleFaq(idx)}
-                      className="flex w-full items-center justify-between text-left font-medium text-zinc-900 dark:text-white"
+                      className="flex w-full items-center justify-between text-left font-medium text-zinc-900"
                     >
                       <span>{faq.q}</span>
                       <span className="text-lg text-blue-500">
@@ -458,7 +458,7 @@ export default function LiveEventsGuide() {
                       </span>
                     </button>
                     {openFaq === idx && (
-                      <p className="mt-2 text-sm text-gray-500 dark:text-slate-400">
+                      <p className="mt-2 text-sm text-gray-500">
                         {faq.a}
                       </p>
                     )}
@@ -469,8 +469,6 @@ export default function LiveEventsGuide() {
           </div>
         </div>
       </main>
-
-     
     </div>
   );
 }

@@ -11,12 +11,12 @@ const routes: RouteRow[] = [
   {
     need: 'Need ZoikoStream to operate the whole event',
     destination: 'Managed Live Event Streaming',
-    href: '/live-events-overview',
+    href: '/managed-live-event-streaming',
   },
   {
     need: 'Need remote presenters or remote feeds',
     destination: 'Remote Contribution Tools',
-    href: '/live-events-overview',
+    href: '/remote-contribution-landing',
   },
   {
     need: 'Need to plan sources, switching, cues, graphics',
@@ -27,7 +27,7 @@ const routes: RouteRow[] = [
   {
     need: 'Need controlled viewing/authentication',
     destination: 'Secure Audience Access',
-    href: '/private-streaming',
+    href: '/secure-audience-access',
   },
   {
     need: 'Need captions or multiple languages',
@@ -42,7 +42,7 @@ const routes: RouteRow[] = [
   {
     need: 'Need stronger resilience planning',
     destination: 'Event Resilience Framework',
-    href: '/assured-event',
+    href: '/event-resilience',
   },
   {
     need: 'Not sure what I need for our setup',

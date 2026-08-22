@@ -1,24 +1,24 @@
 'use client';
 
 import React from 'react';
-import { Tv, Disc,  Code, Smartphone, Milestone, Folder } from 'lucide-react';
+import { Tv, Disc,  Code, Smartphone, Milestone, Folder, Video, Wifi, PlayCircle, Router, Radio } from 'lucide-react';
 
 export default function PlatformApis() {
   const cards = [
     {
       title: 'Live Streaming',
       desc: 'Auto-scaling infrastructure supporting sub-second global broadcast streams.',
-      icon: Tv
+      icon: Video
     },
     {
       title: 'Real-time Contribution',
       desc: 'Zero-latency feedback pathways for remote speakers and guest anchors.',
-      icon: Disc
+      icon: Radio
     },
     {
       title: 'Video on Demand',
       desc: 'Seamless asset packaging, metadata injection, and cloud transcode automation.',
-      icon: Folder
+      icon: PlayCircle
     },
     {
       title: 'Video APIs',
@@ -33,7 +33,7 @@ export default function PlatformApis() {
     {
       title: 'Media Protocols',
       desc: 'Full-scale native support for SRT, RTMP, WebRTC, and HLS distribution.',
-      icon: Milestone
+      icon: Wifi
     }
   ];
 
@@ -69,7 +69,7 @@ export default function PlatformApis() {
                 className="p-6 bg-gray-900/75 rounded-2xl border border-slate-700 backdrop-blur-sm flex flex-col justify-start items-start gap-4 overflow-hidden hover:border-teal-400 transition-colors duration-300 min-h-[220px]"
               >
                 {/* Gradient Icon Box */}
-                <div className="size-12 bg-gradient-to-br from-teal-450 to-blue-600 rounded-xl flex justify-center items-center shrink-0 shadow-inner">
+                <div className="size-12 bg-gradient-to-br from-teal-400 to-blue-600 rounded-xl flex justify-center items-center shrink-0 shadow-inner">
                   <Icon className="size-5 text-white stroke-[1.8]" />
                 </div>
                 

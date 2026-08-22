@@ -21,11 +21,11 @@ export default function UrgentHelpStrip() {
         </div>
 
         {/* Right side: Button */}
-        <button className="flex items-center justify-center px-6 py-3.5 bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity whitespace-nowrap">
+        <a href="#" className="flex items-center justify-center px-6 py-3.5 bg-gradient-to-r from-[#33d9c7] to-[#4c86ff] rounded-[10px] shadow-[0px_4px_8px_rgba(51,217,199,0.2)] hover:opacity-90 transition-opacity whitespace-nowrap">
           <span className="font-space-grotesk font-bold text-black text-[13px]">
             Get active-event help
           </span>
-        </button>
+        </a>
 
       </div>
     </section>

@@ -33,15 +33,15 @@ export default function WorkflowA11y() {
   ];
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-white dark:bg-zinc-955 text-zinc-900 dark:text-white border-b border-gray-200 dark:border-zinc-900 transition-colors duration-250 font-spaceGrotesk">
+    <section className="relative w-full py-16 sm:py-24 bg-white text-zinc-900 border-b border-gray-200 transition-colors duration-250 font-spaceGrotesk">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-12 text-left">
         
         {/* Title Block */}
         <div className="flex flex-col gap-3 max-w-3xl">
-          <h2 className="text-zinc-955 dark:text-white text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-zinc-955 text-3xl sm:text-4xl font-bold tracking-tight">
             Plan captions, languages, and inclusive access before the event
           </h2>
-          <p className="text-slate-655 dark:text-zinc-400 text-base sm:text-lg font-normal leading-relaxed">
+          <p className="text-slate-655 text-base sm:text-lg font-normal leading-relaxed">
             Make inclusive participation an effortless engineering choice. Embed speech-to-text translators and alternative visual options natively in your player.
           </p>
         </div>
@@ -53,10 +53,10 @@ export default function WorkflowA11y() {
             return (
               <div 
                 key={idx}
-                className="bg-slate-50 dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300 min-h-[340px]"
+                className="bg-slate-50 rounded-2xl border border-gray-200 flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300 min-h-[340px]"
               >
                 {/* Image Box */}
-                <div className="relative h-40 w-full bg-slate-100 dark:bg-zinc-950">
+                <div className="relative h-40 w-full bg-slate-100">
                   <Image 
                     src={c.img} 
                     alt={c.title}
@@ -68,15 +68,15 @@ export default function WorkflowA11y() {
                 {/* Text Content */}
                 <div className="p-5 flex flex-col justify-start items-start gap-3 flex-1">
                   <div className="flex justify-between items-center w-full">
-                    <h3 className="text-zinc-955 dark:text-white text-base font-bold">
+                    <h3 className="text-zinc-955 text-base font-bold">
                       {c.title}
                     </h3>
                     {/* Small Blue Icon Box */}
                     <div className="size-7 bg-blue-500/10 rounded-lg flex justify-center items-center shrink-0">
-                      <Icon className="size-3.5 text-blue-555 dark:text-blue-400 stroke-[1.8]" />
+                      <Icon className="size-3.5 text-blue-555 stroke-[1.8]" />
                     </div>
                   </div>
-                  <p className="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm font-normal leading-relaxed text-left">
+                  <p className="text-slate-600 text-xs sm:text-sm font-normal leading-relaxed text-left">
                     {c.desc}
                   </p>
                 </div>
@@ -87,9 +87,10 @@ export default function WorkflowA11y() {
 
         {/* Bottom Button link */}
         <div className="flex justify-start pt-2">
-          <button className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 dark:outline-zinc-700 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 dark:text-slate-100 text-base font-bold">
+          <a href="/captions-and-languages">
+          <button className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 text-base font-bold">
             Explore Captions and languages
-          </button>
+          </button></a>
         </div>
 
       </div>

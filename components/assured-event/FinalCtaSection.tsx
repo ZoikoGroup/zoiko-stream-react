@@ -19,7 +19,7 @@ export default function FinalCtaSection() {
 
       <div className="w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4">
         <Link
-          href="/plan-a-live-event"
+          href="#"
           className="px-6 py-3.5 rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 text-base font-bold text-center hover:opacity-90 transition-opacity"
         >
           Request Assured Event review

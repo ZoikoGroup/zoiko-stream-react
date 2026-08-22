@@ -30,14 +30,14 @@ export default function ManagedCtaBand() {
             Submit your basic service details, and our specialized event team will guide you through our clear operational paths.
           </p>
           <div className="pt-4 font-sans flex flex-wrap justify-center items-center gap-4">
+            <a href="/plan-a-live-event">
             <button 
-              onClick={scrollToBrief}
               className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer shadow-[0px_4px_16px_rgba(51,217,199,0.20)] border-none"
             >
               Plan a Live Event
-            </button>
+            </button></a>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="/talk-to-an-expert"
               className="px-8 py-4 rounded-lg border border-gray-500 bg-zinc-900/40 text-slate-105 text-sm font-medium hover:bg-zinc-900/80 transition-colors cursor-pointer w-full sm:w-auto text-center"
             >
               Talk to an expert

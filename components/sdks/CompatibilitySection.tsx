@@ -116,7 +116,7 @@ export default function CompatibilitySection() {
         </div>
 
         <a
-          href="#"
+          href="/sdks"
           className="flex items-center justify-center px-7 py-3.5 rounded-[10px] border border-[#aab3c4] hover:bg-[rgba(255,255,255,0.05)] transition-colors"
         >
           <span className="font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">

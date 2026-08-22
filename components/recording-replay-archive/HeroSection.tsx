@@ -39,7 +39,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative w-full lg:h-[724px] overflow-hidden flex items-center bg-slate-950 dark:bg-slate-900 text-white dark:text-white pt-33 sm:pt-20 lg:pt-39 pb-8 sm:pb-10 lg:pb-12 px-4 sm:px-6 lg:px-8 transition-colors duration-200 bg-cover bg-center bg-no-repeat"
+      className="relative w-full lg:h-[724px] overflow-hidden flex items-center bg-slate-950 text-white pt-33 sm:pt-20 lg:pt-39 pb-8 sm:pb-10 lg:pb-12 px-4 sm:px-6 lg:px-8 transition-colors duration-200 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(rgba(2, 6, 23, 0.15), rgba(2, 6, 23, 0.15)), url('/images/recording-replay-archive/hero-bg.jpg')`,
       }}
@@ -58,12 +58,12 @@ export default function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-slate-100 dark:text-white text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:leading-[1.15]">
+          <h1 className="text-slate-100 text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:leading-[1.15]">
             Decide what happens after the live moment.
           </h1>
 
           {/* Description */}
-          <p className="text-slate-300 dark:text-slate-300 text-base sm:text-lg font-normal leading-relaxed">
+          <p className="text-slate-300 text-base sm:text-lg font-normal leading-relaxed">
             Plan recording, replay access, accessibility, corrections, archive, and retention as explicit event decisions - with clear ownership and honest states.
           </p>
 
@@ -75,35 +75,36 @@ export default function HeroSection() {
             >
               Start your event brief
             </button>
+            <a href="/talk-to-an-expert">
             <button
               type="button"
-              className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-gray-500 hover:outline-gray-400 bg-slate-900/40 backdrop-blur-sm text-slate-100 dark:text-white text-base font-medium transition-colors flex justify-center items-center"
+              className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-gray-500 hover:outline-gray-400 bg-slate-900/40 backdrop-blur-sm text-slate-100 text-base font-medium transition-colors flex justify-center items-center"
             >
               Talk to an event expert
-            </button>
+            </button></a>
           </div>
 
-          <hr className="w-full border-t border-gray-800 dark:border-slate-800" />
+          <hr className="w-full border-t border-gray-800" />
 
           {/* Disclaimer */}
           <div className="w-full flex items-start gap-3">
             <span className="mt-0.5 shrink-0 w-4 h-4 rounded-full border border-blue-500 text-blue-500 text-[10px] font-bold flex items-center justify-center">
               i
             </span>
-            <p className="text-slate-400 dark:text-slate-400 text-sm font-normal leading-relaxed">
+            <p className="text-slate-400 text-sm font-normal leading-relaxed">
               Nothing is recorded, published, retained, downloadable, or shared merely because an event is live. Exact post-event options are confirmed for the event and service scope.
             </p>
           </div>
         </div>
 
         {/* Right Continuity Card */}
-        <div className="w-full lg:w-[520px] p-6 sm:p-7 bg-zinc-900/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-[20px] shadow-2xl border border-gray-800 dark:border-slate-800 flex flex-col shrink-0">
+        <div className="w-full lg:w-[520px] p-6 sm:p-7 bg-zinc-900/95 backdrop-blur-md rounded-[20px] shadow-2xl border border-gray-800 flex flex-col shrink-0">
 
           {/* Card Header */}
           <div className="w-full flex justify-between items-center pb-5">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-teal-400 rounded-full" />
-              <h2 className="text-slate-100 dark:text-white text-sm font-bold uppercase tracking-wide">
+              <h2 className="text-slate-100 text-sm font-bold uppercase tracking-wide">
                 Post-Event Continuity
               </h2>
             </div>
@@ -112,7 +113,7 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <hr className="w-full border-t border-gray-800 dark:border-slate-800" />
+          <hr className="w-full border-t border-gray-800" />
 
           {/* Continuity Rows */}
           <div className="w-full flex flex-col">
@@ -120,14 +121,14 @@ export default function HeroSection() {
               <div
                 key={index}
                 className={`w-full flex justify-between items-center gap-4 py-4 ${
-                  index !== continuityItems.length - 1 ? 'border-b border-gray-800 dark:border-slate-800' : ''
+                  index !== continuityItems.length - 1 ? 'border-b border-gray-800' : ''
                 }`}
               >
                 <div className="flex flex-col gap-1">
                   <span className="text-slate-500 text-[11px] font-bold tracking-widest uppercase">
                     {item.label}
                   </span>
-                  <span className="text-slate-100 dark:text-white text-sm sm:text-base font-medium">
+                  <span className="text-slate-100 text-sm sm:text-base font-medium">
                     {item.value}
                   </span>
                 </div>

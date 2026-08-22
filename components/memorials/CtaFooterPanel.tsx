@@ -14,7 +14,7 @@ export default function CtaFooterPanel() {
   return (
     <section 
       id="contact-expert"
-      className="w-full py-20 bg-zinc-950 dark:bg-black bg-[url('/images/memorials/bg-image (2).png')] bg-cover bg-center bg-no-repeat text-white relative overflow-hidden transition-colors duration-200 border-t border-slate-900"
+      className="w-full py-20 bg-zinc-950 bg-[url('/images/memorials/bg-image (2).png')] bg-cover bg-center bg-no-repeat text-white relative overflow-hidden transition-colors duration-200 border-t border-slate-900"
     >
       {/* Glow overlay */}
       <div className="pointer-events-none absolute -left-1/3 -top-1/2 h-full w-full rounded-full bg-violet-500/10 blur-3xl" />
@@ -22,11 +22,11 @@ export default function CtaFooterPanel() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col justify-start items-center gap-8 text-center">
         
-        <h2 className="text-slate-100 dark:text-white text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
+        <h2 className="text-slate-100 text-3xl sm:text-4xl lg:text-4xl font-bold leading-tight">
           Plan the memorial with the right viewing, access, and support choices
         </h2>
         
-        <p className="text-slate-400 dark:text-slate-350 text-base sm:text-lg max-w-2xl leading-relaxed">
+        <p className="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
           Start with the event basics. ZoikoStream can use the brief to route you to the appropriate published setup or expert path.
         </p>
 
@@ -38,8 +38,8 @@ export default function CtaFooterPanel() {
             Start brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
-            className="px-7 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 dark:text-white text-base font-bold transition-colors cursor-pointer"
+            href="/talk-to-an-expert"
+            className="px-7 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 text-base font-bold transition-colors cursor-pointer"
           >
             Email expert
           </a>

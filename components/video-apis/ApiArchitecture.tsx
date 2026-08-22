@@ -50,7 +50,7 @@ export default function ApiArchitecture() {
     <section className="relative w-full py-16 sm:py-24 bg-slate-955 text-white overflow-hidden border-b border-zinc-900 font-spaceGrotesk">
       {/* Background Image overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none opacity-20"
+        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none "
         style={{ backgroundImage: "url('/images/video-api/bg (50).png')" }}
       />
       <div className="absolute inset-0 bg-black/60 pointer-events-none z-0" />

@@ -25,7 +25,7 @@ export default function ConferenceStartPlanning() {
       category: 'I NEED REMOTE SPEAKERS GATED',
       title: 'Remote Contribution',
       desc: 'Secure, low-latency browser-based ingest links for offsite executives.',
-      link: '#',
+      link: '/remote-contribution-landing',
       linkLabel: 'View Contribution',
       active: false
     },
@@ -33,7 +33,7 @@ export default function ConferenceStartPlanning() {
       category: 'I NEED SWITCHING AND GRAPHICS',
       title: 'Production Control',
       desc: 'Deploy cloud switchers, lower-thirds, and real-time canvas overrides.',
-      link: '#',
+      link: '/production-switching-graphics',
       linkLabel: 'See Production',
       active: false
     },
@@ -49,7 +49,7 @@ export default function ConferenceStartPlanning() {
       category: 'I NEED FAILURE RESILIENCE PLANNING',
       title: 'Event Resilience',
       desc: 'Simulate outages, deploy dry-run environments, and manage hot backups.',
-      link: '#',
+      link: '/event-resilience',
       linkLabel: 'Learn Resilience',
       active: false
     },
@@ -57,7 +57,7 @@ export default function ConferenceStartPlanning() {
       category: 'I NEED SECURE CLOSED ROOMS',
       title: 'Private Streaming',
       desc: 'Restrict streams behind corporate SSO, SAML V2, and dynamic geo-blocks.',
-      link: '#',
+      link: '/private-streaming',
       linkLabel: 'Review Security',
       active: false
     },
@@ -65,7 +65,7 @@ export default function ConferenceStartPlanning() {
       category: 'I NEED ACCESSIBILITY DESIGN',
       title: 'Accessibility & Inclusion',
       desc: 'Stenography, sign overlays, and WCAG 2.2 auditable compliance matrixes.',
-      link: '/captions-and-languages',
+      link: '/accessibility-inclusion',
       linkLabel: 'Verify Accessibility',
       active: false
     }

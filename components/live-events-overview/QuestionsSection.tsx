@@ -16,21 +16,21 @@ export default function QuestionsSection() {
       description:
         'Need advice on structure, scale, or pricing models before you brief us?',
       linkText: 'Learn more →',
-      href: '#',
+      href: '/planning-and-briefing',
     },
     {
       title: 'Technical/support questions',
       description:
         'Have constraints regarding network protocols, local decoders, or secure player setups?',
       linkText: 'Learn more →',
-      href: '#',
+      href: '/faqs-and-support',
     },
     {
       title: 'Existing-event help',
       description:
         'Already planned an event and need to modify dates, access policies, or operational staff?',
       linkText: 'Learn more →',
-      href: '#',
+      href: '/talk-to-an-expert',
     },
   ];
 
