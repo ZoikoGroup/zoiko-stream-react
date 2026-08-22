@@ -1,6 +1,6 @@
 import React from 'react';
 
-const imgBackground = "http://localhost:3845/assets/1ec10cce22fd246179874c7ff43047347e7447d6.png";
+const imgBackground = "/images/live-event-inquiries/closing-section-bg.png";
 
 export default function SectionDecisionClosure() {
   return (

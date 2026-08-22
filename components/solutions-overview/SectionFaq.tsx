@@ -1,10 +1,10 @@
 import React from 'react';
 
-const imgSectionFaq = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgBgBlob1 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgBgBlob2 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgMinus = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgPlus = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
+const imgSectionFaq = "/images/solutions-overview/faq-section-bg.png";
+const imgBgBlob1 = "/images/solutions-overview/faq-bg-blob-1.svg";
+const imgBgBlob2 = "/images/solutions-overview/faq-bg-blob-2.svg";
+const imgMinus = "/images/solutions-overview/faq-icon-minus.svg";
+const imgPlus = "/images/solutions-overview/faq-icon-minus-1.svg";
 
 export default function SectionFaq() {
   return (

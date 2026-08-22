@@ -16,7 +16,8 @@ export default function SectionReadinessDimensions() {
             Plan the event, not just the stream.
           </h2>
           <p className="font-inter font-normal text-[#6b7280] text-[16px] leading-[25.6px] m-0">
-            These are discovery topics to think through before a serious live event — not a feature<br className="hidden lg:block" />checklist.
+            <span className="block">These are discovery topics to think through before a serious live event — not a feature</span>
+            <span className="block">checklist.</span>
           </p>
         </div>
 
@@ -34,7 +35,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Event type, exact or approximate date, timezone, duration, single event vs.<br className="hidden lg:block" />series.
+              <span className="block">Event type, exact or approximate date, timezone, duration, single event vs.</span>
+              <span className="block">series.</span>
             </p>
           </div>
 
@@ -49,7 +51,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Internal, external or mixed; expected peak audience range; regions and<br className="hidden lg:block" />languages. "Not sure" is always valid.
+              <span className="block">Internal, external or mixed; expected peak audience range; regions and</span>
+              <span className="block">languages. "Not sure" is always valid.</span>
             </p>
           </div>
 
@@ -79,7 +82,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              In-house production, agency/venue partner, remote speakers, or not yet<br className="hidden lg:block" />decided.
+              <span className="block">In-house production, agency/venue partner, remote speakers, or not yet</span>
+              <span className="block">decided.</span>
             </p>
           </div>
 
@@ -109,7 +113,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Redundancy expectations, rehearsal, monitoring, escalation and fallback<br className="hidden lg:block" />requirements.
+              <span className="block">Redundancy expectations, rehearsal, monitoring, escalation and fallback</span>
+              <span className="block">requirements.</span>
             </p>
           </div>
 
@@ -124,7 +129,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Live captions, language support, interpretation, and accessible registration or<br className="hidden lg:block" />player requirements.
+              <span className="block">Live captions, language support, interpretation, and accessible registration or</span>
+              <span className="block">player requirements.</span>
             </p>
           </div>
 
@@ -139,7 +145,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Identity, registration, analytics, CRM/marketing, or moderation and engagement<br className="hidden lg:block" />tools.
+              <span className="block">Identity, registration, analytics, CRM/marketing, or moderation and engagement</span>
+              <span className="block">tools.</span>
             </p>
           </div>
 
@@ -154,7 +161,8 @@ export default function SectionReadinessDimensions() {
               </h3>
             </div>
             <p className="font-inter font-normal text-[#6b7280] text-[14px] leading-[22.4px] m-0">
-              Recording, on-demand availability, clips, reporting, retention or follow-up<br className="hidden lg:block" />requirements.
+              <span className="block">Recording, on-demand availability, clips, reporting, retention or follow-up</span>
+              <span className="block">requirements.</span>
             </p>
           </div>
 

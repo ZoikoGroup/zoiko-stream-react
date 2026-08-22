@@ -1,15 +1,15 @@
 import React from 'react';
 
-const imgSectionTrustEvaluator = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgBgBlob1 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgBgBlob2 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgShield = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgLine = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgEye = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgGitBranch = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgLine1 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgSliders = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgCpu = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
+const imgSectionTrustEvaluator = "/images/solutions-overview/trust-evaluator-section-bg.png";
+const imgBgBlob1 = "/images/solutions-overview/trust-evaluator-bg-blob-1.svg";
+const imgBgBlob2 = "/images/solutions-overview/trust-evaluator-bg-blob-2.svg";
+const imgShield = "/images/solutions-overview/trust-evaluator-icon-shield.svg";
+const imgLine = "/images/solutions-overview/trust-evaluator-line.svg";
+const imgEye = "/images/solutions-overview/trust-evaluator-icon-eye.svg";
+const imgGitBranch = "/images/solutions-overview/trust-evaluator-icon-git-branch.svg";
+const imgLine1 = "/images/solutions-overview/trust-evaluator-line-1.svg";
+const imgSliders = "/images/solutions-overview/trust-evaluator-icon-sliders.svg";
+const imgCpu = "/images/solutions-overview/trust-evaluator-icon-cpu.svg";
 
 export default function SectionTrustEvaluator() {
   return (

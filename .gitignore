@@ -43,6 +43,12 @@ next-env.d.ts
 # python scripts (temporary fetchers)
 *.py
 
+# one-off figma dev-mode fetch scripts and their output (temporary)
+/fetch_*.js
+/download_figma_*.js
+/design_code_*.json
+/design_code_*.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/settings.json

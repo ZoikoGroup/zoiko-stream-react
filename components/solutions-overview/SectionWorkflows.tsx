@@ -17,7 +17,7 @@ const imgActivity = "/images/solutions-overview/86ffd6d44b62cc2bca10fba5877380fd
 
 export default function SectionWorkflows() {
   return (
-    <div className="border-[#e1e6eb] border-b border-solid content-stretch flex flex-col gap-[56px] items-start px-[112px] py-[120px] relative size-full">
+    <div className="border-[#e1e6eb] border-b border-solid content-stretch flex flex-col gap-[56px] items-start px-6 lg:px-[112px] py-[60px] lg:py-[120px] relative w-full overflow-hidden">
       <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgSectionWorkflows} />
       <div className="absolute left-[-181px] size-[420px] top-[-120px]">
         <div className="absolute inset-[-21.43%]">
@@ -37,8 +37,8 @@ export default function SectionWorkflows() {
           Open a workflow to see the platform stages, trust requirements, and operating model relevant to that job.
         </p>
       </div>
-      <div className="content-start flex flex-wrap gap-[24px] items-start relative shrink-0 w-full">
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] relative shrink-0 w-full">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage} />
           </div>
@@ -58,7 +58,7 @@ export default function SectionWorkflows() {
             </p>
           </div>
         </div>
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage1} />
           </div>
@@ -76,7 +76,7 @@ export default function SectionWorkflows() {
             <p className="[word-break:break-word] font-inter font-normal leading-[22px] not-italic relative shrink-0 text-[#4f5e74] text-[14px] w-full">{`High security corporate town halls & events`}</p>
           </div>
         </div>
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage2} />
           </div>
@@ -96,7 +96,7 @@ export default function SectionWorkflows() {
             </p>
           </div>
         </div>
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col h-[284px] items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage3} />
           </div>
@@ -116,7 +116,7 @@ export default function SectionWorkflows() {
             </p>
           </div>
         </div>
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col h-[284px] items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage4} />
           </div>
@@ -136,7 +136,7 @@ export default function SectionWorkflows() {
             </p>
           </div>
         </div>
-        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] shrink-0 w-[389px]">
+        <div className="bg-[#f8fafc] border border-[#e1e6eb] border-solid content-stretch flex flex-col items-start overflow-clip relative rounded-[12px] w-full">
           <div className="h-[160px] relative shrink-0 w-full">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgCardImage5} />
           </div>

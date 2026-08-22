@@ -1,11 +1,11 @@
 import React from 'react';
 
-const imgContainer = "http://localhost:3845/assets/ab7d909c057df80e7b4c0fde838c58c6e1c739dd.png";
-const imgContainer1 = "http://localhost:3845/assets/2b497276399dc1b31469e1056f4fbb190afc6d8d.png";
-const imgContainer2 = "http://localhost:3845/assets/48e0fea57deab53ad9c1fd207dbe74cee49da4b5.png";
-const imgContainer3 = "http://localhost:3845/assets/7f092d69abdce704040109126536db4ffe63fb53.png";
-const imgImage3 = "http://localhost:3845/assets/a810ec905a3e6e4faeb177e2e25d4e6b9312ab19.png";
-const imgContainer4 = "http://localhost:3845/assets/b6ee1f53695b5939b30edae78e60318266b7e1c3.png";
+const imgContainer = "/images/live-event-inquiries/mosaic-conference-hybrid.png";
+const imgContainer1 = "/images/live-event-inquiries/mosaic-company-internal.png";
+const imgContainer2 = "/images/live-event-inquiries/mosaic-product-launch.png";
+const imgContainer3 = "/images/live-event-inquiries/mosaic-sports-live.png";
+const imgImage3 = "/images/live-event-inquiries/mosaic-media-premiere.png";
+const imgContainer4 = "/images/live-event-inquiries/mosaic-education-community.png";
 
 export default function SectionEventTypeSelectorMosaic() {
   return (

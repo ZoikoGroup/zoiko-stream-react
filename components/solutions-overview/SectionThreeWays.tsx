@@ -4,9 +4,6 @@ import { Target, Users, GitBranch } from 'lucide-react';
 const imgSectionThreeWays = "/images/solutions-overview/three-ways-section-bg.png";
 const imgBgBlob1 = "/images/solutions-overview/three-ways-bg-blob-1.svg";
 const imgBgBlob2 = "/images/solutions-overview/three-ways-bg-blob-2.svg";
-const imgTarget = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgUsers = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgGitBranch = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
 
 export default function SectionThreeWays() {
   return (

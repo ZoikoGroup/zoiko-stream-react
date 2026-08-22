@@ -1,14 +1,14 @@
 import React from 'react';
 
-const imgSectionConversionPaths = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgPathImage = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgPathImage1 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgPathImage2 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgCode = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgLine = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgLock = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgLine1 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
-const imgVideo = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1' viewBox='0 0 1 1'%3E%3C/svg%3E";
+const imgSectionConversionPaths = "/images/solutions-overview/conversion-paths-section-bg.png";
+const imgPathImage = "/images/solutions-overview/conversion-paths-card-1.png";
+const imgPathImage1 = "/images/solutions-overview/conversion-paths-card-2.png";
+const imgPathImage2 = "/images/solutions-overview/conversion-paths-card-3.png";
+const imgCode = "/images/solutions-overview/conversion-paths-icon-code.svg";
+const imgLine = "/images/solutions-overview/conversion-paths-line.svg";
+const imgLock = "/images/solutions-overview/conversion-paths-icon-lock.svg";
+const imgLine1 = "/images/solutions-overview/conversion-paths-line-1.svg";
+const imgVideo = "/images/solutions-overview/conversion-paths-icon-video.svg";
 
 export default function SectionConversionPaths() {
   return (

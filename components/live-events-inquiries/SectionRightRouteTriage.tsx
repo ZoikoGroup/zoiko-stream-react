@@ -1,9 +1,9 @@
 import React from 'react';
 
-const imgSvg = "http://localhost:3845/assets/403fd2486ac5b07c0579a4e6b5d2b3e2b9648797.svg";
-const imgSvg1 = "http://localhost:3845/assets/163c7ede04ee2b2c6a8d6b853e546740a3b35d41.svg";
-const imgSvg2 = "http://localhost:3845/assets/8e9f35cc22a742b27c8228570d5727df6163f045.svg";
-const imgSvg3 = "http://localhost:3845/assets/fa8560a83fbcb0a6fb2118caa5a909827ef165ec.svg";
+const imgSvg = "/images/live-event-inquiries/triage-icon-1.svg";
+const imgSvg1 = "/images/live-event-inquiries/triage-icon-2.svg";
+const imgSvg2 = "/images/live-event-inquiries/triage-icon-3.svg";
+const imgSvg3 = "/images/live-event-inquiries/triage-icon-4.svg";
 
 export default function SectionRightRouteTriage() {
   return (

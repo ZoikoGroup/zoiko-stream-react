@@ -1,11 +1,11 @@
 import React from 'react';
 
-const imgBackground = "http://localhost:3845/assets/ecbe9b9defab1cb8dce5eeb89e2ea95a150f6d2b.png";
-const imgBackground1 = "http://localhost:3845/assets/d4ba2e86e1876fe1bf529de236a0cfe0429bebe5.png";
-const imgBackground2 = "http://localhost:3845/assets/1490182deaa4064947c6b6dd8c297f79e442e385.png";
-const imgBackground3 = "http://localhost:3845/assets/a632deb0ee93e0dc0adb33d07a06076c5a76b688.png";
-const imgBackground4 = "http://localhost:3845/assets/91b909cacbbf74752e00c6912730de697951b39d.png";
-const imgBackground5 = "http://localhost:3845/assets/80215a83ae0d389888bcc4daa52156f63348c80b.png";
+const imgBackground = "/images/live-event-inquiries/journey-card-1-define.png";
+const imgBackground1 = "/images/live-event-inquiries/journey-card-2-validate.png";
+const imgBackground2 = "/images/live-event-inquiries/journey-card-3-align.png";
+const imgBackground3 = "/images/live-event-inquiries/journey-card-4-confirm.png";
+const imgBackground4 = "/images/live-event-inquiries/journey-card-5-prepare.png";
+const imgBackground5 = "/images/live-event-inquiries/journey-card-6-live-close.png";
 
 export default function SectionJourneyHorizontalScroll() {
   const cards = [
