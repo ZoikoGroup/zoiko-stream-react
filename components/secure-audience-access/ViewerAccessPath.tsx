@@ -121,7 +121,7 @@ export default function ViewerAccessPath() {
             <p className="mt-5 text-center text-xs text-slate-400">
               Having trouble?{" "}
               <a
-                href="#"
+                href="/faqs-and-support"
                 className="text-teal-400 transition-colors hover:text-teal-300"
               >
                 Contact Event Support

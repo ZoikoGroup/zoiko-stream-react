@@ -93,7 +93,7 @@ export default function ReadinessHelpSection() {
             </div>
           </div>
           <a 
-            href="mailto:support@zoikostream.com" 
+            href="#" 
             className="text-violet-605 text-sm sm:text-base font-bold hover:underline self-start md:self-center shrink-0"
           >
             Active-event help &rarr;

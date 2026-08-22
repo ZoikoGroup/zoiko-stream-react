@@ -136,39 +136,48 @@ const EnterpriseOperations = () => {
           </h3>
 
           <div className="flex w-full flex-wrap items-start gap-x-6 gap-y-4">
-            {complianceItems.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="flex items-center gap-1.5 font-['Space_Grotesk'] text-xs font-normal text-slate-900 underline"
-              >
-                {/* Document SVG icon */}
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="shrink-0"
+            {complianceItems.map((item, idx) => {
+              const hrefs = [
+                "/platform-overview",
+                "/platform-secure-playback",
+                "/platform-delivery-and-trust-overview",
+                "/accessibility-inclusion",
+                "/platform-delivery-and-trust-overview",
+              ];
+              return (
+                <a
+                  key={item}
+                  href={hrefs[idx]}
+                  className="flex items-center gap-1.5 font-['Space_Grotesk'] text-xs font-normal text-slate-900 underline"
                 >
-                  <path
-                    d="M3.5 1.5H8L10.5 4V12.5H3.5V1.5Z"
-                    stroke="#4F5E74"
-                    strokeWidth="1.5"
-                    strokeLinejoin="round"
-                  />
+                  {/* Document SVG icon */}
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="shrink-0"
+                  >
+                    <path
+                      d="M3.5 1.5H8L10.5 4V12.5H3.5V1.5Z"
+                      stroke="#4F5E74"
+                      strokeWidth="1.5"
+                      strokeLinejoin="round"
+                    />
 
-                  <path
-                    d="M8 1.5V4H10.5"
-                    stroke="#4F5E74"
-                    strokeWidth="1.5"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                    <path
+                      d="M8 1.5V4H10.5"
+                      stroke="#4F5E74"
+                      strokeWidth="1.5"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
 
-                {item}
-              </a>
-            ))}
+                  {item}
+                </a>
+              );
+            })}
           </div>
         </div>
 

@@ -57,18 +57,18 @@ export default function ConferenceHero() {
           
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            <a href="/plan-a-live-event">
             <button 
-              onClick={() => scrollToSection('conference-brief-section')}
               className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold font-spaceGrotesk rounded-[10px] shadow-[0px_4px_16px_0px_rgba(51,217,199,0.20)] cursor-pointer border-none text-center w-full sm:w-auto"
             >
               Plan a Live Event
-            </button>
+            </button></a>
+            <a href="/talk-to-an-expert">
             <button 
-              onClick={() => scrollToSection('conference-brief-section')}
               className="px-7 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-400 bg-transparent transition-colors text-slate-100 text-base font-medium font-spaceGrotesk text-center cursor-pointer w-full sm:w-auto"
             >
               Talk to an expert
-            </button>
+            </button></a>
           </div>
           
           {/* Divider */}

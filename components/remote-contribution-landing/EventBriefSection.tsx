@@ -202,6 +202,7 @@ export default function EventBriefSection() {
                 </span>
               </button>
               {/* Outline Button */}
+              <a href="/talk-to-an-expert">
               <button
                 className="flex items-center justify-center shrink-0 border"
                 style={{
@@ -214,7 +215,7 @@ export default function EventBriefSection() {
                 <span className="font-space-grotesk font-medium whitespace-nowrap" style={{ color: '#eef1f6', fontSize: '14px' }}>
                   Talk to an expert
                 </span>
-              </button>
+              </button></a>
             </div>
           </div>
 

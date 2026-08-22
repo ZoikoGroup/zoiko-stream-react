@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import React from 'react';
 
 export default function ManagedPathSection() {
@@ -107,12 +107,13 @@ export default function ManagedPathSection() {
 
           {/* CTA Button */}
           <div className="pt-4">
+              <Link href="/plan-a-live-event">
             <button
               type="button"
               className="px-6 py-3 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-zinc-950 text-base font-bold   leading-6 hover:opacity-90 transition-opacity"
             >
               Plan a live event
-            </button>
+            </button></Link>
           </div>
         </div>
 

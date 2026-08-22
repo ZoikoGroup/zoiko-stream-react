@@ -1,0 +1,13 @@
+export { default as HeroSection } from './HeroSection';
+export { default as WhatIsZoikoTechSection } from './WhatIsZoikoTechSection';
+export { default as CoreAccountabilitySection } from './CoreAccountabilitySection';
+export { default as PlatformOutcomesSection } from './PlatformOutcomesSection';
+export { default as RelationshipClaritySection } from './RelationshipClaritySection';
+export { default as EngineeringPrinciplesSection } from './EngineeringPrinciplesSection';
+export { default as EvidencePathsSection } from './EvidencePathsSection';
+export { default as DeveloperPathwaySection } from './DeveloperPathwaySection';
+export { default as TrustBoundarySection } from './TrustBoundarySection';
+export { default as PeopleEcosystemSection } from './PeopleEcosystemSection';
+export { default as DecisionRoutingSection } from './DecisionRoutingSection';
+export { default as FaqSection } from './FaqSection';
+export { default as FinalCtaSection } from './FinalCtaSection';

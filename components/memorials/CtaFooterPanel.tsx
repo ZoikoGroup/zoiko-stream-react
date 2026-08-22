@@ -38,7 +38,7 @@ export default function CtaFooterPanel() {
             Start brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="/talk-to-an-expert"
             className="px-7 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 text-base font-bold transition-colors cursor-pointer"
           >
             Email expert

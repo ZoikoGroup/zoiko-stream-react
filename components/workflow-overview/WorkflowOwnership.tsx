@@ -80,7 +80,7 @@ export default function WorkflowOwnership() {
             Not sure which model fits? Our team will review your local AV setup during the initial briefing.
           </p>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="/managed-live-event-streaming"
             className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-600 bg-transparent hover:outline-teal-400 transition-colors text-zinc-955 text-sm font-medium shrink-0"
           >
             Explore Managed live event streaming

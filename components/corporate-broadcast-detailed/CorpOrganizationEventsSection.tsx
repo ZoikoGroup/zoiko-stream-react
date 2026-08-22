@@ -58,9 +58,9 @@ export default function CorpOrganizationEventsSection() {
 
         {/* Action Button */}
         <div className="inline-flex justify-start items-center gap-4 mt-2">
-          <button className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer border-none shadow-[0px_4px_16px_rgba(51,217,199,0.20)]">
+          <a href="/talk-to-an-expert" className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity cursor-pointer border-none shadow-[0px_4px_16px_rgba(51,217,199,0.20)]">
             Talk to an event expert
-          </button>
+          </a>
         </div>
 
       </div>

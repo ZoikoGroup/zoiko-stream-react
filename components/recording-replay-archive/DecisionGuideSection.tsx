@@ -4,36 +4,44 @@ import Link from "next/link";
 interface GuideRow {
   requirement: string;
   destination: string;
+  href: string;
 }
 
 const tableData: GuideRow[] = [
   {
     requirement: "Need to decide whether to record live streams safely",
-    destination: "Stay on this page / Event Brief Setup"
+    destination: "Stay on this page / Event Brief Setup",
+    href: "/planning-and-briefing",
   },
   {
     requirement: "Need automated dual-WAN active recording pipeline",
-    destination: "Platform Recording and Replay Module"
+    destination: "Platform Recording and Replay Module",
+    href: "/platform-recording-replay",
   },
   {
     requirement: "Need strict SSO-gated portals with access expiry rules",
-    destination: "Secure Audience Access Controls"
+    destination: "Secure Audience Access Controls",
+    href: "/secure-audience-access",
   },
   {
     requirement: "Need completely isolated stream tunnels for corporate secrecy",
-    destination: "Private Streaming Framework"
+    destination: "Private Streaming Framework",
+    href: "/private-streaming",
   },
   {
     requirement: "Need localized audio tracks and verified replay captions",
-    destination: "Captions and Languages Platform"
+    destination: "Captions and Languages Platform",
+    href: "/captions-and-languages",
   },
   {
     requirement: "Need white-glove technical operators running switcher, cues",
-    destination: "Managed Live Event Streaming"
+    destination: "Managed Live Event Streaming",
+    href: "/managed-live-event-streaming",
   },
   {
     requirement: "Need incident monitoring and active switch lock controls",
-    destination: "Support & Real-time Console Route"
+    destination: "Support & Real-time Console Route",
+    href: "/faqs-and-support",
   }
 ];
 
@@ -82,7 +90,7 @@ export default function DecisionGuideSection() {
               {row.requirement}
             </p>
             <Link 
-              href="#" 
+              href={row.href} 
               className="group flex gap-2 items-center text-[#60a5fa] text-[14px] w-full max-w-[400px] transition-colors hover:text-blue-300"
             >
               <p className="font-spaceGrotesk font-bold">

@@ -46,7 +46,7 @@ export default function CtaWorshipFooter() {
             Start your event brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="#"
             className="px-8 py-3.5 rounded-lg border border-slate-700 bg-zinc-900/50 hover:bg-zinc-900 text-slate-100 text-base font-bold transition-colors cursor-pointer w-full sm:w-auto text-center"
           >
             Email event advisor

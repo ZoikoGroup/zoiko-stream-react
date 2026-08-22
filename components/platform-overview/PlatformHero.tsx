@@ -46,7 +46,7 @@ export default function PlatformHero() {
               Start building
             </button>
             <a 
-              href="mailto:support@zoikostream.com"
+              href="#"
               className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-405 transition-colors text-slate-700 text-white font-medium"
             >
               Talk to an expert

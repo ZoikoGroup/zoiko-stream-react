@@ -24,14 +24,14 @@ export default function CtaSection() {
         {/* Action Buttons */}
         <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="/talk-to-an-expert"
             className="px-10 py-5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-90 transition-opacity rounded-xl text-white text-base font-normal   leading-6"
           >
             Talk to an Expert
           </a>
 
           <a
-            href="#explore"
+            href="/platform-overview"
             className="px-10 py-5 rounded-xl border border-white/20 hover:bg-white/10 transition-colors text-white text-base font-normal   leading-6"
           >
             Explore the Platform

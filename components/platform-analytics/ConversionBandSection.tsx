@@ -37,7 +37,7 @@ export default function ConversionBandSection() {
             </span>
           </Link>
           <Link
-            href="/resources/documentation"
+            href="/sdks"
             className="border border-[#aab3c4] border-solid flex items-center justify-center px-[24px] py-[14px] relative rounded-[10px] shrink-0 hover:bg-[#aab3c4]/10 transition-colors"
           >
             <span className="font-spaceGrotesk font-bold leading-[normal] relative shrink-0 text-[#232b3a] text-[15px] whitespace-nowrap">
@@ -63,7 +63,7 @@ export default function ConversionBandSection() {
             System status
           </a>{' '}
           ·{' '}
-          <a href="#" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
+          <a href="/faqs-and-support" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
             Support
           </a>
         </p>

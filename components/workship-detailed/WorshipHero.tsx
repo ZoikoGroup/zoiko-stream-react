@@ -56,12 +56,13 @@ export default function WorshipHero() {
             >
               Start your event brief
             </button>
+            <a href="/talk-to-an-expert">
             <button 
-              onClick={scrollToContact}
+              
               className="px-7 py-3.5 rounded-lg border border-slate-600 bg-zinc-900/40 text-slate-100 text-base font-bold hover:bg-zinc-900 transition-colors cursor-pointer w-full sm:w-auto text-center"
             >
               Talk to an expert
-            </button>
+            </button></a>
           </div>
 
         </div>

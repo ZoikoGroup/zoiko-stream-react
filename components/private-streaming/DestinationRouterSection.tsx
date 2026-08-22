@@ -11,7 +11,7 @@ const routes: RouteRow[] = [
   {
     need: 'I need invite-only, ticketed, or general access control',
     destination: 'Secure audience access',
-    href: '/live-events-overview',
+    href: '/secure-audience-access',
   },
   {
     need: 'I need a dedicated closed, credentialed viewing room',
@@ -22,7 +22,7 @@ const routes: RouteRow[] = [
   {
     need: 'I need failure planning and recovery',
     destination: 'Event resilience',
-    href: '/live-events-overview',
+    href: '/event-resilience',
   },
   {
     need: 'I need highest-assurance tier and commitments',
@@ -32,7 +32,7 @@ const routes: RouteRow[] = [
   {
     need: 'I need accessibility program design',
     destination: 'Accessibility & inclusion',
-    href: '/captions-and-languages',
+    href: '/accessibility-inclusion',
   },
 ];
 

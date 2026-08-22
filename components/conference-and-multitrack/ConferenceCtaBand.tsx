@@ -47,7 +47,7 @@ export default function ConferenceCtaBand({ onStartBrief }: ConferenceCtaBandPro
             Start your event brief
           </button>
           <a 
-            href="mailto:support@zoikostream.com"
+            href="/talk-to-an-expert"
             className="px-8 py-4 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-450 hover:outline-teal-400 bg-transparent transition-colors text-slate-100 text-base font-medium font-spaceGrotesk"
           >
             Talk to an expert

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-
+import Link from 'next/link';
 export default function ResilienceSection() {
   return (
     <section
@@ -45,12 +45,14 @@ export default function ResilienceSection() {
 
         {/* CTA Button */}
         <div>
+          <Link href="/talk-to-an-expert">
+
           <button
             type="button"
             className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-white text-base font-bold   leading-6 hover:opacity-90 transition-opacity"
           >
             Talk to an expert
-          </button>
+          </button></Link>
         </div>
 
       </div>

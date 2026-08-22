@@ -9,7 +9,8 @@ const cards = [
     pillColor: '#065f46',
     title: 'Event Resilience',
     description: <>Resilience model, dependency<br/>truth, verification, change<br/>detection, recovery planning, live<br/>incident state, and evidence.</>,
-    cta: 'Learn more'
+    cta: 'Learn more',
+    href:"#"
   },
   {
     icon: '/images/event-resilience/icon-shield-cyan.svg',
@@ -19,7 +20,8 @@ const cards = [
     pillColor: '#1e40af',
     title: 'Managed Live Event Streaming',
     description: <>Responsibility-led managed<br/>operating model where specific<br/>event tasks are run by ZoikoStream<br/>when scoped.</>,
-    cta: 'Talk to an expert'
+    cta: 'Talk to an expert',
+    href:"/talk-to-an-expert"
   },
   {
     icon: '/images/event-resilience/icon-shield-cyan.svg',
@@ -29,7 +31,9 @@ const cards = [
     pillColor: '#6b21a8',
     title: 'Assured Event',
     description: <>Higher-assurance commercial and<br/>service packaging. Exact<br/>commitments defined by<br/>authoritative service source.</>,
-    cta: 'Talk to an expert'
+    cta: 'Talk to an expert',
+    href:"/talk-to-an-expert"
+
   }
 ];
 
@@ -125,6 +129,7 @@ export default function FitAndAssuranceSection() {
               </div>
 
               <div className="flex flex-col items-start w-full" style={{ paddingTop: '32px' }}>
+                  <a href={card.href}>
                 <button 
                   className="flex items-center justify-center border w-full hover:bg-[rgba(52,212,202,0.1)] transition-colors"
                   style={{ 
@@ -136,7 +141,7 @@ export default function FitAndAssuranceSection() {
                   <span className="font-space-grotesk font-bold leading-[normal]" style={{ color: '#34d4ca', fontSize: '15px' }}>
                     {card.cta}
                   </span>
-                </button>
+                </button></a>
               </div>
             </div>
           ))}
