@@ -112,7 +112,7 @@ export default function ControlCenterSection() {
                     Dependency Gating policy
                   </p>
                   <div className="px-4 py-3 bg-white rounded-md border border-gray-200 flex justify-between items-center">
-                    <span className="text-gray-500 text-base font-normal font-['Inter']">
+                    <span className="text-gray-500 text-base font-normal  ">
                       Corporate Whitelist Active
                     </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -126,7 +126,7 @@ export default function ControlCenterSection() {
                     SLA State Checklist
                   </p>
                   <div className="px-4 py-3 bg-white rounded-md border border-gray-200 flex justify-between items-center">
-                    <span className="text-gray-500 text-base font-normal font-['Inter']">
+                    <span className="text-gray-500 text-base font-normal  ">
                       All states validated (Current)
                     </span>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

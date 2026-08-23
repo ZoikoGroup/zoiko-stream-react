@@ -29,10 +29,10 @@ export default function IdentityAuthAuthorizationSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Identity, Authentication &amp; Authorization
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             Sign-in is not permission. Understand the layered authority model that governs enterprise media.
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function IdentityAuthAuthorizationSection() {
                   <ShieldCheck className="size-4" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-slate-900 text-base font-bold font-['Space_Grotesk']">
+                  <h3 className="text-slate-900 text-base font-bold  ">
                     {pt.title}
                   </h3>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     {pt.desc}
                   </p>
                 </div>
@@ -61,16 +61,16 @@ export default function IdentityAuthAuthorizationSection() {
           <div className="lg:col-span-5 flex justify-center">
             <div className="w-full max-w-md p-8 md:p-10 bg-white rounded-2xl border border-slate-200 shadow-2xl flex flex-col gap-6">
               <div className="flex flex-col gap-2">
-                <h3 className="text-slate-900 text-3xl font-bold font-['Space_Grotesk']">
+                <h3 className="text-slate-900 text-3xl font-bold  ">
                   Sign in to ZoikoStream
                 </h3>
-                <p className="text-slate-600 text-sm font-normal font-['Space_Grotesk']">
+                <p className="text-slate-600 text-sm font-normal  ">
                   Enter your corporate credentials to access the platform.
                 </p>
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-slate-900 text-sm font-bold font-['Space_Grotesk']">
+                <label className="text-slate-900 text-sm font-bold  ">
                   Work email
                 </label>
                 <input
@@ -78,13 +78,13 @@ export default function IdentityAuthAuthorizationSection() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="name@organization.com"
-                  className="w-full h-12 px-4 bg-white rounded-lg border border-gray-200 text-slate-900 text-sm font-normal font-['Space_Grotesk'] focus:outline-hidden focus:border-teal-500"
+                  className="w-full h-12 px-4 bg-white rounded-lg border border-gray-200 text-slate-900 text-sm font-normal   focus:outline-hidden focus:border-teal-500"
                 />
               </div>
 
               <button
                 type="button"
-                className="w-full h-12 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-white text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                className="w-full h-12 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-white text-base font-bold   hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
               >
                 <span>Continue</span>
                 <ArrowRight className="size-4" />
@@ -92,7 +92,7 @@ export default function IdentityAuthAuthorizationSection() {
 
               <div className="flex items-center gap-2 pt-2 border-t border-slate-100">
                 <Lock className="size-4 text-slate-500 shrink-0" />
-                <span className="text-slate-600 text-xs font-normal font-['Space_Grotesk']">
+                <span className="text-slate-600 text-xs font-normal  ">
                   Use the account your organization approved.
                 </span>
               </div>

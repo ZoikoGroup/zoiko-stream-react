@@ -79,11 +79,11 @@ const TrustProofFAQ = () => {
           {/* ================= HEADER ================= */}
           <div className="flex w-full flex-col items-start gap-4">
 
-            <h2 className="w-full font-['Space_Grotesk'] text-4xl font-bold leading-[60.80px] text-slate-100">
+            <h2 className="w-full   text-4xl font-bold leading-[60.80px] text-slate-100">
               Trust, proof, and frequently asked questions
             </h2>
 
-            <p className="w-full font-['Space_Grotesk'] text-lg font-normal leading-7 text-slate-400">
+            <p className="w-full   text-lg font-normal leading-7 text-slate-400">
               Governed evidence and sourceable answers built around active
               operational capabilities.
             </p>
@@ -102,13 +102,13 @@ const TrustProofFAQ = () => {
 
                   <div className="h-2 w-2 shrink-0 rounded-full bg-[#00D4AA]" />
 
-                  <h3 className="font-['Space_Grotesk'] text-base font-bold text-slate-100">
+                  <h3 className="  text-base font-bold text-slate-100">
                     {card.title}
                   </h3>
 
                 </div>
 
-                <p className="font-['Space_Grotesk'] text-xs font-normal leading-4 text-slate-400">
+                <p className="  text-xs font-normal leading-4 text-slate-400">
                   {card.description}
                 </p>
               </div>
@@ -137,7 +137,7 @@ const TrustProofFAQ = () => {
                     className="flex w-full items-center justify-between gap-6 p-6 text-left"
                     aria-expanded={isOpen}
                   >
-                    <span className="flex-1 font-['Space_Grotesk'] text-base font-bold text-slate-100">
+                    <span className="flex-1   text-base font-bold text-slate-100">
                       {faq.question}
                     </span>
 
@@ -165,7 +165,7 @@ const TrustProofFAQ = () => {
                   {/* Answer */}
                   {isOpen && (
                     <div className="px-6 pb-6">
-                      <p className="font-['Space_Grotesk'] text-sm font-normal leading-5 text-slate-400">
+                      <p className="  text-sm font-normal leading-5 text-slate-400">
                         {faq.answer}
                       </p>
                     </div>

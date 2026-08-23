@@ -37,10 +37,10 @@ export default function CorpTechnicalAuditSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-900 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-900 text-4xl font-bold   leading-[60.80px]">
             Readiness, resilience, and event-day help
           </h2>
-          <p className="text-slate-655 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-655 text-lg font-normal   leading-7">
             Validate every technical dependency before the event begins. A shared preflight checklist tracks network, captions, encoders, and presenter rehearsals — flagging deviations from historical norms and prompting recovery steps in real time.
           </p>
         </div>
@@ -50,7 +50,7 @@ export default function CorpTechnicalAuditSection() {
           
           {/* Left Column (Card Checklist) */}
           <div className="w-full lg:w-[540px] p-8 bg-slate-50 rounded-2xl border border-gray-200 flex flex-col justify-start items-start gap-4 font-sans shadow-md shrink-0">
-            <div className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
+            <div className="text-slate-900 text-lg font-bold  ">
               Technical Alignment Checklist
             </div>
             
@@ -62,11 +62,11 @@ export default function CorpTechnicalAuditSection() {
                   key={idx}
                   className="w-full px-4 py-3 bg-white rounded-lg border border-gray-150 inline-flex justify-between items-center"
                 >
-                  <span className="text-slate-900 text-sm font-medium font-['Space_Grotesk']">
+                  <span className="text-slate-900 text-sm font-medium  ">
                     {step.label}
                   </span>
                   <div className={`px-3 py-1 ${step.statusClass} rounded-sm flex justify-center items-center`}>
-                    <span className="text-xs font-bold font-['Space_Grotesk']">
+                    <span className="text-xs font-bold  ">
                       {step.status}
                     </span>
                   </div>
@@ -77,10 +77,10 @@ export default function CorpTechnicalAuditSection() {
 
           {/* Right Column */}
           <div className="flex-1 w-full flex flex-col justify-start items-start gap-8 font-sans">
-            <h3 className="text-slate-900 text-xl font-bold font-['Space_Grotesk']">
+            <h3 className="text-slate-900 text-xl font-bold  ">
               No green status guarantees without verification
             </h3>
-            <p className="text-slate-600 text-lg font-normal font-['Space_Grotesk'] leading-7">
+            <p className="text-slate-600 text-lg font-normal   leading-7">
               Event days require perfect synchronization. ZoikoStream tracks preflight milestones explicitly in a shared, read-only interface. If any metric deviates from historical norms, the system prompts immediate recovery steps.
             </p>
             

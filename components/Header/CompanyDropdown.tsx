@@ -43,23 +43,23 @@ const ABOUT_ITEMS: MenuItem[] = [
   { title: 'About ZoikoStream', description: 'Our purpose in plain terms', href: '/about-us', icon: Info },
   { title: 'Purpose and principles', description: 'What we optimize for', href: '/purpose-principles', icon: Target },
   { title: 'Leadership', description: 'The people accountable for the platform', href: '/leadership', icon: Users },
-  { title: 'Operating context', description: 'How the group fits together', href: '/company', icon: Building2 },
+  { title: 'Operating context', description: 'How the group fits together', href: '/operating-context', icon: Building2 },
   { title: 'Zoiko Group', description: 'The parent organization', href: '/zoiko-group', icon: Building },
   { title: 'Zoiko Tech', description: 'Where ZoikoStream is built', href: '/zoiko-tech', icon: Code2 },
 ];
 
 const WORK_ITEMS: MenuItem[] = [
-  { title: 'Careers', description: 'Open roles across the group', href: '/company', icon: Briefcase },
-  { title: 'Partners', description: 'Implementation and technology allies', href: '/company', icon: Handshake },
-  { title: 'Contact', description: 'General enquiries', href: '/company', icon: Mail },
+  { title: 'Careers', description: 'Open roles across the group', href: '/carrers', icon: Briefcase },
+  { title: 'Partners', description: 'Implementation and technology allies', href: '/partners', icon: Handshake },
+  { title: 'Contact', description: 'General enquiries', href: '/contact-us', icon: Mail },
   { title: 'Enterprise inquiries', description: 'Talk to sales', href: '/company', icon: Building },
-  { title: 'Live Events inquiries', description: 'Plan a managed broadcast', href: '/live-events', icon: Radio },
+  { title: 'Live Events inquiries', description: 'Plan a managed broadcast', href: '/live-events-inquiries', icon: Radio },
   { title: 'Developer relations', description: 'Talk to the platform team', href: '/developers', icon: Terminal },
   { title: 'Accessibility contact', description: 'Report or ask directly', href: '/company', icon: Accessibility },
 ];
 
 const INFO_ITEMS: MenuItem[] = [
-  { title: 'Newsroom', description: 'Announcements and coverage', href: '/company', icon: Newspaper },
+  { title: 'Newsroom', description: 'Announcements and coverage', href: '/newsroom', icon: Newspaper },
   { title: 'Press and media', description: 'Assets and media contacts', href: '/company', icon: FileText },
   { title: 'Company updates', description: 'What changed, and when', href: '/company', icon: History },
   { title: 'Trust Center', description: 'Security and compliance posture', href: '/company', icon: ShieldCheck },

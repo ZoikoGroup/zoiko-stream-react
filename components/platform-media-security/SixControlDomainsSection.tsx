@@ -50,10 +50,10 @@ export default function SixControlDomainsSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-14">
         <div className="flex flex-col gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             What is protected — six control domains
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Space_Grotesk'] leading-relaxed max-w-3xl">
+          <p className="text-slate-400 text-lg font-normal   leading-relaxed max-w-3xl">
             Scoped controls with applicability states, not a universal checklist.
           </p>
         </div>
@@ -74,14 +74,14 @@ export default function SixControlDomainsSection() {
               </div>
               <div className="p-6 flex flex-col gap-4 flex-1">
                 <div className="flex justify-between items-start gap-2">
-                  <h3 className="text-white text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-400 transition-colors">
+                  <h3 className="text-white text-lg font-bold   group-hover:text-teal-400 transition-colors">
                     {dom.title}
                   </h3>
                   <span className="px-2.5 py-1 bg-emerald-500/10 text-emerald-500 rounded border border-emerald-500/20 text-xs font-bold font-mono uppercase tracking-wide shrink-0">
                     SCOPED
                   </span>
                 </div>
-                <p className="text-slate-400 text-base font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-base font-normal   leading-relaxed">
                   {dom.desc}
                 </p>
               </div>

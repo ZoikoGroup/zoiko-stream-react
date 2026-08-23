@@ -64,10 +64,10 @@ export default function ChooseRightControlBoundarySection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             Choose the Right Control Boundary
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
             Six specialist destinations for detailed evaluation
           </p>
         </div>
@@ -84,13 +84,13 @@ export default function ChooseRightControlBoundarySection() {
                   <Icon className="size-5" />
                 </div>
                 <div className="flex flex-col gap-1.5">
-                  <h3 className="text-white text-base font-bold font-['Space_Grotesk']">
+                  <h3 className="text-white text-base font-bold  ">
                     {item.title}
                   </h3>
-                  <span className="text-teal-400 text-xs font-semibold font-['Inter']">
+                  <span className="text-teal-400 text-xs font-semibold  ">
                     {item.question}
                   </span>
-                  <p className="text-slate-400 text-xs font-normal font-['Inter'] leading-relaxed pt-1">
+                  <p className="text-slate-400 text-xs font-normal   leading-relaxed pt-1">
                     {item.desc}
                   </p>
                 </div>

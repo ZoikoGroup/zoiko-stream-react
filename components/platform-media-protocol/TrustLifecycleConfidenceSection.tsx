@@ -50,10 +50,10 @@ export default function TrustLifecycleConfidenceSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             Trust, lifecycle, and production confidence
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
             Calm, technical, evidence-led proof for enterprise evaluation and procurement.
           </p>
         </div>
@@ -73,10 +73,10 @@ export default function TrustLifecycleConfidenceSection() {
                 />
               </div>
               <div className="p-6 flex flex-col gap-3 flex-1">
-                <h3 className="text-white text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-400 transition-colors">
+                <h3 className="text-white text-lg font-bold   group-hover:text-teal-400 transition-colors">
                   {card.title}
                 </h3>
-                <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                   {card.desc}
                 </p>
               </div>

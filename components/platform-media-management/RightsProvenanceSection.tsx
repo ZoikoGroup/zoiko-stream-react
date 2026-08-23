@@ -32,7 +32,7 @@ export default function RightsProvenanceSection() {
           <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
             Rights, provenance, and controlled reuse
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Inter'] leading-relaxed max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   leading-relaxed max-w-3xl">
             Explicit ownership and legal bounds are surfaced before media enters downstream production pipelines.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function RightsProvenanceSection() {
                     <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk']">
                       {feat.title}
                     </h3>
-                    <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                    <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                       {feat.desc}
                     </p>
                   </div>
@@ -67,43 +67,43 @@ export default function RightsProvenanceSection() {
                 <span className="text-slate-900 text-sm font-bold font-['Space_Grotesk'] tracking-wide">
                   RIGHTS OPERATING MODEL
                 </span>
-                <span className="px-2 py-0.5 bg-emerald-600/10 text-emerald-600 text-xs font-bold font-['Inter'] rounded">
+                <span className="px-2 py-0.5 bg-emerald-600/10 text-emerald-600 text-xs font-bold   rounded">
                   ACTIVE POLICY
                 </span>
               </div>
 
               <div className="flex flex-col gap-3">
                 <div className="pb-2 border-b border-slate-200 flex flex-col gap-1">
-                  <span className="text-slate-500 text-xs uppercase font-['Inter']">Origin Route</span>
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">Ingest-RTMP:HQ-Desk_02</span>
+                  <span className="text-slate-500 text-xs uppercase  ">Origin Route</span>
+                  <span className="text-slate-900 text-sm font-semibold  ">Ingest-RTMP:HQ-Desk_02</span>
                 </div>
 
                 <div className="pb-2 border-b border-slate-200 flex flex-col gap-1">
-                  <span className="text-slate-500 text-xs uppercase font-['Inter']">Accountable Steward</span>
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">Corporate Communications</span>
+                  <span className="text-slate-500 text-xs uppercase  ">Accountable Steward</span>
+                  <span className="text-slate-900 text-sm font-semibold  ">Corporate Communications</span>
                 </div>
 
                 <div className="pb-2 border-b border-slate-200 flex flex-col gap-1">
-                  <span className="text-slate-500 text-xs uppercase font-['Inter']">License Authority</span>
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">Master Agreement - SEC-2026</span>
+                  <span className="text-slate-500 text-xs uppercase  ">License Authority</span>
+                  <span className="text-slate-900 text-sm font-semibold  ">Master Agreement - SEC-2026</span>
                 </div>
 
                 <div className="pb-2 border-b border-slate-200 flex flex-col gap-1">
-                  <span className="text-slate-500 text-xs uppercase font-['Inter']">Approved Purpose</span>
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">Global Internal Broadcast Only</span>
+                  <span className="text-slate-500 text-xs uppercase  ">Approved Purpose</span>
+                  <span className="text-slate-900 text-sm font-semibold  ">Global Internal Broadcast Only</span>
                 </div>
 
                 <div className="pb-2 border-b border-slate-200 flex flex-col gap-1">
-                  <span className="text-slate-500 text-xs uppercase font-['Inter']">Expiry Policy</span>
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">2029-12-31 (Regulatory retention)</span>
+                  <span className="text-slate-500 text-xs uppercase  ">Expiry Policy</span>
+                  <span className="text-slate-900 text-sm font-semibold  ">2029-12-31 (Regulatory retention)</span>
                 </div>
               </div>
 
               <div className="p-4 bg-amber-100 rounded-lg border border-amber-500 flex flex-col gap-1">
-                <span className="text-amber-800 text-xs font-bold font-['Inter']">
+                <span className="text-amber-800 text-xs font-bold  ">
                   ⚠ Used before is not permission to use again.
                 </span>
-                <span className="text-amber-700 text-xs font-normal font-['Inter'] leading-relaxed">
+                <span className="text-amber-700 text-xs font-normal   leading-relaxed">
                   Every subsequent replay or VOD distribution run demands active readiness check validation against the OIDC master policy whitelist.
                 </span>
               </div>

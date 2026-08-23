@@ -56,10 +56,10 @@ export default function AccessContextMatrixSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-white">
+          <h2 className="text-3xl md:text-4xl font-bold   text-white">
             Access Context Matrix
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
             Understand access across administrators, applications, contributors, and audiences.
           </p>
         </div>
@@ -77,10 +77,10 @@ export default function AccessContextMatrixSection() {
                     <Icon className="size-5" />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <h3 className="text-white text-base font-bold font-['Space_Grotesk']">
+                    <h3 className="text-white text-base font-bold  ">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-sm font-normal font-['Inter'] leading-relaxed">
+                    <p className="text-slate-400 text-sm font-normal   leading-relaxed">
                       {item.desc}
                     </p>
                   </div>

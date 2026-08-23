@@ -29,11 +29,11 @@ const EnterpriseOperations = () => {
 
         {/* Heading */}
         <div className="flex w-full flex-col items-start gap-4">
-          <h2 className="font-['Space_Grotesk'] text-4xl font-bold leading-[60.80px] text-slate-900">
+          <h2 className="  text-4xl font-bold leading-[60.80px] text-slate-900">
             Enterprise operations and managed events
           </h2>
 
-          <p className="font-['Space_Grotesk'] text-lg font-normal leading-7 text-slate-600">
+          <p className="  text-lg font-normal leading-7 text-slate-600">
             Rigorous governance, structured operational support, dedicated
             support continuity, and change control.
           </p>
@@ -56,11 +56,11 @@ const EnterpriseOperations = () => {
 
             {/* Text */}
             <div className="mt-6 flex w-full flex-col items-start gap-3">
-              <h3 className="font-['Space_Grotesk'] text-xl font-bold text-slate-900">
+              <h3 className="  text-xl font-bold text-slate-900">
                 Enterprise operations
               </h3>
 
-              <p className="font-['Space_Grotesk'] text-sm font-normal leading-5 text-slate-600">
+              <p className="  text-sm font-normal leading-5 text-slate-600">
                 Complete governance, robust security integration, system
                 observability, and pre-scheduled automatic retry failovers for
                 repeatable enterprise broadcasting.
@@ -76,7 +76,7 @@ const EnterpriseOperations = () => {
                 >
                   <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-blue-500" />
 
-                  <span className="font-['Space_Grotesk'] text-xs font-normal text-slate-600">
+                  <span className="  text-xs font-normal text-slate-600">
                     {feature}
                   </span>
                 </div>
@@ -86,7 +86,7 @@ const EnterpriseOperations = () => {
             {/* Button */}
             <Link
               href="/talk-to-an-expert"
-              className="mt-6 rounded-[10px] border border-slate-600 px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
+              className="mt-6 rounded-[10px] border border-slate-600 px-7 py-3.5   text-base font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
             >
               Talk to an expert →
             </Link>
@@ -106,11 +106,11 @@ const EnterpriseOperations = () => {
 
             {/* Text */}
             <div className="mt-6 flex w-full flex-col items-start gap-3">
-              <h3 className="font-['Space_Grotesk'] text-xl font-bold text-slate-900">
+              <h3 className="  text-xl font-bold text-slate-900">
                 Managed Live Events
               </h3>
 
-              <p className="font-['Space_Grotesk'] text-sm font-normal leading-5 text-slate-600">
+              <p className="  text-sm font-normal leading-5 text-slate-600">
                 Hands-on professional planning support and active on-site
                 stream coordination monitors for high-stakes scheduled
                 broadcasts. Technical mapping, verified failovers, and direct
@@ -121,7 +121,7 @@ const EnterpriseOperations = () => {
             {/* Button */}
             <Link
               href="/plan-a-live-event"
-              className="mt-6 rounded-[10px] border border-slate-600 px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
+              className="mt-6 rounded-[10px] border border-slate-600 px-7 py-3.5   text-base font-medium text-slate-900 transition-colors hover:bg-slate-900 hover:text-white"
             >
               Plan a live event →
             </Link>
@@ -131,7 +131,7 @@ const EnterpriseOperations = () => {
         {/* Compliance */}
         <div className="flex w-full flex-col items-start gap-4 rounded-xl bg-slate-100 p-5">
 
-          <h3 className="font-['Space_Grotesk'] text-xs font-bold tracking-wide text-slate-600">
+          <h3 className="  text-xs font-bold tracking-wide text-slate-600">
             COMPLIANCE &amp; PROCUREMENT EVIDENCE VERIFICATION
           </h3>
 
@@ -148,7 +148,7 @@ const EnterpriseOperations = () => {
                 <a
                   key={item}
                   href={hrefs[idx]}
-                  className="flex items-center gap-1.5 font-['Space_Grotesk'] text-xs font-normal text-slate-900 underline"
+                  className="flex items-center gap-1.5   text-xs font-normal text-slate-900 underline"
                 >
                   {/* Document SVG icon */}
                   <svg

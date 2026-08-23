@@ -42,10 +42,10 @@ export default function CorpParticipationBoundariesSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-100 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-100 text-4xl font-bold   leading-[60.80px]">
             Speakers, participant questions, moderation, and privacy
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-400 text-lg font-normal   leading-7">
             Maintain safe, productive audience engagement throughout the broadcast. Moderated Q&A queues, presenter privacy masking, and real-time abuse controls keep conversations healthy without enabling surveillance or profiling.
           </p>
         </div>
@@ -59,7 +59,7 @@ export default function CorpParticipationBoundariesSection() {
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`px-6 py-3 text-sm font-bold font-['Space_Grotesk'] transition-all border-none cursor-pointer bg-transparent ${
+                className={`px-6 py-3 text-sm font-bold   transition-all border-none cursor-pointer bg-transparent ${
                   activeTab === idx 
                     ? 'border-b-2 border-teal-500 text-teal-400 bg-gray-800/40' 
                     : 'text-slate-400 hover:text-slate-200'
@@ -83,13 +83,13 @@ export default function CorpParticipationBoundariesSection() {
             
             {/* Details */}
             <div className="flex flex-col gap-3">
-              <h3 className="text-slate-100 text-xl font-bold font-['Space_Grotesk']">
+              <h3 className="text-slate-100 text-xl font-bold  ">
                 {tabs[activeTab].subtitle}
               </h3>
-              <p className="text-slate-400 text-sm font-normal font-['Space_Grotesk'] leading-6 font-medium">
+              <p className="text-slate-400 text-sm font-normal   leading-6 font-medium">
                 {tabs[activeTab].desc}
               </p>
-              <p className="text-slate-400 text-sm font-normal font-['Space_Grotesk'] leading-7">
+              <p className="text-slate-400 text-sm font-normal   leading-7">
                 {tabs[activeTab].paragraph}
               </p>
             </div>

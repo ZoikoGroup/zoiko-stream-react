@@ -54,7 +54,7 @@ export default function SpecialistDestinationsSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-zinc-950">
+          <h2 className="text-3xl md:text-4xl font-bold   text-zinc-950">
             Recording and replay connects to every specialist destination
           </h2>
         </div>
@@ -74,10 +74,10 @@ export default function SpecialistDestinationsSection() {
                 />
               </div>
               <div className="p-5 flex flex-col gap-2">
-                <h3 className="text-zinc-950 text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
+                <h3 className="text-zinc-950 text-lg font-bold   group-hover:text-teal-600 transition-colors">
                   {dest.title}
                 </h3>
-                <p className="text-slate-600 text-sm font-normal font-['Space_Grotesk'] leading-relaxed">
+                <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                   {dest.desc}
                 </p>
               </div>

@@ -69,7 +69,7 @@ export default function DescribeConnectionSection() {
                   <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
                     {cat.title}
                   </h3>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     {cat.desc}
                   </p>
                 </div>

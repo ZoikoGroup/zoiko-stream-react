@@ -62,7 +62,7 @@ export default function InspectProtocolQualificationSection() {
                   <span className="text-slate-900 text-xs font-bold font-['Space_Grotesk'] uppercase tracking-wider">
                     Fit &amp; Exclusions
                   </span>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     Ideal for high-jitter public internet contribution. Exclude if browser WebRTC endpoints are the client software base.
                   </p>
                 </div>
@@ -71,7 +71,7 @@ export default function InspectProtocolQualificationSection() {
                   <span className="text-slate-900 text-xs font-bold font-['Space_Grotesk'] uppercase tracking-wider">
                     Endpoint / Authorization
                   </span>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     Target listening port mapped dynamically. Handshake auth executed via private passphrases ranging 10-79 characters.
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function InspectProtocolQualificationSection() {
                   <span className="text-slate-900 text-xs font-bold font-['Space_Grotesk'] uppercase tracking-wider">
                     Media Compatibility
                   </span>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     Restricted payload profile: MPEG2-TS wrapped frames only. Multiple audio tracks supported under standardized stream IDs.
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export default function InspectProtocolQualificationSection() {
                   <span className="text-slate-900 text-xs font-bold font-['Space_Grotesk'] uppercase tracking-wider">
                     Network Qualification
                   </span>
-                  <p className="text-slate-600 text-sm font-normal font-['Inter'] leading-relaxed">
+                  <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                     Explicit firewall routing of inbound UDP ports required. NAT-traversal must be qualified under strict listener-caller mapping.
                   </p>
                 </div>
@@ -116,18 +116,18 @@ export default function InspectProtocolQualificationSection() {
                       {row.protocol}
                     </span>
                     <div className="flex-1 flex flex-col">
-                      <span className="text-slate-900 text-sm font-medium font-['Inter']">
+                      <span className="text-slate-900 text-sm font-medium  ">
                         {row.contextTitle}
                       </span>
-                      <span className="text-slate-600 text-xs font-normal font-['Inter']">
+                      <span className="text-slate-600 text-xs font-normal  ">
                         {row.contextDesc}
                       </span>
                     </div>
                     <div className="w-32 flex flex-col shrink-0">
-                      <span className="text-blue-600 text-xs font-semibold font-['Inter']">
+                      <span className="text-blue-600 text-xs font-semibold  ">
                         {row.netTitle}
                       </span>
-                      <span className="text-slate-600 text-xs font-normal font-['Inter']">
+                      <span className="text-slate-600 text-xs font-normal  ">
                         {row.netDesc}
                       </span>
                     </div>

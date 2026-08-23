@@ -14,10 +14,10 @@ export default function DecisionEvidenceAuditabilitySection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Decision Evidence &amp; Auditability
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             Prove what was authorized, limited, denied, changed, or revoked with reconstructable cryptographic receipts.
           </p>
         </div>
@@ -27,10 +27,10 @@ export default function DecisionEvidenceAuditabilitySection() {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 pb-4 border-b border-slate-200">
             <div className="flex flex-col gap-1">
               <div className="flex items-center gap-3 flex-wrap">
-                <h3 className="text-slate-900 text-xl font-bold font-['Space_Grotesk']">
+                <h3 className="text-slate-900 text-xl font-bold  ">
                   Cryptographic Audit Receipt #9F8B
                 </h3>
-                <span className="px-2.5 py-0.5 bg-slate-100 text-slate-600 rounded text-xs font-bold font-['Inter']">
+                <span className="px-2.5 py-0.5 bg-slate-100 text-slate-600 rounded text-xs font-bold  ">
                   COMPLIANCE RECORD
                 </span>
               </div>
@@ -39,7 +39,7 @@ export default function DecisionEvidenceAuditabilitySection() {
               </span>
             </div>
 
-            <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold font-['Inter'] border border-emerald-300 shrink-0">
+            <span className="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold   border border-emerald-300 shrink-0">
               VERIFIED DECISION
             </span>
           </div>
@@ -48,14 +48,14 @@ export default function DecisionEvidenceAuditabilitySection() {
             {receiptRows.map((row, idx) => (
               <div key={idx} className="p-4 bg-white flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                 <div className="flex flex-col">
-                  <span className="text-slate-900 text-sm font-semibold font-['Inter']">
+                  <span className="text-slate-900 text-sm font-semibold  ">
                     {row.label}
                   </span>
                   <span className="text-slate-600 text-xs font-mono">
                     {row.value}
                   </span>
                 </div>
-                <span className={`px-2.5 py-1 rounded text-xs font-bold font-['Inter'] ${row.statusClass}`}>
+                <span className={`px-2.5 py-1 rounded text-xs font-bold   ${row.statusClass}`}>
                   {row.status}
                 </span>
               </div>

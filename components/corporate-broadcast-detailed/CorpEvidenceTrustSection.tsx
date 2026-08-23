@@ -51,10 +51,10 @@ export default function CorpEvidenceTrustSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 max-w-4xl">
-          <h2 className="text-slate-100 text-3xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-100 text-3xl font-bold   leading-[60.80px]">
             Run of show, schedule, and content context
           </h2>
-          <p className="text-zinc-400 text-lg font-normal font-['Space_Grotesk']">
+          <p className="text-zinc-400 text-lg font-normal  ">
             Manage your entire event timeline from a single, versioned dashboard — coordinate cues, track approvals, and keep every stakeholder aligned in real time.
           </p>
         </div>
@@ -64,10 +64,10 @@ export default function CorpEvidenceTrustSection() {
           
           {/* Left Column */}
           <div className="flex-1 flex flex-col justify-start items-start gap-6 font-sans">
-            <h3 className="text-teal-400 text-xl font-bold font-['Space_Grotesk']">
+            <h3 className="text-teal-400 text-xl font-bold  ">
               Versioned run-of-show references and approval states
             </h3>
-            <p className="text-slate-400 text-base font-normal font-['Space_Grotesk'] leading-6">
+            <p className="text-slate-400 text-base font-normal   leading-6">
               Never miss a cue. Coordinate video layout shifts, slides triggers, speaker handoffs, and video roll cues inside a versioned, secure dashboard. Change logs are synced in real-time across AV operators, organizers, and remote contributors.
             </p>
             
@@ -76,7 +76,7 @@ export default function CorpEvidenceTrustSection() {
                 <div className="w-3.5 h-3.5 flex justify-center items-center border border-teal-450 rounded-sm">
                   <span className="text-teal-400 text-[10px]">✓</span>
                 </div>
-                <div className="text-slate-100 text-sm font-normal font-['Space_Grotesk']">
+                <div className="text-slate-100 text-sm font-normal  ">
                   Authoritative timeline locking
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function CorpEvidenceTrustSection() {
                 <div className="w-3.5 h-3.5 flex justify-center items-center border border-teal-450 rounded-sm">
                   <span className="text-teal-400 text-[10px]">✓</span>
                 </div>
-                <div className="text-slate-100 text-sm font-normal font-['Space_Grotesk']">
+                <div className="text-slate-100 text-sm font-normal  ">
                   Instant stage manager notifications
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function CorpEvidenceTrustSection() {
                 <div className="w-3.5 h-3.5 flex justify-center items-center border border-teal-450 rounded-sm">
                   <span className="text-teal-400 text-[10px]">✓</span>
                 </div>
-                <div className="text-slate-100 text-sm font-normal font-['Space_Grotesk']">
+                <div className="text-slate-100 text-sm font-normal  ">
                   Approved backup pathways clearly mapped
                 </div>
               </div>
@@ -102,11 +102,11 @@ export default function CorpEvidenceTrustSection() {
           {/* Right Column (Town Hall Q1 Card) */}
           <div className="w-full lg:w-[640px] p-8 bg-gray-900/90 rounded-2xl border border-slate-800 backdrop-blur-[10px] flex flex-col justify-start items-start gap-4 font-sans shadow-xl">
             <div className="w-full flex justify-between items-center">
-              <div className="text-slate-100 text-base font-bold font-['Space_Grotesk']">
+              <div className="text-slate-100 text-base font-bold  ">
                 Town Hall Q1 — Approved Active Plan
               </div>
               <div className="px-3 py-1 bg-emerald-500/10 rounded-sm flex justify-center items-center">
-                <span className="text-emerald-500 text-xs font-bold font-['Space_Grotesk']">
+                <span className="text-emerald-500 text-xs font-bold  ">
                   Locked
                 </span>
               </div>
@@ -124,18 +124,18 @@ export default function CorpEvidenceTrustSection() {
                       : 'bg-transparent border-transparent'
                   }`}
                 >
-                  <div className={`text-sm font-bold font-['Space_Grotesk'] ${step.isActive ? 'text-teal-400' : 'text-slate-400'}`}>
+                  <div className={`text-sm font-bold   ${step.isActive ? 'text-teal-400' : 'text-slate-400'}`}>
                     {step.time}
                   </div>
                   <div className="flex-1 flex flex-col justify-start items-start gap-0.5">
-                    <div className="text-slate-100 text-sm font-bold font-['Space_Grotesk']">
+                    <div className="text-slate-100 text-sm font-bold  ">
                       {step.title}
                     </div>
-                    <div className="text-slate-400 text-xs font-normal font-['Space_Grotesk']">
+                    <div className="text-slate-400 text-xs font-normal  ">
                       {step.lead}
                     </div>
                   </div>
-                  <div className={`text-xs font-bold font-['Space_Grotesk'] ${step.isActive ? 'text-teal-400' : 'text-slate-400'}`}>
+                  <div className={`text-xs font-bold   ${step.isActive ? 'text-teal-400' : 'text-slate-400'}`}>
                     {step.status}
                   </div>
                 </div>

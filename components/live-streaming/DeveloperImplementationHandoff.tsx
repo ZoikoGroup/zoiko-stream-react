@@ -47,11 +47,11 @@ export default function DeveloperImplementationHandoff() {
 
         {/* ================= HEADING ================= */}
         <div className="flex w-full flex-col items-start gap-4">
-          <h2 className="w-full font-['Space_Grotesk'] text-4xl font-bold leading-[60.8px] text-slate-100">
+          <h2 className="w-full   text-4xl font-bold leading-[60.8px] text-slate-100">
             Developer implementation handoff
           </h2>
 
-          <p className="w-full font-['Space_Grotesk'] text-lg font-normal leading-7 text-slate-400">
+          <p className="w-full   text-lg font-normal leading-7 text-slate-400">
             Shorten the path to reliable implementation without forcing
             operators to navigate full developer portals.
           </p>
@@ -75,11 +75,11 @@ export default function DeveloperImplementationHandoff() {
 
               {/* Content */}
               <div className="mt-4 flex w-full flex-col items-start gap-1">
-                <h3 className="font-['Space_Grotesk'] text-base font-bold text-slate-100">
+                <h3 className="  text-base font-bold text-slate-100">
                   {card.title}
                 </h3>
 
-                <p className="w-full font-['Space_Grotesk'] text-xs font-normal leading-5 text-slate-400">
+                <p className="w-full   text-xs font-normal leading-5 text-slate-400">
                   {card.description}
                 </p>
               </div>
@@ -127,7 +127,7 @@ export default function DeveloperImplementationHandoff() {
           {/* Primary Button */}
           <Link
             href="/start-building"
-            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5 font-['Space_Grotesk'] text-base font-bold text-slate-950 transition-opacity duration-200 hover:opacity-90"
+            className="rounded-[10px] bg-gradient-to-b from-teal-500 to-blue-500 px-6 py-3.5   text-base font-bold text-slate-950 transition-opacity duration-200 hover:opacity-90"
           >
             Start Building
           </Link>
@@ -135,7 +135,7 @@ export default function DeveloperImplementationHandoff() {
           {/* Secondary Button */}
           <button
             type="button"
-            className="rounded-[10px] border border-slate-400 px-7 py-3.5 font-['Space_Grotesk'] text-base font-medium text-slate-100 transition-colors duration-200 hover:bg-white/5"
+            className="rounded-[10px] border border-slate-400 px-7 py-3.5   text-base font-medium text-slate-100 transition-colors duration-200 hover:bg-white/5"
           >
             View API Docs
           </button>

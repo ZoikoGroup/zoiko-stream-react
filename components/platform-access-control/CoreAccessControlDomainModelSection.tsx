@@ -39,10 +39,10 @@ export default function CoreAccessControlDomainModelSection() {
     <section className="w-full bg-white border-b border-slate-200 py-20 md:py-24 text-slate-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold   text-slate-900 leading-tight">
             Core Access-Control Domain Model
           </h2>
-          <p className="text-slate-600 text-base md:text-lg font-normal font-['Space_Grotesk'] max-w-3xl">
+          <p className="text-slate-600 text-base md:text-lg font-normal   max-w-3xl">
             A stable vocabulary for identity, authority, and decisions - implementation-neutral by design.
           </p>
         </div>
@@ -62,10 +62,10 @@ export default function CoreAccessControlDomainModelSection() {
                 />
               </div>
               <div className="p-6 flex flex-col gap-3 flex-1">
-                <h3 className="text-slate-900 text-lg font-bold font-['Space_Grotesk'] group-hover:text-teal-600 transition-colors">
+                <h3 className="text-slate-900 text-lg font-bold   group-hover:text-teal-600 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-slate-600 text-sm font-normal font-['Space_Grotesk'] leading-relaxed">
+                <p className="text-slate-600 text-sm font-normal   leading-relaxed">
                   {item.desc}
                 </p>
               </div>

@@ -34,10 +34,10 @@ export default function CorpRemoteContributionSection() {
         
         {/* Title Block */}
         <div className="flex flex-col gap-4 text-left">
-          <h2 className="text-slate-105 text-4xl font-bold font-['Space_Grotesk'] leading-[60.80px]">
+          <h2 className="text-slate-105 text-4xl font-bold   leading-[60.80px]">
             Remote contribution and multi-location
           </h2>
-          <p className="text-slate-400 text-lg font-normal font-['Inter'] leading-7">
+          <p className="text-slate-400 text-lg font-normal   leading-7">
             Bridge distributed teams and satellite offices into a single broadcast. Sub-second return feeds, automated connection audits, and backstage greenrooms ensure remote presenters join with confidence and zero delay.
           </p>
         </div>
@@ -55,10 +55,10 @@ export default function CorpRemoteContributionSection() {
 
           {/* Right Column (List Steps) */}
           <div className="flex-1 w-full flex flex-col justify-start items-start gap-6 font-sans">
-            <h3 className="text-teal-400 text-xl font-bold font-['Space_Grotesk']">
+            <h3 className="text-teal-400 text-xl font-bold  ">
               Connect executives, guest presenters, and satellite branches
             </h3>
-            <p className="text-slate-400 text-base font-normal font-['Space_Grotesk'] leading-6">
+            <p className="text-slate-400 text-base font-normal   leading-6">
               Seamlessly bridge multiple locations. Our system coordinates sub-second latency return feeds, enabling remote presenters to see and hear local audiences with zero delay. Automated preflight connection audits verify network strength before going live.
             </p>
             
@@ -66,15 +66,15 @@ export default function CorpRemoteContributionSection() {
               {steps.map((step, idx) => (
                 <div key={idx} className="self-stretch inline-flex justify-start items-start gap-3">
                   <div className="w-6 h-6 bg-slate-800 rounded-xl flex justify-center items-center select-none shrink-0 mt-0.5">
-                    <span className="text-teal-400 text-xs font-bold font-['Space_Grotesk']">
+                    <span className="text-teal-400 text-xs font-bold  ">
                       {step.num}
                     </span>
                   </div>
                   <div className="flex-1 flex flex-col justify-start items-start gap-0.5">
-                    <h4 className="text-slate-100 text-base font-bold font-['Space_Grotesk']">
+                    <h4 className="text-slate-100 text-base font-bold  ">
                       {step.title}
                     </h4>
-                    <p className="self-stretch text-slate-400 text-xs font-normal font-['Space_Grotesk'] leading-relaxed">
+                    <p className="self-stretch text-slate-400 text-xs font-normal   leading-relaxed">
                       {step.desc}
                     </p>
                   </div>

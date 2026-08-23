@@ -24,6 +24,7 @@ import {
   Video,
   Archive,
   type LucideIcon,
+  Target,
 } from 'lucide-react';
 
 type MenuItem = {
@@ -34,11 +35,11 @@ type MenuItem = {
 };
 
 const OBJECTIVE_ITEMS: MenuItem[] = [
-  { title: 'Solutions overview', description: 'Find your fastest path in', href: '/solutions', icon: Grid },
-  { title: 'Build video into a product', description: 'Embed streaming as a feature', href: '/solutions', icon: Video },
-  { title: 'Broadcast globally', description: 'One-to-many at scale', href: '/solutions', icon: Globe2 },
-  { title: 'Secure enterprise video', description: 'Governed internal and external media', href: '/solutions', icon: ShieldCheck },
-  { title: 'Accessible & multilingual video', description: 'Captioned, translated, inclusive', href: '/solutions', icon: Subtitles },
+  { title: 'Solutions overview', description: 'Find your fastest path in', href: '/solutions-overview', icon: Grid },
+  { title: 'Build video into a product', description: 'Embed streaming as a feature', href: '/build-video-into-product', icon: Video },
+  { title: 'Broadcast globally', description: 'One-to-many at scale', href: '/Broadcast-globally', icon: Globe2 },
+  { title: 'Secure enterprise video', description: 'Governed internal and external media', href: '/secure-enterprise-video', icon: ShieldCheck },
+  { title: 'Accessible & multilingual video', description: 'Captioned, translated, inclusive', href: '/accessible-multilingual', icon: Subtitles },
   { title: 'Record, replay and preserve', description: 'Durable long-term archives', href: '/solutions', icon: Archive },
   { title: 'Run managed Live Events', description: 'Produced, one-time broadcasts', href: '/solutions', icon: Radio },
 ];
@@ -159,7 +160,7 @@ export default function SolutionsDropdown() {
               type="button"
               className="flex h-8 cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-white px-3.5 text-xs font-semibold text-slate-900 transition-colors hover:border-slate-300 hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:hover:border-gray-600 dark:hover:bg-gray-700"
             >
-              <Search className="h-3.5 w-3.5 text-slate-400 dark:text-gray-500" />
+              <Target className="h-3.5 w-3.5 text-slate-400 dark:text-gray-500" />
               <span>{tag}</span>
             </button>
           ))}

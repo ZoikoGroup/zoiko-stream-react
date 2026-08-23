@@ -19,10 +19,10 @@ export default function FinalCtaSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center gap-6 text-center">
           <div className="max-w-3xl flex flex-col gap-4">
-            <h2 className="text-4xl md:text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold   text-white leading-tight">
               Ready to evaluate secure delivery?
             </h2>
-            <p className="text-slate-300 text-lg font-normal font-['Space_Grotesk'] leading-relaxed">
+            <p className="text-slate-300 text-lg font-normal   leading-relaxed">
               Start building, explore the architecture, or talk to an expert.
             </p>
           </div>
@@ -30,13 +30,13 @@ export default function FinalCtaSection() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link
               href="/start-building"
-              className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
+              className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold   hover:opacity-90 transition-opacity"
             >
               Start building
             </Link>
             <Link
               href="/talk-to-an-expert"
-              className="px-8 py-4 rounded-lg border border-slate-400 text-white text-base font-bold font-['Space_Grotesk'] hover:bg-white/10 transition-colors"
+              className="px-8 py-4 rounded-lg border border-slate-400 text-white text-base font-bold   hover:bg-white/10 transition-colors"
             >
               Talk to an expert
             </Link>
