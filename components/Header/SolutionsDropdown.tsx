@@ -45,11 +45,11 @@ const OBJECTIVE_ITEMS: MenuItem[] = [
 ];
 
 const ORGANIZATION_ITEMS: MenuItem[] = [
-  { title: 'Organization overview', description: 'Solutions grouped by who you are', href: '/solutions', icon: Grid },
-  { title: 'Developers & product teams', description: 'Ship video features fast', href: '/solutions', icon: Users },
-  { title: 'Enterprises', description: 'Operate media at company scale', href: '/solutions', icon: Building2 },
-  { title: 'Media & communications', description: 'Editorial and distribution workflows', href: '/solutions', icon: Tv },
-  { title: 'Education', description: 'Lectures, cohorts and replay', href: '/solutions', icon: Compass },
+  { title: 'Organization overview', description: 'Solutions grouped by who you are', href: '/solutions-organization-overview', icon: Grid },
+  { title: 'Developers & product teams', description: 'Ship video features fast', href: '/solutions-developer-product-teams', icon: Users },
+  { title: 'Enterprises', description: 'Operate media at company scale', href: '/solutions-enterprise', icon: Building2 },
+  { title: 'Media & communications', description: 'Editorial and distribution workflows', href: '/solutions-media-communication', icon: Tv },
+  { title: 'Education', description: 'Lectures, cohorts and replay', href: '/solutions-education', icon: Compass },
   { title: 'Faith & community', description: 'Services and gatherings, streamed well', href: '/solutions', icon: Heart },
   { title: 'Public & civic institutions', description: 'Transparent, accessible proceedings', href: '/solutions', icon: Landmark },
 ];

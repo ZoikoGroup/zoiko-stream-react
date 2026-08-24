@@ -52,9 +52,9 @@ const WORK_ITEMS: MenuItem[] = [
   { title: 'Careers', description: 'Open roles across the group', href: '/carrers', icon: Briefcase },
   { title: 'Partners', description: 'Implementation and technology allies', href: '/partners', icon: Handshake },
   { title: 'Contact', description: 'General enquiries', href: '/contact-us', icon: Mail },
-  { title: 'Enterprise inquiries', description: 'Talk to sales', href: '/company', icon: Building },
-  { title: 'Live Events inquiries', description: 'Plan a managed broadcast', href: '/live-events-inquiries', icon: Radio },
-  { title: 'Developer relations', description: 'Talk to the platform team', href: '/developers', icon: Terminal },
+  { title: 'Enterprise inquiries', description: 'Talk to sales', href: '/enterprise-inquiries', icon: Building },
+  { title: 'Live Events inquiries', description: 'Plan a managed broadcast', href: '/zoikostream-enterprise-inquiries', icon: Radio },
+  { title: 'Developer relations', description: 'Talk to the platform team', href: '/zoikostream-developer-relations', icon: Terminal },
   { title: 'Accessibility contact', description: 'Report or ask directly', href: '/company', icon: Accessibility },
 ];
 
@@ -63,8 +63,8 @@ const INFO_ITEMS: MenuItem[] = [
   { title: 'Press and media', description: 'Assets and media contacts', href: '/company', icon: FileText },
   { title: 'Company updates', description: 'What changed, and when', href: '/company', icon: History },
   { title: 'Trust Center', description: 'Security and compliance posture', href: '/company', icon: ShieldCheck },
-  { title: 'System status', description: 'Live platform health', href: '/company', icon: Activity },
-  { title: 'Legal', description: 'Terms and agreements', href: '/company', icon: Scale },
+  { title: 'System status', description: 'Live platform health', href: '/zoikostream-status', icon: Activity },
+  { title: 'Legal', description: 'Terms and agreements', href: '/zoikostream-legal', icon: Scale },
   { title: 'Privacy', description: 'How we handle data', href: '/company', icon: Lock },
 ];
 
