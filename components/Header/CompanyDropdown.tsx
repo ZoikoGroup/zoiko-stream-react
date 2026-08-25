@@ -55,17 +55,17 @@ const WORK_ITEMS: MenuItem[] = [
   { title: 'Enterprise inquiries', description: 'Talk to sales', href: '/enterprise-inquiries', icon: Building },
   { title: 'Live Events inquiries', description: 'Plan a managed broadcast', href: '/zoikostream-enterprise-inquiries', icon: Radio },
   { title: 'Developer relations', description: 'Talk to the platform team', href: '/zoikostream-developer-relations', icon: Terminal },
-  { title: 'Accessibility contact', description: 'Report or ask directly', href: '/company', icon: Accessibility },
+  { title: 'Accessibility contact', description: 'Report or ask directly', href: '/accessibility', icon: Accessibility },
 ];
 
 const INFO_ITEMS: MenuItem[] = [
   { title: 'Newsroom', description: 'Announcements and coverage', href: '/newsroom', icon: Newspaper },
-  { title: 'Press and media', description: 'Assets and media contacts', href: '/company', icon: FileText },
-  { title: 'Company updates', description: 'What changed, and when', href: '/company', icon: History },
-  { title: 'Trust Center', description: 'Security and compliance posture', href: '/company', icon: ShieldCheck },
+  { title: 'Press and media', description: 'Assets and media contacts', href: '/press', icon: FileText },
+  { title: 'Company updates', description: 'What changed, and when', href: '/zoikostream-company-updates', icon: History },
+  { title: 'Trust Center', description: 'Security and compliance posture', href: '/zoikostream-trust-center', icon: ShieldCheck },
   { title: 'System status', description: 'Live platform health', href: '/zoikostream-status', icon: Activity },
   { title: 'Legal', description: 'Terms and agreements', href: '/zoikostream-legal', icon: Scale },
-  { title: 'Privacy', description: 'How we handle data', href: '/company', icon: Lock },
+  { title: 'Privacy', description: 'How we handle data', href: '/privacy', icon: Lock },
 ];
 
 const POPULAR_TAGS = ['Leadership', 'Careers', 'Newsroom', 'Trust Center', 'Partners'];
