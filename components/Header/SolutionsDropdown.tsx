@@ -51,16 +51,16 @@ const ORGANIZATION_ITEMS: MenuItem[] = [
   { title: 'Media & communications', description: 'Editorial and distribution workflows', href: '/solutions-media-communication', icon: Tv },
   { title: 'Education', description: 'Lectures, cohorts and replay', href: '/solutions-education', icon: Compass },
   { title: 'Faith & community', description: 'Services and gatherings, streamed well', href: '/solutions', icon: Heart },
-  { title: 'Public & civic institutions', description: 'Transparent, accessible proceedings', href: '/solutions', icon: Landmark },
+  { title: 'Public & civic institutions', description: 'Transparent, accessible proceedings', href: '/civic-events-detailed', icon: Landmark },
 ];
 
 const WORKFLOW_ITEMS: MenuItem[] = [
-  { title: 'Workflow finder', description: 'Answer three questions, get a path', href: '/solutions', icon: Compass },
-  { title: 'Live product video', description: 'Streaming embedded in your app', href: '/solutions', icon: Video },
-  { title: 'Enterprise broadcast', description: 'Company-wide, all-hands scale', href: '/solutions', icon: Radio },
-  { title: 'Private audience delivery', description: 'Restricted, credentialed viewing', href: '/solutions', icon: Lock },
+  { title: 'Workflow finder', description: 'Answer three questions, get a path', href: '/workflow-finder', icon: Compass },
+  { title: 'Live product video', description: 'Streaming embedded in your app', href: '/live-product-video', icon: Video },
+  { title: 'Enterprise broadcast', description: 'Company-wide, all-hands scale', href: '/solutions-enterprise-broadcast', icon: Radio },
+  { title: 'Private audience delivery', description: 'Restricted, credentialed viewing', href: '/solutions-private-audience-delivery', icon: Lock },
   { title: 'Global event streaming', description: 'One event, every time zone', href: '/solutions', icon: Globe2 },
-  { title: 'Media preservation', description: 'Keep the record intact', href: '/solutions', icon: Archive },
+  { title: 'Media preservation', description: 'Keep the record intact', href: '/solutions-media-preservation', icon: Archive },
   { title: 'Operational analytics', description: 'Prove reach and reliability', href: '/solutions', icon: BarChart3 },
 ];
 
