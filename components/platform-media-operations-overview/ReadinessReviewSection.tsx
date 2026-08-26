@@ -58,7 +58,13 @@ const badgeStyles: Record<string, { bg: string; text: string }> = {
 
 export default function ReadinessReviewSection() {
   return (
-    <section className="w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-slate-950/75 border-b border-slate-700 flex flex-col gap-14 overflow-hidden">
+    <section className="w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-slate-950/75 border-b border-slate-700 flex flex-col gap-14 overflow-hidden"
+    style={{
+        backgroundImage: `url('/images/platform-media-operations-overview/bg (56).png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat', opacity:20
+      }}>
       <div className="flex flex-col gap-3">
         <h2 className="text-slate-50 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">
           Media Operations Readiness Review

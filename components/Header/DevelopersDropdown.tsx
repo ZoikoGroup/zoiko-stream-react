@@ -39,19 +39,19 @@ type MenuItem = {
 };
 
 const GET_STARTED_ITEMS: MenuItem[] = [
-  { title: 'Developers overview', description: 'Where to begin, and why', href: '/developers', icon: Compass },
-  { title: 'Documentation', description: 'Full technical reference', href: '/developers', icon: FileText },
-  { title: 'Quickstart', description: 'Credential to working stream, fast', href: '/developers', icon: Zap },
-  { title: 'API reference', description: 'Every endpoint, typed and explained', href: '/developers', icon: BookOpen },
-  { title: 'Authentication', description: 'Keys, tokens and scopes', href: '/developers', icon: Key },
+  { title: 'Developers overview', description: 'Where to begin, and why', href: '/developers-overview', icon: Compass },
+  { title: 'Documentation', description: 'Full technical reference', href: '/documentation-page', icon: FileText },
+  { title: 'Quickstart', description: 'Credential to working stream, fast', href: '/quick-start', icon: Zap },
+  { title: 'API reference', description: 'Every endpoint, typed and explained', href: '/api-reference', icon: BookOpen },
+  { title: 'Authentication', description: 'Keys, tokens and scopes', href: '/authentication', icon: Key },
   { title: 'Developer access', description: 'The real access model, stated plainly', href: '/developers', icon: ShieldCheck },
-  { title: 'Sample applications', description: 'Working repos you can clone', href: '/developers', icon: FolderGit2 },
+  { title: 'Sample applications', description: 'Working repos you can clone', href: '/sample-application', icon: FolderGit2 },
 ];
 
 const BUILD_ITEMS: MenuItem[] = [
-  { title: 'SDKs', description: 'Maintained libraries, current versions', href: '/developers', icon: Layers },
+  { title: 'SDKs', description: 'Maintained libraries, current versions', href: '/developer-sdk', icon: Layers },
   { title: 'Live streaming API', description: 'Publish and manage broadcasts', href: '/developers', icon: Radio },
-  { title: 'Video-on-demand API', description: 'Upload, encode, deliver', href: '/developers', icon: Video },
+  { title: 'Video-on-demand API', description: 'Upload, encode, deliver', href: '/developer-video-demand-api', icon: Video },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP, qualified', href: '/developers', icon: Network },
   { title: 'Webhooks and events', description: 'React to stream state changes', href: '/developers', icon: Webhook },
   { title: 'Secure playback', description: 'Signed URLs and DRM options', href: '/developers', icon: Lock },
@@ -60,7 +60,7 @@ const BUILD_ITEMS: MenuItem[] = [
 
 const OPERATE_ITEMS: MenuItem[] = [
   { title: 'Analytics API', description: 'Query viewer and QoS data', href: '/developers', icon: BarChart3 },
-  { title: 'Stream monitoring', description: 'Health checks and alerts', href: '/developers', icon: Activity },
+  { title: 'Stream monitoring', description: 'Health checks and alerts', href: '/developer-stream-monitoring', icon: Activity },
   { title: 'Recording and assets', description: 'Manage stored media', href: '/developers', icon: HardDrive },
   { title: 'Error handling', description: 'Codes, retries and guidance', href: '/developers', icon: HelpCircle },
   { title: 'Rate limits', description: 'Know your ceilings up front', href: '/developers', icon: Gauge },

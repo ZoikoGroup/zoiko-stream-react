@@ -45,7 +45,13 @@ export default function FaqSection() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <section className="w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-slate-950/60 flex flex-col gap-14">
+    <section className="w-full px-4 sm:px-8 lg:px-28 opacity-60 py-16 sm:py-20 lg:py-24 bg-slate-950/60 flex flex-col gap-14"
+      style={{
+        backgroundImage: `url('/images/platform-media-operations-overview/bg (61).png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat', 
+      }} >
       <div className="flex flex-col gap-3">
         <h2 className="text-slate-50 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">
           Frequently asked questions
@@ -71,7 +77,7 @@ export default function FaqSection() {
               </span>
             </button>
             {openIdx === idx && (
-              <p className="text-slate-400 text-xs font-normal font-['Space_Grotesk'] leading-5">
+              <p className="text-slate-400 text-xm font-normal font-['Space_Grotesk'] leading-5">
                 {faq.a}
               </p>
             )}

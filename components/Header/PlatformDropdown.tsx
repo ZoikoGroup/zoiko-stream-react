@@ -48,13 +48,13 @@ const OPERATE_ITEMS: MenuItem[] = [
   {
     title: 'Media operations overview',
     description: 'Run streams like infrastructure',
-    href: '/platform-media-operation-overview',
+    href: '/platform-media-operations-overview',
     icon: Grid,
   },
   {
     title: 'Enterprise broadcasting',
     description: 'Multi-destination, managed output',
-    href: '/products',
+    href: '/platform-enterprise-broadcastings',
     icon: Building2,
   },
   { title: 'Media management', description: 'Organize assets at scale', href: '/platform-media-management', icon: FolderKanban },
@@ -68,7 +68,7 @@ const SECURE_ITEMS: MenuItem[] = [
   {
     title: 'Delivery and trust overview',
     description: 'What keeps every stream safe',
-    href: '/products',
+    href: '/platform-delivery-and-trust-overview',
     icon: Grid,
   },
   { title: 'Access control', description: 'Identity-aware entitlements', href: '/platform-access-control', icon: KeyRound },
