@@ -46,9 +46,9 @@ const PROOF_ITEMS: MenuItem[] = [
 
 const SUPPORT_ITEMS: MenuItem[] = [
   { title: 'Help Center', description: 'Step-by-step help and articles', href: '/', icon: HelpCircle },
-  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/', icon: MessageSquare },
+  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/documentation-page', icon: MessageSquare },
   { title: 'Developer documentation', description: 'Technical references and guides', href: '/', icon: BookOpen },
-  { title: 'API reference', description: 'Endpoints, params, examples', href: '/developers', icon: FileText },
+  { title: 'API reference', description: 'Endpoints, params, examples', href: '/api-reference', icon: FileText },
   { title: 'Live Events planning guide', description: 'Book and prepare with confidence', href: '/live-event-guide', icon: Video },
   { title: 'Service updates', description: 'Maintenance and change notices', href: '/resources', icon: Gauge },
   { title: 'Community resources', description: 'Connect with other builders', href: '/resources', icon: Sparkles },

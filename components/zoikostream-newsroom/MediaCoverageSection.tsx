@@ -3,11 +3,20 @@ import Link from 'next/link';
 
 const coverageItems = [
   {
+    publisher: 'OpenPR',
+    date: 'Aug 2026',
+    titleLines: ['ZoikoStream Launches Live Events for Secure,', 'Professional Streaming'],
+    descriptionLines: ['Official press release covering ZoikoStream\'s launch', 'of secure, managed live event broadcasting.'],
+    linkLabel: 'Read at OpenPR ↗',
+    href: 'https://www.openpr.com/news/4612396/zoikostream-launches-live-events-for-secure-professionally',
+  },
+  {
     publisher: 'StreamTech Weekly',
     date: 'Aug 15, 2026',
     titleLines: ['How ZoikoStream is approaching live', 'accessibility at scale.'],
     descriptionLines: ["A look at ZoikoStream's expanding caption and", 'language tooling for live broadcasts.'],
     linkLabel: 'Read at StreamTech Weekly ↗',
+    href: '#',
   },
   {
     publisher: 'Broadcast Business Journal',
@@ -15,6 +24,7 @@ const coverageItems = [
     titleLines: ['Enterprise video platforms compete on', 'reliability, not just reach.'],
     descriptionLines: ["Industry roundup referencing ZoikoStream's recent", 'production partnership news.'],
     linkLabel: 'Read at Broadcast Business Journal ↗',
+    href: '#',
   },
   {
     publisher: 'The Video Infrastructure Report',
@@ -22,6 +32,7 @@ const coverageItems = [
     titleLines: ['What the latest live video research reveals', 'about audience trust.'],
     descriptionLines: ['Coverage of industry research trends, including', "ZoikoStream's annual report."],
     linkLabel: 'Read at The Video Infrastructure Report ↗',
+    href: '#',
   },
 ];
 
@@ -58,7 +69,7 @@ export default function MediaCoverageSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[24px] w-full">
         {coverageItems.map((item) => (
           <div
             key={item.publisher}
@@ -88,7 +99,9 @@ export default function MediaCoverageSection() {
             </p>
 
             <Link
-              href="#"
+              href={item.href}
+              target={item.href.startsWith('http') ? '_blank' : undefined}
+              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               className="font-inter font-bold text-[#5b8def] text-[13px] hover:underline"
             >
               {item.linkLabel}
