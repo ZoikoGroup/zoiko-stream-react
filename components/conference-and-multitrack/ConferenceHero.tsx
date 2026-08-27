@@ -30,7 +30,7 @@ export default function ConferenceHero() {
     <section className="relative w-full bg-black/75 text-white overflow-hidden border-b border-zinc-900">
       {/* Decorative blurred backgrounds */}
       <div 
-        className="absolute inset-0 bg-cover bg-center select-none pointer-events-none z-0"
+        className="absolute inset-0 bg-cover  bg-center select-none pointer-events-none z-0 opacity-55"
         style={{ backgroundImage: "url('/images/conferences-and-multitrack/bg (17).png')" }}
       />
       <div className="absolute -left-[200px] top-[100px] w-[700px] h-[500px] bg-gradient-to-b from-teal-500/10 to-blue-500/10 rounded-full blur-3xl pointer-events-none z-0" />
@@ -38,7 +38,7 @@ export default function ConferenceHero() {
 
      
 
-      <div className="max-w-7xl mx-auto px-4 bg-black/55 sm:px-6 lg:px-8 pt-16 pb-20 lg:py-24 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 text-left">
+      <div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 pt-16 pb-20 lg:py-24 relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16 text-left">
         
         {/* Left Column - Main Intro & Metrics */}
         <div className="flex-1 flex flex-col justify-start items-start gap-7 max-w-3xl">
@@ -51,7 +51,7 @@ export default function ConferenceHero() {
             Govern every session without losing the program view.
           </h1>
           
-          <p className="text-gray-300 text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
+          <p className="text-[#D6D9DE] text-base sm:text-lg font-normal font-spaceGrotesk leading-relaxed">
             Deliver beautiful multi-track virtual and hybrid conferences. Plan, deploy, and verify dozens of simultaneous streams inside a single integrated scheduling architecture.
           </p>
           
@@ -72,11 +72,11 @@ export default function ConferenceHero() {
           </div>
           
           {/* Divider */}
-          <div className="w-full pt-6 border-t border-zinc-800 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="w-full pt-6 border-t  border-zinc-800 grid grid-cols-2 md:grid-cols-4 gap-6">
             {metrics.map((m, idx) => (
               <div key={idx} className="flex flex-col justify-start items-start gap-1">
                 <div className={`${m.color} text-2xl font-bold font-spaceGrotesk`}>{m.value}</div>
-                <div className="text-slate-500 text-xs font-normal font-spaceGrotesk leading-tight">{m.label}</div>
+                <div className="text-[#707A8C] text-xs font-normal font-spaceGrotesk leading-tight">{m.label}</div>
               </div>
             ))}
           </div>

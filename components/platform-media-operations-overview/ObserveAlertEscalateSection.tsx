@@ -3,21 +3,21 @@ import Image from 'next/image';
 const cards = [
   {
     title: 'Monitoring',
-    image: '/images/platform-media-operations-overview/CapImg (6).png',
+    image: '/images/platform-media-operations-overview/CardImg (30).png',
     desc: 'State observation, metric definitions, signal events, health summaries, dependency status, trend analysis.',
     footer: 'Observation reports what is known in context.',
     color: 'text-blue-500',
   },
   {
     title: 'Alerting',
-    image: '/images/platform-media-operations-overview/CapImg (7).png',
+    image: '/images/platform-media-operations-overview/CardImg (31).png',
     desc: 'Condition detection, severity basis, freshness rules, recipient routing, acknowledgement, suppression/snooze policy.',
     footer: 'Optimize for actionable ownership, not volume.',
     color: 'text-teal-400',
   },
   {
     title: 'Escalation',
-    image: '/images/platform-media-operations-overview/CapImg (8).png',
+    image: '/images/platform-media-operations-overview/CardImg (32).png',
     desc: 'Incident linkage, status communication, support routing, evidence preservation, audience-safe messaging.',
     footer: 'No invented response time.',
     color: 'text-slate-400',
@@ -26,8 +26,14 @@ const cards = [
 
 export default function ObserveAlertEscalateSection() {
   return (
-    <section className="w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-slate-950/75 border-b border-slate-700 flex flex-col gap-14 overflow-hidden">
-      <div className="flex flex-col gap-3">
+    <section className="w-full  px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-black/75 border-b border-slate-700 flex flex-col gap-14 overflow-hidden"
+      style={{
+        backgroundImage: `url('/images/platform-media-operations-overview/bg (58).png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat', 
+      }}>
+      <div className="flex flex-col gap-3 ">
         <h2 className="text-slate-50 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">
           Observe, alert, and escalate
         </h2>

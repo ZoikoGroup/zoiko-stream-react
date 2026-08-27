@@ -14,13 +14,8 @@ const controlSections = [
 export default function ControlCenterSection() {
   return (
     <section
-      className="relative w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 border-b border-gray-200 flex flex-col gap-14 overflow-hidden min-h-[742px]"
-      style={{
-        backgroundImage: `url('/images/platform-media-operations-overview/bg (59).png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="relative bg-white w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 border-b border-gray-200 flex flex-col gap-14 overflow-hidden min-h-[742px]"
+     
     >
       <div className="flex flex-col gap-3">
         <h2 className="text-slate-900 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">

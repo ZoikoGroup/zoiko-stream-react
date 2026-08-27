@@ -59,9 +59,9 @@ const WORKFLOW_ITEMS: MenuItem[] = [
   { title: 'Live product video', description: 'Streaming embedded in your app', href: '/live-product-video', icon: Video },
   { title: 'Enterprise broadcast', description: 'Company-wide, all-hands scale', href: '/solutions-enterprise-broadcast', icon: Radio },
   { title: 'Private audience delivery', description: 'Restricted, credentialed viewing', href: '/solutions-private-audience-delivery', icon: Lock },
-  { title: 'Global event streaming', description: 'One event, every time zone', href: '/solutions', icon: Globe2 },
+  { title: 'Global event streaming', description: 'One event, every time zone', href: '/global-event-streaming', icon: Globe2 },
   { title: 'Media preservation', description: 'Keep the record intact', href: '/solutions-media-preservation', icon: Archive },
-  { title: 'Operational analytics', description: 'Prove reach and reliability', href: '/solutions', icon: BarChart3 },
+  { title: 'Operational analytics', description: 'Prove reach and reliability', href: '/operational-analytics', icon: BarChart3 },
 ];
 
 const POPULAR_TAGS = ['Workflow finder', 'Enterprise broadcast', 'Accessibility', 'Global events', 'Preservation'];

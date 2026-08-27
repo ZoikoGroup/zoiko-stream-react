@@ -1,7 +1,7 @@
 export default function FinalCtaSection() {
   return (
     <section
-      className="relative w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-slate-950 border border-gray-800 rounded-2xl flex flex-col items-center justify-center gap-8 overflow-hidden"
+      className="relative w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24  border border-gray-800 rounded-2xl flex flex-col items-center justify-center gap-8 overflow-hidden"
       style={{
         backgroundImage: `url('/images/platform-media-operations-overview/CtaBackground (2).png')`,
         backgroundSize: 'cover',
@@ -9,7 +9,7 @@ export default function FinalCtaSection() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="absolute inset-0 bg-slate-950/80 z-0" />
+      <div className="absolute inset-0  z-0" />
 
       <div className="relative z-10 flex flex-col items-center gap-4 text-center">
         <h2 className="text-slate-100 text-3xl sm:text-4xl font-bold leading-tight sm:leading-[48px] font-['Space_Grotesk']">
