@@ -42,7 +42,7 @@ const GET_STARTED_ITEMS: MenuItem[] = [
   { title: 'Developers overview', description: 'Where to begin, and why', href: '/developers-overview', icon: Compass },
   { title: 'Documentation', description: 'Full technical reference', href: '/developer-documentation', icon: FileText },
   { title: 'Quickstart', description: 'Credential to working stream, fast', href: '/quick-start', icon: Zap },
-  { title: 'API reference', description: 'Every endpoint, typed and explained', href: '/api-reference', icon: BookOpen },
+  { title: 'API reference', description: 'Every endpoint, typed and explained', href: '/developer-api-reference', icon: BookOpen },
   { title: 'Authentication', description: 'Keys, tokens and scopes', href: '/authentication', icon: Key },
   { title: 'Developer access', description: 'The real access model, stated plainly', href: '9/developer-access-page', icon: ShieldCheck },
   { title: 'Sample applications', description: 'Working repos you can clone', href: '/sample-application', icon: FolderGit2 },
@@ -54,7 +54,7 @@ const BUILD_ITEMS: MenuItem[] = [
   { title: 'Video-on-demand API', description: 'Upload, encode, deliver', href: '/developer-video-demand-api', icon: Video },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP, qualified', href: '/developer-media-protocol', icon: Network },
   { title: 'Webhooks and events', description: 'React to stream state changes', href: '/webhooks', icon: Webhook },
-  { title: 'Secure playback', description: 'Signed URLs and DRM options', href: '/developers', icon: Lock },
+  { title: 'Secure playback', description: 'Signed URLs and DRM options', href: '/developer-secure-playback', icon: Lock },
   { title: 'Player integration', description: 'Embed a production-ready player', href: '/developer-player-integrations', icon: PlaySquare },
 ];
 

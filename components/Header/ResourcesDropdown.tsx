@@ -27,15 +27,15 @@ type MenuItem = {
 const LEARN_ITEMS: MenuItem[] = [
   { title: 'Resources overview', description: 'Start here, by audience or topic', href: '/resources', icon: BookOpen },
   { title: 'Guides', description: 'Step-by-step implementation help', href: '/resources', icon: FileText },
-  { title: 'Architecture', description: 'Reference designs and patterns', href: '/resources', icon: Layers },
-  { title: 'Video tutorials', description: 'Watch the workflow, then build it', href: '/resources', icon: Video },
-  { title: 'Webinars and events', description: 'Live sessions and replays', href: '/resources', icon: Sparkles },
-  { title: 'Glossary', description: 'Media and streaming terms, defined', href: '/resources', icon: Tag },
-  { title: 'Blog and insights', description: 'Operations, productivity, growth', href: '/resources', icon: FileText },
+  { title: 'Architecture', description: 'Reference designs and patterns', href: '/resource-architecture', icon: Layers },
+  { title: 'Video tutorials', description: 'Watch the workflow, then build it', href: '/resource-video-tutorial', icon: Video },
+  { title: 'Webinars and events', description: 'Live sessions and replays', href: '/resource-webinar-and-events', icon: Sparkles },
+  { title: 'Glossary', description: 'Media and streaming terms, defined', href: '/resource-glossary', icon: Tag },
+  { title: 'Blog and insights', description: 'Operations, productivity, growth', href: '/resource-blogs-and-insights', icon: FileText },
 ];
 
 const PROOF_ITEMS: MenuItem[] = [
-  { title: 'Case studies', description: 'How real teams operate ZoikoStream', href: '/resources', icon: FileText },
+  { title: 'Case studies', description: 'How real teams operate ZoikoStream', href: '/resource-case-studies', icon: FileText },
   { title: 'Customer stories', description: 'In their own words', href: '/resources', icon: MessageSquare },
   { title: 'System status', description: 'Live uptime and incident history', href: '/resources', icon: Gauge },
   { title: 'Changelog', description: 'Every shipped change, dated', href: '/resources', icon: BookOpen },
