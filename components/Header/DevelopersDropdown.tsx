@@ -63,9 +63,9 @@ const OPERATE_ITEMS: MenuItem[] = [
   { title: 'Stream monitoring', description: 'Health checks and alerts', href: '/developer-stream-monitoring', icon: Activity },
   { title: 'Recording and assets', description: 'Manage stored media', href: '/developer-recording-assest', icon: HardDrive },
   { title: 'Error handling', description: 'Codes, retries and guidance', href: '/developers', icon: HelpCircle },
-  { title: 'Rate limits', description: 'Know your ceilings up front', href: '/developers', icon: Gauge },
-  { title: 'Changelog', description: 'What shipped, and when', href: '/developers', icon: History },
-  { title: 'System status', description: 'Live platform health', href: '/developers', icon: Activity },
+  { title: 'Rate limits', description: 'Know your ceilings up front', href: '/developers-rate-limits', icon: Gauge },
+  { title: 'Changelog', description: 'What shipped, and when', href: '/developers-changelog', icon: History },
+  { title: 'System status', description: 'Live platform health', href: '/developers-system-status', icon: Activity },
 ];
 
 const POPULAR_TAGS = ['Quickstart', 'API reference', 'Webhooks', 'Rate limits', 'System status'];
