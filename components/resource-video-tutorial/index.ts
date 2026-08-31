@@ -1,0 +1,11 @@
+export { default as VideoTutorialHeroSection } from './VideoTutorialHeroSection';
+export { default as VideoTutorialPrinciplesSection } from './VideoTutorialPrinciplesSection';
+export { default as VideoTutorialGoalsSection } from './VideoTutorialGoalsSection';
+export { default as VideoTutorialFeaturedSection } from './VideoTutorialFeaturedSection';
+export { default as VideoTutorialBrowseSection } from './VideoTutorialBrowseSection';
+export { default as VideoTutorialGuidedPathSection } from './VideoTutorialGuidedPathSection';
+export { default as VideoTutorialHowItWorksSection } from './VideoTutorialHowItWorksSection';
+export { default as VideoTutorialRecentlyUpdatedSection } from './VideoTutorialRecentlyUpdatedSection';
+export { default as VideoTutorialBeyondVideoSection } from './VideoTutorialBeyondVideoSection';
+export { default as VideoTutorialCustomWorkflowCtaSection } from './VideoTutorialCustomWorkflowCtaSection';
+export { default as VideoTutorialFaqSection } from './VideoTutorialFaqSection';
