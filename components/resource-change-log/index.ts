@@ -1,0 +1,11 @@
+export { default as ChangelogHeroSection } from './ChangelogHeroSection';
+export { default as ChangelogActionRequiredSection } from './ChangelogActionRequiredSection';
+export { default as ChangelogClassificationSection } from './ChangelogClassificationSection';
+export { default as ChangelogLatestChangesSection } from './ChangelogLatestChangesSection';
+export { default as ChangelogCompleteRecordSection } from './ChangelogCompleteRecordSection';
+export { default as ChangelogDeprecationMapSection } from './ChangelogDeprecationMapSection';
+export { default as ChangelogFindWhatChangedSection } from './ChangelogFindWhatChangedSection';
+export { default as ChangelogConnectedResourcesSection } from './ChangelogConnectedResourcesSection';
+export { default as ChangelogBuiltForDevelopersSection } from './ChangelogBuiltForDevelopersSection';
+export { default as ChangelogFaqSection } from './ChangelogFaqSection';
+export { default as ChangelogMigrationCtaSection } from './ChangelogMigrationCtaSection';

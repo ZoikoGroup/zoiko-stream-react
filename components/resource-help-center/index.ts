@@ -1,0 +1,13 @@
+export { default as HelpCenterHeroSection } from './HelpCenterHeroSection';
+export { default as HelpCenterPathwaysSection } from './HelpCenterPathwaysSection';
+export { default as HelpCenterTopTopicsSection } from './HelpCenterTopTopicsSection';
+export { default as HelpCenterBrowseProductSection } from './HelpCenterBrowseProductSection';
+export { default as HelpCenterEditorialSection } from './HelpCenterEditorialSection';
+export { default as HelpCenterTroubleshootingSection } from './HelpCenterTroubleshootingSection';
+export { default as HelpCenterAccountAccessSection } from './HelpCenterAccountAccessSection';
+export { default as HelpCenterDeveloperResourcesSection } from './HelpCenterDeveloperResourcesSection';
+export { default as HelpCenterLiveEventsSection } from './HelpCenterLiveEventsSection';
+export { default as HelpCenterServiceHealthSection } from './HelpCenterServiceHealthSection';
+export { default as HelpCenterTrustSection } from './HelpCenterTrustSection';
+export { default as HelpCenterHumanSupportSection } from './HelpCenterHumanSupportSection';
+export { default as HelpCenterFaqSection } from './HelpCenterFaqSection';
