@@ -44,7 +44,7 @@ const GET_STARTED_ITEMS: MenuItem[] = [
   { title: 'Quickstart', description: 'Credential to working stream, fast', href: '/quick-start', icon: Zap },
   { title: 'API reference', description: 'Every endpoint, typed and explained', href: '/developer-api-reference', icon: BookOpen },
   { title: 'Authentication', description: 'Keys, tokens and scopes', href: '/authentication', icon: Key },
-  { title: 'Developer access', description: 'The real access model, stated plainly', href: '9/developer-access-page', icon: ShieldCheck },
+  { title: 'Developer access', description: 'The real access model, stated plainly', href: '/developer-access-page', icon: ShieldCheck },
   { title: 'Sample applications', description: 'Working repos you can clone', href: '/sample-application', icon: FolderGit2 },
 ];
 
