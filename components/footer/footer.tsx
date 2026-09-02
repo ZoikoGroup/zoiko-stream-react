@@ -73,8 +73,8 @@ const ROW_1_SECTIONS: FooterSection[] = [
     title: 'Pricing',
     links: [
       { name: 'Pricing overview', href: '#' },
-      { name: 'Developer access', href: '/developer-access-page' },
-      { name: 'Enterprise plans', href: '/solutions-enterprise' },
+      { name: 'Developer access', href: '/pricing-developer-access' },
+      { name: 'Enterprise plans', href: '/pricing-enterprise-plans' },
       { name: 'Live Events pricing', href: '#' },
       { name: 'Usage and billing', href: '#' },
       { name: 'Contact sales', href: '#' },
@@ -113,7 +113,7 @@ const ROW_2_SECTIONS: FooterSection[] = [
   {
     title: 'Support',
     links: [
-      { name: 'Help Center', href: '/faqs-and-support' },
+      { name: 'Help Center', href: '/support-help-center' },
       { name: 'Contact support', href: '/contact-us' },
       { name: 'Developer support', href: '/zoikostream-developer-relations' },
       { name: 'Enterprise support', href: '/zoikostream-enterprise-inquiries' },

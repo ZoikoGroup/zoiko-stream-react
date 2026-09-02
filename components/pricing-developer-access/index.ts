@@ -1,0 +1,9 @@
+export { default as PricingDeveloperAccessHeroSection } from './PricingDeveloperAccessHeroSection';
+export { default as PricingDeveloperAccessDecisionsSection } from './PricingDeveloperAccessDecisionsSection';
+export { default as PricingDeveloperAccessRoutingSection } from './PricingDeveloperAccessRoutingSection';
+export { default as PricingDeveloperAccessDimensionsSection } from './PricingDeveloperAccessDimensionsSection';
+export { default as PricingDeveloperAccessEstimatorSection } from './PricingDeveloperAccessEstimatorSection';
+export { default as PricingDeveloperAccessTechNextStepsSection } from './PricingDeveloperAccessTechNextStepsSection';
+export { default as PricingDeveloperAccessAccountDifferenceSection } from './PricingDeveloperAccessAccountDifferenceSection';
+export { default as PricingDeveloperAccessQuoteScopedSection } from './PricingDeveloperAccessQuoteScopedSection';
+export { default as PricingDeveloperAccessFaqSection } from './PricingDeveloperAccessFaqSection';

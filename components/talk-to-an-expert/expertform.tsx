@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, Activity } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -22,6 +22,7 @@ import {
   AudioWaveform,
   WavesArrowDown,
   WavesVertical,
+  ActivityIcon,
 } from 'lucide-react';
 
 interface FormData {
@@ -542,7 +543,7 @@ export default function TalkToExpertForm() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <AudioWaveform className="size-4 text-slate-600 shrink-0" />
+                    <ActivityIcon className="size-4 text-slate-600 shrink-0" />
                     <span className="text-gray-600 text-xs font-normal  ">
                       Professional live events at any scale
                     </span>
@@ -595,7 +596,7 @@ export default function TalkToExpertForm() {
 
             <div className="flex items-start gap-4">
               <div className="size-10 bg-violet-50 rounded-2xl flex items-center justify-center text-violet-500 shrink-0">
-                <AudioWaveform className="size-5" />
+                <ActivityIcon className="size-5" />
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-zinc-900 text-sm font-bold  ">
