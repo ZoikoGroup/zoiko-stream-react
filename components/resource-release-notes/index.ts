@@ -1,0 +1,11 @@
+export { default as ReleaseNotesHeroSection } from './ReleaseNotesHeroSection';
+export { default as ReleaseNotesMilestoneSection } from './ReleaseNotesMilestoneSection';
+export { default as ReleaseNotesProductAreasSection } from './ReleaseNotesProductAreasSection';
+export { default as ReleaseNotesAllReleasesSection } from './ReleaseNotesAllReleasesSection';
+export { default as ReleaseNotesCompleteRecordSection } from './ReleaseNotesCompleteRecordSection';
+export { default as ReleaseNotesClassificationSection } from './ReleaseNotesClassificationSection';
+export { default as ReleaseNotesRolloutSection } from './ReleaseNotesRolloutSection';
+export { default as ReleaseNotesConnectedResourcesSection } from './ReleaseNotesConnectedResourcesSection';
+export { default as ReleaseNotesFaqSection } from './ReleaseNotesFaqSection';
+export { default as ReleaseNotesStayInformedSection } from './ReleaseNotesStayInformedSection';
+export { default as ReleaseNotesAdoptionCtaSection } from './ReleaseNotesAdoptionCtaSection';
