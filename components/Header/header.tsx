@@ -15,7 +15,7 @@ const NAV_LINKS = [
   { name: 'Solutions', href: '/solutions', dropdown: 'solutions' as const },
   { name: 'Live Events', href: '/live-events-overview', dropdown: 'live-events' as const },
   { name: 'Developers', href: '/developers', dropdown: 'developers' as const },
-  { name: 'Pricing', href: '#', dropdown: null, active: true },
+  { name: 'Pricing', href: '/pricing', dropdown: null, active: true },
 ];
 
 type UtilityLink = {

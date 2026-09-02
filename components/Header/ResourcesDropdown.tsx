@@ -25,8 +25,8 @@ type MenuItem = {
 };
 
 const LEARN_ITEMS: MenuItem[] = [
-  { title: 'Resources overview', description: 'Start here, by audience or topic', href: '/resources', icon: BookOpen },
-  { title: 'Guides', description: 'Step-by-step implementation help', href: '/resources', icon: FileText },
+  { title: 'Resources overview', description: 'Start here, by audience or topic', href: '/resource-overview', icon: BookOpen },
+  { title: 'Guides', description: 'Step-by-step implementation help', href: '/resource-guides', icon: FileText },
   { title: 'Architecture', description: 'Reference designs and patterns', href: '/resource-architecture', icon: Layers },
   { title: 'Video tutorials', description: 'Watch the workflow, then build it', href: '/resource-video-tutorial', icon: Video },
   { title: 'Webinars and events', description: 'Live sessions and replays', href: '/resource-webinar-and-events', icon: Sparkles },
@@ -36,18 +36,18 @@ const LEARN_ITEMS: MenuItem[] = [
 
 const PROOF_ITEMS: MenuItem[] = [
   { title: 'Case studies', description: 'How real teams operate ZoikoStream', href: '/resource-case-studies', icon: FileText },
-  { title: 'Customer stories', description: 'In their own words', href: '/resources', icon: MessageSquare },
-  { title: 'System status', description: 'Live uptime and incident history', href: '/resources', icon: Gauge },
-  { title: 'Changelog', description: 'Every shipped change, dated', href: '/resources', icon: BookOpen },
-  { title: 'Release notes', description: 'What each release means for you', href: '/resources', icon: FileText },
-  { title: 'Security and Trust Center', description: 'Certifications and practices', href: '/resources', icon: ShieldCheck },
-  { title: 'Accessibility', description: 'Our conformance and roadmap', href: '/resources', icon: HelpCircle },
+  { title: 'Customer stories', description: 'In their own words', href: '/resource-customer-stories', icon: MessageSquare },
+  { title: 'System status', description: 'Live uptime and incident history', href: '/resource-system-status', icon: Gauge },
+  { title: 'Changelog', description: 'Every shipped change, dated', href: '/resource-change-log', icon: BookOpen },
+  { title: 'Release notes', description: 'What each release means for you', href: '/resource-release-notes', icon: FileText },
+  { title: 'Security and Trust Center', description: 'Certifications and practices', href: '/resource-security-trust-center', icon: ShieldCheck },
+  { title: 'Accessibility', description: 'Our conformance and roadmap', href: '/resource-accessibility', icon: HelpCircle },
 ];
 
 const SUPPORT_ITEMS: MenuItem[] = [
-  { title: 'Help Center', description: 'Step-by-step help and articles', href: '/', icon: HelpCircle },
-  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/documentation-page', icon: MessageSquare },
-  { title: 'Developer documentation', description: 'Technical references and guides', href: '/', icon: BookOpen },
+  { title: 'Help Center', description: 'Step-by-step help and articles', href: '/resource-help-center', icon: HelpCircle },
+  { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/resource-contact-support', icon: MessageSquare },
+  { title: 'Developer documentation', description: 'Technical references and guides', href: '/resource-developer-documentation', icon: BookOpen },
   { title: 'API reference', description: 'Endpoints, params, examples', href: '/api-reference', icon: FileText },
   { title: 'Live Events planning guide', description: 'Book and prepare with confidence', href: '/live-event-guide', icon: Video },
   { title: 'Service updates', description: 'Maintenance and change notices', href: '/resources', icon: Gauge },
