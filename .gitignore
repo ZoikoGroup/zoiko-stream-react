@@ -65,17 +65,3 @@ next-env.d.ts
 # OS files
 Thumbs.db
 #
-
-# Automation Scripts
-check-img.js
-download-assets.js
-download-pricing-assets.js
-download-status-assets.js
-download-trust-assets.js
-fix-fonts.js
-flatten-bgs.js
-flatten-status-bgs.js
-generate-pricing-page.js
-rename-status-assets.js
-split-pricing.js
-test.png
