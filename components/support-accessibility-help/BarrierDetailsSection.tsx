@@ -41,11 +41,10 @@ export default function BarrierDetailsSection() {
   return (
     <section className="border-b border-[#232b3a] flex flex-col items-center px-6 lg:px-[112px] py-[80px] lg:py-[100px] relative w-full overflow-hidden">
       <div aria-hidden className="absolute inset-0 pointer-events-none z-0">
-        <Image
+        <img
           src="/images/support-accessibility-help/sec3-bg.png"
           alt=""
-          fill
-          className="object-cover"
+          className="absolute max-w-none object-cover size-full"
         />
         <div className="absolute inset-0 bg-[#0a0f1a]/90" />
       </div>
@@ -63,7 +62,7 @@ export default function BarrierDetailsSection() {
         <div className="flex flex-col gap-[48px] w-full">
           <div className="flex flex-col lg:flex-row gap-[40px] w-full items-start">
             {/* Left Panel */}
-            <div className="bg-[#10151e] shadow-[0px_12px_20px_rgba(0,0,0,0.17)] flex flex-1 flex-col gap-[24px] p-[32px] lg:p-[40px] rounded-[16px] w-full">
+            <div className="bg-[#10151e] drop-shadow-[0px_12px_20px_rgba(0,0,0,0.17)] flex flex-1 flex-col gap-[24px] p-[32px] lg:p-[40px] rounded-[16px] w-full">
               <h3 className="font-['Space_Grotesk',sans-serif] font-bold leading-[1.2] lg:leading-[60.8px] text-white text-[28px] lg:text-[37.9px] tracking-[-0.38px]">
                 Accessibility Barrier Report
               </h3>
@@ -101,10 +100,10 @@ export default function BarrierDetailsSection() {
                       {item.icon}
                     </div>
                     <div className="flex flex-col gap-[2px]">
-                      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[24px] text-white text-[16px]">
+                      <p className="font-['Space_Grotesk',sans-serif] font-bold leading-[24px] text-[#0f1b2d] text-[16px]">
                         {item.title}
                       </p>
-                      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[22.75px] text-white/70 text-[14px]">
+                      <p className="font-['Space_Grotesk',sans-serif] font-normal leading-[22.75px] text-white text-[14px]">
                         {item.desc}
                       </p>
                     </div>

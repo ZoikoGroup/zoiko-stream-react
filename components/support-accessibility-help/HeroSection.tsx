@@ -9,12 +9,10 @@ export default function HeroSection() {
   return (
     <section className="border-b border-[#232b3a] flex flex-col items-start justify-center overflow-hidden px-6 lg:px-[112px] py-[80px] lg:py-[120px] relative w-full min-h-[600px] lg:h-[822px]">
       <div aria-hidden className="absolute inset-0 pointer-events-none z-0">
-        <Image
+        <img
           src="/images/support-accessibility-help/hero-bg.png"
           alt=""
-          fill
-          className="object-cover"
-          priority
+          className="absolute max-w-none object-cover size-full"
         />
         <div className="absolute inset-0 bg-[#0a0f1a]/85" />
       </div>

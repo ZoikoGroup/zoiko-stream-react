@@ -33,8 +33,15 @@ export default function RelatedSupportDestinationsSection() {
   ];
 
   return (
-    <section className="bg-white flex flex-col items-center px-6 lg:px-[112px] py-[80px] lg:py-[100px] w-full">
-      <div className="flex flex-col gap-[48px] w-full max-w-[1216px]">
+    <section className="bg-white flex flex-col items-center px-6 lg:px-[112px] py-[80px] lg:py-[100px] w-full relative overflow-hidden">
+      <div aria-hidden className="absolute inset-0 pointer-events-none z-0">
+        <img
+          src="/images/support-accessibility-help/sec2-bg.png"
+          alt=""
+          className="absolute max-w-none object-cover size-full"
+        />
+      </div>
+      <div className="flex flex-col gap-[48px] w-full max-w-[1216px] relative z-10">
         <div className="flex flex-col gap-[16px] w-full">
           <h2 className="font-['Space_Grotesk',sans-serif] font-bold leading-[1.2] lg:leading-[60.8px] text-[#0f1b2d] text-[32px] lg:text-[37.9px] tracking-[-0.38px]">
             Other ways to get help.

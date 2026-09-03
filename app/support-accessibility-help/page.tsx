@@ -9,8 +9,6 @@ import ReviewSubmitSection from "@/components/support-accessibility-help/ReviewS
 import ConfirmationRecoverySection from "@/components/support-accessibility-help/ConfirmationRecoverySection";
 import FaqDirectAnswersSection from "@/components/support-accessibility-help/FaqDirectAnswersSection";
 import RelatedSupportDestinationsSection from "@/components/support-accessibility-help/RelatedSupportDestinationsSection";
-import EnterpriseFooter from "@/components/EnterpriseFooter";
-import EnterpriseNavbar from "@/components/EnterpriseNavbar";
 
 export const metadata = {
   title: "Accessibility Help | ZoikoStream",
@@ -20,7 +18,6 @@ export const metadata = {
 export default function SupportAccessibilityHelpPage() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0a0f1a] w-full">
-      <EnterpriseNavbar />
       <main className="flex flex-col flex-1 w-full">
         <HeroSection />
         <HelpIntentSelectorSection />
@@ -33,7 +30,6 @@ export default function SupportAccessibilityHelpPage() {
         <FaqDirectAnswersSection />
         <RelatedSupportDestinationsSection />
       </main>
-      <EnterpriseFooter />
     </div>
   );
 }

@@ -18,11 +18,10 @@ export default function ReviewSubmitSection() {
   return (
     <section className="border-b border-[#232b3a] flex flex-col items-center px-6 lg:px-[112px] py-[80px] lg:py-[100px] relative w-full overflow-hidden">
       <div aria-hidden className="absolute inset-0 pointer-events-none z-0">
-        <Image
+        <img
           src="/images/support-accessibility-help/sec3-bg.png"
           alt=""
-          fill
-          className="object-cover"
+          className="absolute max-w-none object-cover size-full"
         />
         <div className="absolute inset-0 bg-[#0a0f1a]/90" />
       </div>
