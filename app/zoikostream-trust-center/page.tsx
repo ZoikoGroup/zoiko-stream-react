@@ -1,33 +1,40 @@
-import React from 'react';
-import HeroSection from '@/components/zoikostream-trust-center/HeroSection';
-import StateExplainerSection from '@/components/zoikostream-trust-center/StateExplainerSection';
-import EvidenceFinderSection from '@/components/zoikostream-trust-center/EvidenceFinderSection';
-import SpecialistMapSection from '@/components/zoikostream-trust-center/SpecialistMapSection';
-import SharedResponsibilitySection from '@/components/zoikostream-trust-center/SharedResponsibilitySection';
-import ControlledAccessSection from '@/components/zoikostream-trust-center/ControlledAccessSection';
-import UpdatesCorrectionsSection from '@/components/zoikostream-trust-center/UpdatesCorrectionsSection';
-import OperationalRoutesSection from '@/components/zoikostream-trust-center/OperationalRoutesSection';
-import FaqSection from '@/components/zoikostream-trust-center/FaqSection';
-import NextStepsSection from '@/components/zoikostream-trust-center/NextStepsSection';
+import { TrustBreadcrumb, TrustSidebar, TrustMobileTabs } from '@/components/zoikostream-trust-center/TrustNav';
+import SectionHero from '@/components/zoikostream-trust-center/SectionHero';
+import SectionDirectAnswer from '@/components/zoikostream-trust-center/SectionDirectAnswer';
+import SectionSearch from '@/components/zoikostream-trust-center/SectionSearch';
+import SectionTrustDomains from '@/components/zoikostream-trust-center/SectionTrustDomains';
+import SectionEvidenceSnapshot from '@/components/zoikostream-trust-center/SectionEvidenceSnapshot';
+import SectionPrivacyReliability from '@/components/zoikostream-trust-center/SectionPrivacyReliability';
+import SectionVulnerabilityAdvisories from '@/components/zoikostream-trust-center/SectionVulnerabilityAdvisories';
+import SectionSharedResponsibility from '@/components/zoikostream-trust-center/SectionSharedResponsibility';
+import SectionRequestEvidenceCta from '@/components/zoikostream-trust-center/SectionRequestEvidenceCta';
+import SectionFaq from '@/components/zoikostream-trust-center/SectionFaq';
 
 export const metadata = {
-  title: 'Trust Center | ZoikoStream',
-  description: 'Find approved trust evidence, see what each record covers, and reach the right authority.',
+  title: 'Trust Center - Zoiko Stream',
+  description: "Review how ZoikoStream approaches platform security, privacy, compliance and service resilience. Explore public trust resources, check live service health, report a vulnerability, or request governed evidence for due diligence.",
 };
 
-export default function ZoikoStreamTrustCenterPage() {
+export default function ZoikostreamTrustCenterPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start bg-[#0a0f1a] w-full">
-      <HeroSection />
-      <StateExplainerSection />
-      <EvidenceFinderSection />
-      <SpecialistMapSection />
-      <SharedResponsibilitySection />
-      <ControlledAccessSection />
-      <UpdatesCorrectionsSection />
-      <OperationalRoutesSection />
-      <FaqSection />
-      <NextStepsSection />
+    <main>
+      <TrustBreadcrumb />
+      <div className="flex flex-col lg:flex-row w-full">
+        <TrustSidebar />
+        <div className="flex-1 min-w-0 lg:pl-[88px] lg:pr-[80px] lg:pt-[64px]">
+          <TrustMobileTabs />
+          <SectionHero />
+          <SectionDirectAnswer />
+          <SectionSearch />
+          <SectionTrustDomains />
+          <SectionEvidenceSnapshot />
+          <SectionPrivacyReliability />
+          <SectionVulnerabilityAdvisories />
+          <SectionSharedResponsibility />
+          <SectionRequestEvidenceCta />
+          <SectionFaq />
+        </div>
+      </div>
     </main>
   );
 }
