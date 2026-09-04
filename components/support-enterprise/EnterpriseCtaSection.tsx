@@ -1,25 +1,20 @@
-'use client';
-
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function EnterpriseCtaSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#070b14] text-white py-24 lg:py-36">
       {/* Background 3D Circuit Ribbons Graphic */}
-      <div
-        className="absolute inset-0 pointer-events-none -z-0 opacity-50 bg-no-repeat bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/images/Enterprise Page/se-bg4.png')`,
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Radial Gradient Overlay */}
-      <div
-        className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/75 to-[#070b14] pointer-events-none -z-0"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+        <Image
+          src="/images/Enterprise Page/se-bg4.png"
+          alt="Circuit Ribbons Background"
+          fill
+          className="object-cover object-center opacity-55"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070b14] via-[#070b14]/70 to-[#070b14]" />
+      </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8 text-center flex flex-col items-center">
         {/* Headline */}

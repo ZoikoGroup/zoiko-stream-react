@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,15 +6,15 @@ export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#070b14] text-white pt-16 pb-20 md:pt-24 md:pb-28 lg:pt-28 lg:pb-32 border-b border-slate-800/60">
       {/* Background Circuit Grid */}
-      <div className="absolute inset-0 pointer-events-none -z-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
         <Image
           src="/images/Enterprise Page/se-bg1.png"
           alt="Circuit Grid Background"
           fill
           priority
-          className="object-cover object-bottom opacity-65"
+          className="object-cover object-bottom opacity-85"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#070b14]/60 via-transparent to-[#070b14]/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070b14]/80 via-[#070b14]/30 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">

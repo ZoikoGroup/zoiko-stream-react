@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import Image from 'next/image';
 
@@ -55,13 +53,14 @@ export default function NoFabricatedCasesSection() {
   return (
     <section className="relative w-full bg-[#070b14] text-white py-16 lg:py-24 border-b border-slate-800/80">
       {/* Background Circuit Grid */}
-      <div 
-        className="absolute inset-0 pointer-events-none -z-0 opacity-30 mix-blend-screen bg-no-repeat bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/images/Enterprise Page/se-bg2.png')`,
-        }}
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+        <Image
+          src="/images/Enterprise Page/se-bg1.png"
+          alt="Circuit Grid Background"
+          fill
+          className="object-cover object-center opacity-35 mix-blend-screen"
+        />
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Header Title & Subtitle */}

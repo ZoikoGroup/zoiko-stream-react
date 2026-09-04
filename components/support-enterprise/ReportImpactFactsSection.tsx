@@ -13,9 +13,9 @@ export default function ReportImpactFactsSection() {
   return (
     <section className="relative w-full bg-[#070b14] text-white py-16 lg:py-24 border-b border-slate-800/80">
       {/* Background Circuit Grid */}
-      <div className="absolute inset-0 pointer-events-none -z-0 overflow-hidden" aria-hidden="true">
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
         <Image
-          src="/images/Enterprise Page/se-bg1.png"
+          src="/images/Enterprise Page/se-bg2.png"
           alt="Circuit Grid Background"
           fill
           className="object-cover object-center opacity-35 mix-blend-screen"
