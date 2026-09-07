@@ -37,7 +37,7 @@ export default function ConversionBandSection() {
             </span>
           </Link>
           <Link
-            href="/sdks"
+            href="#"
             className="border border-[#aab3c4] border-solid flex items-center justify-center px-[24px] py-[14px] relative rounded-[10px] shrink-0 hover:bg-[#aab3c4]/10 transition-colors"
           >
             <span className="font-spaceGrotesk font-bold leading-[normal] relative shrink-0 text-[#232b3a] text-[15px] whitespace-nowrap">
@@ -53,17 +53,17 @@ export default function ConversionBandSection() {
         <p className="font-spaceGrotesk font-normal leading-[normal] relative shrink-0 text-[#4f5e74] text-[13px] whitespace-nowrap">
           Already using ZoikoStream?{' '}
           <a
-            href="https://zoikostream-git-454227754507.europe-west1.run.app"
+            href="https://zoikostream-git-454227754507.europe-west1.run.app/login"
             className="text-[#34d4ca] underline decoration-solid hover:opacity-80"
           >
             Sign in
           </a>{' '}
           ·{' '}
-          <a href="#" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
+          <a href="/developers-system-status" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
             System status
           </a>{' '}
           ·{' '}
-          <a href="/faqs-and-support" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
+          <a href="#" className="text-[#34d4ca] underline decoration-solid hover:opacity-80">
             Support
           </a>
         </p>
