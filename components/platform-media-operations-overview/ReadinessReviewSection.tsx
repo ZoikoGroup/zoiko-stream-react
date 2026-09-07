@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const requirements = [
   {
     req: 'Scope defined',
@@ -171,12 +173,14 @@ export default function ReadinessReviewSection() {
               >
                 Review readiness
               </button>
-              <button
-                type="button"
-                className="px-7 py-3.5 rounded-[10px] border border-slate-700 text-slate-50 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
-              >
-                View documentation
-              </button>
+              <Link href="/developer-documentation">
+                <button
+                  type="button"
+                  className="w-full px-7 py-3.5 rounded-[10px] border border-slate-700 text-slate-50 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
+                >
+                  View documentation
+                </button>
+              </Link>
             </div>
           </div>
         </div>

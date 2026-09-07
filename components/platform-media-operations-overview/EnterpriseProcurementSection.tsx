@@ -1,4 +1,5 @@
 import { Accessibility, Award, BookOpen, CreditCard, FileText, Headphones, Lock, Shield } from 'lucide-react';
+import Link from 'next/link';
 
 const row1 = [
   { title: 'Operating Model', desc: 'Roles, readiness, state, evidence, escalation.', icon: Award },
@@ -75,18 +76,22 @@ export default function EnterpriseProcurementSection() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-        <button
-          type="button"
-          className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
-        >
-          Talk to an expert
-        </button>
-        <button
-          type="button"
-          className="px-7 py-3.5 rounded-[10px] border border-slate-700 text-slate-50 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
-        >
-          View documentation
-        </button>
+        <Link href="/talk-to-an-expert">
+          <button
+            type="button"
+            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
+          >
+            Talk to an expert
+          </button>
+        </Link>
+        <Link href="/developer-documentation">
+          <button
+            type="button"
+            className="px-7 py-3.5 rounded-[10px] border border-slate-700 text-slate-50 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
+          >
+            View documentation
+          </button>
+        </Link>
       </div>
     </section>
   );

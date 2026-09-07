@@ -43,7 +43,7 @@ export default function HeroSection() {
                 Talk to an expert
               </Link>
               <Link
-                href="/platform-media-operation-overview"
+                href="/platform-media-operations-overview"
                 className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold   hover:bg-white/10 transition-colors"
               >
                 Explore media operations

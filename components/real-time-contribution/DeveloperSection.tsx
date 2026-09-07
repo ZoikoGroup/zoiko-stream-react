@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function DeveloperSection() {
   const cards = [
@@ -67,11 +68,11 @@ export default function DeveloperSection() {
 
       {/* Action Row */}
       <div className="flex items-center justify-center w-full max-w-[1216px] mx-auto mt-4">
-        <button className="border border-[#aab3c4] px-[28px] py-[14px] rounded-[10px] hover:bg-[#aab3c4]/10 transition-colors">
+        <Link href="/developer-documentation" className="border border-[#aab3c4] px-[28px] py-[14px] rounded-[10px] hover:bg-[#aab3c4]/10 transition-colors">
           <span className="font-['Space_Grotesk'] font-medium text-[#eef1f6] text-[15px]">
             Explore developer documentation
           </span>
-        </button>
+        </Link>
       </div>
 
     </section>

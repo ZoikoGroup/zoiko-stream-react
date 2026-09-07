@@ -44,7 +44,7 @@ export default function HeroSection() {
               </span>
             </a>
             <a
-              href="/docs/api"
+              href="/video-apis"
               className="flex items-center justify-center px-[28px] py-[14px] rounded-[10px] border border-[#aab3c4] hover:bg-[rgba(255,255,255,0.05)] transition-colors"
             >
               <span className="font-medium text-[#eef1f6] text-[15px] whitespace-nowrap">

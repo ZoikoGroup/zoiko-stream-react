@@ -262,14 +262,14 @@ export default function LiveSessionControlCenter() {
         {/* Buttons */}
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Link
-            href="/monitoring"
+            href="/platform-stream-monitoring"
             className="w-full rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5 text-center   text-base font-bold text-[#0A0F1A] transition-opacity hover:opacity-90 sm:w-auto"
           >
             Open monitoring cockpit
           </Link>
 
           <Link
-            href="/api-documentation"
+            href="#"
             className="w-full rounded-[10px] border border-[#AAB3C4] px-7 py-3.5 text-center   text-base font-medium text-[#EEF1F6] transition-colors hover:border-[#EEF1F6] sm:w-auto"
           >
             View API documentation

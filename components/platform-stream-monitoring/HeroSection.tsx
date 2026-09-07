@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const telemetry = [
   { title: 'Signal Integrity Check', detail: 'No packet loss detected', state: 'Healthy' },
@@ -42,15 +43,19 @@ export default function HeroSection() {
           </p>
 
           <div className="flex w-full flex-col items-stretch gap-4 sm:w-fit sm:flex-row sm:items-center">
-            <button
-              className="flex items-center justify-center rounded-[10px] px-7 py-3.5 transition-opacity hover:opacity-90"
-              style={{ background: 'linear-gradient(180deg, #00d4aa 0%, #4c86ff 100%)' }}
-            >
-              <span className="text-[15px] font-bold text-[#04141a]">Talk to an expert</span>
-            </button>
-            <button className="flex items-center justify-center rounded-[10px] border border-[#aab3c4] px-6 py-3.5 transition-colors hover:bg-white/5">
-              <span className="text-[15px] font-medium text-[#eef1f6]">Explore documentation</span>
-            </button>
+            <Link href="/talk-to-an-expert">
+              <button
+                className="flex items-center justify-center rounded-[10px] px-7 py-3.5 transition-opacity hover:opacity-90"
+                style={{ background: 'linear-gradient(180deg, #00d4aa 0%, #4c86ff 100%)' }}
+              >
+                <span className="text-[15px] font-bold text-[#04141a]">Talk to an expert</span>
+              </button>
+            </Link>
+            <Link href="/developer-documentation">
+              <button className="flex items-center justify-center rounded-[10px] border border-[#aab3c4] px-6 py-3.5 transition-colors hover:bg-white/5">
+                <span className="text-[15px] font-medium text-[#eef1f6]">Explore documentation</span>
+              </button>
+            </Link>
           </div>
         </div>
 

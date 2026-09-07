@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function ApiHero() {
   const scrollToBrief = () => {
@@ -39,18 +40,18 @@ export default function ApiHero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button
-              onClick={scrollToBrief}
+            <Link
+              href="/start-building"
               className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold rounded-[10px] cursor-pointer border-none shadow-md"
             >
               Start Building
-            </button>
-            <a 
-              href="#api-doc-handoff"
+            </Link>
+            <Link
+              href="/developer-documentation"
               className="px-6 py-3.5 rounded-[10px] outline outline-1 outline-offset-[-1px] outline-slate-400 hover:outline-teal-450 transition-colors text-slate-100 text-base font-medium"
             >
               Read Documentation
-            </a>
+            </Link>
           </div>
           
           <p className="text-slate-500 text-xs font-normal leading-relaxed">

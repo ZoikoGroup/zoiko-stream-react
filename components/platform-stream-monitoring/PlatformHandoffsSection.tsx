@@ -1,4 +1,7 @@
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import bg147 from '@/public/images/Organization-overview/bg (147).png';
 import { ChevronRight } from 'lucide-react';
 import TopoBackground from './TopoBackground';
 
@@ -12,6 +15,7 @@ const destinations = [
       'Provider-confirmed operational status. If the entire global CDN egress network experiences an outage, it is registered publicly on our global status registry immediately.',
     link: 'View Public Status',
     linkColor: '#4c86ff',
+    href: '/developers-system-status',
   },
   {
     image: 'handoff-support-portal.png',
@@ -22,6 +26,7 @@ const destinations = [
       'Customer-specific assistance. Active stream diagnostic problems undergo immediate routing to senior systems engineering directly. No diversion to marketing or sales groups during outages.',
     link: 'Get Scoped Support',
     linkColor: '#d97706',
+    href: undefined,
   },
   {
     image: 'handoff-developer-hub.png',
@@ -32,12 +37,25 @@ const destinations = [
       'Implementation details, technical guides, API references, active changelogs, and sandbox controls. Read structural integration properties cleanly without marketing bias.',
     link: 'Read Technical Docs',
     linkColor: '#00a184',
+    href: undefined,
   },
 ];
 
 export default function PlatformHandoffsSection() {
   return (
     <section className="relative w-full overflow-hidden bg-white px-6 py-20 md:px-[112px] md:py-24">
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <Image
+          src={bg147}
+          alt="Media Lifecycle Background"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 " />
+      </div>
+      <div className="size-[520px] -right-44 bottom-10 absolute bg-blue-500/10 rounded-full blur-[55px] pointer-events-none" />
+
       <TopoBackground />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1216px] flex-col gap-12">
@@ -52,37 +70,48 @@ export default function PlatformHandoffsSection() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {destinations.map((card) => (
-            <article
-              key={card.title}
-              className="flex flex-col overflow-hidden rounded-xl border border-[#e2e8f0] bg-[#f8fafc]"
-            >
-              <img
-                src={`/images/platform-stream-monitoring/${card.image}`}
-                alt=""
-                className="h-[190px] w-full object-cover"
-              />
-              <div className="flex flex-1 flex-col gap-4 p-6">
-                <div className="flex items-center gap-3">
-                  <h3 className="text-xl font-bold text-[#0d1117]">{card.title}</h3>
+          {destinations.map((card) => {
+            const cardContent = (
+              <article
+                className="h-full flex flex-col overflow-hidden rounded-xl border border-[#e2e8f0] bg-[#f8fafc] transition-shadow hover:shadow-md"
+              >
+                <img
+                  src={`/images/platform-stream-monitoring/${card.image}`}
+                  alt=""
+                  className="h-[190px] w-full object-cover"
+                />
+                <div className="flex flex-1 flex-col gap-4 p-6">
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-xl font-bold text-[#0d1117]">{card.title}</h3>
+                    <span
+                      className="rounded-sm px-2 py-[3px] text-[10px] font-bold tracking-[0.5px]"
+                      style={{ color: card.badgeColor, backgroundColor: `${card.badgeColor}1a` }}
+                    >
+                      {card.badge}
+                    </span>
+                  </div>
+                  <p className="flex-1 text-[13px] leading-[1.6] text-[#475569]">{card.description}</p>
                   <span
-                    className="rounded-sm px-2 py-[3px] text-[10px] font-bold tracking-[0.5px]"
-                    style={{ color: card.badgeColor, backgroundColor: `${card.badgeColor}1a` }}
+                    className="flex items-center gap-1.5 text-[13px] font-bold"
+                    style={{ color: card.linkColor }}
                   >
-                    {card.badge}
+                    {card.link}
+                    <ChevronRight className="h-4 w-4" aria-hidden="true" />
                   </span>
                 </div>
-                <p className="flex-1 text-[13px] leading-[1.6] text-[#475569]">{card.description}</p>
-                <span
-                  className="flex items-center gap-1.5 text-[13px] font-bold"
-                  style={{ color: card.linkColor }}
-                >
-                  {card.link}
-                  <ChevronRight className="h-4 w-4" aria-hidden="true" />
-                </span>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+
+            if (card.href) {
+              return (
+                <Link key={card.title} href={card.href} className="block">
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return <div key={card.title}>{cardContent}</div>;
+          })}
         </div>
 
         <div className="flex items-start gap-3 rounded-xl border border-[#e2e8f0] bg-[#f8fafc] p-5">

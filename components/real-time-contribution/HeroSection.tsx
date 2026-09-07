@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -38,11 +39,11 @@ export default function HeroSection() {
           
           {/* Actions */}
           <div className="flex flex-wrap gap-[16px] items-center mt-4">
-            <button className="bg-gradient-to-b from-[#00d4aa] to-[#4c86ff] px-[26px] py-[14px] rounded-[10px] hover:opacity-90 transition-opacity">
+            <Link href="/start-building" className="bg-gradient-to-b from-[#00d4aa] to-[#4c86ff] px-[26px] py-[14px] rounded-[10px] hover:opacity-90 transition-opacity">
               <span className="font-['Space_Grotesk'] font-bold text-[#04141a] text-[15px]">
                 Start building
               </span>
-            </button>
+            </Link>
             <button className="border border-[#aab3c4] px-[28px] py-[14px] rounded-[10px] hover:bg-[#aab3c4]/10 transition-colors">
               <span className="font-['Space_Grotesk'] font-medium text-[#eef1f6] text-[15px]">
                 View contribution docs

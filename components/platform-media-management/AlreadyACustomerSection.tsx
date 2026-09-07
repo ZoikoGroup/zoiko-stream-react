@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LogIn, FileText, Activity, HelpCircle } from 'lucide-react';
 
 const customerItems = [
@@ -7,21 +8,25 @@ const customerItems = [
     title: 'Sign In',
     desc: 'Return to your media workspace directly.',
     icon: LogIn,
+    href: 'https://zoikostream-git-454227754507.europe-west1.run.app/login',
   },
   {
     title: 'Documentation',
     desc: 'Current guides, API references, and changelogs.',
     icon: FileText,
+    href: '/developer-documentation',
   },
   {
     title: 'System Status',
     desc: 'Real-time platform health and incident updates.',
     icon: Activity,
+    href: '/developers-system-status',
   },
   {
     title: 'Support',
     desc: 'Account-specific help with context preservation.',
     icon: HelpCircle,
+    href: undefined,
   },
 ];
 
@@ -52,10 +57,9 @@ export default function AlreadyACustomerSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {customerItems.map((item, idx) => {
             const Icon = item.icon;
-            return (
+            const cardContent = (
               <div
-                key={idx}
-                className="p-6 bg-zinc-900/80 rounded-xl border border-gray-800 backdrop-blur-sm flex flex-col gap-4 hover:border-teal-400/40 transition-colors"
+                className="h-full p-6 bg-zinc-900/80 rounded-xl border border-gray-800 backdrop-blur-sm flex flex-col gap-4 hover:border-teal-400/40 transition-colors"
               >
                 <div className="size-10 bg-teal-400/10 rounded-lg flex items-center justify-center text-teal-400 shrink-0">
                   <Icon className="size-5" />
@@ -70,6 +74,16 @@ export default function AlreadyACustomerSection() {
                 </div>
               </div>
             );
+
+            if (item.href) {
+              return (
+                <Link key={idx} href={item.href} className="block">
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return <div key={idx}>{cardContent}</div>;
           })}
         </div>
       </div>

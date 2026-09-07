@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const steps = [
   { number: '01', title: 'Program', desc: 'Governance definition' },
@@ -48,16 +49,20 @@ export default function HeroSection() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-[16px] items-center mt-[4px]">
-            <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
-              <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
-                Talk to an expert
-              </span>
-            </button>
-            <button className="bg-transparent border border-[#aab3c4] border-solid rounded-[10px] px-[28px] py-[14px] hover:bg-[#aab3c4]/10 transition-colors">
-              <span className="font-spaceGrotesk font-bold text-white text-[15px]">
-                Explore media operations
-              </span>
-            </button>
+            <Link href="/talk-to-an-expert">
+              <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
+                <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
+                  Talk to an expert
+                </span>
+              </button>
+            </Link>
+            <Link href="/platform-media-operations-overview">
+              <button className="bg-transparent border border-[#aab3c4] border-solid rounded-[10px] px-[28px] py-[14px] hover:bg-[#aab3c4]/10 transition-colors">
+                <span className="font-spaceGrotesk font-bold text-white text-[15px]">
+                  Explore media operations
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
 

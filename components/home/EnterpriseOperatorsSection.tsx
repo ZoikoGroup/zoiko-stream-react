@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const HIGHLIGHTS = [
   {
@@ -41,18 +42,18 @@ export default function EnterpriseOperatorsSection() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <button
-                type="button"
+              <Link
+                href="/zoikostream-enterprise-inquiries"
                 className="rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3.5   text-base font-semibold text-slate-950 transition-opacity hover:opacity-95"
               >
                 Talk to an enterprise media expert
-              </button>
-              <button
-                type="button"
+              </Link>
+              <Link
+                href="/solutions-enterprise"
                 className="rounded-[10px] border border-gray-700 px-6 py-3.5   text-base font-semibold text-slate-100 transition-colors hover:border-gray-500"
               >
                 Explore enterprise capabilities
-              </button>
+              </Link>
             </div>
           </div>
 

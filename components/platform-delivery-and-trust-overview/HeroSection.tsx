@@ -36,15 +36,14 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <Link
-                href="/secure-audience-access"
-                className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold   hover:opacity-90 transition-opacity"
+              <button
+                className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity"
               >
                 Explore secure delivery
-              </Link>
+              </button>
               <Link
-                href="/company-overview"
-                className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold   hover:bg-white/10 transition-colors"
+                href="/zoikostream-trust-center"
+                className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold hover:bg-white/10 transition-colors"
               >
                 Trust Center
               </Link>

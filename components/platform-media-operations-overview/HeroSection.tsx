@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 const pipelineNodes = [
   { label: 'APPROVED WORKFLOW', value: 'Origin ingest authorized' },
   { label: 'READINESS / AUTHORITY', value: 'Checklist and permissions verified' },
@@ -40,18 +42,23 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <button
-              type="button"
-              className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-white text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
-            >
-              Talk to an expert
-            </button>
-            <button
-              type="button"
-              className="px-7 py-3.5 rounded-[10px] border border-white text-white text-base font-medium font-['Space_Grotesk'] hover:bg-white/10 transition-colors"
-            >
-              View documentation
-            </button>
+            <Link href="/talk-to-an-expert">
+              <button
+                type="button"
+                className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-white text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
+              >
+                Talk to an expert
+              </button>
+            </Link>
+            
+            <Link href="/developer-documentation">
+              <button
+                type="button"
+                className="px-7 py-3.5 rounded-[10px] border border-white text-white text-base font-medium font-['Space_Grotesk'] hover:bg-white/10 transition-colors"
+              >
+                View documentation
+              </button>
+            </Link>
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function FinalCtaSection() {
   return (
@@ -22,17 +23,21 @@ export default function FinalCtaSection() {
         </h2>
         
         <div className="flex flex-col sm:flex-row gap-[16px] items-center justify-center mt-[4px]">
-          <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[8px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
-            <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
-              Talk to an expert
-            </span>
-          </button>
+          <Link href="/talk-to-an-expert">
+            <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[8px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
+              <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
+                Talk to an expert
+              </span>
+            </button>
+          </Link>
           
-          <button className="bg-transparent border border-solid border-[#aab3c4] rounded-[8px] px-[28px] py-[14px] hover:bg-[#aab3c4]/10 transition-colors">
-            <span className="font-spaceGrotesk font-medium text-[#eef1f6] text-[15px]">
-              Plan a live event
-            </span>
-          </button>
+          <Link href="/plan-a-live-event">
+            <button className="bg-transparent border border-solid border-[#aab3c4] rounded-[8px] px-[28px] py-[14px] hover:bg-[#aab3c4]/10 transition-colors">
+              <span className="font-spaceGrotesk font-medium text-[#eef1f6] text-[15px]">
+                Plan a live event
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

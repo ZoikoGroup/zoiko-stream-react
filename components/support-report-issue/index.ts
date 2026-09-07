@@ -1,0 +1,13 @@
+export { default as HeroSection } from './HeroSection';
+export { default as FasterPathSection } from './FasterPathSection';
+export { default as IssueTypeCategorySection } from './IssueTypeCategorySection';
+export { default as WhereDidItHappenSection } from './WhereDidItHappenSection';
+export { default as DescribeImpactOccurrenceSection } from './DescribeImpactOccurrenceSection';
+export { default as StepsToReproduceSafeEvidenceSection } from './StepsToReproduceSafeEvidenceSection';
+export { default as ProtectSensitiveInfoSection } from './ProtectSensitiveInfoSection';
+export { default as HowShouldWeFollowUpSection } from './HowShouldWeFollowUpSection';
+export { default as ReviewPayloadSection } from './ReviewPayloadSection';
+export { default as ReportSubmissionAcknowledgementSection } from './ReportSubmissionAcknowledgementSection';
+export { default as ReportLifecycleSection } from './ReportLifecycleSection';
+export { default as IssueReportingFaqSection } from './IssueReportingFaqSection';
+export { default as ReportIssueCtaSection } from './ReportIssueCtaSection';

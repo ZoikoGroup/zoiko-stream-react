@@ -1,32 +1,38 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LogIn, BookOpen, Activity, HelpCircle, Compass } from 'lucide-react';
 
 const continuationItems = [
   {
     icon: LogIn,
     title: 'Sign in',
-    desc: 'Corporate credentials entry point.'
+    desc: 'Corporate credentials entry point.',
+    href: 'https://zoikostream-git-454227754507.europe-west1.run.app/login'
   },
   {
     icon: BookOpen,
     title: 'Documentation',
-    desc: 'Full developer & operations guides.'
+    desc: 'Full developer & operations guides.',
+    href: '/developer-documentation'
   },
   {
     icon: Activity,
     title: 'System Status',
-    desc: 'Unbiased real-time platform metrics.'
+    desc: 'Unbiased real-time platform metrics.',
+    href: '/developers-system-status'
   },
   {
     icon: HelpCircle,
     title: 'Support',
-    desc: 'Direct engineering contact routes.'
+    desc: 'Direct engineering contact routes.',
+    href: undefined
   },
   {
     icon: Compass,
     title: 'Specialist Routes',
-    desc: 'Reach custom configuration desks.'
+    desc: 'Reach custom configuration desks.',
+    href: undefined
   }
 ];
 
@@ -58,10 +64,9 @@ export default function CustomerContinuationSection() {
       <div className="relative z-10 flex flex-col lg:flex-row gap-[16px] items-stretch w-full">
         {continuationItems.map((item, idx) => {
           const Icon = item.icon;
-          return (
+          const cardContent = (
             <div 
-              key={idx} 
-              className="bg-[#f8fafc] border-[1.5px] border-[#e2e8f0] border-solid rounded-[12px] p-[20px] flex-1 flex flex-col gap-[12px] items-start transition-shadow hover:shadow-lg cursor-pointer group"
+              className="h-full bg-[#f8fafc] border-[1.5px] border-[#e2e8f0] border-solid rounded-[12px] p-[20px] flex flex-col gap-[12px] items-start transition-shadow hover:shadow-lg cursor-pointer group"
             >
               <div className="bg-[rgba(78,205,196,0.08)] rounded-[8px] w-[36px] h-[36px] flex items-center justify-center shrink-0 transition-colors group-hover:bg-[rgba(78,205,196,0.15)]">
                 <Icon className="w-[16px] h-[16px] text-[#0f1b2d]" strokeWidth={2} />
@@ -74,6 +79,20 @@ export default function CustomerContinuationSection() {
                   {item.desc}
                 </p>
               </div>
+            </div>
+          );
+
+          if (item.href) {
+            return (
+              <Link key={idx} href={item.href} className="flex-1 block">
+                {cardContent}
+              </Link>
+            );
+          }
+
+          return (
+            <div key={idx} className="flex-1">
+              {cardContent}
             </div>
           );
         })}
