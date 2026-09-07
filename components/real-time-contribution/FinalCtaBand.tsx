@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function FinalCtaBand() {
   return (
@@ -28,17 +29,17 @@ export default function FinalCtaBand() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-[16px] items-center justify-center mt-[12px] w-full sm:w-auto">
           
-          <button className="bg-gradient-to-r from-[#00d4aa] to-[#4c86ff] px-[28px] py-[14px] rounded-[10px] w-full sm:w-auto hover:opacity-90 transition-opacity">
+          <Link href="/start-building" className="bg-gradient-to-r from-[#00d4aa] to-[#4c86ff] px-[28px] py-[14px] rounded-[10px] w-full sm:w-auto hover:opacity-90 transition-opacity">
             <span className="font-['Space_Grotesk'] font-bold text-[#04141a] text-[15px]">
               Start building
             </span>
-          </button>
-          
-          <button className="border border-[#aab3c4] px-[28px] py-[14px] rounded-[10px] w-full sm:w-auto hover:bg-white/5 transition-colors">
+          </Link>
+
+          <Link href="/talk-to-an-expert" className="border border-[#aab3c4] px-[28px] py-[14px] rounded-[10px] w-full sm:w-auto hover:bg-white/5 transition-colors">
             <span className="font-['Space_Grotesk'] font-medium text-[#eef1f6] text-[15px]">
               Talk to an expert
             </span>
-          </button>
+          </Link>
           
         </div>
       </div>

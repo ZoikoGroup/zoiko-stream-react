@@ -163,7 +163,7 @@ export default function CompareQualifiedProtocolPathsSection() {
               </div>
 
               <Link
-                href="/sdks"
+                href="#"
                 className="w-full py-2.5 rounded-lg border border-gray-800 text-white text-center text-sm font-bold font-['Space_Grotesk'] group-hover:border-teal-400/60 group-hover:text-teal-400 transition-all flex items-center justify-center gap-2"
               >
                 <span>View technical profile</span>

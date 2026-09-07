@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function ApiSecurityTrust() {
   const cards = [
@@ -71,9 +72,12 @@ export default function ApiSecurityTrust() {
 
         {/* Bottom Button */}
         <div className="flex justify-center pt-4">
-          <button className="px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-sm font-bold rounded-[10px] cursor-pointer border-none shadow-md">
+          <Link
+            href="/zoikostream-trust-center"
+            className="inline-block px-6 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-sm font-bold rounded-[10px] cursor-pointer border-none shadow-md"
+          >
             Visit Trust Center
-          </button>
+          </Link>
         </div>
 
       </div>

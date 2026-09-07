@@ -6,10 +6,10 @@ import { useState } from 'react';
 // --- DATA DEFINITIONS ---
 
 const SIDEBAR_LINKS = [
-  { label: 'Developer documentation', href: '#docs' },
-  { label: 'Security overview', href: '#security' },
-  { label: 'System status', href: '#status' },
-  { label: 'Talk to an expert', href: '#contact' },
+  { label: 'Developer documentation', href: '/developer-documentation' },
+  { label: 'Security overview', href: '/resource-security-trust-center' },
+  { label: 'System status', href: '/resource-system-status' },
+  { label: 'Talk to an expert', href: '/talk-to-an-expert' },
 ];
 
 const FAQ_ITEMS = [

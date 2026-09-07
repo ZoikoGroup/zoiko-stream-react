@@ -135,7 +135,7 @@ export default function RecordReplayPreserve() {
 
           {/* Secondary Button */}
           <Link
-            href="/recording-replay-archive"
+            href="#"
             className="rounded-[10px] border border-slate-600 px-7 py-3.5   text-base font-medium text-slate-900 transition-colors duration-200 hover:bg-slate-50"
           >
             Explore VOD Pipeline

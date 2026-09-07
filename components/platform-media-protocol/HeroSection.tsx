@@ -37,13 +37,13 @@ export default function HeroSection() {
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
-                href="/sdks"
+                href="/developer-media-protocol"
                 className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
               >
                 View protocol documentation
               </Link>
               <Link
-                href="/real-time-media"
+                href="/real-time-contribution"
                 className="px-7 py-3.5 rounded-lg border border-slate-400 text-white text-base font-bold font-['Space_Grotesk'] hover:bg-white/10 transition-colors"
               >
                 Explore Real-time contribution

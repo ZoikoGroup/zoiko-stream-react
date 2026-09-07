@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function EnterpriseSection() {
   const cards = [
@@ -6,13 +7,15 @@ export default function EnterpriseSection() {
       title: 'Enterprise operations',
       description: 'For teams evaluating multi-location contribution, security, procurement, or organizational workflows.',
       image: '/images/real-time-contribution/enterprise-card-1.png',
-      buttonText: 'Talk to an expert'
+      buttonText: 'Talk to an expert',
+      href: '/talk-to-an-expert'
     },
     {
       title: 'Managed Live Events',
       description: 'For professionally managed event contribution and production logistics.',
       image: '/images/real-time-contribution/enterprise-card-2.png',
-      buttonText: 'Plan a live event'
+      buttonText: 'Plan a live event',
+      href: '/plan-a-live-event'
     }
   ];
 
@@ -61,11 +64,11 @@ export default function EnterpriseSection() {
             </div>
 
             {/* Action Button */}
-            <button className="border border-[#4f5e74] px-[26px] py-[14px] rounded-[10px] hover:bg-[#0f1b2d] hover:border-[#0f1b2d] hover:text-white transition-colors group">
+            <Link href={card.href} className="border border-[#4f5e74] px-[26px] py-[14px] rounded-[10px] hover:bg-[#0f1b2d] hover:border-[#0f1b2d] hover:text-white transition-colors group">
               <span className="font-['Space_Grotesk'] font-bold text-[#0f1b2d] group-hover:text-white text-[15px] transition-colors">
                 {card.buttonText}
               </span>
-            </button>
+            </Link>
 
           </div>
         ))}
