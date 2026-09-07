@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 
 const cards = [
@@ -111,11 +112,13 @@ export default function EnterpriseSection() {
             </div>
           </div>
 
-          <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[8px] w-full px-[24px] py-[14px] flex items-center justify-center hover:opacity-90 transition-opacity mt-[4px]">
-            <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[14px]">
-              Talk to an expert
-            </span>
-          </button>
+          <Link href="/talk-to-an-expert" className="w-full">
+            <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[8px] w-full px-[24px] py-[14px] flex items-center justify-center hover:opacity-90 transition-opacity mt-[4px]">
+              <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[14px]">
+                Talk to an expert
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

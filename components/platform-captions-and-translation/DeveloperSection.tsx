@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const points = [
   {
@@ -92,11 +93,13 @@ export default function DeveloperSection() {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-transparent border-[1.5px] border-solid border-[#aab3c4] rounded-[8px] px-[24px] py-[12px] hover:border-[#0a0d13] hover:text-[#0a0d13] transition-colors mt-[8px]">
-            <p className="font-spaceGrotesk font-bold text-[#232b3a] text-[14px]">
-              View developer documentation
-            </p>
-          </button>
+          <Link href="/resource-developer-documentation">
+            <button className="bg-transparent border-[1.5px] border-solid border-[#aab3c4] rounded-[8px] px-[24px] py-[12px] hover:border-[#0a0d13] hover:text-[#0a0d13] transition-colors mt-[8px]">
+              <p className="font-spaceGrotesk font-bold text-[#232b3a] text-[14px]">
+                View developer documentation
+              </p>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

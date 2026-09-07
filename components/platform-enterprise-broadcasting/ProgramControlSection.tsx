@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
 const stateAxes = [
@@ -88,11 +89,13 @@ export default function ProgramControlSection() {
           <p className="font-spaceGrotesk font-normal text-[#aab3c4] text-[16px] leading-[26px]">
             Don't rely on synthetic system averages. Monitor individual stream telemetry, active whitelist compliance, and cryptographic pipeline logs on a single pane of truth designed for auditability.
           </p>
-          <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
-            <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
-              Explore operations
-            </span>
-          </button>
+          <Link href="/platform-media-operations-overview">
+            <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] hover:opacity-90 transition-opacity">
+              <span className="font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px]">
+                Explore operations
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

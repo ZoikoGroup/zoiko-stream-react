@@ -50,13 +50,13 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/start-building"
-              className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-white text-base font-bold hover:opacity-90 transition-opacity"
+              className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-white text-base font-bold hover:opacity-90 transition-opacity text-center"
             >
               Start Building
             </Link>
             <Link
               href="/developer-documentation"
-              className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors"
+              className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors text-center"
             >
               Read Documentation
             </Link>

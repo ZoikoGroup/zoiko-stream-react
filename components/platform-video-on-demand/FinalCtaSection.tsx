@@ -22,13 +22,13 @@ export default function FinalCtaSection() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
             href="/start-building"
-            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold hover:opacity-90 transition-opacity"
+            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold hover:opacity-90 transition-opacity text-center"
           >
             Start Building
           </Link>
           <Link
             href="/talk-to-an-expert"
-            className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors"
+            className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors text-center"
           >
             Talk to an expert
           </Link>

@@ -1,3 +1,5 @@
+import { ChevronDown } from 'lucide-react';
+
 const stateColumns = [
   {
     title: 'Availability',
@@ -11,12 +13,12 @@ const stateColumns = [
   },
   {
     title: 'Authorization',
-    options: ['PENDING', 'APPROVED', 'DENIED', 'EXPIRED'],
+    options: ['PENDING', 'APPROVED', 'DENIED', 'EXPIRED', 'UNKNOWN'],
     active: 'APPROVED',
   },
   {
     title: 'Runtime',
-    options: ['PLANNED', 'ACTIVE', 'STOPPING', 'ENDED'],
+    options: ['PLANNED', 'ACTIVE', 'STOPPING', 'FAILED'],
     active: 'ACTIVE',
   },
   {
@@ -44,32 +46,38 @@ const stateColumns = [
 
 export default function StateArchitectureSection() {
   return (
-    <section className="w-full px-4 sm:px-8 opacity-20 lg:px-28 py-16 sm:py-20 lg:py-24 bg-black/70 border-b border-slate-700 flex flex-col gap-14 overflow-hidden"
-      style={{
-        backgroundImage: `url('/images/platform-media-operations-overview/bg (57).png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat', opacity:20
-      }}>
-      <div className="flex flex-col gap-3">
+    <section className="relative w-full px-4 sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 bg-[#070C18] border-b border-slate-800/80 flex flex-col gap-12 overflow-hidden">
+      {/* Background glow spots */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-10 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none" />
+
+      {/* Subtle grid pattern background */}
+      <div 
+        className="absolute inset-0 opacity-15 pointer-events-none"
+        style={{
+          backgroundImage: `radial-gradient(#38bdf8 1px, transparent 1px)`,
+          backgroundSize: '32px 32px'
+        }}
+      />
+
+      <div className="relative z-10 flex flex-col gap-3">
         <h2 className="text-slate-50 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">
           Orthogonal state architecture
         </h2>
-        <p className="text-slate-400 text-lg font-normal leading-7 font-['Space_Grotesk']">
+        <p className="text-slate-400 text-base sm:text-lg font-normal leading-7 font-['Space_Grotesk']">
           Independent axes prevent false simplification.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         {stateColumns.map((col) => (
           <div
             key={col.title}
-            className="p-5 bg-slate-900 rounded-2xl border border-slate-700 flex flex-col gap-4"
+            className="p-5 bg-[#0D1527]/90 rounded-2xl border border-slate-800/80 flex flex-col gap-4 shadow-xl backdrop-blur-sm"
           >
-            <p className="text-slate-50 text-base font-bold font-['Space_Grotesk']">
+            <p className="text-slate-100 text-sm font-bold tracking-wide font-['Space_Grotesk']">
               {col.title}
             </p>
-            <div className="border-t border-slate-700" />
             <div className="flex flex-col gap-2">
               {col.options.map((opt) => {
                 const isActive = opt === col.active;
@@ -77,31 +85,19 @@ export default function StateArchitectureSection() {
                 return (
                   <div
                     key={opt}
-                    className={`px-3 py-1.5 rounded-md flex justify-between items-center ${
+                    className={`px-3.5 py-2 rounded-lg flex justify-between items-center transition-all ${
                       isActive
                         ? isAmber
-                          ? 'bg-amber-600/10 border border-slate-700'
-                          : 'bg-teal-500/10 border border-teal-500'
-                        : 'bg-slate-900 border border-transparent'
+                          ? 'bg-amber-950/40 border border-amber-500/80 text-amber-400 shadow-[0_0_12px_rgba(245,158,11,0.15)]'
+                          : 'bg-[#062C2E] border border-teal-400/90 text-teal-300 shadow-[0_0_12px_rgba(45,212,191,0.15)]'
+                        : 'bg-[#09101F]/60 border border-transparent text-slate-500 hover:text-slate-400'
                     }`}
                   >
-                    <span
-                      className={`text-xs font-bold font-['Space_Grotesk'] ${
-                        isActive
-                          ? isAmber
-                            ? 'text-slate-400'
-                            : 'text-teal-500'
-                          : 'text-slate-400'
-                      }`}
-                    >
+                    <span className="text-[11px] sm:text-xs font-semibold tracking-wider font-['Space_Grotesk']">
                       {opt}
                     </span>
                     {isActive && (
-                      <span
-                        className={`w-1.5 h-1.5 rounded-full ${
-                          isAmber ? 'bg-amber-600' : 'bg-teal-500'
-                        }`}
-                      />
+                      <ChevronDown className={`w-3.5 h-3.5 ${isAmber ? 'text-amber-400' : 'text-teal-400'}`} />
                     )}
                   </div>
                 );
@@ -111,13 +107,11 @@ export default function StateArchitectureSection() {
         ))}
       </div>
 
-      <div className="flex justify-center">
-        <div className="px-6 py-3 bg-slate-900 rounded-full border border-slate-700 inline-flex items-center gap-2">
-          <span className="w-3 h-3 text-blue-500 border border-blue-500 rounded-full flex items-center justify-center text-[10px] font-bold">
-            i
-          </span>
-          <span className="text-slate-400 text-sm font-medium font-['Space_Grotesk']">
-            Conflict Rule: If states do not align (e.g. Runtime is Active but Authorization is Pending), the pipeline alerts immediately.
+      <div className="relative z-10 flex justify-center mt-2">
+        <div className="px-6 py-3 bg-[#0B1528]/90 rounded-full border border-blue-500/30 shadow-lg inline-flex items-center gap-3 max-w-full text-center">
+          <span className="w-2.5 h-2.5 rounded-full bg-blue-500 shrink-0 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+          <span className="text-slate-300 text-xs sm:text-sm font-medium font-['Space_Grotesk']">
+            <strong className="text-blue-400 font-semibold">Conflict Rule:</strong> If states do not align (e.g. Runtime is Active but Authorization is Pending), the pipeline alerts immediately.
           </span>
         </div>
       </div>
