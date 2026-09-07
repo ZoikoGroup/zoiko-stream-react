@@ -133,7 +133,7 @@ export default function SecureDeliveryAudienceBoundary() {
         {/* Buttons */}
         <div className="flex flex-col items-start gap-4 sm:flex-row">
           <Link
-            href="/secure-audience-access"
+            href="#"
             className="rounded-[10px] bg-gradient-to-b from-[#00D4AA] to-[#4C86FF] px-6 py-3.5   text-base font-bold text-[#04141A] transition-opacity hover:opacity-90"
           >
             Configure Access Control

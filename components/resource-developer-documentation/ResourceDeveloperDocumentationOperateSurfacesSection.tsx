@@ -51,7 +51,7 @@ const OPERATIONS = [
     title: 'Changelog',
     desc: 'Implementation-level change history, deprecations, and migrations.',
     cta: 'View changes',
-    href: '/changelog',
+    href: '/developers-changelog',
     image: cardImg0,
   },
 ];

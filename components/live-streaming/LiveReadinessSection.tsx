@@ -112,7 +112,7 @@ export default function LiveReadinessSection() {
         {/* CTA */}
         <div className="flex w-full justify-center">
           <Link
-            href="/live-streaming/readiness"
+            href="#"
             className="rounded-[10px] border border-[#AAB3C4] px-7 py-3.5   text-base font-medium text-[#EEF1F6] transition-all duration-200 hover:border-[#00D4AA] hover:text-[#00D4AA]"
           >
             Review readiness requirements →

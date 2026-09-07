@@ -2,16 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 
 export default function ApiDocHandoff() {
   const cards = [
-    { title: 'Developer Quickstart', img: '/images/video-api/DocThumbnail.png' },
-    { title: 'REST API Reference', img: '/images/video-api/DocThumbnail (1).png' },
-    { title: 'Authentication Secrets', img: '/images/video-api/DocThumbnail (2).png' },
-    { title: 'Errors & Limits Handbook', img: '/images/video-api/DocThumbnail (3).png' },
-    { title: 'Code Sample Archives', img: '/images/video-api/DocThumbnail (4).png' },
-    { title: 'Platform Changelog', img: '/images/video-api/DocThumbnail (5).png' }
+    { title: 'Developer Quickstart', img: '/images/video-api/DocThumbnail.png', href: '/quick-start' },
+    { title: 'REST API Reference', img: '/images/video-api/DocThumbnail (1).png', href: '/developer-api-reference' },
+    { title: 'Authentication Secrets', img: '/images/video-api/DocThumbnail (2).png', href: '/authentication' },
+    { title: 'Errors & Limits Handbook', img: '/images/video-api/DocThumbnail (3).png', href: '#' },
+    { title: 'Code Sample Archives', img: '/images/video-api/DocThumbnail (4).png', href: '/sample-application' },
+    { title: 'Platform Changelog', img: '/images/video-api/DocThumbnail (5).png', href: '/developers-changelog' }
   ];
 
   return (
@@ -34,8 +35,9 @@ export default function ApiDocHandoff() {
         {/* 6 Cards Grid (3 columns on desktop) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full font-spaceGrotesk">
           {cards.map((c, idx) => (
-            <div 
+            <Link
               key={idx}
+              href={c.href}
               className="bg-slate-50 rounded-xl  flex flex-col overflow-hidden hover:-translate-y-1 hover:shadow-md transition-all duration-300 min-h-[220px]"
             >
               {/* Thumbnail visual */}
@@ -55,7 +57,7 @@ export default function ApiDocHandoff() {
                 </span>
                 <ArrowUpRight className="size-4 text-blue-500 shrink-0" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

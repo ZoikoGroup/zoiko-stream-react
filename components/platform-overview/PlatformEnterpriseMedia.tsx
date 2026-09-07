@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function PlatformEnterpriseMedia() {
   const feeds = [
@@ -58,9 +59,12 @@ export default function PlatformEnterpriseMedia() {
             </p>
             
             <div className="pt-2">
-              <button className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold rounded-[10px] cursor-pointer border-none shadow-md">
+              <Link
+                href="/platform-media-operations-overview"
+                className="inline-block px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 hover:opacity-95 transition-opacity text-slate-950 text-base font-bold rounded-[10px] cursor-pointer border-none shadow-md"
+              >
                 Explore media operations
-              </button>
+              </Link>
             </div>
           </div>
 

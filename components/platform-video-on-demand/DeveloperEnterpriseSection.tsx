@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const developerItems = [
   {
     title: 'VOD API Endpoints',
@@ -89,12 +91,12 @@ export default function DeveloperEnterpriseSection() {
 
         {/* CTA */}
         <div className="flex justify-center">
-          <button
-            type="button"
+          <Link
+            href="/start-building"
             className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold hover:opacity-90 transition-opacity"
           >
             Start Building
-          </button>
+          </Link>
         </div>
       </div>
     </section>

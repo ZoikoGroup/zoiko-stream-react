@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function WhatIsZoikoStreamSection() {
   return (
@@ -29,13 +30,13 @@ export default function WhatIsZoikoStreamSection() {
             </p>
           </div>
 
-          <button
-            type="button"
+          <Link
+            href="/platform-overview"
             className="group flex items-center justify-center gap-2 rounded-[10px] border border-gray-800 px-6 py-3.5   text-base font-semibold text-zinc-900 transition-colors duration-200 hover:bg-zinc-900 hover:text-white dark:border-gray-200 dark:text-white dark:hover:bg-white dark:hover:text-zinc-900"
           >
             <span>Explore the ZoikoStream platform</span>
             <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
-          </button>
+          </Link>
         </div>
 
         <div className="flex w-full items-center justify-center lg:flex-1">
