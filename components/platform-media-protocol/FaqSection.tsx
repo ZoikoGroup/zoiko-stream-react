@@ -122,7 +122,7 @@ export default function FaqSection() {
 
           <div className="flex flex-wrap items-center gap-3">
             <Link
-              href="/sdks"
+              href="/developer-documentation"
               className="px-6 py-3 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-sm font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
             >
               View documentation

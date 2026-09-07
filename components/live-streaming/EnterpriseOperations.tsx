@@ -138,11 +138,11 @@ const EnterpriseOperations = () => {
           <div className="flex w-full flex-wrap items-start gap-x-6 gap-y-4">
             {complianceItems.map((item, idx) => {
               const hrefs = [
-                "/platform-overview",
-                "/platform-secure-playback",
-                "/platform-delivery-and-trust-overview",
-                "/accessibility-inclusion",
-                "/platform-delivery-and-trust-overview",
+                "#",
+                "#",
+                "#",
+                "#",
+                "#",
               ];
               return (
                 <a

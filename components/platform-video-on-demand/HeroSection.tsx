@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const pipelineItems = [
   { label: 'Approved Source', value: 'Authorized raw ingest' },
@@ -47,18 +48,18 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <button
-              type="button"
+            <Link
+              href="/start-building"
               className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-white text-base font-bold hover:opacity-90 transition-opacity"
             >
               Start Building
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              href="/developer-documentation"
               className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors"
             >
               Read Documentation
-            </button>
+            </Link>
           </div>
         </div>
 

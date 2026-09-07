@@ -23,7 +23,7 @@ const PATHWAYS = [
       'Enterprise analytics',
     ],
     buttonText: 'Explore enterprise solutions',
-    href:"#",
+    href:"/solutions-enterprise",
     imageSrc: '/images/home/div.ar-16-10 (1).png',
   },
 

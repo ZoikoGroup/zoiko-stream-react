@@ -14,21 +14,21 @@ const workflowCards: WorkflowCard[] = [
     title: "Build into a product",
     description:
       "Embed or orchestrate live video inside your application or service using developer tools and API endpoints.",
-    href: "/developers",
+    href: "#",
   },
   {
     image: "/images/live-streaming/workflow-2.png",
     title: "Operate enterprise media",
     description:
       "Run recurring or governed broadcasts with operational ownership. Complete audit logs and team permission architecture.",
-    href: "/platform",
+    href: "#",
   },
   {
     image: "/images/live-streaming/workflow-3.png",
     title: "Plan a managed event",
     description:
       "Professional planning and event-day operational support for scheduled events. Live backup signals and dedicated engineers.",
-    href: "/plan-a-live-event",
+    href: "#",
   },
 ];
 
