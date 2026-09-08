@@ -62,7 +62,7 @@ const INFO_ITEMS: MenuItem[] = [
   { title: 'Newsroom', description: 'Announcements and coverage', href: '/newsroom', icon: Newspaper },
   { title: 'Press and media', description: 'Assets and media contacts', href: '/press', icon: FileText },
   { title: 'Company updates', description: 'What changed, and when', href: '/zoikostream-company-updates', icon: History },
-  { title: 'Trust Center', description: 'Security and compliance posture', href: '/zoikostream-trust-center', icon: ShieldCheck },
+  { title: 'Trust Center', description: 'Security and compliance posture', href: '/company-trust-center', icon: ShieldCheck },
   { title: 'System status', description: 'Live platform health', href: '/zoikostream-status', icon: Activity },
   { title: 'Legal', description: 'Terms and agreements', href: '/zoikostream-legal', icon: Scale },
   { title: 'Privacy', description: 'How we handle data', href: '/privacy', icon: Lock },

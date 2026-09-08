@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 interface FlowStep {
   label: string;
   status: string;
@@ -56,13 +58,19 @@ export default function ResilientDeliveryHero() {
           </p>
 
           <div className="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center">
-            <span className="inline-flex items-center justify-center rounded-lg bg-gradient-to-b from-teal-400 to-blue-500 px-7 py-3.5 text-base font-bold text-slate-950">
+            <Link
+              href="#resilience-model"
+              className="inline-flex items-center justify-center rounded-lg bg-gradient-to-b from-teal-400 to-blue-500 px-7 py-3.5 text-base font-bold text-slate-950 hover:opacity-90 transition-opacity"
+            >
               Explore resilience model
-            </span>
+            </Link>
 
-            <span className="inline-flex items-center justify-center rounded-lg px-7 py-3.5 text-base font-bold text-white outline-1 -outline-offset-1 outline-slate-400">
+            <Link
+              href="/zoikostream-status"
+              className="inline-flex items-center justify-center rounded-lg px-7 py-3.5 text-base font-bold text-white outline-1 -outline-offset-1 outline-slate-400 transition-colors hover:bg-white/10"
+            >
               System Status →
-            </span>
+            </Link>
           </div>
         </div>
 

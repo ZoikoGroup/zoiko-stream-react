@@ -30,13 +30,13 @@ export default function FinalCtaSection() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <Link
               href="/start-building"
-              className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold   hover:opacity-90 transition-opacity"
+              className="px-8 py-4 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold hover:opacity-90 transition-opacity"
             >
               Start building
             </Link>
             <Link
               href="/talk-to-an-expert"
-              className="px-8 py-4 rounded-lg border border-slate-400 text-white text-base font-bold   hover:bg-white/10 transition-colors"
+              className="px-8 py-4 rounded-lg border border-slate-400 text-white text-base font-bold hover:bg-white/10 transition-colors"
             >
               Talk to an expert
             </Link>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function CtaBandSection() {
   return (
@@ -28,9 +29,11 @@ export default function CtaBandSection() {
 
       {/* Action Button */}
       <div className="relative z-10 flex flex-col items-center">
-        <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px] transition-transform hover:scale-105 active:scale-95 shadow-lg">
-          Talk to an expert
-        </button>
+        <Link href="/talk-to-an-expert">
+          <button className="bg-gradient-to-b from-[#34d4ca] to-[#4a8cfb] rounded-[10px] px-[28px] py-[14px] font-spaceGrotesk font-bold text-[#0a0f1a] text-[15px] transition-transform hover:scale-105 active:scale-95 shadow-lg">
+            Talk to an expert
+          </button>
+        </Link>
       </div>
     </section>
   );

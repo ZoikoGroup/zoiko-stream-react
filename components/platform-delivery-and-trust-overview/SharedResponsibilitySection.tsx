@@ -129,14 +129,14 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <ShieldCheck className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold  ">Trust Center</span>
+              <span className="text-teal-400 text-xs font-bold">Trust Center</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal leading-relaxed">
               Inspect platform certifications, SOC 2 reports, and compliance credentials.
             </p>
             <Link
-              href="/company-overview"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
+              href="/zoikostream-trust-center-compliance"
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold hover:bg-white/10"
             >
               View compliance records
             </Link>
@@ -147,17 +147,16 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <Activity className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold  ">System Status</span>
+              <span className="text-teal-400 text-xs font-bold">System Status</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal leading-relaxed">
               View real-time global availability, latency parameters, and past incident logs.
             </p>
-            <Link
-              href="/faqs-and-support"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
+            <button
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold hover:bg-white/10"
             >
               Check system status
-            </Link>
+            </button>
           </div>
 
           <div className="p-6 bg-slate-900/50 rounded-xl border border-gray-800 flex flex-col justify-between gap-4">
@@ -165,17 +164,16 @@ export default function SharedResponsibilitySection() {
               <div className="size-8 bg-teal-400/10 rounded flex items-center justify-center text-teal-400">
                 <FileText className="size-4" />
               </div>
-              <span className="text-teal-400 text-xs font-bold  ">Documentation</span>
+              <span className="text-teal-400 text-xs font-bold">Documentation</span>
             </div>
-            <p className="text-slate-400 text-xs font-normal   leading-relaxed">
+            <p className="text-slate-400 text-xs font-normal leading-relaxed">
               Access our comprehensive guide libraries, API keys, and implementation routes.
             </p>
-            <Link
-              href="/sdks"
-              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10"
+            <button
+              className="px-4 py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold hover:bg-white/10"
             >
               Open developer guides
-            </Link>
+            </button>
           </div>
         </div>
       </div>

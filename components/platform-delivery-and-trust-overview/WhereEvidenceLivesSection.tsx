@@ -8,29 +8,33 @@ const evidenceRoutes = [
     title: 'Trust Center',
     desc: 'Compliance verification, SOC 2 certificates',
     action: 'Open trust interface',
-    href: '/company-overview',
+    href: '/zoikostream-trust-center',
     icon: ShieldCheck,
+    isTbd: false,
   },
   {
     title: 'System Status',
     desc: 'Live platform availability telemetry',
     action: 'View health metrics',
-    href: '/faqs-and-support',
+    href: '',
     icon: Activity,
+    isTbd: true,
   },
   {
     title: 'Documentation',
     desc: 'API pathways and configuration routes',
     action: 'Explore architecture',
-    href: '/sdks',
+    href: '',
     icon: FileText,
+    isTbd: true,
   },
   {
     title: 'Support Portal',
     desc: 'Account-specific issue resolution checks',
     action: 'Contact operations',
-    href: '/faqs-and-support',
+    href: '',
     icon: HelpCircle,
+    isTbd: true,
   },
 ];
 
@@ -50,10 +54,10 @@ export default function WhereEvidenceLivesSection() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col gap-3 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold   text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
             Where Evidence Lives
           </h2>
-          <p className="text-slate-400 text-base md:text-lg font-normal   max-w-3xl">
+          <p className="text-slate-400 text-base md:text-lg font-normal max-w-3xl">
             Four authoritative routes for inspecting trust
           </p>
         </div>
@@ -70,26 +74,34 @@ export default function WhereEvidenceLivesSection() {
                   <div className="size-10 bg-teal-400/10 rounded-lg border border-teal-400/20 flex items-center justify-center text-teal-400 shrink-0">
                     <Icon className="size-5" />
                   </div>
-                  <span className="text-teal-400 text-xs font-bold  ">
+                  <span className="text-teal-400 text-xs font-bold">
                     AUTHORITATIVE
                   </span>
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-white text-lg font-bold  ">
+                  <h3 className="text-white text-lg font-bold">
                     {route.title}
                   </h3>
-                  <p className="text-slate-400 text-xs font-normal   leading-relaxed">
+                  <p className="text-slate-400 text-xs font-normal leading-relaxed">
                     {route.desc}
                   </p>
                 </div>
 
-                <Link
-                  href={route.href}
-                  className="w-full py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold   hover:bg-white/10 transition-colors"
-                >
-                  {route.action}
-                </Link>
+                {route.isTbd ? (
+                  <button
+                    className="w-full py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold hover:bg-white/10 transition-colors"
+                  >
+                    {route.action}
+                  </button>
+                ) : (
+                  <Link
+                    href={route.href}
+                    className="w-full py-2.5 rounded-lg border border-slate-400 text-white text-center text-xs font-bold hover:bg-white/10 transition-colors"
+                  >
+                    {route.action}
+                  </Link>
+                )}
               </div>
             );
           })}

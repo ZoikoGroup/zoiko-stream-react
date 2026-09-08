@@ -1,0 +1,11 @@
+export { default as HeroSection } from './HeroSection';
+export { default as WhatThisNoticeCoversSection } from './WhatThisNoticeCoversSection';
+export { default as HowCategoriesAndChoicesWorkSection } from './HowCategoriesAndChoicesWorkSection';
+export { default as CookieTrackerInventorySection } from './CookieTrackerInventorySection';
+export { default as HowActivationWorksSection } from './HowActivationWorksSection';
+export { default as ManagePrivacyChoicesSection } from './ManagePrivacyChoicesSection';
+export { default as BrowserPrivacySignalsSection } from './BrowserPrivacySignalsSection';
+export { default as ChangesAndHistorySection } from './ChangesAndHistorySection';
+export { default as RelatedPrivacyPoliciesSection } from './RelatedPrivacyPoliciesSection';
+export { default as NeedAccessibilityHelpSection } from './NeedAccessibilityHelpSection';
+export { default as CookieQuickAnswersSection } from './CookieQuickAnswersSection';

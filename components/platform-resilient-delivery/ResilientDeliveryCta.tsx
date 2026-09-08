@@ -26,9 +26,12 @@ export default function ResilientDeliveryCta() {
         </p>
 
         <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center">
-          <span className="inline-flex items-center justify-center rounded-lg bg-gradient-to-b from-teal-400 to-blue-500 px-7 py-3.5 text-base font-bold text-slate-950">
+          <Link
+            href="#resilience-model"
+            className="inline-flex items-center justify-center rounded-lg bg-gradient-to-b from-teal-400 to-blue-500 px-7 py-3.5 text-base font-bold text-slate-950 hover:opacity-90 transition-opacity"
+          >
             Explore resilience model
-          </span>
+          </Link>
 
           <Link
             href="/talk-to-an-expert"

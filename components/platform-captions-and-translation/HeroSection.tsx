@@ -47,7 +47,7 @@ export default function HeroSection() {
                 Talk to an expert
               </span>
             </Link>
-            <Link href="/resources/documentation" className="border border-[#aab3c4] border-solid content-stretch flex items-start px-[28px] py-[14px] relative rounded-[10px] shrink-0 hover:bg-white/5 transition-colors">
+            <Link href="#" className="border border-[#aab3c4] border-solid content-stretch flex items-start px-[28px] py-[14px] relative rounded-[10px] shrink-0 hover:bg-white/5 transition-colors">
               <span className="font-spaceGrotesk font-medium leading-[normal] relative shrink-0 text-[#eef1f6] text-[15px] whitespace-nowrap">
                 View documentation
               </span>

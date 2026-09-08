@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import bg147 from '@/public/images/Organization-overview/bg (147).png';
 import { Code, Link2, OctagonAlert, Search, Share2, Terminal } from 'lucide-react';
 
 export default function DeveloperHandoffSection() {
@@ -44,8 +45,20 @@ export default function DeveloperHandoffSection() {
   ];
 
   return (
-    <section className="w-full bg-white text-slate-900 border-b border-slate-200 py-20 lg:py-28">
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-28 flex flex-col gap-14">
+    <section className="relative w-full bg-white text-slate-900 border-b border-slate-200 py-20 lg:py-28 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <Image
+          src={bg147}
+          alt="Media Lifecycle Background"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 " />
+      </div>
+      <div className="size-[520px] -right-44 bottom-10 absolute bg-blue-500/10 rounded-full blur-[55px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-28 flex flex-col gap-14">
         {/* Header */}
         <div className="flex flex-col gap-4 max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold font-['Space_Grotesk'] text-slate-900 leading-tight">
@@ -185,14 +198,14 @@ export default function DeveloperHandoffSection() {
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <Link
-                href="/docs"
+              <button
+                type="button"
                 className="px-7 py-3.5 rounded-lg border border-slate-900 text-slate-900 text-base font-bold font-['Space_Grotesk'] hover:bg-slate-100 transition-colors"
               >
                 View developer resources
-              </Link>
+              </button>
               <Link
-                href="/build"
+                href="/start-building"
                 className="px-7 py-3.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg text-slate-950 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
               >
                 Start building

@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import bg147 from '@/public/images/Organization-overview/bg (147).png';
+
 const stages = [
   { stage: 'STAGE 01', title: 'Contribute', desc: 'Confirm source/contributor handoff' },
   { stage: 'STAGE 02', title: 'Ingest', desc: 'Confirm accepted connection/intake' },
@@ -12,9 +15,20 @@ export default function MapsToPlatformSection() {
   return (
     <section
       className="relative w-full px-4 bg-white sm:px-8 lg:px-28 py-16 sm:py-20 lg:py-24 border-b border-gray-200 flex flex-col gap-14 overflow-hidden"
-      
     >
-      <div className="flex flex-col gap-3">
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <Image
+          src={bg147}
+          alt="Media Lifecycle Background"
+          fill
+          className="object-cover opacity-30"
+          priority
+        />
+        <div className="absolute inset-0 " />
+      </div>
+      <div className="size-[520px] -right-44 bottom-10 absolute bg-blue-500/10 rounded-full blur-[55px] pointer-events-none" />
+
+      <div className="relative z-10 flex flex-col gap-3">
         <h2 className="text-slate-900 text-3xl sm:text-4xl font-bold leading-tight font-['Space_Grotesk']">
           How operations maps to the platform lifecycle
         </h2>
@@ -23,7 +37,7 @@ export default function MapsToPlatformSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
         {stages.map((item) => (
           <div
             key={item.stage}
