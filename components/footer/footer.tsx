@@ -37,8 +37,8 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'Secure enterprise video', href: '/secure-enterprise-video' },
       { name: 'Accessible multilingual video', href: '/accessible-multilingual' },
       { name: 'Record, replay, and preserve', href: '/solutions' },
-      { name: 'Enterprise media operations', href: '/solutions' },
-      { name: 'Managed live events', href: '/managed-live-event-streaming' },
+      { name: 'Enterprise media operations', href: '/enterprise-media' },
+      { name: 'Managed live events', href: '/managed-live-events' },
     ],
   },
   {
