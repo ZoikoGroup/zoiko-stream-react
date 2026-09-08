@@ -126,7 +126,7 @@ const ROW_2_SECTIONS: FooterSection[] = [
   {
     title: 'Trust & Security',
     links: [
-      { name: 'Trust Center', href: '/zoikostream-trust-center' },
+      { name: 'Trust Center', href: '/footer-trust-center' },
       { name: 'Security', href: '/platform-media-security' },
       { name: 'Compliance', href: '/zoikostream-trust-center-compliance' },
       { name: 'Data protection', href: '/zoikostream-data-protection' },
@@ -316,7 +316,7 @@ export default function Footer() {
               <Link href="/accessibility-inclusion" className="hover:text-slate-200 transition-colors">Accessibility</Link>
               <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">Acceptable Use</Link>
               <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">DPA</Link>
-              <Link href="/zoikostream-trust-center" className="hover:text-slate-200 transition-colors">Responsible Disclosure</Link>
+              <Link href="/footer-trust-center" className="hover:text-slate-200 transition-colors">Responsible Disclosure</Link>
               <Link href="/zoikostream-status" className="hover:text-slate-200 transition-colors">Status</Link>
             </nav>
             <p className="text-slate-500">
