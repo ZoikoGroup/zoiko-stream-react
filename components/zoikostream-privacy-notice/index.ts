@@ -1,0 +1,14 @@
+export { default as HeroSection } from './HeroSection';
+export { default as WhatThisNoticeCoversSection } from './WhatThisNoticeCoversSection';
+export { default as HowPersonalDataIsHandledSection } from './HowPersonalDataIsHandledSection';
+export { default as RecipientsRetentionTransfersSection } from './RecipientsRetentionTransfersSection';
+export { default as PrivacyRightsChoicesSection } from './PrivacyRightsChoicesSection';
+export { default as SubmitPrivacyRequestSection } from './SubmitPrivacyRequestSection';
+export { default as CookiesSimilarTechnologiesSection } from './CookiesSimilarTechnologiesSection';
+export { default as AdditionalTopicsSection } from './AdditionalTopicsSection';
+export { default as DpaSubprocessorsSecuritySection } from './DpaSubprocessorsSecuritySection';
+export { default as PrivacyQuickAnswersSection } from './PrivacyQuickAnswersSection';
+export { default as PrivacyUpdatesSection } from './PrivacyUpdatesSection';
+export { default as ContactPrivacySection } from './ContactPrivacySection';
+export { default as RelatedUtilitiesSection } from './RelatedUtilitiesSection';
+export { default as PrivacyFooterCtaSection } from './PrivacyFooterCtaSection';

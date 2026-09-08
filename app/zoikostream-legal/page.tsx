@@ -1,28 +1,16 @@
-import SectionHero from '@/components/zoikostream-legal/SectionHero';
-import SectionPopularDocuments from '@/components/zoikostream-legal/SectionPopularDocuments';
-import SectionBrowseByCategory from '@/components/zoikostream-legal/SectionBrowseByCategory';
-import SectionFindADocument from '@/components/zoikostream-legal/SectionFindADocument';
-import SectionWhichDocumentsRelevant from '@/components/zoikostream-legal/SectionWhichDocumentsRelevant';
-import SectionChangesVersionsRegional from '@/components/zoikostream-legal/SectionChangesVersionsRegional';
-import SectionNeedSomethingElse from '@/components/zoikostream-legal/SectionNeedSomethingElse';
-import SectionFaq from '@/components/zoikostream-legal/SectionFaq';
+import { Metadata } from 'next';
+import { LegalPoliciesSection } from '@/components/zoikostream-legal';
 
-export const metadata = {
-  title: 'Legal Center - Zoiko Stream',
-  description: 'Terms, policies and legal notices governing use of ZoikoStream, its APIs, Live Events and related services.',
+export const metadata: Metadata = {
+  title: 'Legal Policies | ZoikoStream Legal',
+  description:
+    'Current versions of the agreements and policies that govern use of ZoikoStream. The authoritative legal documents for our services.',
 };
 
 export default function ZoikostreamLegalPage() {
   return (
-    <main>
-      <SectionHero />
-      <SectionPopularDocuments />
-      <SectionBrowseByCategory />
-      <SectionFindADocument />
-      <SectionWhichDocumentsRelevant />
-      <SectionChangesVersionsRegional />
-      <SectionNeedSomethingElse />
-      <SectionFaq />
+    <main className="w-full min-h-screen flex flex-col justify-start items-stretch bg-white">
+      <LegalPoliciesSection />
     </main>
   );
 }
