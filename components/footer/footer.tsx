@@ -139,12 +139,12 @@ const ROW_2_SECTIONS: FooterSection[] = [
   {
     title: 'Legal',
     links: [
-      { name: 'Legal overview', href: '/zoikostream-legal' },
+      { name: 'Legal overview', href: '/legal-overview' },
       { name: 'Terms of service', href: '#' },
       { name: 'Privacy notice', href: '#' },
-      { name: 'Cookie notice', href: '#' },
-      { name: 'Acceptable use', href: '#' },
-      { name: 'Data processing addendum', href: '#' },
+      { name: 'Cookie notice', href: '/cookie-notice' },
+      { name: 'Acceptable use', href: '/acceptable-use' },
+      { name: 'Data processing addendum', href: '/data-processing-addendum' },
       { name: 'Service-specific terms', href: '#' },
       { name: 'Accessibility statement', href: '#' },
       { name: 'Trademark guidelines', href: '#' },
@@ -315,7 +315,7 @@ export default function Footer() {
               <Link href="/privacy" className="hover:text-slate-200 transition-colors">Cookies</Link>
               <Link href="/accessibility-inclusion" className="hover:text-slate-200 transition-colors">Accessibility</Link>
               <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">Acceptable Use</Link>
-              <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">DPA</Link>
+              <Link href="/data-processing-addendum" className="hover:text-slate-200 transition-colors">DPA</Link>
               <Link href="/footer-trust-center" className="hover:text-slate-200 transition-colors">Responsible Disclosure</Link>
               <Link href="/zoikostream-status" className="hover:text-slate-200 transition-colors">Status</Link>
             </nav>
