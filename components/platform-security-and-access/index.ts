@@ -1,0 +1,14 @@
+export { default as PlatformSecurityAccessHeroSection } from './PlatformSecurityAccessHeroSection';
+export { default as PlatformSecurityAccessQuestionSection } from './PlatformSecurityAccessQuestionSection';
+export { default as PlatformSecurityAccessModelSection } from './PlatformSecurityAccessModelSection';
+export { default as PlatformSecurityAccessResourcesSection } from './PlatformSecurityAccessResourcesSection';
+export { default as PlatformSecurityAccessBoundarySection } from './PlatformSecurityAccessBoundarySection';
+export { default as PlatformSecurityAccessAuthorizationSection } from './PlatformSecurityAccessAuthorizationSection';
+export { default as PlatformSecurityAccessLeastPrivilegeSection } from './PlatformSecurityAccessLeastPrivilegeSection';
+export { default as PlatformSecurityAccessDeveloperSection } from './PlatformSecurityAccessDeveloperSection';
+export { default as PlatformSecurityAccessPlaybackSection } from './PlatformSecurityAccessPlaybackSection';
+export { default as PlatformSecurityAccessLifecycleSection } from './PlatformSecurityAccessLifecycleSection';
+export { default as PlatformSecurityAccessEvidenceSection } from './PlatformSecurityAccessEvidenceSection';
+export { default as PlatformSecurityAccessTrustSection } from './PlatformSecurityAccessTrustSection';
+export { default as PlatformSecurityAccessFaqSection } from './PlatformSecurityAccessFaqSection';
+export { default as PlatformSecurityAccessCtaSection } from './PlatformSecurityAccessCtaSection';

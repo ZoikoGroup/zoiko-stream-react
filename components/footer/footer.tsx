@@ -25,7 +25,7 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'Recording and replay', href: '/platform-recording-replay' },
       { name: 'Captions and translation', href: '/platform-captions-and-translation' },
       { name: 'Video analytics', href: '/platform-video-analytics' },
-      { name: 'Security and access', href: '/platform-media-security' },
+      { name: 'Security and access', href: '/platform-security-and-access' },
     ],
   },
   {
