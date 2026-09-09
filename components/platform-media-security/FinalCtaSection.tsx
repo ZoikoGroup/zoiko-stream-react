@@ -7,22 +7,25 @@ const ctaCards = [
     title: 'Explore Security Evidence',
     desc: 'Access our Trust Center for SOC 2 reports, current compliance artifacts, and detailed whitepapers.',
     buttonText: 'Access Trust Center',
-    href: '/company-overview',
+    href: '/zoikostream-trust-center',
     primary: true,
+    isTbd: false,
   },
   {
     title: 'Security Documentation',
     desc: 'Implementation guides, SDK safety patterns, key custody architectures, and configuration templates.',
     buttonText: 'Read Security Docs',
-    href: '/sdks',
+    href: '',
     primary: false,
+    isTbd: true,
   },
   {
     title: 'System Status',
     desc: 'Monitor real-time service health, track rolling SLA metrics, and explore historic incident post-mortems.',
     buttonText: 'Check Service Health',
-    href: '/faqs-and-support',
+    href: '/zoikostream-status',
     primary: false,
+    isTbd: false,
   },
   {
     title: 'Talk to an Expert',
@@ -30,6 +33,7 @@ const ctaCards = [
     buttonText: 'Request Consultation',
     href: '/talk-to-an-expert',
     primary: false,
+    isTbd: false,
   },
 ];
 
@@ -67,16 +71,28 @@ export default function FinalCtaSection() {
                 </p>
               </div>
 
-              <Link
-                href={card.href}
-                className={`w-full py-3 rounded-lg text-center text-sm font-bold font-['Space_Grotesk'] transition-all ${
-                  card.primary
-                    ? 'bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 hover:opacity-90'
-                    : 'border border-slate-400 text-white hover:bg-white/10'
-                }`}
-              >
-                {card.buttonText}
-              </Link>
+              {card.isTbd ? (
+                <button
+                  className={`w-full py-3 rounded-lg text-center text-sm font-bold font-['Space_Grotesk'] transition-all ${
+                    card.primary
+                      ? 'bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 hover:opacity-90'
+                      : 'border border-slate-400 text-white hover:bg-white/10'
+                  }`}
+                >
+                  {card.buttonText}
+                </button>
+              ) : (
+                <Link
+                  href={card.href}
+                  className={`w-full py-3 rounded-lg text-center text-sm font-bold font-['Space_Grotesk'] transition-all ${
+                    card.primary
+                      ? 'bg-gradient-to-r from-teal-400 to-blue-500 text-slate-950 hover:opacity-90'
+                      : 'border border-slate-400 text-white hover:bg-white/10'
+                  }`}
+                >
+                  {card.buttonText}
+                </Link>
+              )}
             </div>
           ))}
         </div>

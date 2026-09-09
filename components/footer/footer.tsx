@@ -24,8 +24,8 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'Enterprise broadcasting', href: '/platform-enterprise-broadcasting' },
       { name: 'Recording and replay', href: '/platform-recording-replay' },
       { name: 'Captions and translation', href: '/platform-captions-and-translation' },
-      { name: 'Video analytics', href: '/platform-analytics' },
-      { name: 'Security and access', href: '/platform-media-security' },
+      { name: 'Video analytics', href: '/platform-video-analytics' },
+      { name: 'Security and access', href: '/platform-security-and-access' },
     ],
   },
   {
@@ -37,8 +37,8 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'Secure enterprise video', href: '/secure-enterprise-video' },
       { name: 'Accessible multilingual video', href: '/accessible-multilingual' },
       { name: 'Record, replay, and preserve', href: '/solutions' },
-      { name: 'Enterprise media operations', href: '/solutions' },
-      { name: 'Managed live events', href: '/managed-live-event-streaming' },
+      { name: 'Enterprise media operations', href: '/enterprise-media' },
+      { name: 'Managed live events', href: '/managed-live-events' },
     ],
   },
   {
@@ -114,11 +114,11 @@ const ROW_2_SECTIONS: FooterSection[] = [
     title: 'Support',
     links: [
       { name: 'Help Center', href: '/support-help-center' },
-      { name: 'Contact support', href: '/contact-us' },
-      { name: 'Developer support', href: '/zoikostream-developer-relations' },
-      { name: 'Enterprise support', href: '/zoikostream-enterprise-inquiries' },
-      { name: 'Live Events support', href: '/live-event-inquiries' },
-      { name: 'Report an issue', href: '/contact-us' },
+      { name: 'Contact support', href: '/zoikostream-contact-support' },
+      { name: 'Developer support', href: '/zoikostream-developer-support' },
+      { name: 'Enterprise support', href: '/support-enterprise' },
+      { name: 'Live Events support', href: '/live-events-support' },
+      { name: 'Report an issue', href: '/support-report-issue' },
       { name: 'Accessibility help', href: '/accessibility' },
       { name: 'System status', href: '/zoikostream-status' },
     ],
@@ -126,25 +126,34 @@ const ROW_2_SECTIONS: FooterSection[] = [
   {
     title: 'Trust & Security',
     links: [
-      { name: 'Trust Center', href: '/zoikostream-trust-center' },
+      { name: 'Trust Center', href: '/footer-trust-center' },
       { name: 'Security', href: '/platform-media-security' },
+<<<<<<< HEAD
       { name: 'Compliance', href: '#' },
       { name: 'Data protection', href: '#' },
       { name: 'Service reliability', href: '#' },
       { name: 'Subprocessors', href: '/subprocessors' },
       { name: 'Security advisories', href: '#' },
       { name: 'Responsible disclosure', href: '#' },
+=======
+      { name: 'Compliance', href: '/zoikostream-trust-center-compliance' },
+      { name: 'Data protection', href: '/zoikostream-data-protection' },
+      { name: 'Service reliability', href: '/zoikostream-service-reliability' },
+      { name: 'Subprocessors', href: '#' },
+      { name: 'Security advisories', href: '/security-advisories' },
+      { name: 'Responsible disclosure', href: '/responsible-disclosure' },
+>>>>>>> origin/main
     ],
   },
   {
     title: 'Legal',
     links: [
-      { name: 'Legal overview', href: '/zoikostream-legal' },
+      { name: 'Legal overview', href: '/legal-overview' },
       { name: 'Terms of service', href: '#' },
       { name: 'Privacy notice', href: '#' },
-      { name: 'Cookie notice', href: '#' },
-      { name: 'Acceptable use', href: '#' },
-      { name: 'Data processing addendum', href: '#' },
+      { name: 'Cookie notice', href: '/cookie-notice' },
+      { name: 'Acceptable use', href: '/acceptable-use' },
+      { name: 'Data processing addendum', href: '/data-processing-addendum' },
       { name: 'Service-specific terms', href: '#' },
       { name: 'Accessibility statement', href: '#' },
       { name: 'Trademark guidelines', href: '#' },
@@ -315,8 +324,8 @@ export default function Footer() {
               <Link href="/privacy" className="hover:text-slate-200 transition-colors">Cookies</Link>
               <Link href="/accessibility-inclusion" className="hover:text-slate-200 transition-colors">Accessibility</Link>
               <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">Acceptable Use</Link>
-              <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">DPA</Link>
-              <Link href="/zoikostream-trust-center" className="hover:text-slate-200 transition-colors">Responsible Disclosure</Link>
+              <Link href="/data-processing-addendum" className="hover:text-slate-200 transition-colors">DPA</Link>
+              <Link href="/footer-trust-center" className="hover:text-slate-200 transition-colors">Responsible Disclosure</Link>
               <Link href="/zoikostream-status" className="hover:text-slate-200 transition-colors">Status</Link>
             </nav>
             <p className="text-slate-500">

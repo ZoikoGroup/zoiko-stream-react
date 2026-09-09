@@ -7,7 +7,7 @@ const destinations = [
     title: 'Developer',
     desc: 'Quickstart, reference, auth, errors, changelog',
     action: 'View Developers',
-    href: '/sdks',
+    href: '/developers-overview',
     icon: Code2,
   },
   {
@@ -21,14 +21,14 @@ const destinations = [
     title: 'Existing customer',
     desc: 'Docs, monitoring, status, support, workspace',
     action: 'Sign in',
-    href: '/start-building',
+    href: '#',
     icon: UserCheck,
   },
   {
     title: 'Adjacent capability',
     desc: 'Live streaming, Real-time contribution, SDKs',
     action: 'Explore Platform',
-    href: '/platform-recording-replay',
+    href: '/platform-overview',
     icon: Layers,
   },
 ];

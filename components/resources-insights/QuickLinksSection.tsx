@@ -25,7 +25,7 @@ const QUICK_LINKS: QuickLinkItem[] = [
   {
     title: 'Changelog',
     description: 'The latest API updates, features, and technical releases.',
-    href: '/changelog',
+    href: '/developers-changelog',
     icon: 'changelog',
   },
   {

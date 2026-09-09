@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 // --- DATA DEFINITIONS ---
 
@@ -132,24 +133,24 @@ export default function TrustedMediaOperationsSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4 pt-2">
-          <button
-            type="button"
+          <Link
+            href="/platform-media-security"
             className="px-6 py-3.5 border border-gray-700 hover:border-gray-500 text-slate-100 font-semibold text-base rounded-[10px] transition-colors"
           >
             Explore security
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link
+            href="/platform-analytics"
             className="px-6 py-3.5 border border-gray-700 hover:border-gray-500 text-slate-100 font-semibold text-base rounded-[10px] transition-colors"
           >
             Explore analytics
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link
+            href="/zoikostream-enterprise-inquiries"
             className="px-6 py-3.5 border border-gray-700 hover:border-gray-500 text-slate-100 font-semibold text-base rounded-[10px] transition-colors"
           >
             Discuss enterprise requirements
-          </button>
+          </Link>
         </div>
 
       </div>

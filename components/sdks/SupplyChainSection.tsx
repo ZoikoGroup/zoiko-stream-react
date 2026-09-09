@@ -83,7 +83,7 @@ export default function SupplyChainSection() {
 
       <div className="relative z-10 flex items-start justify-center w-full">
         <a
-          href="/docs/security"
+          href="#"
           className="flex items-center justify-center px-[26px] py-3.5 rounded-[10px] hover:brightness-110 transition-[filter]"
           style={{ background: 'linear-gradient(180deg, #34d4ca 0%, #4a8cfb 100%)' }}
         >

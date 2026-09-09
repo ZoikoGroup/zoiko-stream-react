@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function FinalCtaSection() {
   return (
@@ -20,12 +21,14 @@ export default function FinalCtaSection() {
           See how ZoikoStream Stream monitoring helps enterprise teams operate with clarity,
           evidence, and confidence.
         </p>
-        <button
-          className="flex items-center justify-center rounded-[10px] px-8 py-3.5 transition-opacity hover:opacity-90"
-          style={{ background: 'linear-gradient(90deg, #00d4aa 0%, #4c86ff 100%)' }}
-        >
-          <span className="text-[15px] font-bold text-[#04141a]">Talk to an expert</span>
-        </button>
+        <Link href="/talk-to-an-expert">
+          <button
+            className="flex items-center justify-center rounded-[10px] px-8 py-3.5 transition-opacity hover:opacity-90"
+            style={{ background: 'linear-gradient(90deg, #00d4aa 0%, #4c86ff 100%)' }}
+          >
+            <span className="text-[15px] font-bold text-[#04141a]">Talk to an expert</span>
+          </button>
+        </Link>
       </div>
     </section>
   );

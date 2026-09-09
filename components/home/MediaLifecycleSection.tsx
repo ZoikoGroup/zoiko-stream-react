@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const LIFECYCLE_STAGES = [
@@ -106,12 +107,12 @@ export default function MediaLifecycleSection() {
 
         {/* Bottom Link */}
         <div className="pt-1">
-          <a
-            href="#capabilities"
+          <Link
+            href="/platform-overview"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-500 transition-colors hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
           >
             Explore all platform capabilities <span>→</span>
-          </a>
+          </Link>
         </div>
 
       </div>

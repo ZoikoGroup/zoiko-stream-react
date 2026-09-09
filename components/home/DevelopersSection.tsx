@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const CODE_TABS = [
@@ -39,18 +40,18 @@ export default function DevelopersSection() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button
-              type="button"
+            <Link
+              href="/developer-documentation"
               className="rounded-[10px] bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-3.5 text-base font-semibold text-slate-950 transition-opacity hover:opacity-95"
             >
               Read the documentation
-            </button>
-            <button
-              type="button"
+            </Link>
+            <Link
+              href="/quick-start"
               className="rounded-[10px] border border-gray-700 px-6 py-3.5 text-base font-semibold text-slate-100 transition-colors hover:border-gray-500 dark:border-gray-700 dark:text-white dark:hover:border-gray-500"
             >
               Get started
-            </button>
+            </Link>
           </div>
 
           <ul className="flex flex-col gap-3 pt-4 text-sm font-normal text-slate-400 dark:text-gray-400">

@@ -38,13 +38,13 @@ const RESOURCE_CARDS = [
 ];
 
 const FOOTER_LINKS = [
-  { label: 'Documentation', href: '#documentation' },
-  { label: 'API reference', href: '#api-reference' },
-  { label: 'Guides', href: '#guides' },
-  { label: 'Case studies', href: '#case-studies' },
-  { label: 'Webinars', href: '#webinars' },
-  { label: 'Status', href: '#status' },
-  { label: 'Changelog', href: '#changelog' },
+  { label: 'Documentation', href: '/resource-developer-documentation' },
+  { label: 'API reference', href: '/resource-api-reference' },
+  { label: 'Guides', href: '/resource-guides' },
+  { label: 'Case studies', href: '/resource-case-studies' },
+  { label: 'Webinars', href: '/resource-webinar-and-events' },
+  { label: 'Status', href: '/resource-system-status' },
+  { label: 'Changelog', href: '/resource-change-log' },
 ];
 
 // --- COMPONENT ---

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function FinalCtaSection() {
   return (
     <section
@@ -21,18 +23,22 @@ export default function FinalCtaSection() {
       </div>
 
       <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-        <button
-          type="button"
-          className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-slate-50 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
-        >
-          Talk to an expert
-        </button>
-        <button
-          type="button"
-          className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
-        >
-          Start building
-        </button>
+        <Link href="/talk-to-an-expert">
+          <button
+            type="button"
+            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-slate-50 text-base font-bold font-['Space_Grotesk'] hover:opacity-90 transition-opacity"
+          >
+            Talk to an expert
+          </button>
+        </Link>
+        <Link href="/start-building">
+          <button
+            type="button"
+            className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium font-['Space_Grotesk'] hover:bg-slate-800 transition-colors"
+          >
+            Start building
+          </button>
+        </Link>
       </div>
     </section>
   );

@@ -54,7 +54,7 @@ const OPERATE_ITEMS: MenuItem[] = [
   {
     title: 'Enterprise broadcasting',
     description: 'Multi-destination, managed output',
-    href: '/platform-enterprise-broadcastings',
+    href: '/platform-enterprise-broadcasting',
     icon: Building2,
   },
   { title: 'Media management', description: 'Organize assets at scale', href: '/platform-media-management', icon: FolderKanban },

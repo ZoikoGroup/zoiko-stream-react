@@ -1,0 +1,12 @@
+export { default as PlatformVideoAnalyticsHeroSection } from './PlatformVideoAnalyticsHeroSection';
+export { default as PlatformVideoAnalyticsPathSection } from './PlatformVideoAnalyticsPathSection';
+export { default as PlatformVideoAnalyticsCoverageSection } from './PlatformVideoAnalyticsCoverageSection';
+export { default as PlatformVideoAnalyticsDefinitionsSection } from './PlatformVideoAnalyticsDefinitionsSection';
+export { default as PlatformVideoAnalyticsDashboardSection } from './PlatformVideoAnalyticsDashboardSection';
+export { default as PlatformVideoAnalyticsQualitySection } from './PlatformVideoAnalyticsQualitySection';
+export { default as PlatformVideoAnalyticsSurfacesSection } from './PlatformVideoAnalyticsSurfacesSection';
+export { default as PlatformVideoAnalyticsComparisonSection } from './PlatformVideoAnalyticsComparisonSection';
+export { default as PlatformVideoAnalyticsReportsSection } from './PlatformVideoAnalyticsReportsSection';
+export { default as PlatformVideoAnalyticsGovernanceSection } from './PlatformVideoAnalyticsGovernanceSection';
+export { default as PlatformVideoAnalyticsFaqSection } from './PlatformVideoAnalyticsFaqSection';
+export { default as PlatformVideoAnalyticsCtaSection } from './PlatformVideoAnalyticsCtaSection';

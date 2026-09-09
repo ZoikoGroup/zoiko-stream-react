@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function FinalCtaSection() {
   return (
     <section
@@ -18,18 +20,18 @@ export default function FinalCtaSection() {
           Start with developer documentation or talk to an expert about enterprise architecture. Explore our sandboxes without commitment.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button
-            type="button"
-            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold hover:opacity-90 transition-opacity"
+          <Link
+            href="/start-building"
+            className="px-6 py-3.5 bg-gradient-to-b from-teal-500 to-blue-500 rounded-[10px] text-gray-800 text-base font-bold hover:opacity-90 transition-opacity text-center"
           >
             Start Building
-          </button>
-          <button
-            type="button"
-            className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors"
+          </Link>
+          <Link
+            href="/talk-to-an-expert"
+            className="px-7 py-3.5 rounded-[10px] border border-slate-400 text-slate-100 text-base font-medium hover:bg-slate-800 transition-colors text-center"
           >
             Talk to an expert
-          </button>
+          </Link>
         </div>
       </div>
     </section>

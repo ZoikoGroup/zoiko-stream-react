@@ -48,10 +48,10 @@ const SUPPORT_ITEMS: MenuItem[] = [
   { title: 'Help Center', description: 'Step-by-step help and articles', href: '/resource-help-center', icon: HelpCircle },
   { title: 'Contact support', description: 'Open a ticket or start a chat', href: '/resource-contact-support', icon: MessageSquare },
   { title: 'Developer documentation', description: 'Technical references and guides', href: '/resource-developer-documentation', icon: BookOpen },
-  { title: 'API reference', description: 'Endpoints, params, examples', href: '/api-reference', icon: FileText },
-  { title: 'Live Events planning guide', description: 'Book and prepare with confidence', href: '/live-event-guide', icon: Video },
-  { title: 'Service updates', description: 'Maintenance and change notices', href: '/resources', icon: Gauge },
-  { title: 'Community resources', description: 'Connect with other builders', href: '/resources', icon: Sparkles },
+  { title: 'API reference', description: 'Endpoints, params, examples', href: '/resources-api-reference', icon: FileText },
+  { title: 'Live Events planning guide', description: 'Book and prepare with confidence', href: '/resources-live-events-planning-guide', icon: Video },
+  { title: 'Service updates', description: 'Maintenance and change notices', href: '/resources-service-updates', icon: Gauge },
+  { title: 'Community resources', description: 'Connect with other builders', href: '/resources-community-resources', icon: Sparkles },
 ];
 
 const POPULAR_TAGS = ['Getting started', 'Security & Trust', 'Case studies', 'Accessibility', 'Status page'];
