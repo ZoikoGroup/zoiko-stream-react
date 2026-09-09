@@ -131,7 +131,7 @@ const ROW_2_SECTIONS: FooterSection[] = [
       { name: 'Compliance', href: '#' },
       { name: 'Data protection', href: '#' },
       { name: 'Service reliability', href: '#' },
-      { name: 'Subprocessors', href: '#' },
+      { name: 'Subprocessors', href: '/subprocessors' },
       { name: 'Security advisories', href: '#' },
       { name: 'Responsible disclosure', href: '#' },
     ],
