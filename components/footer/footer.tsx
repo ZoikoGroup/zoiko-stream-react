@@ -51,8 +51,8 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'Graduations', href: '/graduation-detailed' },
       { name: 'Civic events', href: '/civic-events-detailed' },
       { name: 'Corporate broadcasts', href: '/corporate-broadcast-detailed' },
-      { name: 'Conferences', href: '/conference-and-multitrack' },
-      { name: 'Plan a live event', href: '/plan-a-live-event' },
+      { name: 'Conferences', href: '/live-event-conferences' },
+      { name: 'Plan a live event', href: '/live-events-plan-a-live-event' },
     ],
   },
   {
@@ -140,8 +140,8 @@ const ROW_2_SECTIONS: FooterSection[] = [
     title: 'Legal',
     links: [
       { name: 'Legal overview', href: '/legal-overview' },
-      { name: 'Terms of service', href: '#' },
-      { name: 'Privacy notice', href: '#' },
+      { name: 'Terms of service', href: '/terms-of-service' },
+      { name: 'Privacy notice', href: '/zoikostream-privacy-notice' },
       { name: 'Cookie notice', href: '/cookie-notice' },
       { name: 'Acceptable use', href: '/acceptable-use' },
       { name: 'Data processing addendum', href: '/data-processing-addendum' },
@@ -311,7 +311,7 @@ export default function Footer() {
           <div className="space-y-2">
             <nav className="flex flex-wrap gap-x-3.5 gap-y-1">
               <Link href="/privacy" className="hover:text-slate-200 transition-colors">Privacy</Link>
-              <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">Terms</Link>
+              <Link href="/terms-of-service" className="hover:text-slate-200 transition-colors">Terms</Link>
               <Link href="/privacy" className="hover:text-slate-200 transition-colors">Cookies</Link>
               <Link href="/accessibility-inclusion" className="hover:text-slate-200 transition-colors">Accessibility</Link>
               <Link href="/zoikostream-legal" className="hover:text-slate-200 transition-colors">Acceptable Use</Link>
