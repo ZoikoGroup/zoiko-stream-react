@@ -64,4 +64,24 @@ next-env.d.ts
 
 # OS files
 Thumbs.db
-#
+
+# Agent temp files
+*.py
+parse_insights_sections.js
+extract_insights_images.js
+insights_images_payload.json
+output.txt
+figma_data*.json
+figma_structure.txt
+rename_subprocessors.js
+mcp_payload.json
+extract_regex.js
+extract_images.js
+
+# Additional temp parsing scripts
+extract_figma_styles.js
+extract_hero.js
+generate_sections.js
+parse_figma.js
+parse_figma2.js
+parse_figma_sections.js
