@@ -128,21 +128,12 @@ const ROW_2_SECTIONS: FooterSection[] = [
     links: [
       { name: 'Trust Center', href: '/footer-trust-center' },
       { name: 'Security', href: '/platform-media-security' },
-<<<<<<< HEAD
-      { name: 'Compliance', href: '#' },
-      { name: 'Data protection', href: '#' },
-      { name: 'Service reliability', href: '#' },
-      { name: 'Subprocessors', href: '/subprocessors' },
-      { name: 'Security advisories', href: '#' },
-      { name: 'Responsible disclosure', href: '#' },
-=======
       { name: 'Compliance', href: '/zoikostream-trust-center-compliance' },
       { name: 'Data protection', href: '/zoikostream-data-protection' },
       { name: 'Service reliability', href: '/zoikostream-service-reliability' },
       { name: 'Subprocessors', href: '#' },
       { name: 'Security advisories', href: '/security-advisories' },
       { name: 'Responsible disclosure', href: '/responsible-disclosure' },
->>>>>>> origin/main
     ],
   },
   {

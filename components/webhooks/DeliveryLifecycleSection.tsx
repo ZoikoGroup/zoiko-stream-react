@@ -1,85 +1,66 @@
 import React from 'react';
 
+const imgBg = "/images/webhooks/lifecycle-background.webp";
+
+const states = [
+  { title: 'Generated', badge: 'ORIGED', tone: 'blue', description: 'Event exists within primary source server scope.' },
+  { title: 'Attempting', badge: 'POSTING', tone: 'blue', description: 'Delivery connection is established over transport.' },
+  { title: 'Transport Received', badge: 'TRANSPORTED', tone: 'green', description: 'Webhook payload has reached target endpoint buffer.' },
+  { title: 'Acknowledged', badge: 'RESOLVED', tone: 'green', description: 'Target endpoint returned valid contract signature status.' },
+  { title: 'Retry Pending', badge: 'REQUEUED', tone: 'amber', description: 'Attempt scheduled per active retry backoff algorithm.' },
+  { title: 'Failed / Exhausted', badge: 'EXHAUSTED', tone: 'red', description: 'Dead-letter state reached after final retry bounds expire.' },
+  { title: 'Delayed', badge: 'LATE', tone: 'amber', description: 'Delivery exceeds target latency boundaries.' },
+  { title: 'Unknown', badge: 'UNCHECKED', tone: 'slate', description: 'Outcome cannot be established. Use API read check fallback.' },
+];
+
+const toneClasses: Record<string, string> = {
+  blue: 'bg-[#dbeafe] text-[#1e40af]',
+  green: 'bg-[#d1fae5] text-[#065f46]',
+  amber: 'bg-[#fef3c7] text-[#92400e]',
+  red: 'bg-[#fee2e2] text-[#991b1b]',
+  slate: 'bg-[#e2e8f0] text-[#4f5e74]',
+};
+
 export default function DeliveryLifecycleSection() {
   return (
-    <section className="relative w-full border-t border-solid border-[#dde2ea] bg-white px-6 py-16 md:px-12 xl:px-[132px] xl:py-[80px]">
-      
+    <section className="bg-white flex flex-col items-center px-5 sm:px-6 lg:px-[112px] py-12 sm:py-16 lg:py-[96px] relative w-full overflow-hidden" data-name="Delivery-Lifecycle-Section">
+      <img alt="" aria-hidden className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBg} />
+      <div aria-hidden className="absolute left-[-70px] top-[-133px] size-[420px] rounded-full bg-[rgba(0,212,170,0.1)] blur-[60px] pointer-events-none" />
+      <div aria-hidden className="absolute right-[-160px] bottom-[-120px] size-[520px] rounded-full bg-[rgba(76,134,255,0.1)] blur-[55px] pointer-events-none" />
 
-      <div className="mx-auto flex w-full max-w-[1176px] flex-col items-start gap-[24px]">
-        <div className="flex items-center gap-[8px] mb-2">
-          <div className="w-[6px] h-[6px] rounded-full bg-[#5b8def]" />
-          <p className="text-[12px] font-bold uppercase tracking-[1.2px] text-[#5b8def]">
-          Delivery lifecycle &amp; retries
-        </p>
+      <div className="flex flex-col gap-[32px] sm:gap-[48px] items-start w-full max-w-[1216px] relative z-10">
+        <div className="flex flex-col gap-[12px] items-start w-full">
+          <h2 className="[word-break:break-word] font-sans font-bold text-[#0a0d13] text-[26px] sm:text-[32px] lg:text-[38px] leading-[1.3] lg:leading-[60px] w-full">
+            Delivery lifecycle model
+          </h2>
+          <p className="font-sans font-normal text-[#4f5e74] text-[15px] sm:text-[17px] lg:text-[18px] leading-[28px] w-full">
+            Transport receipt, signature verification, payload parsing, business processing, and final reconciliation
+            are separate states.
+          </p>
         </div>
 
-        <h2 className="w-full max-w-[734px] font-sora text-[27px] font-bold leading-[1.62] tracking-[-0.27px] text-[#2b2e35]">
-          Understand each delivery attempt &mdash; and what happens after a failure.
-        </h2>
-
-        {/* State Pills */}
-        <div className="flex flex-wrap items-center gap-[12px] mt-4 mb-6">
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#f1f4f8] px-[12px] text-[10.5px] font-bold text-[#63697a]">Pending</span>
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#f1f4f8] px-[12px] text-[10.5px] font-bold text-[#63697a]">Attempting</span>
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#eafaf3] px-[12px] text-[10.5px] font-bold text-[#1f9d6f]">Delivered</span>
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#fbeae8] px-[12px] text-[10.5px] font-bold text-[#c0392b]">Failed</span>
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#fdf6e3] px-[12px] text-[10.5px] font-bold text-[#b8860b]">Retry scheduled</span>
-          <span className="flex h-[23px] items-center justify-center rounded-[100px] bg-[#f1f4f8] px-[12px] text-[10.5px] font-bold text-[#63697a]">Redelivered</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[16px] w-full">
+          {states.map((state) => (
+            <div
+              key={state.title}
+              className="bg-[#f8fafc] border border-[#e2e8f0] border-solid flex flex-col gap-[12px] items-start p-[20px] rounded-[12px]"
+            >
+              <div className="flex flex-wrap gap-2 justify-between items-center w-full">
+                <p className="font-sans font-bold text-[#0a0d13] text-[16px] min-w-0 break-words">{state.title}</p>
+                <div className={`${toneClasses[state.tone]} flex items-start px-[8px] py-[2px] rounded-[2px] shrink-0`}>
+                  <span className="font-mono font-bold text-[10px]">{state.badge}</span>
+                </div>
+              </div>
+              <p className="font-sans font-normal text-[#4f5e74] text-[12px] leading-[18px] w-full">{state.description}</p>
+            </div>
+          ))}
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-[64px] w-full items-start">
-          {/* Left: Table */}
-          <div className="flex w-full lg:w-[500px] flex-col">
-            <div className="flex w-full items-center border-b border-solid border-[#dde2ea] pb-[10px]">
-              <span className="w-1/2 font-inter text-[11px] font-bold uppercase tracking-wider text-[#9aa1ae]">Policy</span>
-              <span className="w-1/2 font-inter text-[11px] font-bold uppercase tracking-wider text-[#9aa1ae]">Value</span>
-            </div>
-            
-            {[
-              { label: 'Acknowledgment timeout', value: '[ACK_TIMEOUT]' },
-              { label: 'Retry backoff', value: '[RETRY_POLICY]' },
-              { label: 'Maximum attempts', value: '[RETRY_POLICY]' },
-              { label: 'Redelivery window', value: '[REDELIVERY_WINDOW]' },
-              { label: 'Ordering guarantee', value: 'Not guaranteed' },
-            ].map((row, idx) => (
-              <div key={idx} className="flex w-full items-center border-b border-solid border-[#dde2ea] py-[12px]">
-                <span className="w-1/2 font-inter text-[13px] font-normal text-[#63697a]">{row.label}</span>
-                <span className={`w-1/2 font-mono text-[13px] font-bold ${row.value.startsWith('[') ? 'text-[#6a6df0]' : 'text-[#2b2e35]'}`}>
-                  {row.value}
-                </span>
-              </div>
-            ))}
-
-            <p className="mt-4 font-inter text-[11.5px] leading-[18.63px] text-[#9aa1ae] max-w-[440px]">
-              Values in brackets are registry-driven and shown as placeholders until confirmed by the current Delivery Contract Registry &mdash; no retry cadence is fabricated here.
-            </p>
-          </div>
-
-          {/* Right: Attempt lineage */}
-          <div className="flex w-full lg:w-[440px] flex-col gap-[16px]">
-            <h3 className="font-sora text-[15px] font-bold tracking-[-0.15px] text-[#2b2e35]">
-              Attempt lineage
-            </h3>
-
-            <div className="flex flex-col w-full rounded-[10px] border border-solid border-[#dde2ea] overflow-hidden bg-white">
-              <div className="flex items-center justify-between border-b border-solid border-[#dde2ea] p-[14px]">
-                <span className="font-inter text-[13px] font-normal text-[#63697a]">Attempt 1 &middot; 14:02:07</span>
-                <span className="flex h-[24px] items-center justify-center rounded-[100px] bg-[#fbeae8] px-[12px] text-[11px] font-bold text-[#c0392b]">Timeout</span>
-              </div>
-              <div className="flex items-center justify-between border-b border-solid border-[#dde2ea] p-[14px]">
-                <span className="font-inter text-[13px] font-normal text-[#63697a]">Attempt 2 &middot; 14:03:12</span>
-                <span className="flex h-[24px] items-center justify-center rounded-[100px] bg-[#fbeae8] px-[12px] text-[11px] font-bold text-[#c0392b]">HTTP 503</span>
-              </div>
-              <div className="flex items-center justify-between p-[14px]">
-                <span className="font-inter text-[13px] font-normal text-[#63697a]">Manual redelivery &middot; 14:20:00</span>
-                <span className="flex h-[24px] items-center justify-center rounded-[100px] bg-[#eafaf3] px-[12px] text-[11px] font-bold text-[#1f9d6f]">Delivered</span>
-              </div>
-            </div>
-
-            <p className="font-inter text-[12.5px] leading-[20.25px] text-[#9aa1ae]">
-              Manual redelivery reuses the same event identity &mdash; it is another attempt, not a new event.
-            </p>
-          </div>
+        <div className="border border-[#e2e8f0] border-solid flex items-start p-[16px] rounded-[8px] w-full">
+          <p className="font-sans font-normal text-[#4f5e74] text-[12px]">
+            *Acknowledged state only confirms transport reception. Application logical success requires downstream
+            process queue checks.
+          </p>
         </div>
       </div>
     </section>
