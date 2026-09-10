@@ -1,38 +1,48 @@
 import React from 'react';
 import HeroSection from '@/components/webhooks/HeroSection';
-import MentalModelSection from '@/components/webhooks/MentalModelSection';
-import DiscoverEventsSection from '@/components/webhooks/DiscoverEventsSection';
-import PayloadAnatomySection from '@/components/webhooks/PayloadAnatomySection';
-import EndpointSetupSection from '@/components/webhooks/EndpointSetupSection';
-import SecurityImplementationSection from '@/components/webhooks/SecurityImplementationSection';
-import ReferenceArchitectureSection from '@/components/webhooks/ReferenceArchitectureSection';
+import TaskRouterSection from '@/components/webhooks/TaskRouterSection';
+import WebhooksVsApiSection from '@/components/webhooks/WebhooksVsApiSection';
+import EventCatalogSection from '@/components/webhooks/EventCatalogSection';
+import EventContractSection from '@/components/webhooks/EventContractSection';
+import SubscriptionModelSection from '@/components/webhooks/SubscriptionModelSection';
+import VerificationSection from '@/components/webhooks/VerificationSection';
 import DeliveryLifecycleSection from '@/components/webhooks/DeliveryLifecycleSection';
-import DiagnoseFailuresSection from '@/components/webhooks/DiagnoseFailuresSection';
-import TestingDevelopmentSection from '@/components/webhooks/TestingDevelopmentSection';
-import VersioningSection from '@/components/webhooks/VersioningSection';
+import RetriesIdempotencySection from '@/components/webhooks/RetriesIdempotencySection';
+import ReplayRecoverySection from '@/components/webhooks/ReplayRecoverySection';
+import TestingWorkflowSection from '@/components/webhooks/TestingWorkflowSection';
+import ObservabilitySection from '@/components/webhooks/ObservabilitySection';
+import ErrorTaxonomySection from '@/components/webhooks/ErrorTaxonomySection';
+import SchemaVersioningSection from '@/components/webhooks/SchemaVersioningSection';
 import SecurityPrivacySection from '@/components/webhooks/SecurityPrivacySection';
-import EnterpriseArchitectureSection from '@/components/webhooks/EnterpriseArchitectureSection';
-import ProductionReadinessSection from '@/components/webhooks/ProductionReadinessSection';
+import FaqSection from '@/components/webhooks/FaqSection';
+import FinalCtaSection from '@/components/webhooks/FinalCtaSection';
+
+export const metadata = {
+  title: 'Webhooks | ZoikoStream',
+  description:
+    'Subscribe to current source-approved ZoikoStream events and process deliveries using explicit event versions, endpoint requirements, verification, retry, replay, and lifecycle rules.',
+};
 
 export default function WebhooksPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
-      <div className="w-full">
-        <HeroSection />
-        <MentalModelSection />
-        <DiscoverEventsSection />
-        <PayloadAnatomySection />
-        <EndpointSetupSection />
-        <SecurityImplementationSection />
-        <ReferenceArchitectureSection />
-        <DeliveryLifecycleSection />
-        <DiagnoseFailuresSection />
-        <TestingDevelopmentSection />
-        <VersioningSection />
-        <SecurityPrivacySection />
-        <EnterpriseArchitectureSection />
-        <ProductionReadinessSection />
-      </div>
+    <main className="flex min-h-screen flex-col items-center justify-start bg-[#0a0d13] w-full overflow-hidden">
+      <HeroSection />
+      <TaskRouterSection />
+      <WebhooksVsApiSection />
+      <EventCatalogSection />
+      <EventContractSection />
+      <SubscriptionModelSection />
+      <VerificationSection />
+      <DeliveryLifecycleSection />
+      <RetriesIdempotencySection />
+      <ReplayRecoverySection />
+      <TestingWorkflowSection />
+      <ObservabilitySection />
+      <ErrorTaxonomySection />
+      <SchemaVersioningSection />
+      <SecurityPrivacySection />
+      <FaqSection />
+      <FinalCtaSection />
     </main>
   );
 }
