@@ -53,7 +53,7 @@ const BUILD_ITEMS: MenuItem[] = [
   { title: 'Live streaming API', description: 'Publish and manage broadcasts', href: '/live-streaming-api', icon: Radio },
   { title: 'Video-on-demand API', description: 'Upload, encode, deliver', href: '/developer-video-demand-api', icon: Video },
   { title: 'Media protocols', description: 'RTMPS, SRT, WHIP, qualified', href: '/developer-media-protocol', icon: Network },
-  { title: 'Webhooks and events', description: 'React to stream state changes', href: '/webhooks', icon: Webhook },
+  { title: 'Webhooks and events', description: 'React to stream state changes', href: '/developer-webhooks-events', icon: Webhook },
   { title: 'Secure playback', description: 'Signed URLs and DRM options', href: '/developer-secure-playback', icon: Lock },
   { title: 'Player integration', description: 'Embed a production-ready player', href: '/developer-player-integrations', icon: PlaySquare },
 ];
