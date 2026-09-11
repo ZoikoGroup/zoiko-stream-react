@@ -64,9 +64,9 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'SDKs', href: '/developer-sdk' },
       { name: 'Media protocols', href: '/developer-media-protocol' },
       { name: 'Webhooks', href: '/webhooks' },
-      { name: 'Code samples', href: '#' },
+      { name: 'Code samples', href: '/start-building' },
       { name: 'Changelog', href: '/developers-changelog' },
-      { name: 'GitHub', href: 'https://github.com', external: true },
+      { name: 'GitHub', href: '/github' },
     ],
   },
   {
