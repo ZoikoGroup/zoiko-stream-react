@@ -72,7 +72,7 @@ const ROW_1_SECTIONS: FooterSection[] = [
   {
     title: 'Pricing',
     links: [
-      { name: 'Pricing overview', href: '#' },
+      { name: 'Pricing overview', href: '/pricing-overview' },
       { name: 'Developer access', href: '/pricing-developer-access' },
       { name: 'Enterprise plans', href: '/pricing-enterprise-plans' },
       { name: 'Live Events pricing', href: '#' },
@@ -119,8 +119,8 @@ const ROW_2_SECTIONS: FooterSection[] = [
       { name: 'Enterprise support', href: '/support-enterprise' },
       { name: 'Live Events support', href: '/live-events-support' },
       { name: 'Report an issue', href: '/support-report-issue' },
-      { name: 'Accessibility help', href: '/accessibility' },
-      { name: 'System status', href: '/zoikostream-status' },
+      { name: 'Accessibility help', href: '/support-accessibility-help' },
+      { name: 'System status', href: '/support-system-status' },
     ],
   },
   {
