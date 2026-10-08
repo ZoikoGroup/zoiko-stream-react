@@ -31,6 +31,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "ZoikoStream",
   description: "ZoikoStream by Zoiko Tech and Zoiko Cloud",
+  verification: {
+    google: "_8lcZUHsZF0-b1c7mQchWFb-OZD8w1VjmuSqvTYuC3Q",
+  },
 };
 
 export default function RootLayout({

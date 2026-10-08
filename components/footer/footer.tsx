@@ -64,7 +64,7 @@ const ROW_1_SECTIONS: FooterSection[] = [
       { name: 'SDKs', href: '/developer-sdk' },
       { name: 'Media protocols', href: '/developer-media-protocol' },
       { name: 'Webhooks', href: '/webhooks' },
-      { name: 'Code samples', href: '#' },
+      { name: 'Code samples', href: '/start-building' },
       { name: 'Changelog', href: '/developers-changelog' },
       { name: 'GitHub', href: '/github' },
     ],
@@ -153,12 +153,12 @@ const ROW_2_SECTIONS: FooterSection[] = [
 ];
 
 const SOCIAL_LINKS = [
-  { name: 'LinkedIn', href: '#social-1', icon: '/images/footer/SVG (5).png' },
-  { name: 'YouTube', href: '#social-2', icon: '/images/footer/SVG.png' },
-  { name: 'GitHub', href: '#social-3', icon: '/images/footer/SVG (1).png' },
-  { name: 'X', href: '#social-4', icon: '/images/footer/SVG (2).png' },
-  { name: 'Instagram', href: '#social-5', icon: '/images/footer/SVG (3).png' },
-  { name: 'Facebook', href: '#social-6', icon: '/images/footer/SVG (4).png' },
+  { name: 'X (Twitter)', href: 'https://x.com/ZoikoStream', icon: '/images/footer/SVG (2).png' },
+  { name: 'Pinterest', href: 'https://www.pinterest.com/zoikostream/', icon: '/images/footer/pinterest.svg' },
+  { name: 'Instagram', href: 'https://www.instagram.com/zoikostream/', icon: '/images/footer/SVG (3).png' },
+  { name: 'YouTube', href: 'https://www.youtube.com/@ZoikoStream', icon: '/images/footer/SVG.png' },
+  { name: 'Facebook', href: 'https://www.facebook.com/zoikostream/', icon: '/images/footer/SVG (4).png' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/company/zoiko-stream', icon: '/images/footer/SVG (5).png' },
 ];
 
 export default function Footer() {
@@ -276,6 +276,8 @@ export default function Footer() {
                 <a
                   key={social.name}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 bg-[#353947] border border-[#404555] rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-[#424757] transition-colors"
                   aria-label={social.name}
                 >
