@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, Sora, IBM_Plex_Mono } from "next/font/google";
 import Header from "@/components/Header/header";
 import Footer from "@/components/footer/footer";
+import ZoikoGuide from "@/components/zoiko-guide/ZoikoGuide";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -49,6 +50,8 @@ export default function RootLayout({
           <div className="flex-1">{children}</div>
           <Footer />
         </div>
+        {/* ZoikoStream Guide (AI assistant): client-only, idle-loaded, failure-isolated. */}
+        <ZoikoGuide />
       </body>
     </html>
   );
