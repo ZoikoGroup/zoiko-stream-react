@@ -1,38 +1,25 @@
 // ZoikoStream Guide — public API client (ZST-API-PUB-GUIDE-001), website edition.
 //
 // The website is a separate origin from the ZoikoStream platform, which hosts the Guide API
-// (https://get.zoikostream.com/api/v1/public-guide). Plain fetch with cookie credentials only
-// (the HttpOnly zs_guide_sid capability, set by the platform host) and the CSRF header on every
-// write; no account identity ever (PR-029/030). zoikostream.com and get.zoikostream.com are the
-// same site, so the SameSite=Lax session cookie travels with these cross-origin requests.
+// (https://get.zoikostream.com/api/v1/public-guide). This client calls that API through this
+// site's own origin (a next.config.ts rewrite), so the request is same-origin and the HttpOnly
+// zs_guide_sid session cookie is first-party. Plain fetch with cookie credentials only and the
+// CSRF header on every write; no account identity ever (PR-029/030).
 //
-// The platform must list this site's origin in CORS_ORIGINS and GUIDE_ALLOWED_ORIGINS.
+// The platform must list this site's origin in GUIDE_ALLOWED_ORIGINS (the proxy forwards it).
 
-// Where the Guide API lives. NEXT_PUBLIC_GUIDE_API_BASE overrides; development defaults to the
-// local platform backend, production to the live platform.
+// Where the Guide API lives. The platform origin is still used for action links below; the API
+// itself is called on THIS site's origin, where next.config.ts proxies it to the platform.
+//
+// Calling the platform host directly would make the HttpOnly zs_guide_sid session cookie
+// cross-site, so SameSite=Lax withholds it and every call after session creation fails as 401
+// (always the case in local development, where the page is localhost and the API is not).
 export const PLATFORM_ORIGIN = (
   process.env.NEXT_PUBLIC_GUIDE_API_BASE ||
   (process.env.NODE_ENV === "development" ? "http://localhost:8000" : "https://get.zoikostream.com")
 ).replace(/\/+$/, "");
 
-// Dev only: "localhost" and "127.0.0.1" are different SITES to the browser, so a page on one
-// talking to an API on the other has its SameSite session cookie withheld and every Guide call
-// after session creation fails as 401. When both are loopback, use the page's own hostname.
-function guideBase() {
-  try {
-    const api = new URL(PLATFORM_ORIGIN);
-    const loopback = ["localhost", "127.0.0.1"];
-    if (typeof window !== "undefined" && loopback.includes(api.hostname)
-        && loopback.includes(window.location.hostname)) {
-      api.hostname = window.location.hostname;
-    }
-    return `${api.origin}/api/v1/public-guide`;
-  } catch {
-    return `${PLATFORM_ORIGIN}/api/v1/public-guide`;
-  }
-}
-
-export const GUIDE_BASE = guideBase();
+export const GUIDE_BASE = "/api/v1/public-guide";
 
 // Guide actions carry platform-relative paths from its destination registry (e.g. /contact,
 // /status). On the website they open on the platform host.
