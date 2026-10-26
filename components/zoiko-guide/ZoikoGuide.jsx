@@ -10,6 +10,16 @@ import { Component, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { guidePageFor } from "./pageContext";
+import { platformUrl } from "./guideApi";
+
+// Website paths for the Guide page's links; Guide action links open on the platform host.
+const SITE_LINKS = {
+  liveEvents: "/live-events-overview",
+  help: "/faqs-and-support",
+  about: "/about-us",
+  support: "/contact-us",
+};
+const openOnPlatform = (href) => window.location.assign(platformUrl(href));
 
 const GuideWidget = dynamic(() => import("./GuideWidget"), { ssr: false, loading: () => null });
 
@@ -52,7 +62,22 @@ export default function ZoikoGuide() {
   if (!ready) return null;
   return (
     <Isolate>
-      <GuideWidget page={guidePageFor(pathname)} pathname={pathname} />
+      {/* The launcher opens the full Guide design over the page; on /guide the page itself is
+          the conversation, so the launcher steps aside there. */}
+      {/* The launcher opens the full Guide design over the page; on /guide the page itself is
+          the conversation, so the launcher steps aside there. */}
+      {/* The launcher opens the full Guide design over the page; on /guide the page itself is
+          the conversation, so the launcher steps aside there. */}
+      {/* The launcher opens the full Guide design over the page; on /guide the page itself is
+          the conversation, so the launcher steps aside there. */}
+      <GuideWidget
+        page={guidePageFor(pathname)}
+        pathname={pathname}
+        suppressed={pathname === "/guide"}
+        variant="overlay"
+        pageLinks={SITE_LINKS}
+        pageOpenHref={openOnPlatform}
+      />
     </Isolate>
   );
 }
