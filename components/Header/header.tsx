@@ -383,7 +383,8 @@ export default function Header() {
 
   return (
     <header className="relative sticky top-0 z-30 w-full border-b border-slate-200 bg-white/95 backdrop-blur dark:border-gray-800 dark:bg-gray-900/95">
-      
+      <meta name="google-site-verification" content="_8lcZUHsZF0-b1c7mQchWFb-OZD8w1VjmuSqvTYuC3Q" />
+
       {/* Top Utility Bar Wrapper */}
       <div className="w-full bg-linear-359 from-stone-100 to-neutral-300 dark:from-gray-900 dark:to-gray-800">
         <div className="mx-auto hidden max-w-7xl 2xl:max-w-[1600px] 3xl:max-w-[1920px] justify-end gap-6 px-4 py-2 sm:flex sm:px-8 lg:px-12 2xl:px-16">

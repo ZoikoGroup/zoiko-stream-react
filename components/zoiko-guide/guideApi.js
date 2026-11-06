@@ -1,0 +1,328 @@
+// ZoikoStream Guide — public API client (ZST-API-PUB-GUIDE-001), website edition.
+//
+// The website is a separate origin from the ZoikoStream platform, which hosts the Guide API
+// (https://get.zoikostream.com/api/v1/public-guide). This client calls that API through this
+// site's own origin (a next.config.ts rewrite), so the request is same-origin and the HttpOnly
+// zs_guide_sid session cookie is first-party. Plain fetch with cookie credentials only and the
+// CSRF header on every write; no account identity ever (PR-029/030).
+//
+// The platform must list this site's origin in GUIDE_ALLOWED_ORIGINS (the proxy forwards it).
+
+// Where the Guide API lives. The platform origin is still used for action links below; the API
+// itself is called on THIS site's origin, where next.config.ts proxies it to the platform.
+//
+// Calling the platform host directly would make the HttpOnly zs_guide_sid session cookie
+// cross-site, so SameSite=Lax withholds it and every call after session creation fails as 401
+// (always the case in local development, where the page is localhost and the API is not).
+export const PLATFORM_ORIGIN = (
+  process.env.NEXT_PUBLIC_GUIDE_API_BASE ||
+  (process.env.NODE_ENV === "development" ? "http://localhost:8000" : "https://get.zoikostream.com")
+).replace(/\/+$/, "");
+
+export const GUIDE_BASE = "/api/v1/public-guide";
+
+// Guide actions carry platform-relative paths from its destination registry (e.g. /contact,
+// /status). On the website they open on the platform host.
+export function platformUrl(href) {
+  return `${PLATFORM_ORIGIN}${href}`;
+}
+
+export class GuideError extends Error {
+  constructor(status, problem) {
+    super(problem?.detail || `Guide request failed (${status})`);
+    this.status = status;
+    this.code = problem?.code || "GUIDE_NETWORK_ERROR";
+    this.problem = problem || {};
+    this.retryAfter = problem?.retryAfter ?? null;
+  }
+}
+
+// Session capability lives in memory only: no conversation data or tokens in localStorage
+// (Security/Privacy §8). A reload simply starts a fresh, anonymous session.
+let session = null; // { id, csrf }
+
+export const getSession = () => session;
+export const clearSession = () => {
+  session = null;
+};
+
+// Last time the server accepted a call on the current session. Every authenticated session
+// call refreshes the server's idle clock (sessions.load_session), so the client can warn before
+// idle expiry without a dedicated keep-alive route (Figma §13 "Timeout/session expiry").
+let lastActivity = 0;
+const activityListeners = new Set();
+export const getLastActivity = () => lastActivity;
+export function onActivity(fn) {
+  activityListeners.add(fn);
+  return () => activityListeners.delete(fn);
+}
+function markActivity() {
+  lastActivity = Date.now();
+  activityListeners.forEach((fn) => {
+    try {
+      fn(lastActivity);
+    } catch {
+      /* listeners never break a request */
+    }
+  });
+}
+
+export const uuid = () =>
+  globalThis.crypto?.randomUUID
+    ? globalThis.crypto.randomUUID()
+    : "10000000-1000-4000-8000-100000000000".replace(/[018]/g, (c) =>
+        (+c ^ (Math.random() * 16) >> (+c / 4)).toString(16),
+      );
+
+async function request(method, path, { body, headers = {}, stream = false, signal } = {}) {
+  const init = {
+    method,
+    credentials: "include",
+    headers: { Accept: stream ? "text/event-stream" : "application/json", ...headers },
+    ...(signal ? { signal } : {}),
+  };
+  if (body !== undefined) {
+    init.headers["Content-Type"] = "application/json";
+    init.body = JSON.stringify(body);
+  }
+  if (method !== "GET" && session) init.headers["X-ZS-CSRF"] = session.csrf;
+  let res;
+  try {
+    res = await fetch(`${GUIDE_BASE}${path}`, init);
+  } catch {
+    if (signal?.aborted) throw new GuideError(0, { code: "GUIDE_TIMEOUT", detail: "Guide took too long to answer." });
+    throw new GuideError(0, { code: "GUIDE_NETWORK_ERROR", detail: "Guide couldn't be reached." });
+  }
+  if (res.ok && path.startsWith("/sessions")) markActivity();
+  // Capability rotation (Security §7): the cookie updates itself; the CSRF token is ours to swap.
+  const rotatedCsrf = res.headers.get("x-zs-csrf-rotated");
+  if (rotatedCsrf && session) session = { ...session, csrf: rotatedCsrf };
+  if (res.status === 204 || res.status === 202) return null;
+  if (stream && res.ok && (res.headers.get("content-type") || "").includes("text/event-stream")) {
+    return res;
+  }
+  let data;
+  try {
+    data = await res.json();
+  } catch {
+    data = null;
+  }
+  if (!res.ok) {
+    const retry = Number(res.headers.get("retry-after"));
+    throw new GuideError(res.status, { ...(data || {}), retryAfter: Number.isFinite(retry) && retry > 0 ? retry : null });
+  }
+  return data;
+}
+
+const sessionPath = (p) => {
+  if (!session) throw new GuideError(401, { code: "GUIDE_SESSION_INVALID" });
+  return `/sessions/${session.id}${p}`;
+};
+
+export const bootstrap = ({ pageId, pageType }) =>
+  request("GET", `/bootstrap?page_id=${encodeURIComponent(pageId)}&page_type=${encodeURIComponent(pageType)}&locale=en-US`);
+
+// consent_snapshot (API §7.1): the site's analytics choice at open, read from the consent
+// manager; Guide never asks for it itself.
+export async function createSession(pageContext, consentState = "unknown") {
+  const data = await request("POST", "/sessions", {
+    body: {
+      client_session_nonce: uuid(),
+      page_context: pageContext,
+      consent_snapshot: { analytics: consentState, consent_version: null },
+    },
+  });
+  session = { id: data.session_id, csrf: data.csrf_token };
+  return data;
+}
+
+export const updateContext = (pageContext) =>
+  request("PATCH", sessionPath("/context"), { body: { page_context: pageContext } });
+
+export const endSession = async () => {
+  try {
+    await request("POST", sessionPath("/end"));
+  } finally {
+    session = null;
+  }
+};
+
+// confirm_replace (C3): the visitor confirmed that a different viewer issue replaces the
+// active flow's progress. Without it the server answers 409 with confirm_required.
+export const startSupportFlow = (flowType, { confirmReplace = false } = {}) =>
+  request("POST", sessionPath("/support-flows"), {
+    body: { flow_type: flowType, ...(confirmReplace ? { confirm_replace: true } : {}) },
+  });
+
+export const submitSupportStep = (flowId, { stepId, optionId, command }) =>
+  request("POST", sessionPath(`/support-flows/${flowId}/steps`), {
+    body: {
+      client_step_id: uuid(),
+      step_id: stepId,
+      ...(optionId ? { option_id: optionId } : { command }),
+    },
+  });
+
+export const startLeadFlow = (flowKind, sourceIntent) =>
+  request("POST", sessionPath("/lead-flows"), {
+    body: { flow_kind: flowKind, ...(sourceIntent ? { source_intent: sourceIntent } : {}) },
+  });
+
+export const updateLeadFlow = (flowId, fields) =>
+  request("PATCH", sessionPath(`/lead-flows/${flowId}`), { body: { fields } });
+
+// Lead draft (C6, CF §3 "Preserve form draft server-side"): partial approved fields, saved on
+// blur so a paused or resumed lead flow keeps what the visitor typed. No consent needed to
+// hold a draft; the server encrypts it like other lead values and purges it with the session.
+export const saveLeadDraft = (flowId, fields) =>
+  request("PATCH", sessionPath(`/leads/${flowId}/draft`), { body: fields });
+
+export const cancelLeadFlow = (flowId) =>
+  request("PATCH", sessionPath(`/lead-flows/${flowId}`), { body: { cancel: true } });
+
+export const putConsent = (purpose, status, noticeVersion) =>
+  request("PUT", sessionPath(`/consents/${purpose}`), {
+    body: { status, notice_version: noticeVersion, source: "guide" },
+  });
+
+export const submitLead = (flowId, consentReceiptId, idempotencyKey) =>
+  request("POST", sessionPath(`/lead-flows/${flowId}/submit`), {
+    body: { consent_receipt_id: consentReceiptId },
+    headers: { "Idempotency-Key": idempotencyKey },
+  });
+
+export const handoff = (target, reasonCode) =>
+  request("POST", sessionPath("/handoffs"), {
+    body: { target, ...(reasonCode ? { reason_code: reasonCode } : {}) },
+    headers: { "Idempotency-Key": uuid() },
+  });
+
+export const sendFeedback = (payload) =>
+  request("POST", sessionPath("/feedback"), { body: { client_feedback_id: uuid(), ...payload } });
+
+// ── Messages (SSE with JSON fallback) ──────────────────────────────────────────────────────
+
+// Parses a text/event-stream body into {event, data} objects. Exported for tests.
+export function parseSSE(text) {
+  const out = [];
+  for (const block of text.split(/\r?\n\r?\n/)) {
+    if (!block.trim()) continue;
+    let event = "message";
+    const data = [];
+    for (const line of block.split(/\r?\n/)) {
+      if (line.startsWith("event:")) event = line.slice(6).trim();
+      else if (line.startsWith("data:")) data.push(line.slice(5).trimStart());
+    }
+    try {
+      out.push({ event, data: data.length ? JSON.parse(data.join("\n")) : null });
+    } catch {
+      /* malformed event: ignored, never executed (API §9) */
+    }
+  }
+  return out;
+}
+
+// No byte from the server for this long = the message timed out (Figma §14 "Message timeout").
+export const MESSAGE_TIMEOUT_MS = 60_000;
+
+/**
+ * Send a message. `onDelta(text)` receives the growing answer text while it streams;
+ * `onAccepted()` fires once the server has accepted the message (an OK response), after which
+ * the server holds the answer under this client_message_id and a retry must reuse it.
+ * Resolves to { assistant_message, session_state } in the same shape as the JSON API.
+ */
+export async function sendMessage({ clientMessageId, text, intentHint }, { onDelta, onAccepted, onProgress } = {}) {
+  const body = {
+    client_message_id: clientMessageId,
+    text,
+    ...(intentHint ? { intent_hint: intentHint } : {}),
+  };
+  const controller = typeof AbortController === "function" ? new AbortController() : null;
+  let timer = null;
+  const arm = () => {
+    if (!controller) return;
+    clearTimeout(timer);
+    timer = setTimeout(() => controller.abort(), MESSAGE_TIMEOUT_MS);
+  };
+  arm();
+  try {
+    const res = await request("POST", sessionPath("/messages"), { body, stream: true, signal: controller?.signal });
+    onAccepted?.();
+    if (!(res instanceof Response)) return res; // server answered JSON
+    return await readStream(res, { onDelta, onProgress, arm, controller });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+// Progress stages the server reports before text arrives (C2): retrieving -> drafting -> checking.
+export const PROGRESS_STAGES = new Set(["retrieving", "drafting", "checking"]);
+
+async function readStream(res, { onDelta, onProgress, arm, controller }) {
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let answer = "";
+  const msg = { sources: [], actions: [] };
+  let completed = null;
+  const handle = ({ event, data }) => {
+    if (!data) return;
+    // started may carry a null id (the row is written only once the answer passes validation);
+    // completed carries the authoritative one.
+    if (event === "response.started") msg.message_id = data.assistant_message_id || msg.message_id;
+    else if (event === "response.text.delta") {
+      answer += typeof data.delta === "string" ? data.delta : "";
+      onDelta?.(answer);
+    } else if (event === "response.source") msg.sources.push(data);
+    else if (event === "response.action") msg.actions.push(data);
+    else if (event === "response.progress") {
+      if (PROGRESS_STAGES.has(data.stage)) onProgress?.(data.stage);
+    } else if (event === "response.completed") completed = data;
+    else if (event === "response.error") {
+      // C2: {code, retryable}. A stable code only; never a provider message.
+      const code = typeof data.code === "string" && /^GUIDE_[A-Z_]{1,48}$/.test(data.code) ? data.code : "GUIDE_UNAVAILABLE";
+      throw new GuideError(503, { code, retryable: data.retryable === true });
+    }
+  };
+  for (;;) {
+    let chunk;
+    try {
+      chunk = await reader.read();
+    } catch {
+      throw new GuideError(0, {
+        code: controller?.signal.aborted ? "GUIDE_TIMEOUT" : "GUIDE_STREAM_INTERRUPTED",
+        detail: "The answer was interrupted.",
+      });
+    }
+    const { value, done } = chunk;
+    arm();
+    buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+    const cut = buffer.lastIndexOf("\n\n");
+    if (cut >= 0) {
+      parseSSE(buffer.slice(0, cut)).forEach(handle);
+      buffer = buffer.slice(cut + 2);
+    }
+    if (done) break;
+  }
+  if (buffer.trim()) parseSSE(buffer).forEach(handle);
+  if (!completed) throw new GuideError(0, { code: "GUIDE_STREAM_INTERRUPTED", detail: "The answer was interrupted." });
+  return {
+    session_state: completed.session_state,
+    assistant_message: {
+      ...msg,
+      message_id: completed.assistant_message_id || msg.message_id,
+      text: answer,
+      answer_class: completed.answer_class,
+      grounded: completed.grounded,
+      uncertainty: completed.uncertainty,
+      notice: completed.notice || undefined,
+      resume: completed.resume || undefined,
+      suggestions: Array.isArray(completed.suggestions) ? completed.suggestions : [],
+      clarification: completed.clarification || undefined,
+      paused: completed.paused || undefined,
+      missing_topic_code: completed.missing_topic_code || undefined,
+      intent_class: completed.intent_class || undefined,
+      support_flow: completed.support_flow || undefined,
+    },
+  };
+}
