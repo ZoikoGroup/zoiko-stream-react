@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter, Sora, IBM_Plex_Mono } from "next/font/google";
 import Header from "@/components/Header/header";
 import Footer from "@/components/footer/footer";
 import ZoikoGuide from "@/components/zoiko-guide/ZoikoGuide";
+import BlackFridayPopup from "@/components/black-friday/BlackFridayPopup";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -49,6 +50,8 @@ export default function RootLayout({
         </div>
         {/* ZoikoStream Guide (AI assistant): client-only, idle-loaded, failure-isolated. */}
         <ZoikoGuide />
+        {/* Site-wide Black Friday 2026 promo popup (once per session, hidden on /black-friday). */}
+        <BlackFridayPopup />
       </body>
     </html>
   );
