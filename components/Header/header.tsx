@@ -509,7 +509,7 @@ export default function Header() {
         {/* Desktop CTA Buttons */}
         <div className="hidden items-center gap-3 lg:flex 2xl:gap-4">
           <Link
-            href="https://zoikostream-git-454227754507.europe-west1.run.app/login"
+            href="https://get.zoikostream.com/login"
             className="whitespace-nowrap rounded-lg border border-[#d9d6cc] px-3.5 py-2 text-[13px] 2xl:text-[14px] font-semibold text-slate-800 transition-colors hover:bg-slate-50 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800"
           >
             Sign In
