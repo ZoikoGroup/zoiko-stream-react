@@ -13,9 +13,9 @@ import CtaSection from '@/components/black-friday/CtaSection';
 import NewsletterSection from '@/components/black-friday/NewsletterSection';
 
 export const metadata: Metadata = {
-  title: 'Black Friday 2026 — 20% Off | ZoikoStream',
+  title: 'Black Friday Streaming Deals & Discounts 2026 | Zoiko Stream',
   description:
-    'Professional live streaming for events, creators and businesses. Black Friday 2026: 20% off eligible first-event platform fees.',
+  'Explore Zoiko Stream Black Friday discounts in 2026. Discover special streaming offers and enjoy entertainment at a great price.'
 };
 
 export default function BlackFridayPage() {
