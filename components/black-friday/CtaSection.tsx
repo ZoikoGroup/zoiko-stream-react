@@ -4,8 +4,8 @@ import { useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { TagGlyph } from './shared';
 
-/** Countdown target: start of Black Friday 2026 (UTC). */
-const TARGET = Date.parse('2026-11-27T00:00:00Z');
+/** Countdown target: end of the Black Friday sale, 30 Nov 2026 (UTC). */
+const TARGET = Date.parse('2026-12-01T00:00:00Z');
 
 function remaining(now: number) {
   const s = Math.max(0, Math.floor((TARGET - now) / 1000));
@@ -64,7 +64,7 @@ export default function CtaSection() {
             Lock in your Black Friday offer before the window closes and go live with confidence.
           </p>
 
-          <div className="mt-8 flex justify-center gap-3 sm:gap-4" role="timer" aria-label="Time until Black Friday">
+          <div className="mt-8 flex justify-center gap-3 sm:gap-4" role="timer" aria-label="Time until the Black Friday offer ends">
             {units.map((u) => (
               <div
                 key={u.label}
@@ -95,7 +95,7 @@ export default function CtaSection() {
 
           <p className="mx-auto mt-7 max-w-[560px] text-[11px] leading-[1.6] text-violet-200">
             *Offer proposed and subject to approval. Discount applies to eligible first-event platform fees only. Terms,
-            conditions and eligibility apply. Black Friday: 27 Nov 2026 · Cyber Monday: 30 Nov 2026.
+            conditions and eligibility apply. Offer runs 20 Nov 2026 – 30 Nov 2026.
           </p>
         </div>
       </div>
