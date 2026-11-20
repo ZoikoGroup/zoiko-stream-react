@@ -8,8 +8,8 @@ import { ArrowRight, Download, Globe, MonitorPlay, Shield, X } from 'lucide-reac
 import { IMG, TagGlyph, gradientBtn } from './shared';
 import styles from './BlackFridayPopup.module.css';
 
-/** Black Friday starts / Cyber Monday ends (UTC) — same dates as /black-friday. */
-const BF_START = Date.parse('2026-11-27T00:00:00Z');
+/** Black Friday sale runs 20 Nov – 30 Nov 2026 (UTC) — same dates as /black-friday. */
+const BF_START = Date.parse('2026-11-20T00:00:00Z');
 const CM_END = Date.parse('2026-12-01T00:00:00Z');
 
 const STORAGE_KEY = 'zs-bf-popup-dismissed-2026';
@@ -223,11 +223,11 @@ export default function BlackFridayPopup() {
             {/* Dates */}
             <div className="mt-4 flex items-center justify-between rounded-xl border border-amber-300/40 bg-gradient-to-r from-amber-300/10 to-transparent px-4 py-2.5 text-xs">
               <span className="text-gray-300">
-                <span className="font-bold text-white">Black Friday</span> · 27 Nov
+                <span className="font-bold text-white">Sale starts</span> · 20 Nov
               </span>
               <span className="h-4 w-px bg-amber-300/40" />
               <span className="text-gray-300">
-                <span className="font-bold text-white">Cyber Monday</span> · 30 Nov
+                <span className="font-bold text-white">Sale ends</span> · 30 Nov
               </span>
             </div>
 

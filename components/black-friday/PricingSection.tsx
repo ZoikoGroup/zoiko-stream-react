@@ -49,8 +49,8 @@ export default function PricingSection() {
 
             <dl className="mt-5 grid grid-cols-2 gap-3.5">
               {[
-                { icon: CalendarDays, label: 'Black Friday', date: '27 Nov 2026' },
-                { icon: Clock, label: 'Cyber Monday', date: '30 Nov 2026' },
+                { icon: CalendarDays, label: 'Sale starts', date: '20 Nov 2026' },
+                { icon: Clock, label: 'Sale ends', date: '30 Nov 2026' },
               ].map(({ icon: Icon, label, date }) => (
                 <div key={label} className="flex gap-2.5">
                   <Icon className="mt-0.5 size-4 shrink-0 text-violet-300" strokeWidth={1.5} />

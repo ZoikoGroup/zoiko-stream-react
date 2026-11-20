@@ -8,7 +8,7 @@ import { IMG, SectionHeading } from './shared';
 const faqs = [
   {
     q: 'How does the Black Friday offer work?',
-    a: 'Book your first eligible event between Black Friday (27 Nov 2026) and Cyber Monday (30 Nov 2026) and 20% is taken off the eligible first-event platform fees. Terms, conditions and eligibility apply.',
+    a: 'Book your first eligible event between 20 Nov 2026 and 30 Nov 2026 and 20% is taken off the eligible first-event platform fees. Terms, conditions and eligibility apply.',
   },
   {
     q: 'Do my viewers need to download anything?',
